@@ -1,0 +1,594 @@
+()
+%100
+[@main]
+<COLOR=clLime ┅☆→><COLOR=clRed 本服为了方便玩家转职业，特提供装备互换功能><COLOR=clLime ←☆┅>\ \
+『<降龙￠战盔互换/@11>』『<降龙￠法盔互换/@21>』『<降龙￠道盔互换/@31>』\
+『<降龙￠战链互换/@12>』『<降龙￠法链互换/@22>』『<降龙￠道链互换/@32>』\
+『<降龙￠战镯互换/@13>』『<降龙￠法镯互换/@23>』『<降龙￠道镯互换/@33>』\
+『<降龙￠战戒互换/@14>』『<降龙￠法戒互换/@24>』『<降龙￠道戒互换/@34>』\
+『<降龙￠战带互换/@15>』『<降龙￠法带互换/@25>』『<降龙￠道带互换/@35>』\
+『<降龙￠战靴互换/@16>』『<降龙￠法靴互换/@26>』『<降龙￠道靴互换/@36>』\
+
+
+[@11]
+<COLOR=clAqua ┅☆→转换需要50000元宝手续费←☆┅>\ \
+降龙￠战盔 换成：<降龙￠法盔/@战盔换法盔>\ \
+降龙￠战盔 换成：<降龙￠道盔/@战盔换道盔>
+
+[@战盔换法盔]
+#IF
+CHECKITEM  降龙￠战盔 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠战盔 1
+GAMEGOLD - 50000
+GIVE 降龙￠法盔 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+[@战盔换道盔]
+#IF
+CHECKITEM  降龙￠战盔 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠战盔 1
+GAMEGOLD - 50000
+GIVE 降龙￠道盔 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+
+[@21]
+<COLOR=clAqua ┅☆→转换需要50000元宝手续费←☆┅>\ \
+降龙￠法盔 换成：<降龙￠战盔/@法盔换战盔>\ \
+降龙￠法盔 换成：<降龙￠道盔/@法盔换道盔>
+
+[@法盔换战盔]
+#IF
+CHECKITEM  降龙￠法盔 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠法盔 1
+GAMEGOLD - 50000
+GIVE 降龙￠战盔 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+[@法盔换道盔]
+#IF
+CHECKITEM  降龙￠法盔 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠法盔 1
+GAMEGOLD - 50000
+GIVE 降龙￠道盔 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+
+[@31]
+<COLOR=clAqua ┅☆→转换需要50000元宝手续费←☆┅>\ \
+降龙￠道盔 换成：<降龙￠战盔/@道盔换战盔>\ \
+降龙￠道盔 换成：<降龙￠法盔/@道盔换法盔>
+
+[@道盔换战盔]
+#IF
+CHECKITEM  降龙￠道盔 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠道盔 1
+GAMEGOLD - 50000
+GIVE 降龙￠战盔 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+[@道盔换法盔]
+#IF
+CHECKITEM  降龙￠道盔 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠道盔 1
+GAMEGOLD - 50000
+GIVE 降龙￠法盔 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+;------------------------------------------------------
+[@12]
+<COLOR=clAqua ┅☆→转换需要50000元宝手续费←☆┅>\ \
+降龙￠战链 换成：<降龙￠法链/@战链换法链>\ \
+降龙￠战链 换成：<降龙￠道链/@战链换道链>
+
+[@战链换法链]
+#IF
+CHECKITEM  降龙￠战链 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠战链 1
+GAMEGOLD - 50000
+GIVE 降龙￠法链 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+[@战链换道链]
+#IF
+CHECKITEM  降龙￠战链 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠战链 1
+GAMEGOLD - 50000
+GIVE 降龙￠道链 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+
+[@22]
+<COLOR=clAqua ┅☆→转换需要50000元宝手续费←☆┅>\ \
+降龙￠法链 换成：<降龙￠战链/@法链换战链>\ \
+降龙￠法链 换成：<降龙￠道链/@法链换道链>
+
+[@法链换战链]
+#IF
+CHECKITEM  降龙￠法链 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠法链 1
+GAMEGOLD - 50000
+GIVE 降龙￠战链 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+[@法链换道链]
+#IF
+CHECKITEM  降龙￠法链 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠法链 1
+GAMEGOLD - 50000
+GIVE 降龙￠道链 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+
+[@32]
+<COLOR=clAqua ┅☆→转换需要50000元宝手续费←☆┅>\ \
+降龙￠道链 换成：<降龙￠战链/@道链换战链>\ \
+降龙￠道链 换成：<降龙￠法链/@道链换法链>
+
+[@道链换战链]
+#IF
+CHECKITEM  降龙￠道链 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠道链 1
+GAMEGOLD - 50000
+GIVE 降龙￠战链 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+[@道链换法链]
+#IF
+CHECKITEM  降龙￠道链 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠道链 1
+GAMEGOLD - 50000
+GIVE 降龙￠法链 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+;------------------------------------------------------
+
+
+[@13]
+<COLOR=clAqua ┅☆→转换需要50000元宝手续费←☆┅>\ \
+降龙￠战镯 换成：<降龙￠法镯/@战镯换法镯>\ \
+降龙￠战镯 换成：<降龙￠道镯/@战镯换道镯>
+
+[@战镯换法镯]
+#IF
+CHECKITEM  降龙￠战镯 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠战镯 1
+GAMEGOLD - 50000
+GIVE 降龙￠法镯 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+[@战镯换道镯]
+#IF
+CHECKITEM  降龙￠战镯 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠战镯 1
+GAMEGOLD - 50000
+GIVE 降龙￠道镯 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+
+[@23]
+<COLOR=clAqua ┅☆→转换需要50000元宝手续费←☆┅>\ \
+降龙￠法镯 换成：<降龙￠战镯/@法镯换战镯>\ \
+降龙￠法镯 换成：<降龙￠道镯/@法镯换道镯>
+
+[@法镯换战镯]
+#IF
+CHECKITEM  降龙￠法镯 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠法镯 1
+GAMEGOLD - 50000
+GIVE 降龙￠战镯 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+[@法镯换道镯]
+#IF
+CHECKITEM  降龙￠法镯 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠法镯 1
+GAMEGOLD - 50000
+GIVE 降龙￠道镯 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+
+[@33]
+<COLOR=clAqua ┅☆→转换需要50000元宝手续费←☆┅>\ \
+降龙￠道镯 换成：<降龙￠战镯/@道镯换战镯>\ \
+降龙￠道镯 换成：<降龙￠法镯/@道镯换法镯>
+
+[@道镯换战镯]
+#IF
+CHECKITEM  降龙￠道镯 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠道镯 1
+GAMEGOLD - 50000
+GIVE 降龙￠战镯 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+[@道镯换法镯]
+#IF
+CHECKITEM  降龙￠道镯 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠道镯 1
+GAMEGOLD - 50000
+GIVE 降龙￠法镯 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+;------------------------------------------------------
+
+[@14]
+<COLOR=clAqua ┅☆→转换需要50000元宝手续费←☆┅>\ \
+降龙￠战戒 换成：<降龙￠法戒/@战戒换法戒>\ \
+降龙￠战戒 换成：<降龙￠道戒/@战戒换道戒>
+
+[@战戒换法戒]
+#IF
+CHECKITEM  降龙￠战戒 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠战戒 1
+GAMEGOLD - 50000
+GIVE 降龙￠法戒 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+[@战戒换道戒]
+#IF
+CHECKITEM  降龙￠战戒 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠战戒 1
+GAMEGOLD - 50000
+GIVE 降龙￠道戒 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+
+[@24]
+<COLOR=clAqua ┅☆→转换需要50000元宝手续费←☆┅>\ \
+降龙￠法戒 换成：<降龙￠战戒/@法戒换战戒>\ \
+降龙￠法戒 换成：<降龙￠道戒/@法戒换道戒>
+
+[@法戒换战戒]
+#IF
+CHECKITEM  降龙￠法戒 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠法戒 1
+GAMEGOLD - 50000
+GIVE 降龙￠战戒 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+[@法戒换道戒]
+#IF
+CHECKITEM  降龙￠法戒 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠法戒 1
+GAMEGOLD - 50000
+GIVE 降龙￠道戒 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+
+[@34]
+<COLOR=clAqua ┅☆→转换需要50000元宝手续费←☆┅>\ \
+降龙￠道戒 换成：<降龙￠战戒/@道戒换战戒>\ \
+降龙￠道戒 换成：<降龙￠法戒/@道戒换法戒>
+
+[@道戒换战戒]
+#IF
+CHECKITEM  降龙￠道戒 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠道戒 1
+GAMEGOLD - 50000
+GIVE 降龙￠战戒 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+[@道戒换法戒]
+#IF
+CHECKITEM  降龙￠道戒 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠道戒 1
+GAMEGOLD - 50000
+GIVE 降龙￠法戒 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+
+;------------------------------------------------------
+
+[@15]
+<COLOR=clAqua ┅☆→转换需要50000元宝手续费←☆┅>\ \
+降龙￠战带 换成：<降龙￠法带/@战带换法带>\ \
+降龙￠战带 换成：<降龙￠道带/@战带换道带>
+
+[@战带换法带]
+#IF
+CHECKITEM  降龙￠战带 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠战带 1
+GAMEGOLD - 50000
+GIVE 降龙￠法带 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+[@战带换道带]
+#IF
+CHECKITEM  降龙￠战带 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠战带 1
+GAMEGOLD - 50000
+GIVE 降龙￠道带 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+
+[@25]
+<COLOR=clAqua ┅☆→转换需要50000元宝手续费←☆┅>\ \
+降龙￠法带 换成：<降龙￠战带/@法带换战带>\ \
+降龙￠法带 换成：<降龙￠道带/@法带换道带>
+
+[@法带换战带]
+#IF
+CHECKITEM  降龙￠法带 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠法带 1
+GAMEGOLD - 50000
+GIVE 降龙￠战带 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+[@法带换道带]
+#IF
+CHECKITEM  降龙￠法带 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠法带 1
+GAMEGOLD - 50000
+GIVE 降龙￠道带 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+
+[@35]
+<COLOR=clAqua ┅☆→转换需要50000元宝手续费←☆┅>\ \
+降龙￠道带 换成：<降龙￠战带/@道带换战带>\ \
+降龙￠道带 换成：<降龙￠法带/@道带换法带>
+
+[@道带换战带]
+#IF
+CHECKITEM  降龙￠道带 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠道带 1
+GAMEGOLD - 50000
+GIVE 降龙￠战带 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+[@道带换法带]
+#IF
+CHECKITEM  降龙￠道带 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠道带 1
+GAMEGOLD - 50000
+GIVE 降龙￠法带 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+;------------------------------------------------------
+
+[@16]
+<COLOR=clAqua ┅☆→转换需要50000元宝手续费←☆┅>\ \
+降龙￠战靴 换成：<降龙￠法靴/@战靴换法靴>\ \
+降龙￠战靴 换成：<降龙￠道靴/@战靴换道靴>
+
+[@战靴换法靴]
+#IF
+CHECKITEM  降龙￠战靴 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠战靴 1
+GAMEGOLD - 50000
+GIVE 降龙￠法靴 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+[@战靴换道靴]
+#IF
+CHECKITEM  降龙￠战靴 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠战靴 1
+GAMEGOLD - 50000
+GIVE 降龙￠道靴 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+
+[@26]
+<COLOR=clAqua ┅☆→转换需要50000元宝手续费←☆┅>\ \
+降龙￠法靴 换成：<降龙￠战靴/@法靴换战靴>\ \
+降龙￠法靴 换成：<降龙￠道靴/@法靴换道靴>
+
+[@法靴换战靴]
+#IF
+CHECKITEM  降龙￠法靴 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠法靴 1
+GAMEGOLD - 50000
+GIVE 降龙￠战靴 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+[@法靴换道靴]
+#IF
+CHECKITEM  降龙￠法靴 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠法靴 1
+GAMEGOLD - 50000
+GIVE 降龙￠道靴 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+
+[@36]
+<COLOR=clAqua ┅☆→转换需要50000元宝手续费←☆┅>\ \
+降龙￠道靴 换成：<降龙￠战靴/@道靴换战靴>\ \
+降龙￠道靴 换成：<降龙￠法靴/@道靴换法靴>
+
+[@道靴换战靴]
+#IF
+CHECKITEM  降龙￠道靴 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠道靴 1
+GAMEGOLD - 50000
+GIVE 降龙￠战靴 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+[@道靴换法靴]
+#IF
+CHECKITEM  降龙￠道靴 1
+CHECKGAMEGOLD > 49999
+#ACT
+Take 降龙￠道靴 1
+GAMEGOLD - 50000
+GIVE 降龙￠法靴 1
+SENDMSG 6 恭喜你,互换成功.!
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：材料不齐，请检查背包！
+
+

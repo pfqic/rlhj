@@ -1,0 +1,201 @@
+[@main]
+#IF
+CHECKVAR HUMAN 新手入门 =
+#ACT
+CALCVAR HUMAN 新手入门 = 可接受
+#IF
+CHECKVAR HUMAN 初级阶段 =
+#ACT
+CALCVAR HUMAN 初级阶段 = 可接受
+#IF
+CHECKVAR HUMAN 中级阶段 =
+#ACT
+CALCVAR  HUMAN 中级阶段 = 可接受
+#IF
+CHECKVAR HUMAN 高级阶段 =
+#ACT
+CALCVAR  HUMAN 高级阶段 = 可接受
+#IF
+CHECKVAR HUMAN 傲视群雄 =
+#ACT
+CALCVAR  HUMAN 傲视群雄 = 可接受
+#IF
+CHECKVAR HUMAN 初试牛刀 =
+#ACT
+CALCVAR  HUMAN 初试牛刀 = 可接受
+#IF
+CHECKVAR HUMAN 名扬天下 =
+#ACT
+CALCVAR  HUMAN 名扬天下 = 可接受
+#IF
+CHECKVAR HUMAN 狂野之路 =
+#ACT
+CALCVAR  HUMAN 狂野之路 = 可接受
+#IF
+CHECKVAR HUMAN 单枪匹马 =
+#ACT
+CALCVAR  HUMAN 单枪匹马 = 可接受
+#IF
+CHECKVAR HUMAN 君临天下 =
+#ACT
+CALCVAR  HUMAN 君临天下 = 可接受
+#IF
+CHECKVAR HUMAN 新手入门 = 已完成
+#SAY
+<新手入门/@main>  <COLOR=clRed 状态：><$HUMAN(新手入门)>          <初试牛刀/@初试牛刀>  <COLOR=clRed 状态：><$HUMAN(初试牛刀)>\
+<初级阶段/@初级阶段>  <COLOR=clRed 状态：><$HUMAN(初级阶段)>          <名扬天下/@名扬天下>  <COLOR=clRed 状态：><$HUMAN(名扬天下)>\
+<中级阶段/@中级阶段>  <COLOR=clRed 状态：><$HUMAN(中级阶段)>          <狂野之路/@狂野之路>  <COLOR=clRed 状态：><$HUMAN(狂野之路)>\
+<高级阶段/@高级阶段>  <COLOR=clRed 状态：><$HUMAN(高级阶段)>          <单枪匹马/@单枪匹马>  <COLOR=clRed 状态：><$HUMAN(单枪匹马)>\
+<傲视群雄/@傲视群雄>  <COLOR=clRed 状态：><$HUMAN(傲视群雄)>          <君临天下/@君临天下>  <COLOR=clRed 状态：><$HUMAN(君临天下)>\
+<COLOR=clFuchsia 任务要求：><COLOR=clTeal 等级超过><$GLOBAL(新手等级)><COLOR=clTeal 级(包括><$GLOBAL(新手等级)>级<COLOR=clTeal )可以领取任务！>\
+<COLOR=clFuchsia 任务目标：><COLOR=clFuchsia 前往[><练级广场1/@新手练级><COLOR=clFuchsia ]击杀(><$GLOBAL(新手数量)><COLOR=clFuchsia )只经验长枪兵！>\
+<COLOR=clFuchsia 任务奖励：><COLOR=clYellow 500W经验、四倍卷轴、元宝+1000>\
+<COLOR=clGreen 奖励已领取>
+#act
+break
+#IF
+CHECKVAR HUMAN 新手已杀 = <$GLOBAL(新手数量)>
+#SAY
+<新手入门/@main>  <COLOR=clRed 状态：><$HUMAN(新手入门)>          <初试牛刀/@初试牛刀>  <COLOR=clRed 状态：><$HUMAN(初试牛刀)>\
+<初级阶段/@初级阶段>  <COLOR=clRed 状态：><$HUMAN(初级阶段)>          <名扬天下/@名扬天下>  <COLOR=clRed 状态：><$HUMAN(名扬天下)>\
+<中级阶段/@中级阶段>  <COLOR=clRed 状态：><$HUMAN(中级阶段)>          <狂野之路/@狂野之路>  <COLOR=clRed 状态：><$HUMAN(狂野之路)>\
+<高级阶段/@高级阶段>  <COLOR=clRed 状态：><$HUMAN(高级阶段)>          <单枪匹马/@单枪匹马>  <COLOR=clRed 状态：><$HUMAN(单枪匹马)>\
+<傲视群雄/@傲视群雄>  <COLOR=clRed 状态：><$HUMAN(傲视群雄)>          <君临天下/@君临天下>  <COLOR=clRed 状态：><$HUMAN(君临天下)>\
+<COLOR=clFuchsia 任务要求：><COLOR=clTeal 等级超过><$GLOBAL(新手等级)><COLOR=clTeal 级(包括><$GLOBAL(新手等级)>级<COLOR=clTeal )可以领取任务！>\
+<COLOR=clFuchsia 任务目标：><COLOR=clFuchsia 前往[><练级广场1/@新手练级><COLOR=clFuchsia ]击杀(><$GLOBAL(新手数量)><COLOR=clFuchsia )只经验长枪兵！>\
+<COLOR=clFuchsia 任务奖励：><COLOR=clYellow 500W经验、四倍卷轴、元宝+1000>\
+<领取奖励/@新手奖励>   [500W经验、四倍卷轴、元宝+1000]
+#act
+break
+#IF
+CHECKVAR HUMAN 新手入门 = 已接受
+#SAY
+<新手入门/@main>  <COLOR=clRed 状态：><$HUMAN(新手入门)>          <初试牛刀/@初试牛刀>  <COLOR=clRed 状态：><$HUMAN(初试牛刀)>\
+<初级阶段/@初级阶段>  <COLOR=clRed 状态：><$HUMAN(初级阶段)>          <名扬天下/@名扬天下>  <COLOR=clRed 状态：><$HUMAN(名扬天下)>\
+<中级阶段/@中级阶段>  <COLOR=clRed 状态：><$HUMAN(中级阶段)>          <狂野之路/@狂野之路>  <COLOR=clRed 状态：><$HUMAN(狂野之路)>\
+<高级阶段/@高级阶段>  <COLOR=clRed 状态：><$HUMAN(高级阶段)>          <单枪匹马/@单枪匹马>  <COLOR=clRed 状态：><$HUMAN(单枪匹马)>\
+<傲视群雄/@傲视群雄>  <COLOR=clRed 状态：><$HUMAN(傲视群雄)>          <君临天下/@君临天下>  <COLOR=clRed 状态：><$HUMAN(君临天下)>\
+<COLOR=clFuchsia 任务要求：><COLOR=clTeal 等级超过><$GLOBAL(新手等级)><COLOR=clTeal 级(包括><$GLOBAL(新手等级)>级<COLOR=clTeal )可以领取任务！>\
+<COLOR=clFuchsia 任务目标：><COLOR=clFuchsia 前往[><练级广场1/@新手练级><COLOR=clFuchsia ]击杀(><$GLOBAL(新手数量)><COLOR=clFuchsia )只经验长枪兵！>\
+<COLOR=clFuchsia 任务奖励：><COLOR=clYellow 500W经验、四倍卷轴、元宝+1000>\
+<放弃任务/@新手放弃>    已击杀：（<$HUMAN(新手已杀)>/<$GLOBAL(新手数量)>）
+#ELSESAY
+<新手入门/@main>  <COLOR=clRed 状态：><$HUMAN(新手入门)>          <初试牛刀/@初试牛刀>  <COLOR=clRed 状态：><$HUMAN(初试牛刀)>\
+<初级阶段/@初级阶段>  <COLOR=clRed 状态：><$HUMAN(初级阶段)>          <名扬天下/@名扬天下>  <COLOR=clRed 状态：><$HUMAN(名扬天下)>\
+<中级阶段/@中级阶段>  <COLOR=clRed 状态：><$HUMAN(中级阶段)>          <狂野之路/@狂野之路>  <COLOR=clRed 状态：><$HUMAN(狂野之路)>\
+<高级阶段/@高级阶段>  <COLOR=clRed 状态：><$HUMAN(高级阶段)>          <单枪匹马/@单枪匹马>  <COLOR=clRed 状态：><$HUMAN(单枪匹马)>\
+<傲视群雄/@傲视群雄>  <COLOR=clRed 状态：><$HUMAN(傲视群雄)>          <君临天下/@君临天下>  <COLOR=clRed 状态：><$HUMAN(君临天下)>\
+<COLOR=clFuchsia 任务要求：><COLOR=clTeal 等级超过><$GLOBAL(新手等级)><COLOR=clTeal 级(包括><$GLOBAL(新手等级)>级<COLOR=clTeal )可以领取任务！>\
+<COLOR=clFuchsia 任务目标：><COLOR=clFuchsia 前往[><练级广场1/@新手练级><COLOR=clFuchsia ]击杀(><$GLOBAL(新手数量)><COLOR=clFuchsia )只经验长枪兵！>\
+<COLOR=clFuchsia 任务奖励：><COLOR=clYellow 500W经验、四倍卷轴、元宝+1000>\
+<接受任务/@新手接受>
+
+
+[@新手奖励]
+#IF
+CHECKVAR HUMAN 新手入门 = 已完成
+#ACT
+MessageBox 您已经领取了[新手任务]奖励不能重复领取！
+goto @main
+break
+
+#IF
+CHECKVAR HUMAN 新手已杀 = <$GLOBAL(新手数量)>
+#ACT
+CALCVAR HUMAN 新手已杀 = 0
+SAVEVAR HUMAN 新手已杀 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+CALCVAR HUMAN 新手入门 = 已完成
+SAVEVAR HUMAN 新手入门 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+give 四倍卷轴
+gamegold + 1000
+ChangeExp + 5000000
+SendMSG 7 提示：[%s]您已经领取[新手入门]任务奖励! 233 255
+SendMSG 0 提示：恭喜[%s]完成今天的[新手入门]任务! 255 241 10
+SendMSG 0 提示：恭喜[%s]获得四倍卷轴+1000元宝+500万经验! 255 241 10
+goto @main
+break
+
+[@新手放弃]
+#ACT
+CALCVAR HUMAN 新手入门 = 可接受
+SAVEVAR HUMAN 新手入门 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+CALCVAR HUMAN 新手已杀 =
+SAVEVAR HUMAN 新手入门 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+SendMSG 7 提示：[%s]您已经放弃了[新手入门]任务! 233 255
+goto @main
+break
+
+[@新手接受]
+#IF
+CHECKVAR HUMAN 新手入门 = 已完成
+#ACT
+MessageBox 您已经完成了[新手任务]不能重复领取任务！
+goto @main
+break
+
+#IF
+CHECKLEVELEX ? <$GLOBAL(新手等级)>
+#ACT
+CALCVAR HUMAN 新手入门 = 已接受
+SAVEVAR HUMAN 新手入门 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+SendMSG 7 提示：[%s]您已经成功领取[新手入门]任务! 233 255
+SendMSG 0 提示：[%s]已经成功领取[新手入门]任务! 233 255
+goto @main
+#ELSEACT
+MessageBox 你的等级不符合[新手任务]设定的等级！
+break
+
+
+
+
+
+
+
+
+
+
+[@初级阶段]
+#CALL [\LEGM2任务系统\CALLNPC\初级阶段.txt] @初级阶段CA
+[@中级阶段]
+#CALL [\LEGM2任务系统\CALLNPC\中级阶段.txt] @中级阶段CA
+[@高级阶段]
+#CALL [\LEGM2任务系统\CALLNPC\高级阶段.txt] @高级阶段CA
+[@傲视群雄]
+#CALL [\LEGM2任务系统\CALLNPC\傲视群雄.txt] @傲视群雄CA
+[@初试牛刀]
+#CALL [\LEGM2任务系统\CALLNPC\初试牛刀.txt] @初试牛刀CA
+[@名扬天下]
+#CALL [\LEGM2任务系统\CALLNPC\名扬天下.txt] @名扬天下CA
+[@狂野之路]
+#CALL [\LEGM2任务系统\CALLNPC\狂野之路.txt] @狂野之路CA
+[@单枪匹马]
+#CALL [\LEGM2任务系统\CALLNPC\单枪匹马.txt] @单枪匹马CA
+[@君临天下]
+#CALL [\LEGM2任务系统\CALLNPC\君临天下.txt] @君临天下CA
+
+
+
+
+
+
+[@新手练级]
+#ACT
+MAPMOVE lj111
+SENDMSG 0 勇敢的玩家:[%s]进入【练级广场一】开始闯荡了。 49 223
+SENDMSG 0 勇敢的玩家:[%s]进入【练级广场一】开始闯荡了。 49 223
+SENDMSG 0 勇敢的玩家:[%s]进入【练级广场一】开始闯荡了。 49 223
+SENDMSG 0 勇敢的玩家:[%s]进入【练级广场一】开始闯荡了。 49 223
+give 回城卷
+
+
+
+
+
+
+
+
+
+
+
+
+

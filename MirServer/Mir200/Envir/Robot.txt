@@ -1,0 +1,2 @@
+;机器人名称 脚本名称5 s 9 8  . c o  m
+系统控制 AutoRunRobot

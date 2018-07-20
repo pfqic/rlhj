@@ -1,0 +1,87 @@
+()
+%100
+[@main]
+　　　※ <免费进入Boss皇宫/@Boss皇宫> ※    ※ <免费进入地下皇陵/@地下皇陵> ※ \
+　　　※ <免费进入猪洞九层/@猪洞九层> ※    ※ <免费进入恶魔殿堂/@恶魔殿堂> ※ \
+　　　※ <免费进入赤血魔域/@赤血魔域> ※    ※ <免费进入王者之路/@王者之路> ※ \
+<COLOR=clGray ------------------------------------------------------------>　\
+<COLOR=clLime 地图介绍：此地图为新手地图 初级混装备打宝-以上地图最好可以爆到极品星王>\
+<COLOR=clLime 怪物介绍：所有地图怪物重新定义所有地图增加怪物数量-魔龙小怪-魔龙教主>\
+<COLOR=clLime 爆率介绍：魔龙小怪[赤月-雷霆-战神-开天]-魔龙教主[战神-星王-极品星王]>\
+<COLOR=clGray ------------------------------------------------------------>　\
+
+[@Boss皇宫]
+#if
+;CHECKLEVELEX > 49
+#act
+MAPMOVE BOSSG
+SENDMSG 0 玩家[%s],进入Boss皇宫,本地图BOSS超多请小心哦!
+SENDMSG 0 玩家[%s],进入Boss皇宫,本地图BOSS超多请小心哦!
+SENDMSG 0 玩家[%s],进入Boss皇宫,本地图BOSS超多请小心哦!
+SENDMSG 0 玩家[%s],进入Boss皇宫,本地图BOSS超多请小心哦!
+#ELSEACT
+MESSAGEBOX 需要等级50级进入。
+
+
+[@猪洞九层]
+#if
+;CHECKLEVELEX > 49
+#act
+MAPMOVE zhu9
+SENDMSG 0 勇敢的玩家:[%s]进入猪九去寻宝去了!!!
+SENDMSG 0 勇敢的玩家:[%s]进入猪九去寻宝去了!!!
+SENDMSG 0 勇敢的玩家:[%s]进入猪九去寻宝去了!!!
+SENDMSG 0 勇敢的玩家:[%s]进入猪九去寻宝去了!!!
+#ELSEACT
+MESSAGEBOX 需要等级50级进入。
+
+[@地下皇陵]
+#if
+;CHECKLEVELEX > 49
+#act
+MAPMOVE di1
+SENDMSG 0 勇敢的玩家:[%s]进入地下皇陵寻宝去了!!! 
+SENDMSG 0 勇敢的玩家:[%s]进入地下皇陵寻宝去了!!! 
+SENDMSG 0 勇敢的玩家:[%s]进入地下皇陵寻宝去了!!! 
+SENDMSG 0 勇敢的玩家:[%s]进入地下皇陵寻宝去了!!! 
+#ELSEACT
+MESSAGEBOX 需要等级50级进入。
+
+[@恶魔殿堂]
+#if
+;CHECKLEVELEX > 49
+#act
+mapmove Emzd
+SENDMSG 0 勇敢的玩家:[%s]进入恶魔殿堂寻宝去了!!! 
+SENDMSG 0 勇敢的玩家:[%s]进入恶魔殿堂寻宝去了!!!
+SENDMSG 0 勇敢的玩家:[%s]进入恶魔殿堂寻宝去了!!!
+SENDMSG 0 勇敢的玩家:[%s]进入恶魔殿堂寻宝去了!!!
+#ELSEACT
+MESSAGEBOX 需要等级50级进入。
+
+
+[@王者之路]
+#if
+;CHECKLEVELEX > 49
+#act
+mapmove wzzl1 32 10
+SENDMSG 0 不怕死的[%s],进入王者之路,王者之路拥有超大BOSS,建议组队前往!
+SENDMSG 0 不怕死的[%s],进入王者之路,王者之路拥有超大BOSS,建议组队前往!
+SENDMSG 0 不怕死的[%s],进入王者之路,王者之路拥有超大BOSS,建议组队前往!
+SENDMSG 0 不怕死的[%s],进入王者之路,王者之路拥有超大BOSS,建议组队前往!
+#ELSEACT
+MESSAGEBOX 需要等级50级进入。
+
+
+[@赤血魔域]
+#if
+;CHECKLEVELEX > 49
+#act
+mapmove CXUE1 258 270
+SENDMSG 0 不怕死的[%s],进入赤血魔域,赤血魔域拥有超大BOSS,建议组队前往!
+SENDMSG 0 不怕死的[%s],进入赤血魔域,赤血魔域拥有超大BOSS,建议组队前往!
+SENDMSG 0 不怕死的[%s],进入赤血魔域,赤血魔域拥有超大BOSS,建议组队前往!
+SENDMSG 0 不怕死的[%s],进入赤血魔域,赤血魔域拥有超大BOSS,建议组队前往!
+#ELSEACT
+MESSAGEBOX 需要等级50级进入。
+

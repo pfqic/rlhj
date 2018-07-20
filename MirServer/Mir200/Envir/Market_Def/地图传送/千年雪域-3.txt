@@ -1,0 +1,31 @@
+()
+%100
+[@main]
+<COLOR=clAqua 【千年雪域】地图共三层> <COLOR=clRed Hot~ >                      <COLOR=clLime 降龙合击，邀你來戰!>\
+<COLOR=clGray ------------------------------------------------------------>　\
+<COLOR=clRed BOOS名称：>20万血boss，7万血boss，10万血BOSS\
+<COLOR=clRed 怪物刷新：>boss类30分钟\
+<COLOR=clRed 爆率介绍：>爆各种高档装备，爆率其他地图的2倍\
+<COLOR=clRed 进入条件：><COLOR=clFuchsia 5000元宝+100金刚石 等级65级>\
+<COLOR=clRed 友情提示：><COLOR=clFuchsia 怪物比较强大、请勇士一路小心！>\
+<COLOR=clGray ------------------------------------------------------------>　\
+　　※ <我要进入/@千年雪域> ※      　　　　       ※ <关闭对话/@exit> ※
+
+
+[@千年雪域]
+#if
+CHECKGAMEDIAMOND > 99
+CHECKLEVELEX > 64
+CHECKGAMEGOLD > 4999
+#act
+GAMEDIAMOND - 100
+GAMEGOLD - 5000
+mapmove xueyu
+SENDMSG 0 勇敢的玩家:[%s]进入千年雪域寻宝去了!!! 253 0 
+SENDMSG 0 勇敢的玩家:[%s]进入千年雪域寻宝去了!!! 253 0 
+SENDMSG 0 勇敢的玩家:[%s]进入千年雪域寻宝去了!!! 253 0 
+SENDMSG 0 勇敢的玩家:[%s]进入千年雪域寻宝去了!!!大声喊到：有种的来杀我啊! 250 255 10
+SENDMSG 0 勇敢的玩家:[%s]进入千年雪域寻宝去了!!!大声喊到：有种的来杀我啊! 250 255 10
+SENDMSG 0 勇敢的玩家:[%s]进入千年雪域寻宝去了!!!大声喊到：有种的来杀我啊! 250 255 10
+#ELSEACT
+MESSAGEBOX 需要5000元宝+100金刚石进入地图，且人物等级达到65级。

@@ -1,0 +1,23 @@
+2018-6-24 22:22:15 MapInfo.txt 地图重复: D:\MirServer\Mir200\Map\BSZJ.map
+2018-6-24 22:22:15 请检查MapInfo.txt文件！
+2018-6-24 22:22:16 Access violation at address 0781212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 22:22:18 Access violation at address 0781212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 22:22:20 Access violation at address 0781212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 22:22:22 Access violation at address 0781212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 22:22:24 Access violation at address 0781212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 22:22:26 Access violation at address 0781212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 22:22:28 Access violation at address 0781212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 22:22:30 Access violation at address 0781212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 22:22:32 Access violation at address 0781212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 22:22:34 Access violation at address 0781212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 22:22:36 Access violation at address 0781212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 22:22:38 Access violation at address 0781212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 22:22:40 Access violation at address 0781212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 22:22:42 Access violation at address 0781212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 22:22:44 Access violation at address 0781212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 22:22:46 Access violation at address 0781212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 22:22:48 Access violation at address 0781212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 22:22:50 Access violation at address 0781212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 22:22:52 Access violation at address 0781212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 22:22:54 Access violation at address 0781212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 22:22:56 Access violation at address 0781212C in module 'mSystemModule.dll'. Read of address 00001798

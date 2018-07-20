@@ -1,0 +1,25 @@
+()
+%100
+[@main]
+<COLOR=clAqua 【无常殿】> <COLOR=clRed Hot~ >                      <COLOR=clLime 降龙合击，邀你來戰!>\
+<COLOR=clGray ------------------------------------------------------------>　\
+<COLOR=clRed BOOS名称：>4万血boss，7万血boss、10万血boss\
+<COLOR=clRed 怪物刷新：>大BOSS类40分钟，魔龙教主类20分钟\
+<COLOR=clRed 爆率介绍：>战神、星王、极品星王、次终极、终极 \
+<COLOR=clRed 进入条件：><COLOR=clFuchsia 3000元宝 等级48级>\
+<COLOR=clGray ------------------------------------------------------------>　\
+　　※ <我要进入/@无常殿> ※      　　　　       ※ <关闭对话/@exit> ※
+
+[@无常殿]
+#if
+CHECKLEVELEX > 47
+CHECKGAMEGOLD > 2999
+#act
+GAMEGOLD - 3000
+mapmove shang0
+SENDMSG 0 勇敢的玩家:[%s]进入无常殿寻宝去了!!! 253 0 10
+SENDMSG 0 勇敢的玩家:[%s]进入无常殿寻宝去了!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]进入无常殿寻宝去了!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]进入无常殿寻宝去了!!! 253 0
+#ELSEACT
+MESSAGEBOX 需要3000元宝用来进入地图，且人物等级达到48级。

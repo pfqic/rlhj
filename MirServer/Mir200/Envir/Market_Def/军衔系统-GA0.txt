@@ -1,0 +1,218 @@
+()
+%100
+[@main] 
+#IF
+#ACT
+#SAY
+<COLOR=clLime 本服提供的军衔系统，不乏味有追求，只要达到一定等级>\
+<COLOR=clLime 我就可以帮你晋升军衔系统>\
+<COLOR=clLime 不掉级，军衔系统自动赠送额外属性点，自由分配!>\
+<COLOR=clLime 自己在仔细看下面介绍吧.>\
+
+
+
+<军衔系统条件/@zslhui>              <重新分配属性点/@fenpei>\
+是不是极具诱惑力呢，<COLOR=clLime 本系统专为长期玩家打造>\
+〓〓〓〓〓〓〓〓〓〓<晋升军衔系统/@zslhui>〓〓〓〓〓〓〓〓〓〓〓\
+
+
+[@fenpei]
+<COLOR=clLime 我可以帮你重新分配属性>\
+<COLOR=clLime 每次收费5万元宝！>\
+<COLOR=clLime 当前经验清零！>\
+<COLOR=clLime 请慎重选择！>\ \
+
+<我要重新分配/@fen>       <算了吧/@exit>
+
+[@fen]
+#IF
+CHECKBONUSPOINT = 1500
+#ACT
+gamegold - 50000
+BonusPoint = 0
+renewlevel 0 0 1500
+SENDMSG 5 重新获得1500点属性自由分配,当前经验清零！
+
+
+#IF
+CHECKBONUSPOINT = 1000
+#ACT
+gamegold - 50000
+BonusPoint = 0
+renewlevel 0 0 1000
+SENDMSG 5 重新获得1000点属性自由分配,当前经验清零！
+
+
+
+#IF
+CHECKBONUSPOINT = 600
+#ACT
+gamegold - 50000
+BonusPoint = 0
+renewlevel 0 0 600
+SENDMSG 5 重新获得600点属性自由分配,当前经验清零！
+
+
+#IF
+CHECKBONUSPOINT = 300
+#ACT
+gamegold - 50000
+BonusPoint = 0
+renewlevel 0 0 300
+SENDMSG 5 重新获得300点属性自由分配,当前经验清零！
+
+
+
+#IF
+CHECKBONUSPOINT = 100
+#ACT
+gamegold - 50000
+BonusPoint = 0
+renewlevel 0 0 100
+SENDMSG 5 重新获得100点属性自由分配,当前经验清零！
+
+
+
+#ELSESAY
+
+我已经尽力了，请自己注意查看成功了没？
+
+
+[@zslhui]
+
+<晋升军衔系统会得到额外的属性点，不掉级，经验清零!>\
+【步兵团长】 <等级50 花费1万元宝 +2舍利子    可得100>属性点 \
+【高炮旅长】 <等级55 花费3万元宝 +4舍利子    可得200>属性点 \
+【装甲师长】 <等级60 花费5万元宝 +6舍利子    可得300>属性点 \
+【集团军长】 <等级65 花费10万元宝+2000金刚石   可得400>属性点 \
+【军委主席】 <等级75 花费20万元宝+5000金刚石   可得500>属性点 \
+
+<晋升团长/@qqq1> <晋升旅长/@qqq2> <晋升师长/@qqq3> <晋升军长/@qqq4> <晋升军委主席/@qqq5>\
+
+<返回/@main>\
+
+[@qqq5]
+#if
+CHECKGAMEDIAMOND > 4999
+checkrenewlevel = 4
+CHECKLEVELEX > 74
+checkgamegold > 199999
+#act
+GAMEDIAMOND - 5000
+gamegold - 200000
+renewlevel 1 0 500
+#CALL [\\登陆\封号.txt] @FH
+SENDMSG 0 恭喜%s在军衔系统努力奋斗成【军委主席】 251 244 
+SENDMSG 0 恭喜%s在军衔系统努力奋斗成【军委主席】 251 244 
+SENDMSG 5 恭喜你获得500点属性自由分配！
+break
+#ELSESAY
+. \
+条件不足，无法完成晋升军衔任务!\ \
+1：有可能您已经完成过此军衔的晋升。 \
+2：等级还不够。 \
+3：需要金刚石5000颗。 \
+4：元宝不足。\ \
+<返回/@zslhui> <关闭/@exit>\
+
+
+
+[@qqq4]
+#if
+CHECKGAMEDIAMOND > 1999
+checkrenewlevel = 3
+CHECKLEVELEX > 64
+checkgamegold > 99999
+#act
+GAMEDIAMOND - 2000
+gamegold - 100000
+renewlevel 1 0 400
+#CALL [\\登陆\封号.txt] @FH
+SENDMSG 0 恭喜%s在军衔系统努力奋斗成【集团军长】 251 244 
+SENDMSG 0 恭喜%s在军衔系统努力奋斗成【集团军长】 251 244 
+SENDMSG 5 经脉获得400点属性自由分配！
+break
+#ELSESAY
+. \
+条件不足，无法完成晋升军衔任务!\ \
+1：有可能您已经完成过此军衔的晋升。 \
+2：等级还不够。 \
+3：需要金刚石2000颗。 \
+4：元宝不足。\ \
+<返回/@zslhui> <关闭/@exit>\
+
+
+
+[@qqq3]
+#if
+CHECKITEM 舍利子 6
+checkrenewlevel = 2
+CHECKLEVELEX > 59
+checkgamegold > 49999
+#act
+take 舍利子 6
+gamegold - 50000
+renewlevel 1 0 300
+#CALL [\\登陆\封号.txt] @FH
+SENDMSG 0 恭喜%s在军衔系统努力奋斗成【装甲师长】 251 244 
+SENDMSG 0 恭喜%s在军衔系统努力奋斗成【装甲师长】 251 244 
+SENDMSG 5 经脉获得300点属性自由分配！
+break
+#ELSESAY
+. \
+条件不足，无法完成晋升军衔任务!\ \
+1：有可能您已经完成过此军衔的晋升。 \
+2：等级还不够。 \
+3：需要舍利子6个。 \
+4：元宝不足。\ \
+<返回/@zslhui> <关闭/@exit>\
+
+
+
+[@qqq2]
+#if
+CHECKITEM 舍利子 4
+checkrenewlevel = 1
+CHECKLEVELEX > 54
+checkgamegold > 29999
+#act
+take 舍利子 4
+gamegold - 30000
+renewlevel 1 0 200
+#CALL [\\登陆\封号.txt] @FH
+SENDMSG 0 恭喜%s在军衔系统努力奋斗成【高炮旅长】 251 244 
+SENDMSG 0 恭喜%s在军衔系统努力奋斗成【高炮旅长】 251 244 
+SENDMSG 5 经脉获得200点属性自由分配！
+break
+#ELSESAY
+. \
+条件不足，无法完成晋升军衔任务!\ \
+1：有可能您已经完成过此军衔的晋升。 \
+2：等级还不够。 \
+3：需要舍利子4个。 \
+4：元宝不足。\ \
+<返回/@zslhui> <关闭/@exit>\
+
+[@qqq1]
+#if
+CHECKITEM 舍利子 2
+checkrenewlevel = 0
+CHECKLEVELEX > 49
+checkgamegold > 9999
+#act
+take 舍利子 2
+gamegold - 10000
+renewlevel 1 0 100
+#CALL [\\登陆\封号.txt] @FH
+SENDMSG 0 恭喜%s在军衔系统努力奋斗成【步兵团长】 251 244 
+SENDMSG 0 恭喜%s在军衔系统努力奋斗成【步兵团长】 251 244 
+SENDMSG 5 经脉获得100点属性自由分配！
+break
+#ELSESAY
+. \
+条件不足，无法完成晋升军衔任务!\ \
+1：有可能您已经完成过此军衔的晋升。 \
+2：等级还不够。 \
+3：需要舍利子2个。 \
+4：元宝不足。\ \
+<返回/@zslhui> <关闭/@exit>\

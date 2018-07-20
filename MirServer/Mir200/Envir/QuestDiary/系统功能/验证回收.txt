@@ -1,0 +1,730 @@
+[@盟重回收]
+{
+#If
+#Act
+SetRandomNo
+#Say
+为了防止部分玩家,恶意挂机回收,特别设置验证码系统!\　\
+<输入验证码/@@CheckNo>:<$RANDOMNO>\　\　\
+
+[@@CheckNo]
+#If
+CheckRandomNo
+#SAY
+<COLOR=clRed 〓〓〓〓星王以下〓〓〓〓一键全收〓〓〓〓>  <一键全收/@快速回收>\
+<COLOR=clRed 〓〓〓〓星王以下〓〓〓〓一键全收〓〓〓〓>  <一键全收/@快速回收>\
+<COLOR=clLime 极品首饰系列> → <COLOR=clAqua 100万经验>+  <COLOR=clRed  1000元宝>  <一键全收/@极品星王>\
+<COLOR=clFuchsia 星王剑甲系列> → <COLOR=clAqua 400万经验>+  <COLOR=clRed  5000元宝>  <一键全收/@星王剑甲>\
+<COLOR=clLime 极品剑甲系列> → <COLOR=clAqua 500万经验>+  <COLOR=clRed 10000元宝>  <一键全收/@极品星王剑甲>\
+<COLOR=clFuchsia 次终极★首饰> → <COLOR=clAqua 900万经验>+  <COLOR=clRed 20000元宝>  <一键全收/@次终极首饰>\ \
+
+<金刚石回收/@金刚石>       <一键特修装备/@修理23>\
+
+[@修理23]
+#IF
+CHECKGAMEGOLD > 99
+#ACT
+GAMEGOLD - 100
+RepairAll
+H.RepairAll
+SENDMSG 6 修复完毕
+BREAK
+#ELSEACT
+MessageBox  尊敬的玩家你身上不够100元宝,我不能给你修理!
+
+
+[@快速回收]
+#CALL [系统功能\一键1-4.txt] @快速回收11
+
+[@星王剑甲]
+#CALL [系统功能\星王剑甲.txt] @星王剑甲11
+
+[@极品星王]
+#CALL [系统功能\极品星王首饰.txt] @极品星王11
+
+[@极品星王剑甲]
+#CALL [系统功能\极品星王剑甲.txt] @极品星王剑甲11
+
+[@次终极首饰]
+#CALL [系统功能\次终极首饰.txt] @次终极首饰11
+
+[@金刚石]
+#If
+#SAY
+<COLOR=clLime ①级回收进入：><星王首饰系列> → <COLOR=clAqua  200元宝>  + <COLOR=clRed  5金刚石>  <回收金刚石/@星王首饰>\
+<COLOR=clLime ②级回收进入：><极品首饰系列> → <COLOR=clAqua  500元宝>  + <COLOR=clRed 10金刚石>  <回收金刚石/@极品首饰>\
+<COLOR=clLime ③级回收进入：><降龙首饰系列> → <COLOR=clAqua 10000元宝> + <COLOR=clRed 100金刚石> <回收金刚石/@降龙首饰>\
+<COLOR=clLime ④级回收进入：><星王剑甲系列> → <COLOR=clAqua 2000元宝>  + <COLOR=clRed 10金刚石>  <回收金刚石/@星王武器>\
+<COLOR=clLime ⑤级回收进入：><极品剑甲系列> → <COLOR=clAqua 5000元宝>  + <COLOR=clRed 20金刚石>  <回收金刚石/@极品剑甲>\ 
+<COLOR=clLime ⑥级回收进入：><降龙剑甲系列> → <COLOR=clAqua 50000元宝> + <COLOR=clRed 200金刚石> <回收金刚石/@终极剑甲>\ 
+<COLOR=clLime 注意：高级回收得金刚石，得元宝，也得经验！长期服，不花钱也终极>\
+<COLOR=clFuchsia 【官方承诺】:一小时打20万元宝左右!轻松游戏!散人好混!>
+
+[@星王首饰]
+#IF
+checkitem 星王法戒 1
+#ACT
+take 星王法戒 1
+CHANGEEXP + 1000000
+GAMEDIAMOND + 5
+GAMEGOLD + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @星王首饰
+break
+#IF
+checkitem 星王法镯 1
+#ACT
+take 星王法镯 1
+CHANGEEXP + 1000000
+GAMEDIAMOND + 5
+GAMEGOLD + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @星王首饰
+break
+#IF
+checkitem 星王法链 1
+#ACT
+take 星王法链 1
+CHANGEEXP + 1000000
+GAMEDIAMOND + 5
+GAMEGOLD + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @星王首饰
+break
+#IF
+checkitem 星王法靴 1
+#ACT
+take 星王法靴 1
+CHANGEEXP + 1000000
+GAMEDIAMOND + 5
+GAMEGOLD + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @星王首饰
+break
+#IF
+checkitem 星王法带 1
+#ACT
+take 星王法带 1
+CHANGEEXP + 1000000
+GAMEDIAMOND + 5
+GAMEGOLD + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @星王首饰
+break
+#IF
+checkitem 星王道带 1
+#ACT
+take 星王道带 1
+CHANGEEXP + 1000000
+GAMEDIAMOND + 5
+GAMEGOLD + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @星王首饰
+break
+#IF
+checkitem 星王道靴 1
+#ACT
+take 星王道靴 1
+CHANGEEXP + 1000000
+GAMEDIAMOND + 5
+GAMEGOLD + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @星王首饰
+break
+#IF
+checkitem 星王道链 1
+#ACT
+take 星王道链 1
+CHANGEEXP + 1000000
+GAMEDIAMOND + 5
+GAMEGOLD + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @星王首饰
+break
+#IF
+checkitem 星王道镯 1
+#ACT
+take 星王道镯 1
+CHANGEEXP + 1000000
+GAMEDIAMOND + 5
+GAMEGOLD + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @星王首饰
+break
+#IF
+checkitem 星王道戒 1
+#ACT
+take 星王道戒 1
+CHANGEEXP + 1000000
+GAMEDIAMOND + 5
+GAMEGOLD + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @星王首饰
+break
+#IF
+checkitem 星王战靴 1
+#ACT
+take 星王战靴 1
+CHANGEEXP + 1000000
+GAMEDIAMOND + 5
+GAMEGOLD + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @星王首饰
+break
+#IF
+checkitem 星王战带 1
+#ACT
+take 星王战带 1
+CHANGEEXP + 1000000
+GAMEDIAMOND + 5
+GAMEGOLD + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @星王首饰
+break
+#IF
+checkitem 星王战链 1
+#ACT
+take 星王战链 1
+CHANGEEXP + 1000000
+GAMEDIAMOND + 5
+GAMEGOLD + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @星王首饰
+break
+#IF
+checkitem 星王战镯 1
+#ACT
+take 星王战镯 1
+CHANGEEXP + 1000000
+GAMEDIAMOND + 5
+GAMEGOLD + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @星王首饰
+break
+#IF
+checkitem 星王战戒 1
+#ACT
+take 星王战戒 1
+CHANGEEXP + 1000000
+GAMEDIAMOND + 5
+GAMEGOLD + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @星王首饰
+break
+#IF
+checkitem 星王道盔 1
+#ACT
+take 星王道盔 1
+CHANGEEXP + 1000000
+GAMEDIAMOND + 5
+GAMEGOLD + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @星王首饰
+break
+#IF
+checkitem 星王法盔 1
+#ACT
+take 星王法盔 1
+CHANGEEXP + 1000000
+GAMEDIAMOND + 5
+GAMEGOLD + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @星王首饰
+break
+#IF
+checkitem 星王战盔 1
+#ACT
+take 星王战盔 1
+CHANGEEXP + 1000000
+GAMEDIAMOND + 5
+GAMEGOLD + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @星王首饰
+break
+#ELSEACT 
+SENDMSG 7 〖提示〗你身上没有星王系列装备，无法回收！ 
+GOTO @金刚石
+
+
+[@极品首饰]
+#IF
+checkitem 极品星王法戒 1
+#ACT
+take 极品星王法戒 1
+CHANGEEXP + 2000000
+GAMEDIAMOND + 10
+GAMEGOLD + 500
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王法镯 1
+#ACT
+take 极品星王法镯 1
+CHANGEEXP + 2000000
+GAMEDIAMOND + 10
+GAMEGOLD + 500
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王法链 1
+#ACT
+take 极品星王法链 1
+CHANGEEXP + 2000000
+GAMEDIAMOND + 10
+GAMEGOLD + 500
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王法靴 1
+#ACT
+take 极品星王法靴 1
+CHANGEEXP + 2000000
+GAMEDIAMOND + 10
+GAMEGOLD + 500
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王法带 1
+#ACT
+take 极品星王法带 1
+CHANGEEXP + 2000000
+GAMEDIAMOND + 10
+GAMEGOLD + 500
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王道带 1
+#ACT
+take 极品星王道带 1
+CHANGEEXP + 2000000
+GAMEDIAMOND + 10
+GAMEGOLD + 500
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王道靴 1
+#ACT
+take 极品星王道靴 1
+CHANGEEXP + 2000000
+GAMEDIAMOND + 10
+GAMEGOLD + 500
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王道链 1
+#ACT
+take 极品星王道链 1
+CHANGEEXP + 2000000
+GAMEDIAMOND + 10
+GAMEGOLD + 500
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王道镯 1
+#ACT
+take 极品星王道镯 1
+CHANGEEXP + 2000000
+GAMEDIAMOND + 10
+GAMEGOLD + 500
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王道戒 1
+#ACT
+take 极品星王道戒 1
+CHANGEEXP + 2000000
+GAMEDIAMOND + 10
+GAMEGOLD + 500
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王战靴 1
+#ACT
+take 极品星王战靴 1
+CHANGEEXP + 2000000
+GAMEDIAMOND + 10
+GAMEGOLD + 500
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王战带 1
+#ACT
+take 极品星王战带 1
+CHANGEEXP + 2000000
+GAMEDIAMOND + 10
+GAMEGOLD + 500
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王战链 1
+#ACT
+take 极品星王战链 1
+CHANGEEXP + 2000000
+GAMEDIAMOND + 10
+GAMEGOLD + 500
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王战镯 1
+#ACT
+take 极品星王战镯 1
+CHANGEEXP + 2000000
+GAMEDIAMOND + 10
+GAMEGOLD + 500
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王战戒 1
+#ACT
+take 极品星王战戒 1
+CHANGEEXP + 2000000
+GAMEDIAMOND + 10
+GAMEGOLD + 500
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王道盔 1
+#ACT
+take 极品星王道盔 1
+CHANGEEXP + 2000000
+GAMEDIAMOND + 10
+GAMEGOLD + 500
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王法盔 1
+#ACT
+take 极品星王法盔 1
+CHANGEEXP + 2000000
+GAMEDIAMOND + 10
+GAMEGOLD + 500
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王战盔 1
+#ACT
+take 极品星王战盔 1
+CHANGEEXP + 2000000
+GAMEDIAMOND + 10
+GAMEGOLD + 500
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#ELSEACT 
+SENDMSG 7 〖提示〗你身上没有极品星王系列装备，无法回收！ 
+GOTO @金刚石
+
+[@降龙首饰]
+#IF
+checkitem 降龙￠法戒 1
+#ACT
+take 降龙￠法戒 1
+CHANGEEXP + 3000000
+GAMEDIAMOND + 100
+GAMEGOLD + 10000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @降龙首饰
+break
+#IF
+checkitem 降龙￠法镯 1
+#ACT
+take 降龙￠法镯 1
+CHANGEEXP + 3000000
+GAMEDIAMOND + 100
+GAMEGOLD + 10000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @降龙首饰
+break
+#IF
+checkitem 降龙￠法链 1
+#ACT
+take 降龙￠法链 1
+CHANGEEXP + 3000000
+GAMEDIAMOND + 100
+GAMEGOLD + 10000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @降龙首饰
+break
+#IF
+checkitem 降龙￠法靴 1
+#ACT
+take 降龙￠法靴 1
+CHANGEEXP + 3000000
+GAMEDIAMOND + 100
+GAMEGOLD + 10000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @降龙首饰
+break
+#IF
+checkitem 降龙￠法带 1
+#ACT
+take 降龙￠法带 1
+CHANGEEXP + 3000000
+GAMEDIAMOND + 100
+GAMEGOLD + 10000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @降龙首饰
+break
+#IF
+checkitem 降龙￠道带 1
+#ACT
+take 降龙￠道带 1
+CHANGEEXP + 3000000
+GAMEDIAMOND + 100
+GAMEGOLD + 10000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @降龙首饰
+break
+#IF
+checkitem 降龙￠道靴 1
+#ACT
+take 降龙￠道靴 1
+CHANGEEXP + 3000000
+GAMEDIAMOND + 100
+GAMEGOLD + 10000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @降龙首饰
+break
+#IF
+checkitem 降龙￠道链 1
+#ACT
+take 降龙￠道链 1
+CHANGEEXP + 3000000
+GAMEDIAMOND + 100
+GAMEGOLD + 10000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @降龙首饰
+break
+#IF
+checkitem 降龙￠道镯 1
+#ACT
+take 降龙￠道镯 1
+CHANGEEXP + 3000000
+GAMEDIAMOND + 100
+GAMEGOLD + 10000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @降龙首饰
+break
+#IF
+checkitem 降龙￠道戒 1
+#ACT
+take 降龙￠道戒 1
+CHANGEEXP + 3000000
+GAMEDIAMOND + 100
+GAMEGOLD + 10000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @降龙首饰
+break
+#IF
+checkitem 降龙￠战靴 1
+#ACT
+take 降龙￠战靴 1
+CHANGEEXP + 3000000
+GAMEDIAMOND + 100
+GAMEGOLD + 10000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @降龙首饰
+break
+#IF
+checkitem 降龙￠战带 1
+#ACT
+take 降龙￠战带 1
+CHANGEEXP + 3000000
+GAMEDIAMOND + 100
+GAMEGOLD + 10000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @降龙首饰
+break
+#IF
+checkitem 降龙￠战链 1
+#ACT
+take 降龙￠战链 1
+CHANGEEXP + 3000000
+GAMEDIAMOND + 100
+GAMEGOLD + 10000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @降龙首饰
+break
+#IF
+checkitem 降龙￠战镯 1
+#ACT
+take 降龙￠战镯 1
+CHANGEEXP + 3000000
+GAMEDIAMOND + 100
+GAMEGOLD + 10000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @降龙首饰
+break
+#IF
+checkitem 降龙￠战戒 1
+#ACT
+take 降龙￠战戒 1
+CHANGEEXP + 3000000
+GAMEDIAMOND + 100
+GAMEGOLD + 10000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @降龙首饰
+break
+#IF
+checkitem 降龙￠道盔 1
+#ACT
+take 降龙￠道盔 1
+CHANGEEXP + 3000000
+GAMEDIAMOND + 100
+GAMEGOLD + 10000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @降龙首饰
+break
+#IF
+checkitem 降龙￠法盔 1
+#ACT
+take 降龙￠法盔 1
+CHANGEEXP + 3000000
+GAMEDIAMOND + 100
+GAMEGOLD + 10000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @降龙首饰
+break
+#IF
+checkitem 降龙￠战盔 1
+#ACT
+take 降龙￠战盔 1
+CHANGEEXP + 3000000
+GAMEDIAMOND + 100
+GAMEGOLD + 10000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @降龙首饰
+break
+#ELSEACT 
+SENDMSG 7 〖提示〗你身上没有降龙系列装备，无法回收！ 
+GOTO @金刚石
+
+
+
+[@星王武器]
+#IF
+checkitem 星王神剑 1
+#ACT
+take 星王神剑 1
+CHANGEEXP + 4000000
+GAMEDIAMOND + 10
+GAMEGOLD + 2000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @星王武器
+break
+#IF
+checkitem 星王神甲 1
+#ACT
+take 星王神甲 1
+CHANGEEXP + 4000000
+GAMEDIAMOND + 10
+GAMEGOLD + 2000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @星王武器
+break
+#IF
+checkitem 星王神衣 1
+#ACT
+take 星王神衣 1
+CHANGEEXP + 4000000
+GAMEDIAMOND + 10
+GAMEGOLD + 2000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @星王武器
+break
+#ELSEACT 
+SENDMSG 7 〖提示〗你身上没有星王系列装备，无法回收！ 
+GOTO @金刚石
+
+
+
+[@极品剑甲]
+#IF
+checkitem 极品星王神剑 1
+#ACT
+take 极品星王神剑 1
+CHANGEEXP + 5000000
+GAMEDIAMOND + 20
+GAMEGOLD + 5000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品剑甲
+break
+#IF
+checkitem 极品星王神甲 1
+#ACT
+take 极品星王神甲 1
+CHANGEEXP + 5000000
+GAMEDIAMOND + 20
+GAMEGOLD + 5000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品剑甲
+break
+#IF
+checkitem 极品星王神衣 1
+#ACT
+take 极品星王神衣 1
+CHANGEEXP + 5000000
+GAMEDIAMOND + 20
+GAMEGOLD + 5000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品剑甲
+break
+#ELSEACT 
+SENDMSG 7 〖提示〗你身上没有极品剑甲装备，无法回收！ 
+GOTO @金刚石
+
+[@终极剑甲]
+#IF
+checkitem 降龙￠神剑 1
+#ACT
+take 降龙￠神剑 1
+CHANGEEXP + 7000000
+GAMEDIAMOND + 200
+GAMEGOLD + 50000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @终极剑甲
+break
+#IF
+checkitem 降龙￠神甲 1
+#ACT
+take 降龙￠神甲 1
+CHANGEEXP + 7000000
+GAMEDIAMOND + 200
+GAMEGOLD + 50000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @终极剑甲
+break
+#IF
+checkitem 降龙￠神衣 1
+#ACT
+take 降龙￠神衣 1
+CHANGEEXP + 7000000
+GAMEDIAMOND + 200
+GAMEGOLD + 50000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石+元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @终极剑甲
+break
+#ELSEACT 
+SENDMSG 7 〖提示〗你身上没有降龙剑甲，无法回收！ 
+GOTO @金刚石
+
+
+
+}

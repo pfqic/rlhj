@@ -1,0 +1,19 @@
+[@main]
+#say
+╔━━━━━━╗ ╔━━━━━━━━━━━━━━━━━━━╗　\
+┃<★><COLOR=clFuchsia 如龍卍宝藏><★> ┃<COLOR=clLime 主要BOSS：如龍战帝、如龍道帝，如龍魔帝>┃　\
+┃------------┃ ┃<COLOR=clFuchsia 怪物刷新：终极90分钟，次级60分钟>　　  ┃　\
+┃↘<COLOR=clLime ━━━━>↙┃ ┃<COLOR=clLime 怪物爆率：本服所有装备>　　　          ┃　\
+┃<COLOR=clLime ┃><点击进入/@如龍卍宝藏><COLOR=clLime ┃>┃ ┃<COLOR=clFuchsia 挑战难度：><★★★>　<COLOR=clLime 爆率指数：><★★★★★>┃　\
+┃↗<COLOR=clLime ━━━━>↖┃ ╚━━━━━━━━━━━━━━━━━━━╝　\
+┃------------┃ ╔━━━━━━━━━━━━━━━━━━━╗　\
+┃<★><COLOR=clFuchsia 传送条件><★>┃ ┃　　　　进入需要： 免费进入　 　　 　 ┃　\
+╚━━━━━━╝ ╚━━━━━━━━━━━━━━━━━━━╝ 
+
+[@如龍卍宝藏]
+#if
+checklevel > 90
+#act
+mapmove rlbz
+#elseact
+messagebox 你还太弱小，等你90级以后再来吧！！

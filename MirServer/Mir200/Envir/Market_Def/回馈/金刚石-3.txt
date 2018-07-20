@@ -1,0 +1,5 @@
+[@main]
+#if
+#act
+GAMEDIAMOND + 500000
+sendmsg 6 你的金刚石增加50万！！

@@ -1,0 +1,33 @@
+2018-6-24 11:48:50 已读取 0个行会信息...
+2018-6-24 11:48:50 已读取 1个城堡信息...
+2018-6-24 11:48:50 连接SQL数据成功...
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/山庄-3.txt
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/幽冥-3.txt
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/幻海-3.txt
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/上古-3.txt
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/如龙-3.txt
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/缥缈-3.txt
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/弑血-3.txt
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/殺天-3.txt
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/不灭-3.txt
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/征战-3.txt
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/传说-3.txt
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/红石河谷-3.txt
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/葬神沙漠-3.txt
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/葬神沙漠-3.txt
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/精绝古关-3.txt
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/封魔古迹-3.txt
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/焚天炼域-3.txt
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/深兰幽谷-3.txt
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/暴风-3.txt
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/至尊-3.txt
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/超级-3.txt
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/高级-3.txt
+2018-6-24 11:48:50 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/中级-3.txt
+2018-6-24 11:48:50 初始化 197个交易NPC...
+2018-6-24 11:48:50 初始化 18个管理NPC...
+2018-6-24 11:48:51 游戏网关端口(127.0.0.1:5000)已打开...
+2018-6-24 11:48:51 登录服务器(127.0.0.1:5600)连接成功...
+2018-6-24 11:48:51 游戏网关[0](127.0.0.1:52751)已打开..
+2018-6-24 11:48:54 数据库服务器(127.0.0.1:6000)连接成功...
+2018-6-24 11:50:23 游戏网关[0](127.0.0.1:52751)已关闭..

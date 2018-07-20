@@ -1,0 +1,8 @@
+[@新人登陆]
+{
+#IF
+ISNEWHUMAN
+#act
+Gmexecute shutup Self 600000
+SENDMSG 0 <$USERNAME>加入游戏,<$SERVERNAME>又多了一份力量!
+}

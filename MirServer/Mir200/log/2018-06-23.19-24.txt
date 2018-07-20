@@ -1,0 +1,40 @@
+2018-6-23 19:24:34 已读取 0个行会信息...
+2018-6-23 19:24:34 已读取 1个城堡信息...
+2018-6-23 19:24:34 连接SQL数据成功...
+2018-6-23 19:24:34 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/新手-3.txt
+2018-6-23 19:24:34 初始化 172个交易NPC...
+2018-6-23 19:24:34 初始化 18个管理NPC...
+2018-6-23 19:24:35 游戏网关端口(127.0.0.1:5000)已打开...
+2018-6-23 19:24:35 登录服务器(127.0.0.1:5600)连接成功...
+2018-6-23 19:24:35 游戏网关[0](127.0.0.1:56459)已打开..
+2018-6-23 19:24:38 数据库服务器(127.0.0.1:6000)连接成功...
+2018-6-23 19:28:27 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/中级-3.txt
+2018-6-23 19:28:27 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/高级-3.txt
+2018-6-23 19:28:27 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/超级-3.txt
+2018-6-23 19:29:32 在线数: 1(1)
+2018-6-23 19:29:57 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/中级-3.txt
+2018-6-23 19:29:57 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/高级-3.txt
+2018-6-23 19:29:57 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/超级-3.txt
+2018-6-23 19:29:57 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/至尊-3.txt
+2018-6-23 19:29:57 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/暴风-3.txt
+2018-6-23 19:34:32 在线数: 1(1)
+2018-6-23 19:39:32 在线数: 1(1)
+2018-6-23 19:41:15 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/中级-3.txt
+2018-6-23 19:41:15 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/高级-3.txt
+2018-6-23 19:41:15 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/超级-3.txt
+2018-6-23 19:41:15 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/至尊-3.txt
+2018-6-23 19:41:15 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/暴风-3.txt
+2018-6-23 19:41:15 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/深兰幽谷-3.txt
+2018-6-23 19:41:15 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/焚天炼域-3.txt
+2018-6-23 19:41:15 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/葬神沙漠-3.txt
+2018-6-23 19:42:04 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/中级-3.txt
+2018-6-23 19:42:04 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/高级-3.txt
+2018-6-23 19:42:04 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/超级-3.txt
+2018-6-23 19:42:04 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/至尊-3.txt
+2018-6-23 19:42:04 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/暴风-3.txt
+2018-6-23 19:42:04 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/深兰幽谷-3.txt
+2018-6-23 19:42:04 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/焚天炼域-3.txt
+2018-6-23 19:42:04 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/封魔古迹-3.txt
+2018-6-23 19:42:04 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/精绝古关-3.txt
+2018-6-23 19:42:04 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/葬神沙漠-3.txt
+2018-6-23 19:42:48 游戏网关[0](127.0.0.1:56459)已关闭..

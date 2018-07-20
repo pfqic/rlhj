@@ -1,0 +1,40 @@
+[@MAIN]
+如果您参与过<$SERVERNAME>传奇测试阶段\
+并且在测试阶段等级达到31级.40级.45级！\
+正式开区后在我这领取31级50W,40级350W,45级650W的奖励！\
+例如：测试阶段您申请的游戏帐号为:1234567\
+并且在测试阶段您的等级到达了31级\
+那么正式开区后，您只要是申请游戏帐号:1234567\
+即可在我这里领取相应奖励！\
+<领取测试奖励/@领取测试奖励>\
+
+[@领取测试奖励]
+#IF
+equal G10 1
+#SAY
+对不起！请过正式开区后再来领取奖励！\
+#ACT
+BREAK
+#IF
+equal G10 0
+CHECKACCOUNTLIST ..\QuestDiary\测试奖励\测试31帐号.txt
+#ACT
+DELACCOUNTLIST ..\QuestDiary\测试奖励\测试31帐号.txt
+GIVE 金币 500000
+BREAK
+#IF
+equal G10 0
+CHECKACCOUNTLIST ..\QuestDiary\测试奖励\测试40帐号.txt
+#ACT
+DELACCOUNTLIST ..\QuestDiary\测试奖励\测试40帐号.txt
+GIVE 金币 3500000
+BREAK
+#IF
+equal G10 0
+CHECKACCOUNTLIST ..\QuestDiary\测试奖励\测试45帐号.txt
+#ACT
+DELACCOUNTLIST ..\QuestDiary\测试奖励\测试45帐号.txt
+GIVE 金币 6500000
+BREAK
+#ELSESAY
+对不起！您没有领取奖励的资格！\

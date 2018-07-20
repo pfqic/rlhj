@@ -1,0 +1,11 @@
+[@main]
+你想挑战下一层么？\
+里面会有更大的惊喜哦!\
+\
+<我要进去/@go> <我看算了/@exit>
+
+[@go]
+#if
+#act
+mapmove wzzl3 33 9
+break

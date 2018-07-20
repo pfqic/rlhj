@@ -1,0 +1,58 @@
+()
+%100
+[@MAIN]
+ ╱◥██◣ ╭⌒╮         欢迎光临   <$SERVERNAME>\
+︱田︱田田|╰-------------\
+╬╬╬╬╬╬╬╬╬╬╬╬╬    　 　    <COLOR=clFuchsia 幸运最多加三>\
+------------------------------------------------------------\
+升级幸运+1    <需要5000元宝    成功率   50%>         <确定升级/@升级1>\ \
+升级幸运+2    <需要10000元宝   成功率   30%>         <确定升级/@升级2>\
+------------------------------------------------------------\
+<COLOR=clLime 温馨提示：升级幸运+2的项链会随机出现1-5点暴击属性，强悍无比！>\
+<COLOR=clLime 有机会赋予暴击属性！>  不满意暴击属性<花5万元宝清洗暴击/@清洗项链>\
+[@清洗项链]
+#IF 
+CHECKGAMEGOLD > 49999
+#act
+GAMEGOLD - 50000
+GMEXECUTE 改属性 3 8 0
+GMEXECUTE 改属性 3 1 1
+MESSAGEBOX 已清理！！！
+[@升级1]
+#IF
+RANDOM 2
+CHECKITEMADDVALUE 3 1 = 0
+CHECKGAMEGOLD > 4999
+#ACT
+#CALL [\幸运项链\项链加幸运1.txt] @项链幸运1
+BREAK
+#IF
+RANDOM 1
+CHECKITEMADDVALUE 3 1 = 0
+CHECKGAMEGOLD > 4999
+#ACT
+GAMEGOLD - 5000
+SENDMSG 6 不好意思。这个技艺我太生疏，升级失败了。。。
+#ELSEACT
+MESSAGEBOX 您没有佩带项链\不是幸运加0的\或者您没有足够的元宝，无法升级。。
+CLOSE
+BREAK
+[@升级2]
+#IF
+RANDOM 3
+CHECKITEMADDVALUE 3 1 = 1
+CHECKGAMEGOLD > 9999
+#ACT
+#CALL [\幸运项链\项链加幸运2.txt] @项链幸运2
+BREAK
+#IF
+RANDOM 1
+CHECKITEMADDVALUE 3 1 = 1
+CHECKGAMEGOLD > 9999
+#ACT
+GAMEGOLD - 10000
+SENDMSG 6 不好意思。这个技艺我太生疏，升级失败了。。。
+#ELSEACT
+MESSAGEBOX 您没有佩带项链\不是幸运加1的\或者您没有足够的元宝，无法升级。。
+CLOSE
+BREAK

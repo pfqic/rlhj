@@ -1,0 +1,56 @@
+()
+%100
+[@main]
+<COLOR=clLime 你当前的消费积分为>：<$GAMEPOINT> <COLOR=clRed 1元网银=1积分！积分合区不消失> \
+<COLOR=clLime 累计充值 100元可领取：><COLOR=clFuchsia  弑血血石 + 圣心>    <点击领取100元奖励/@100>   \
+<COLOR=clLime 累计充值 300元可领取：><COLOR=clFuchsia  缥缈血石 + 圣心>    <点击领取300元奖励/@300>   \
+<COLOR=clLime 累计充值 500元可领取：><COLOR=clFuchsia  如龍顶级血石 + 圣心><点击领取500元奖励/@500>   \ \
+<COLOR=clAqua 请保持身上有3个空位 不然会掉地上>\
+
+
+
+[@100]
+#if
+CheckGamePoint  >  99
+CheckBagSize 3
+#act
+give 弑血メ赞助圣心（圣） 1
+give 弑血メ赞助圣石（圣） 1
+sendmsg  6 领取成功！！！
+SENDMSG 1 〖玩家〗<$USERNAME>在【充值回馈】处领取了【弑血血石+圣心】！ 251 249
+SENDMSG 1 〖玩家〗<$USERNAME>在【充值回馈】处领取了【弑血血石+圣心】！ 251 249
+SENDMSG 1 〖玩家〗<$USERNAME>在【充值回馈】处领取了【弑血血石+圣心】！ 251 249
+#elseact
+messagebox  你的积分不够或者你的背包空格不足3个！
+
+
+[@300]
+#if
+CheckGamePoint  >  299
+CheckBagSize 3
+#act
+give 缥缈№赞助圣心（神） 1
+give 缥缈№赞助圣石（神） 1
+sendmsg  6 领取成功！！！
+SENDMSG 1 〖玩家〗<$USERNAME>在【充值回馈】处领取了【缥缈血石+圣心】！ 251 249
+SENDMSG 1 〖玩家〗<$USERNAME>在【充值回馈】处领取了【缥缈血石+圣心】！ 251 249
+SENDMSG 1 〖玩家〗<$USERNAME>在【充值回馈】处领取了【缥缈血石+圣心】！ 251 249
+#elseact
+messagebox  你的积分不够或者你的背包空格不足3个！
+
+
+
+
+[@500]
+#if
+CheckGamePoint  >  499
+CheckBagSize 3
+#act
+give 如龍◆赞助圣心（终）  1
+give 如龍◆赞助圣石（终）  1
+sendmsg  6 领取成功！！！
+SENDMSG 1 〖玩家〗<$USERNAME>在【充值回馈】处领取了【如龍顶级血石+圣心】！ 251 249
+SENDMSG 1 〖玩家〗<$USERNAME>在【充值回馈】处领取了【如龍顶级血石+圣心】！ 251 249
+SENDMSG 1 〖玩家〗<$USERNAME>在【充值回馈】处领取了【如龍顶级血石+圣心】！ 251 249
+#elseact
+messagebox  你的积分不够或者你的背包空格不足3个！

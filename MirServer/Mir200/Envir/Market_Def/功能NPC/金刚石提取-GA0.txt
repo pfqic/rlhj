@@ -1,0 +1,48 @@
+()
+%100
+[@main]
+<COLOR=clLime ─☆→> <COLOR=clRed 这里可以为你提取金刚石,收取十分之一的费用> <COLOR=clLime ←☆─>\
+╔┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╗\
+┊『<100金刚石 = 110金刚石兑换/@JGS1>』                   ┊\
+┊『<500金刚石 = 550金刚石兑换/@JGS2>』                   ┊\
+┊『<1000金刚石 = 1100金刚石兑换/@JGS3>』                 ┊\
+┊『<5000金刚石 = 5500金刚石兑换/@JGS4>』                 ┊\
+╚┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╝\
+
+
+[@JGS1]
+#IF
+CHECKGAMEDIAMOND > 109
+#ACT
+GAMEDIAMOND - 110
+GIVE 100金刚石 1
+#ELSEACT
+MESSAGEBOX [错误信息]：你的金刚石不够，请准备好再来。
+
+[@JGS2]
+#IF
+CHECKGAMEDIAMOND > 549
+#ACT
+GAMEDIAMOND - 550
+GIVE 500金刚石 1
+#ELSEACT
+MESSAGEBOX [错误信息]：你的金刚石不够，请准备好再来。
+
+
+[@JGS3]
+#IF
+CHECKGAMEDIAMOND > 1099
+#ACT
+GAMEDIAMOND - 1100
+GIVE 1000金刚石 1
+#ELSEACT
+MESSAGEBOX [错误信息]：你的金刚石不够，请准备好再来。
+
+[@JGS4]
+#IF
+CHECKGAMEDIAMOND > 5499
+#ACT
+GAMEDIAMOND - 5500
+GIVE 5000金刚石 1
+#ELSEACT
+MESSAGEBOX [错误信息]：你的金刚石不够，请准备好再来。

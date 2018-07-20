@@ -1,0 +1,10 @@
+[@main]
+ <积分/@积分>\
+
+
+[@积分]
+#IF
+#ACT
+CALCVAR HUMAN 消费积分 + 2000000000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+BREAK

@@ -1,0 +1,11 @@
+2018-6-24 9:35:12 Start ServerEngine Exception, An error occurred while attempting to initialize the Borland Database Engine (error $2501)
+2018-6-24 9:35:14 Access violation at address 0783212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 9:35:16 Access violation at address 0783212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 9:35:18 Access violation at address 0783212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 9:35:20 Access violation at address 0783212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 9:35:22 Access violation at address 0783212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 9:35:24 Access violation at address 0783212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 9:35:26 Access violation at address 0783212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 9:35:28 Access violation at address 0783212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 9:35:30 Access violation at address 0783212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 9:35:32 Access violation at address 0783212C in module 'mSystemModule.dll'. Read of address 00001798

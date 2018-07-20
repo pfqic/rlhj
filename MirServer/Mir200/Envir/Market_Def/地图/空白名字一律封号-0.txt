@@ -1,0 +1,5 @@
+[@main]
+║<COLOR=clRed 封>║<COLOR=clLime 请珍惜自己的账号，欢迎举报！！！ > \
+║<COLOR=clRed 空>║<COLOR=clFuchsia 不论主体还是英雄，空白名字一律删号 > \
+║<COLOR=clRed 白>║<COLOR=clRed 不论等级高低，空白名字一律删号 > \
+║<COLOR=clRed 名>║<COLOR=clSKYBLUE 不论散人还是RMB玩家，空白名字一律删号 > \

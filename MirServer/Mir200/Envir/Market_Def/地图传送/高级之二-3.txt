@@ -1,0 +1,40 @@
+()
+%100
+[@main]
+<COLOR=clAqua 【高级地图】> <COLOR=clRed Hot~ >                      <COLOR=clLime 降龙合击，邀你來戰!>\
+<COLOR=clGray ------------------------------------------------------------>　\
+<COLOR=clRed BOOS名称：>2万血boss，4万血boss，6万血BOSS\
+<COLOR=clRed 怪物刷新：>小boss类20分钟，大BOSS类40分钟\
+<COLOR=clRed 爆率介绍：>战神、星王、极品、次终极\
+<COLOR=clRed 进入条件：><COLOR=clFuchsia 2000元宝>\
+<COLOR=clGray ------------------------------------------------------------>　\
+　※ <进入天空之城/@天空之城> ※      　　　　  ※ <进入遗忘之都/@帝王殿堂> ※
+
+[@帝王殿堂]
+
+
+#if
+CHECKGAMEGOLD > 1999
+#act
+GAMEGOLD - 2000
+mapmove gaoji1
+SENDMSG 0 勇敢的玩家:[%s]进入遗忘之都寻宝去了!!! 253 0 10
+SENDMSG 0 勇敢的玩家:[%s]进入遗忘之都寻宝去了!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]进入遗忘之都寻宝去了!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]进入遗忘之都寻宝去了!!! 253 0
+#ELSEACT
+MESSAGEBOX 需要2000元宝用来进入地图。
+
+[@天空之城]
+
+#if
+CHECKGAMEGOLD > 1999
+#act
+GAMEGOLD - 2000
+mapmove gaoji2
+SENDMSG 0 勇敢的玩家:[%s]进入天空之城寻宝去了!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]进入天空之城寻宝去了!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]进入天空之城寻宝去了!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]进入天空之城寻宝去了!!! 253 0
+#ELSEACT
+MESSAGEBOX 需要2000元宝用来进入地图。

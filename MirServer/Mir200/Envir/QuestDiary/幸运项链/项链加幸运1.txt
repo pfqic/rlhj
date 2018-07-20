@@ -1,0 +1,9 @@
+[@项链幸运1]
+{
+#IF
+#act
+GAMEGOLD - 5000
+UPGRADEITEMEX 3 1 0 1 0
+SENDMSG 1 恭喜[%s]在幸运之家将<$NECKLACE>升级成功。
+BREAK
+}

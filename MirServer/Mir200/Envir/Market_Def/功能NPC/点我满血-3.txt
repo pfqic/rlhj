@@ -1,0 +1,23 @@
+[@main]
+神医：“最近玛法大陆动荡不平，每天进进出出这里的伤者日益\
+增多尤其我身前这片土地，土壤早已被鲜血染成红色……”\ \
+<瞬间恢复人物和英雄ＨＰ／ＭＰ最大值>\ \
+
+<1.花费1000元宝接受治疗/@治疗>\
+<2.别、放弃治疗/@exit>
+
+[@治疗]
+#IF
+CHECKGAMEGOLD > 999
+InSafeZone
+#act
+GAMEGOLD - 1000
+HumanHP + 500000
+HumanMP + 500000
+H.HumanHP + 500000
+H.HumanMP + 500000
+SENDMSG 7 HPMP已恢复，如果没满请喝一瓶药!
+SENDMSG 1 〖提示〗<$USERNAME>给了【药王神医】1000YB小费，现已【满血复活】，让暴风雨来的更猛一些把！ 255 241
+#ELSEACT
+MESSAGEBOX 请检查您的元宝数量！或不在安全区
+BREAK

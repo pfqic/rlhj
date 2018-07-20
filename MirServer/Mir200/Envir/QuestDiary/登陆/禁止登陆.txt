@@ -1,0 +1,106 @@
+[@禁止登陆]
+{
+#IF
+checknamelist ..\QuestDiary\数据\禁止登陆-脱机.txt
+#ACT
+messagebox \　\你因使用了非法脱机软件，已被禁止登陆\　\现在清空你人物上的金币和元宝做为惩罚\　\请到论坛www.51ee.net发帖承认错误，如诚心忏悔可以考虑解封.....
+SENDMSG 7 〖公告〗:你因使用了非法脱机软件，已被系统禁止登陆
+SENDMSG 7 〖公告〗:现在清空你人物上的金币和元宝做为惩罚
+SENDMSG 7 〖公告〗:请到论坛www.51ee.net发帖承认错误，如诚心忏悔可以考虑解封
+;addiplist ..\QuestDiary\数据\禁止登陆脱机IP.txt
+KICK
+
+#IF
+checknamelist ..\QuestDiary\数据\禁止登陆-骗子.txt
+#ACT
+messagebox 你的号被举报为骗子，请联系QQ：200946515,271186388咨询
+SENDMSG 5 你的号被举报为骗子，请联系QQ：200946515,271186388说明情况，给您带来不便请谅
+;addiplist ..\QuestDiary\数据\禁止登陆骗子IP.txt
+KICK
+break
+
+#IF
+checknamelist ..\QuestDiary\数据\禁止登陆-其他.txt
+#ACT
+messagebox 你的号被暂时禁止登陆,请联系QQ：200946515
+SENDMSG 5 你的号被暂时禁止登陆,请联系QQ：200946515
+;addiplist ..\QuestDiary\数据\禁止登陆IP.txt
+KICK
+break
+
+#IF
+CHECKGAMEGOLD > 6000
+#ACT
+addiplist ..\QuestDiary\数据\元宝超额IP.txt
+addnamelist ..\QuestDiary\数据\禁止登陆-元宝超额.txt
+kick
+break
+
+#IF
+checknamelist ..\QuestDiary\数据\禁止登陆-元宝超额.txt
+#ACT
+addiplist ..\QuestDiary\数据\元宝超额IP.txt
+kick
+break
+
+#IF
+CHECKIPLIST ..\QuestDiary\数据\元宝超额IP.txt
+#ACT
+addnamelist ..\QuestDiary\数据\禁止登陆-元宝超额.txt
+KICK
+
+
+
+#IF
+checknamelist ..\QuestDiary\数据\禁止登陆-加速.txt
+#ACT
+messagebox \　\你因使用了非法加速软件，快刀，跟踪刺杀已被禁止登陆\　\请到论坛www.51ee.net接受惩罚，如诚心忏悔可以考虑解封.....
+SENDMSG 7 〖公告〗:你因使用了非法加速软件，快刀，跟踪刺杀已被禁止登陆
+SENDMSG 7 〖公告〗:请到论坛www.51ee.net接受惩罚，如诚心忏悔可以考虑解封
+;addiplist ..\QuestDiary\数据\禁止登陆加速IP.txt
+Kick
+break
+
+
+
+#IF
+checknamelist ..\QuestDiary\数据\禁止登陆-记录.txt
+#ACT
+messagebox 为防止你的号被盗，请联系QQ：31958863免费修改密保，给你带来不便请见谅
+SENDMSG 5 为防止你的号被盗，请联系QQ：31958863免费修改密保，给你带来不便请见谅
+KICK
+break
+
+
+#IF
+CHECKIPLIST ..\QuestDiary\数据\禁止登陆IP.txt
+#ACT
+messagebox \　\你的号因违反游戏规则，被暂时禁止登陆游戏\　\请联系QQ：200946515,271186388说明情况\　\请到论坛www.51ee.net发贴说明情况.....
+SENDMSG 5 你的号因违反游戏规则，被暂时禁止登陆游戏
+addnamelist ..\QuestDiary\数据\禁止登陆-其他.txt
+KICK
+
+#IF
+CHECKIPLIST ..\QuestDiary\数据\禁止登陆脱机IP.txt
+#ACT
+messagebox \　\你因使用了非法脱机软件，已被禁止登陆\　\请联系QQ：200946515,271186388说明情况\　\请到论坛www.51ee.net发贴说明情况.....
+SENDMSG 5 你的号因违反游戏规则，被暂时禁止登陆游戏
+addnamelist ..\QuestDiary\数据\禁止登陆-脱机.txt
+KICK
+
+#IF
+CHECKIPLIST ..\QuestDiary\数据\禁止登陆加速IP.txt
+#ACT
+messagebox \　\你因使用了非法加速软件，快刀，跟踪刺杀已被禁止登陆\　\请联系QQ：200946515,271186388说明情况\　\请到论坛www.51ee.net发贴说明情况.....
+SENDMSG 5 你的号因违反游戏规则，被暂时禁止登陆游戏
+addnamelist ..\QuestDiary\数据\禁止登陆-加速.txt
+KICK
+
+#IF
+CHECKIPLIST ..\QuestDiary\数据\禁止登陆骗子IP.txt
+#ACT
+messagebox \　\你的号因违反游戏规则，被暂时禁止登陆游戏\　\请联系QQ：200946515,271186388说明情况\　\请到论坛www.51ee.net发贴说明情况.....
+SENDMSG 5 你的号因违反游戏规则，被暂时禁止登陆游戏
+addnamelist ..\QuestDiary\数据\禁止登陆-骗子.txt
+KICK
+}

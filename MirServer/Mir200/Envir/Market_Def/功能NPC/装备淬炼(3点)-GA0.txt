@@ -1,0 +1,808 @@
+
+[@MAIN]
+╔───────────────────────────╗  \
+┊ <COLOR=clLime 装备淬炼服务>  <提示:有几率失败首饰最高升3点武器升7点>  ┊\
+├───────────────────────────┤\
+┊ [<升级武器/@武器>] ┊ [<升级项链/@项链>] ┊ [<升级头盔/@头盔>] ┊ [<升级勋章/@勋章>] ┊\
+┊ [<升级手镯/@手镯>] ┊ [<升级戒指/@戒指>] ┊ [<升级盔甲/@盔甲>] ┊ [<升级腰带/@腰带>] ┊\
+┊            ┊        [<升级鞋子/@鞋子>]        ┊            ┊\
+├───────────────────────────┤\
+┊     <COLOR=clAqua 升级装备的几率40%成功.60%失败.失败不会破碎!>      ┊\
+╚───────────────────────────╝\
+[@戒指]
+<COLOR=clAqua 请将戒指佩带至装备框左边.> <COLOR=clLime 超过上限导致失败，费用不退还.成功率40%>　　\
+ 1.戒指防御:<点击升级/@戒指防> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　　\
+ 2.戒指魔御:<点击升级/@戒指御> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　　\
+ 3.戒指攻击:<点击升级/@戒指攻> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　　\
+ 4.戒指魔法:<点击升级/@戒指魔> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　　\
+ 5.戒指道术:<点击升级/@戒指道> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　　\
+
+[@腰带]
+<COLOR=clLime 超过升级上限导致失败，升级费用不退还.成功率40%>　\
+ 1.腰带防御:<点击升级/@腰带防> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　　\
+ 2.腰带魔御:<点击升级/@腰带御> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　　\
+ 3.腰带攻击:<点击升级/@腰带攻> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　　\
+ 4.腰带魔法:<点击升级/@腰带魔> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　　\
+ 5.腰带道术:<点击升级/@腰带道> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　　\
+
+
+[@鞋子]
+<COLOR=clLime 超过升级上限导致失败，升级费用不退还.成功率40%>　\
+ 1.鞋子防御:<点击升级/@鞋子防> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　　\
+ 2.鞋子魔御:<点击升级/@鞋子御> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　　\
+ 3.鞋子攻击:<点击升级/@鞋子攻> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　　\
+ 4.鞋子魔法:<点击升级/@鞋子魔> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　　\
+ 5.鞋子道术:<点击升级/@鞋子道> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　　\
+
+[@武器]
+<COLOR=clLime 超过升级上限导致失败，升级费用不退还.成功率40%>　\
+ 1.武器准确:<点击升级/@武器准> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 1000>元宝每点』　\
+ 2.武器攻击:<点击升级/@武器攻> 『升级上限:<COLOR=clFuchsia 7>点 升级价格:<COLOR=clAqua 1000>元宝每点』　\
+ 3.武器魔法:<点击升级/@武器魔> 『升级上限:<COLOR=clFuchsia 7>点 升级价格:<COLOR=clAqua 1000>元宝每点』　\
+ 4.武器道术:<点击升级/@武器道> 『升级上限:<COLOR=clFuchsia 7>点 升级价格:<COLOR=clAqua 1000>元宝每点』　\
+
+[@盔甲]
+<COLOR=clLime 超过升级上限导致失败，升级费用不退还.成功率40%>　\
+ 1.盔甲防御:<点击升级/@盔甲防> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 1000>元宝每点』　\
+ 2.盔甲魔御:<点击升级/@盔甲御> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 1000>元宝每点』　\
+ 3.盔甲攻击:<点击升级/@盔甲攻> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 1000>元宝每点』　\
+ 4.盔甲魔法:<点击升级/@盔甲魔> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 1000>元宝每点』　\
+ 5.盔甲道术:<点击升级/@盔甲道> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 1000>元宝每点』　\
+
+[@勋章]
+<COLOR=clLime 超过上限导致失败，费用不退还.成功率40%.极品属性不包含上限内>\　\
+ 3.勋章攻击:<点击升级/@勋章攻> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　\
+ 4.勋章魔法:<点击升级/@勋章魔> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　\
+ 5.勋章道术:<点击升级/@勋章道> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　\ \
+
+[@头盔]
+<COLOR=clLime 超过上限导致失败，费用不退还.成功率40%.极品属性不包含上限内>\
+ 1.头盔防御:<点击升级/@头盔防> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　\
+ 2.头盔魔御:<点击升级/@头盔御> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　\
+ 3.头盔攻击:<点击升级/@头盔攻> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　\
+ 4.头盔魔法:<点击升级/@头盔魔> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　\
+ 5.头盔道术:<点击升级/@头盔道> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　\
+
+[@项链]
+<COLOR=clLime 超过上限导致失败，费用不退还.成功率40%.极品属性不包含上限内>\　\
+ 3.项链攻击:<点击升级/@项链攻> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　\
+ 4.项链魔法:<点击升级/@项链魔> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　\
+ 5.项链道术:<点击升级/@项链道> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』\　\
+
+[@手镯]
+<COLOR=clAqua 请将手镯佩带至装备框左边.><COLOR=clLime 超过上限导致失败，费用不退还.成功率40%>　　\
+ 1.手镯防御:<点击升级/@手镯防> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　　\
+ 2.手镯魔御:<点击升级/@手镯御> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　　\
+ 3.手镯攻击:<点击升级/@手镯攻> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　　\
+ 4.手镯魔法:<点击升级/@手镯魔> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　　\
+ 5.手镯道术:<点击升级/@手镯道> 『升级上限:<COLOR=clFuchsia 3>点 升级价格:<COLOR=clAqua 500>元宝每点』　　\
+
+
+[@鞋子道]
+#IF
+CheckItemAddvalue 11 4 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 11 4 15 1 0
+goto @鞋子
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@鞋子魔]
+#IF
+CheckItemAddvalue 11 3 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 11 3 15 1 0
+goto @鞋子
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@鞋子攻]
+#IF
+CheckItemAddvalue 11 2 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 11 2 15 1 0
+goto @鞋子
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@鞋子御]
+#IF
+CheckItemAddvalue 11 1 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 11 1 15 1 0
+goto @鞋子
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+
+[@鞋子防]
+#IF
+CheckItemAddvalue 11 0 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 11 0 15 1 0
+goto @鞋子
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+;-----------------------------
+
+[@腰带道]
+#IF
+CheckItemAddvalue 10 4 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 10 4 15 1 0
+goto @腰带
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@腰带魔]
+#IF
+CheckItemAddvalue 10 3 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 10 3 15 1 0
+goto @腰带
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+
+[@腰带攻]
+#IF
+CheckItemAddvalue 10 2 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 10 2 15 1 0
+goto @腰带
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@腰带御]
+#IF
+CheckItemAddvalue 10 1 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 10 1 15 1 0
+goto @腰带
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@腰带防]
+#IF
+CheckItemAddvalue 10 0 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 10 0 15 1 0
+goto @腰带
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+;-----------------------------
+
+[@戒指道]
+#IF
+CheckItemAddvalue 8 4 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 8 4 15 1 0
+goto @戒指
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@戒指魔]
+#IF
+CheckItemAddvalue 8 3 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 8 3 15 1 0
+goto @戒指
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@戒指攻]
+#IF
+CheckItemAddvalue 8 2 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 8 2 15 1 0
+goto @戒指
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@戒指御]
+#IF
+CheckItemAddvalue 8 1 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 8 1 15 1 0
+goto @戒指
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@戒指防]
+#IF
+CheckItemAddvalue 8 0 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 8 0 15 1 0
+goto @戒指
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+;-----------------------------
+
+[@手镯道]
+#IF
+CheckItemAddvalue 6 4 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 6 4 15 1 0
+goto @手镯
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@手镯魔]
+#IF
+CheckItemAddvalue 6 3 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 6 3 15 1 0
+goto @手镯
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@手镯攻]
+#IF
+CheckItemAddvalue 6 2 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 6 2 15 1 0
+goto @手镯
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@手镯御]
+#IF
+CheckItemAddvalue 6 1 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 6 1 15 1 0
+goto @手镯
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@手镯防]
+#IF
+CheckItemAddvalue 6 0 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 6 0 15 1 0
+goto @手镯
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+;-----------------------------
+
+[@项链道]
+#IF
+CheckItemAddvalue 3 4 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 3 4 15 1 0
+goto @项链
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@项链魔]
+#IF
+CheckItemAddvalue 3 3 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 3 3 15 1 0
+goto @项链
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@项链攻]
+#IF
+CheckItemAddvalue 3 2 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 3 2 15 1 0
+goto @项链
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@项链敏]
+#IF
+CheckItemAddvalue 3 1 < 2
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 3 1 15 1 0
+goto @项链
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@项链准]
+#IF
+CheckItemAddvalue 3 0 < 2
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 3 0 15 1 0
+goto @项链
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+;-----------------------------
+
+[@头盔道]
+#IF
+CheckItemAddvalue 4 4 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 4 4 15 1 0
+goto @头盔
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@头盔魔]
+#IF
+CheckItemAddvalue 4 3 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 4 3 15 1 0
+goto @头盔
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@头盔攻]
+#IF
+CheckItemAddvalue 4 2 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 4 2 15 1 0
+goto @头盔
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@头盔御]
+#IF
+CheckItemAddvalue 4 1 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 4 1 15 1 0
+goto @头盔
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@头盔防]
+#IF
+CheckItemAddvalue 4 0 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 4 0 15 1 0
+goto @头盔
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+;-----------------------------
+
+[@盔甲攻]
+#IF
+CHECKITEMADDVALUE 0 2 < 3
+CHECKGAMEGOLD > 999
+#ACT
+GAMEGOLD - 1000
+UPGRADEITEMEX 0 2 15 1 0
+goto @盔甲
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够1000颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@盔甲道]
+#IF
+CHECKITEMADDVALUE 0 4 < 3
+CHECKGAMEGOLD > 999
+#ACT
+GAMEGOLD - 1000
+UPGRADEITEMEX 0 4 15 1 0
+goto @盔甲
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够1000颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@盔甲魔]
+#IF
+CHECKITEMADDVALUE 0 3 < 3
+CHECKGAMEGOLD > 999
+#ACT
+GAMEGOLD - 1000
+UPGRADEITEMEX 0 3 15 1 0
+goto @盔甲
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够1000颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@盔甲御]
+#IF
+CHECKITEMADDVALUE 0 1 < 3
+CHECKGAMEGOLD > 999
+#ACT
+GAMEGOLD - 1000
+UPGRADEITEMEX 0 1 15 1 0
+goto @盔甲
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够1000颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@盔甲防]
+#IF
+CHECKITEMADDVALUE 0 0 < 3
+CHECKGAMEGOLD > 999
+#ACT
+GAMEGOLD - 1000
+UPGRADEITEMEX 0 0 15 1 0
+goto @盔甲
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够1000颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+;-----------------------------
+
+[@武器道]
+#IF
+CheckItemAddvalue 1 2 < 7
+CHECKGAMEGOLD > 999
+#ACT
+GAMEGOLD - 1000
+UPGRADEITEMEX 1 2 15 1 0
+goto @武器
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够1000颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@武器魔]
+#IF
+CheckItemAddvalue 1 1 < 7
+CHECKGAMEGOLD > 999
+#ACT
+GAMEGOLD - 1000
+UPGRADEITEMEX 1 1 15 1 0
+goto @武器
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够1000颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@武器攻]
+#IF
+CheckItemAddvalue 1 0 < 7
+CHECKGAMEGOLD > 999
+#ACT
+GAMEGOLD - 1000
+UPGRADEITEMEX 1 0 15 1 0
+goto @武器
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够1000颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@武器幸]
+#IF
+CheckItemAddvalue 1 3 < 7
+CHECKGAMEGOLD > 999
+#ACT
+GAMEGOLD - 1000
+UPGRADEITEMEX 1 3 15 1 0
+goto @武器
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够1000颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@武器准]
+#IF
+CheckItemAddvalue 1 5 < 3
+CHECKGAMEGOLD > 999
+#ACT
+GAMEGOLD - 1000
+UPGRADEITEMEX 1 5 15 1 0
+goto @武器
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够1000颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+
+[@nomake]
+#ACT
+messagebox 你所佩带的武器不允许升级！！
+
+;-----------------------------
+[@勋章攻]
+#IF
+CHECKITEMADDVALUE 2 2 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 2 2 15 1 0
+goto @勋章
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+[@勋章道]
+#IF
+CHECKITEMADDVALUE 2 4 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 2 4 15 1 0
+goto @勋章
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+
+[@勋章魔]
+#IF
+CHECKITEMADDVALUE 2 3 < 3
+CHECKGAMEGOLD > 499
+#ACT
+GAMEGOLD - 500
+UPGRADEITEMEX 2 3 15 1 0
+goto @勋章
+#ELSESAY
+无法提供装备淬炼服务。。。\
+请查看您是否满足以下几点要求\ \
+1:元宝是否足够500颗.\
+2:装备是否佩带指定位置.\
+3:装备是否已经达到最大升级点数.\
+
+
+;==========================
+[@改名]
+请选择要改名的装备：(将要改名的装备戴身上)需要10000元宝\
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\
+◇◇◇『<盔　甲/@@useitemname0>』◇◇◇『<武　器/@@useitemname1>』◇◇◇\
+◇◇◇『<项　链/@@useitemname3>』◇◇◇『<头　盔/@@useitemname4>』◇◇◇\
+◇◇◇『<左手镯/@@useitemname5>』◇◇◇『<右手镯/@@useitemname6>』◇◇◇\
+◇◇◇『<左戒指/@@useitemname8>』◇◇◇『<右戒指/@@useitemname7>』◇◇◇\
+◇◇◇『<腰  带/@@useitemname10>』◇◇◇『<靴  子/@@useitemname11>』◇◇◇\
+◇◇◇『<勋  章/@@useitemname2>』\
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\
+[@@useitemname0]
+#ACT
+ goto @ChangeName
+[@@useitemname1]
+#ACT
+ goto @ChangeName
+[@@useitemname2]
+#ACT
+ goto @ChangeName
+[@@useitemname3]
+#ACT
+ goto @ChangeName
+[@@useitemname4]
+#ACT
+ goto @ChangeName
+[@@useitemname5]
+#ACT
+ goto @ChangeName
+[@@useitemname6]
+#ACT
+ goto @ChangeName
+[@@useitemname7]
+#ACT
+ goto @ChangeName
+[@@useitemname8]
+#ACT
+ goto @ChangeName
+[@@useitemname9]
+#ACT
+ goto @ChangeName
+[@@useitemname10]
+#ACT
+ goto @ChangeName
+[@@useitemname11]
+#ACT
+ goto @ChangeName
+[@@useitemname12]
+#ACT
+ goto @ChangeName
+[@ChangeName]
+#if
+  CHECKGAMEGOLD > 9999
+#act
+  gamegold - 10000
+  SETSCRIPTFLAG 1 1
+  sendmsg 7 改名成功！！！
+  Close
+#elseact
+  sendmsg 7 没钱跑来做什么？
+
+
+
+

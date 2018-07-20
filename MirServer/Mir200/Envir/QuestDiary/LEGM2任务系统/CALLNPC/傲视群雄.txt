@@ -1,0 +1,110 @@
+[@傲视群雄CA]
+{
+#IF
+CHECKVAR HUMAN 傲视群雄 = 已完成
+#SAY
+<新手入门/@main>  <COLOR=clRed 状态：><$HUMAN(新手入门)>          <初试牛刀/@初试牛刀>  <COLOR=clRed 状态：><$HUMAN(初试牛刀)>\
+<初级阶段/@初级阶段>  <COLOR=clRed 状态：><$HUMAN(初级阶段)>          <名扬天下/@名扬天下>  <COLOR=clRed 状态：><$HUMAN(名扬天下)>\
+<中级阶段/@中级阶段>  <COLOR=clRed 状态：><$HUMAN(中级阶段)>          <狂野之路/@狂野之路>  <COLOR=clRed 状态：><$HUMAN(狂野之路)>\
+<高级阶段/@高级阶段>  <COLOR=clRed 状态：><$HUMAN(高级阶段)>          <单枪匹马/@单枪匹马>  <COLOR=clRed 状态：><$HUMAN(单枪匹马)>\
+<傲视群雄/@傲视群雄>  <COLOR=clRed 状态：><$HUMAN(傲视群雄)>          <君临天下/@君临天下>  <COLOR=clRed 状态：><$HUMAN(君临天下)>\
+<COLOR=clFuchsia 任务要求：><COLOR=clTeal 等级超过><$GLOBAL(傲视等级)><COLOR=clTeal 级(包括><$GLOBAL(傲视等级)>级<COLOR=clTeal )可以领取任务！>\
+<COLOR=clFuchsia 任务目标：><COLOR=clFuchsia 前往[><仙踪林><COLOR=clFuchsia ]击杀(><$GLOBAL(傲视数量)><COLOR=clFuchsia )只上古火龙神！>\
+<COLOR=clFuchsia 任务奖励：><COLOR=clYellow 极品星王神剑+5000万经验+1万元宝>\
+<COLOR=clGreen 奖励已领取>
+#act
+break
+#IF
+CHECKVAR HUMAN 傲视已杀 = <$GLOBAL(傲视数量)>
+#SAY
+<新手入门/@main>  <COLOR=clRed 状态：><$HUMAN(新手入门)>          <初试牛刀/@初试牛刀>  <COLOR=clRed 状态：><$HUMAN(初试牛刀)>\
+<初级阶段/@初级阶段>  <COLOR=clRed 状态：><$HUMAN(初级阶段)>          <名扬天下/@名扬天下>  <COLOR=clRed 状态：><$HUMAN(名扬天下)>\
+<中级阶段/@中级阶段>  <COLOR=clRed 状态：><$HUMAN(中级阶段)>          <狂野之路/@狂野之路>  <COLOR=clRed 状态：><$HUMAN(狂野之路)>\
+<高级阶段/@高级阶段>  <COLOR=clRed 状态：><$HUMAN(高级阶段)>          <单枪匹马/@单枪匹马>  <COLOR=clRed 状态：><$HUMAN(单枪匹马)>\
+<傲视群雄/@傲视群雄>  <COLOR=clRed 状态：><$HUMAN(傲视群雄)>          <君临天下/@君临天下>  <COLOR=clRed 状态：><$HUMAN(君临天下)>\
+<COLOR=clFuchsia 任务要求：><COLOR=clTeal 等级超过><$GLOBAL(傲视等级)><COLOR=clTeal 级(包括><$GLOBAL(傲视等级)>级<COLOR=clTeal )可以领取任务！>\
+<COLOR=clFuchsia 任务目标：><COLOR=clFuchsia 前往[><仙踪林><COLOR=clFuchsia ]击杀(><$GLOBAL(傲视数量)><COLOR=clFuchsia )只上古火龙神！>\
+<COLOR=clFuchsia 任务奖励：><COLOR=clYellow 极品星王神剑+5000万经验+1万元宝>\
+<领取奖励/@傲视奖励>   [极品星王神剑+5000万经验+1万元宝]
+#act
+break
+#IF
+CHECKVAR HUMAN 傲视群雄 = 已接受
+#SAY
+<新手入门/@main>  <COLOR=clRed 状态：><$HUMAN(新手入门)>          <初试牛刀/@初试牛刀>  <COLOR=clRed 状态：><$HUMAN(初试牛刀)>\
+<初级阶段/@初级阶段>  <COLOR=clRed 状态：><$HUMAN(初级阶段)>          <名扬天下/@名扬天下>  <COLOR=clRed 状态：><$HUMAN(名扬天下)>\
+<中级阶段/@中级阶段>  <COLOR=clRed 状态：><$HUMAN(中级阶段)>          <狂野之路/@狂野之路>  <COLOR=clRed 状态：><$HUMAN(狂野之路)>\
+<高级阶段/@高级阶段>  <COLOR=clRed 状态：><$HUMAN(高级阶段)>          <单枪匹马/@单枪匹马>  <COLOR=clRed 状态：><$HUMAN(单枪匹马)>\
+<傲视群雄/@傲视群雄>  <COLOR=clRed 状态：><$HUMAN(傲视群雄)>          <君临天下/@君临天下>  <COLOR=clRed 状态：><$HUMAN(君临天下)>\
+<COLOR=clFuchsia 任务要求：><COLOR=clTeal 等级超过><$GLOBAL(傲视等级)><COLOR=clTeal 级(包括><$GLOBAL(傲视等级)>级<COLOR=clTeal )可以领取任务！>\
+<COLOR=clFuchsia 任务目标：><COLOR=clFuchsia 前往[><仙踪林><COLOR=clFuchsia ]击杀(><$GLOBAL(傲视数量)><COLOR=clFuchsia )只上古火龙神！>\
+<COLOR=clFuchsia 任务奖励：><COLOR=clYellow 极品星王神剑+5000万经验+1万元宝>\
+<放弃任务/@傲视放弃>    已击杀：（<$HUMAN(傲视已杀)>/<$GLOBAL(傲视数量)>）
+#ELSESAY
+<新手入门/@main>  <COLOR=clRed 状态：><$HUMAN(新手入门)>          <初试牛刀/@初试牛刀>  <COLOR=clRed 状态：><$HUMAN(初试牛刀)>\
+<初级阶段/@初级阶段>  <COLOR=clRed 状态：><$HUMAN(初级阶段)>          <名扬天下/@名扬天下>  <COLOR=clRed 状态：><$HUMAN(名扬天下)>\
+<中级阶段/@中级阶段>  <COLOR=clRed 状态：><$HUMAN(中级阶段)>          <狂野之路/@狂野之路>  <COLOR=clRed 状态：><$HUMAN(狂野之路)>\
+<高级阶段/@高级阶段>  <COLOR=clRed 状态：><$HUMAN(高级阶段)>          <单枪匹马/@单枪匹马>  <COLOR=clRed 状态：><$HUMAN(单枪匹马)>\
+<傲视群雄/@傲视群雄>  <COLOR=clRed 状态：><$HUMAN(傲视群雄)>          <君临天下/@君临天下>  <COLOR=clRed 状态：><$HUMAN(君临天下)>\
+<COLOR=clFuchsia 任务要求：><COLOR=clTeal 等级超过><$GLOBAL(傲视等级)><COLOR=clTeal 级(包括><$GLOBAL(傲视等级)>级<COLOR=clTeal )可以领取任务！>\
+<COLOR=clFuchsia 任务目标：><COLOR=clFuchsia 前往[><仙踪林><COLOR=clFuchsia ]击杀(><$GLOBAL(傲视数量)><COLOR=clFuchsia )只上古火龙神！>\
+<COLOR=clFuchsia 任务奖励：><COLOR=clYellow 极品星王神剑+5000万经验+1万元宝>\
+<接受任务/@傲视接受>
+
+
+
+
+[@傲视奖励]
+#IF
+CHECKVAR HUMAN 傲视群雄 = 已完成
+#ACT
+MessageBox 您已经领取了[傲视群雄]奖励不能重复领取！
+goto @傲视群雄
+break
+
+#IF
+CHECKVAR HUMAN 傲视已杀 = <$GLOBAL(傲视数量)>
+#ACT
+CALCVAR HUMAN 傲视已杀 = 0
+SAVEVAR HUMAN 傲视已杀 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+CALCVAR HUMAN 傲视群雄 = 已完成
+SAVEVAR HUMAN 傲视群雄 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+gamegold + 10000
+give 极品星王神剑
+ChangeExp + 50000000
+SendMSG 7 提示：[%s]您已经领取[傲视群雄]任务奖励! 233 255
+SendMSG 0 提示：恭喜[%s]完成今日[傲视群雄]任务奖励! 255 241 10 
+SendMSG 0 提示：恭喜[%s]获得极品星王神剑+5000万经验+1万元宝! 255 241 10
+goto @傲视群雄
+break
+
+[@傲视放弃]
+#ACT
+CALCVAR HUMAN 傲视群雄 = 可接受
+SAVEVAR HUMAN 傲视群雄 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+CALCVAR HUMAN 傲视已杀 =
+SAVEVAR HUMAN 傲视已杀 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+SendMSG 7 提示：[%s]您已经放弃了[傲视群雄]任务! 233 255
+goto @傲视群雄
+break
+
+[@傲视接受]
+#IF
+CHECKVAR HUMAN 傲视群雄 = 已完成
+#ACT
+MessageBox 您已经完成了[傲视群雄]不能重复领取任务！
+goto @傲视群雄
+break
+
+#IF
+CHECKLEVELEX ? <$GLOBAL(傲视等级)>
+#ACT
+CALCVAR HUMAN 傲视群雄 = 已接受
+SAVEVAR HUMAN 傲视群雄 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+SendMSG 7 提示：[%s]您已经成功领取[傲视群雄]任务! 233 255
+SendMSG 0 提示：[%s]已经成功领取今日[傲视群雄]任务! 233 255
+goto @傲视群雄
+#ELSEACT
+MessageBox 你的等级不符合[傲视群雄]设定的等级！
+break
+}

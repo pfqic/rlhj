@@ -1,0 +1,157 @@
+(@@InPutString @@InPutInteger  )
+
+[@MAIN] 
+<COLOR=cllime ━━━━━━━━━━━━━━━━━━━━━━━━━━━━>\
+　　　　<COLOR=clltgray ━> <COLOR=cllime ◆>【<$STR(A64)>】<COLOR=cllime ◆><COLOR=clltgray 工会><COLOR=cllime ◆><COLOR=clltgray 招募中心><COLOR=cllime ◆> <COLOR=clltgray ━>\ 
+<COLOR=cllime ━━━━━━━━━━━━━━━━━━━━━━━━━━━━>\
+　\
+<COLOR=clfuchsia ☆> <加入行会/@jrxh>  <COLOR=claqua ★>  <参与竞标/@QFA> <COLOR=claqua ★>  <创建行会/@cjhh> <COLOR=claqua ★>  <在线收人/@sqhhz111> <COLOR=clfuchsia ☆>\
+　\
+<COLOR=cllime ━━━━━━━━━━━━━━━━━━━━━━━━━━━━>\
+
+<COLOR=cllime ▓竞标行会▓>： <COLOR=CLLIME →> <$STR(A64)> <COLOR=CLLIME ←>\
+<COLOR=clfuchsia ▓竞标价格▓>： <COLOR=CLLIME →> <$STR(G48)> <COLOR=CLLIME ←>\
+<COLOR=claqua 首次竞标价格为：1000元宝,即让行会竞标板上加入的是您行会。>\
+
+[@sqhhz111]
+<COLOR=clLime ★━━━━★   行会>【<$STR(A64)>】<COLOR=clLime 自助招人系统>\
+<COLOR=clLime ┃行 ■ 收┃> \
+<COLOR=clLime ┃ ■  ■ ┃>    <发布此行会全区在线收人信息/@jrxh1211>\
+<COLOR=clLime ┃会 ■ 人┃> \
+<COLOR=clLime ★━━━━★ 　━━━━━━━━━━━━━━━━━━━━>\
+　\
+<COLOR=clAqua 【服务收费】：每次发送需要支付1000元宝>\
+<COLOR=clAqua 【服务说明】：发布行会收人信息给每个在线且没有行会的玩家>
+
+[@jrxh1211]
+#IF
+;ISGUILDMASTER
+CHECKGUILDLIST ..\QuestDiary\数据整理\竞价行会.txt
+#ELSEACT
+Messagebox [失败]：你不是【<$STR(A64)>】行会成员，不能发布此行会收人信息！
+BREAK
+#IF
+CHECKGAMEGOLD > 1000
+#SAY
+发送在线收人信息成功。\　\
+行会【<$STR(A64)>】\
+的招募成员信息已发送至每个在线且没有行会的玩家.
+#ACT
+GAMEGOLD - 1000
+SENDMSG 0 本服最强行会现在收人，一起激情一起打装备！点招兵买马NPC！ 255 0
+SENDMSG 0 本服最强行会现在收人，一起激情一起打装备！点招兵买马NPC！ 255 0
+SENDMSG 0 本服最强行会现在收人，一起激情一起打装备！点招兵买马NPC！ 255 0
+SENDMSG 0 本服最强行会现在收人，一起激情一起打装备！点招兵买马NPC！ 255 0
+SENDMSG 0 本服最强行会现在收人，一起激情一起打装备！点招兵买马NPC！ 255 0
+#ELSESAY
+元宝不够，操作失败
+
+[@cjhh]
+#IF
+CheckLevelEX > 49
+#ACT
+MAPMOVE 0122 24 29
+SENDMSG 0 玛法勇士　%s　从盟重"招兵买马"进入<比奇皇宫>创建行会 0 245
+BREAK
+#ELSESAY
+你的等级不够50级，不能创建行会！~！~！~ \\
+
+[@QFA]
+#ACT
+QUERYVALUE 8 1 8 @InPutString5 参与竞标必须输入1000～50000000)的数值。
+[@InPutString5]
+#IF
+CHECKGAMEGOLD < <$STR(M8)>
+#ACT
+MESSAGEBOX [提示]：你身上的元宝不足,无法参与竞标。
+MOV M8 0
+MOV D8 0
+GOTO @MAIN
+BREAK
+#IF
+large M8 5000000
+#ACT
+MESSAGEBOX [提示]：请输入5000000以下字符。
+MOV M8 0
+MOV D8 0
+GOTO @MAIN
+BREAK
+#ELSEACT
+Goto @InPutInteger8
+
+
+[@InPutInteger8]
+#if
+SMALL M8 1000
+#ACT
+MOV M8 0
+MOV M8 0
+MESSAGEBOX [提示]：参与竞标必须在1000以上的数值！
+GOTO @MAIN
+BREAK
+
+#if
+large M8 <$STR(G48)>
+HAVEGUILD 
+#ACT
+mov G49 1
+gamegold - <$STR(M8)>
+mov A64 <$GUILDNAME> 
+mov G48 <$str(M8)>
+MOV M8 0
+MOV M8 0
+Messagebox [成功]：你在行会竞标板上花了【<$STR(G48)>】个元宝竞得。 
+SENDMSG 0 恭喜【<$USERNAME>】在行会竞标板为行会【<$STR(A64)>】竞得，大家赶快来加入这个有实力的行会吧!  254 0 30
+SENDMSG 0 恭喜【<$USERNAME>】在行会竞标板为行会【<$STR(A64)>】竞得，大家赶快来加入这个有实力的行会吧!  253 0 30
+SENDMSG 0 恭喜【<$USERNAME>】在行会竞标板为行会【<$STR(A64)>】竞得，大家赶快来加入这个有实力的行会吧!  251 0 30
+SENDMSG 0 恭喜【<$USERNAME>】在行会竞标板为行会【<$STR(A64)>】竞得，大家赶快来加入这个有实力的行会吧!  250 0 30
+CLEARNAMELIST ..\QuestDiary\数据整理\竞价行会.txt
+ADDGUILDLIST ..\QuestDiary\数据整理\竞价行会.txt
+GOTO @MAIN 
+BREAK 
+#ELSEACT 
+Messagebox [失败]：你竞标的价格未高过对方行会或者你没有行会！！
+
+
+
+
+
+
+[@cyjj] 
+#IF 
+HAVEGUILD 
+CHECKGAMEGOLD > <$STR(G48)> 
+#ACT 
+INC G48 1000
+GAMEGOLD - <$STR(G48)> 
+mov A64 <$GUILDNAME> 
+mov G49 1
+Messagebox [成功]：你在行会竞价板上花了【<$STR(G48)>】个元宝竞得。 
+SENDMSG 0 恭喜【<$USERNAME>】在行会竞价板为行会【<$STR(A64)>】竞得，大家赶快来加入这个有实力的行会吧! 
+GOTO @MAIN 
+BREAK 
+#ELSEACT 
+Messagebox [失败]：你的元宝不足或者你没有行会
+
+[@jrxh] 
+#if
+HAVEGUILD
+#act
+messagebox 你已经加入行会了...
+break
+#IF 
+equal G49 1
+#ACT 
+Gmexecute 加入门派
+AFFILIATEGUILD <$STR(A64)>
+Messagebox [成功]：恭喜【<$USERNAME>】加入了行会【<$STR(A64)>】。 
+SENDMSG 0 恭喜【<$USERNAME>】通过行会竟标—加入了行会【<$STR(A64)>】。 252 255 10
+BREAK 
+#ELSEACT 
+Messagebox [失败]：目前没有行会竞得行会竞价板
+
+[@IsInFilterList]
+#Act
+MessageBox 输入数据中包含了非法字符.请重新编辑...
+Goto @Main
+Break 

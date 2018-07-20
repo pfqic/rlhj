@@ -1,0 +1,32 @@
+[@main]
+<COLOR=clMedGray ┌──────────────────────────┐>\
+<COLOR=clMedGray │>  <COLOR=clYellow 【终极回馈地图】>  <COLOR=clYellow 本服良心回馈，终极全爆！！！><COLOR=clMedGray     │>\
+<COLOR=clMedGray ├────────────┬┬────────────┤>\
+<COLOR=clMedGray │><COLOR=#17389 怪物：><COLOR=clLime BOSS 60分钟刷一次> <COLOR=clMedGray ││><COLOR=#17389 地图怪物：><COLOR=clLime 各大地图BOsS等><COLOR=clMedGray │>\
+<COLOR=clMedGray │><COLOR=#17389 爆率：><COLOR=clAqua 终极全爆！！> <COLOR=clMedGray      ││><COLOR=#17389 地图介绍：><COLOR=clAqua 此地图︴共一层><COLOR=clMedGray │>\
+<COLOR=clMedGray │><COLOR=#17389 条件：><COLOR=clFuchsia 需50积分即可> <COLOR=clMedGray      ││><COLOR=#17389 地图刷新><COLOR=clPurple   怪物随机刷新><COLOR=clMedGray   │>\
+<COLOR=clMedGray └────────────┴┴────────────┘ >  \
+<回馈地图一/@回馈地图一>                            <回馈地图二/@回馈地图二>
+
+
+
+#if
+checklevel >0
+#act
+SendMSG 4  10元顶赞！只需50元，打金一整年！真正打金服！！
+[@回馈地图一]
+#if
+CheckGamePoint > 49
+#act
+mapmove huikui1
+give 回城卷 1
+#elseact
+messagebox 你没有50充值积分，暂时无法进入！
+[@回馈地图二]
+#if
+CheckGamePoint > 49
+#act
+mapmove huikui2
+give 回城卷 1
+#elseact
+messagebox 你没有50充值积分，暂时无法进入！

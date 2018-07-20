@@ -1,0 +1,64 @@
+()
+%100
+[@main]
+#IF
+CheckStringList ..\QuestDiary\如龙数据\区状态.txt 测试区
+#say
+                     <COLOR=clYellow [当前为测试状态]>\
+<COLOR=clLime 奖>║<COLOR=clAqua 测试玩家等级达到><100><COLOR=clAqua 级，开区在此领取><10元><COLOR=clAqua 充值卷    >\
+<COLOR=clLime 励>║<COLOR=clAqua 测试玩家等级达到><110><COLOR=clAqua 级，开区在此领取><20元><COLOR=clAqua 充值卷    >\
+<COLOR=clLime 员>║<COLOR=clAqua 测试玩家等级达到><130><COLOR=clAqua 级，开区在此领取><50><COLOR=clAqua 充值卷    >\
+                     <COLOR=clYellow [当前为测试状态]>\
+<注意:每个IP至多1个测试奖励账号---请勿恶意创建>\
+<注意:正式开区后.领取测试奖励账号要与测试阶段账号一致>\ \
+#ELSESAY
+                     <COLOR=clYellow [当前已正式开区]>\
+<COLOR=clLime 奖>║<COLOR=clAqua 测试玩家等级达到><100><COLOR=clAqua 级，开区在此领取><10元><COLOR=clAqua 充值卷    >\
+<COLOR=clLime 励>║<COLOR=clAqua 测试玩家等级达到><110><COLOR=clAqua 级，开区在此领取><20元><COLOR=clAqua 充值卷    >\
+<COLOR=clLime 员>║<COLOR=clAqua 测试玩家等级达到><130><COLOR=clAqua 级，开区在此领取><50><COLOR=clAqua 充值卷    >\
+<注意:正式开区后.领取测试奖励账号要与测试阶段账号一致>\
+<注意:每个IP至多1个测试奖励账号---请勿恶意创建>\
+                     <[领取测试区奖励]/@1>\
+
+
+[@1]
+#IF
+CheckStringList ..\QuestDiary\如龙数据\区状态.txt 测试区
+#ACT
+MESSAGEBOX 领取失败。目前本区处于测试区。等正式区再来领取吧！
+BREAK
+#IF
+CHECKACCOUNTLIST ..\QuestDiary\如龙数据\领取记录.txt
+#ACT
+MESSAGEBOX 领取失败。你已经领取过测试奖励了！
+BREAK
+#IF
+CHECKACCOUNTLIST ..\QuestDiary\如龙数据\130级记录.txt
+#ACT
+ADDACCOUNTLIST ..\QuestDiary\如龙数据\领取记录.txt
+give 50元充值卷  1
+SENDMSG 6 提示：测试区冲到130级奖励50元充值卷，想干死我的先掂量掂量自己再来吧！！！
+SENDMSG 2 ぐ骨灰玩家：『<$USERNAME>』参与测试区.成功领取130级测试奖励50元充值卷！！！
+BREAK
+
+#IF
+CHECKACCOUNTLIST ..\QuestDiary\如龙数据\110级记录.txt
+#ACT
+ADDACCOUNTLIST ..\QuestDiary\如龙数据\领取记录.txt
+give 20元充值卷  1
+SENDMSG 6 提示：测试区冲到110级奖励20元充值卷，想干死我的先掂量掂量自己再来吧！！！
+SENDMSG 2 ぐ骨灰玩家：『<$USERNAME>』参与测试区.成功领取110级测试奖励20元充值卷！！！
+BREAK
+
+#IF
+CHECKACCOUNTLIST ..\QuestDiary\如龙数据\100级记录.txt
+#ACT
+ADDACCOUNTLIST ..\QuestDiary\如龙数据\领取记录.txt
+give 10元充值卷  1
+SENDMSG 6 提示：测试区冲到100级奖励10元充值卷。想干死我的先掂量掂量自己再来吧！！！
+SENDMSG 2 ぐ骨灰玩家：『<$USERNAME>』参与测试区.成功领取100级测试奖励10元充值卷！
+BREAK
+
+#ELSEACT
+MESSAGEBOX 领取失败。你在测试区的成绩不符合领取奖励资格!
+BREAK

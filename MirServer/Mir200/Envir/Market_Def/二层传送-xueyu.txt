@@ -1,0 +1,28 @@
+[@main]
+<COLOR=clAqua 【千年雪域二层】> <COLOR=clRed Hot~ >                      <COLOR=clLime 降龙合击，邀你來戰!>\
+<COLOR=clGray ------------------------------------------------------------>　\
+<COLOR=clRed BOOS名称：>20万血boss，5万血boss，10万血BOSS\
+<COLOR=clRed 怪物刷新：>boss类30分钟\
+<COLOR=clRed 爆率介绍：>爆所有高档装备，爆率其他地图的2倍\
+<COLOR=clRed 进入条件：><COLOR=clFuchsia 5000元宝 等级55级 >\
+<COLOR=clRed 友情提示：><COLOR=clFuchsia 此地图怪物凶险，建议提高自己战斗力再进入>\
+<COLOR=clGray ------------------------------------------------------------>　\
+　　※ <我要进入/@千年雪域> ※      　　　　       ※ <关闭对话/@exit> ※
+
+
+[@千年雪域]
+#if
+CHECKLEVELEX > 54
+CHECKGAMEGOLD > 4999
+#act
+GAMEGOLD - 5000
+mapmove xueyu1
+SENDMSG 0 勇敢的玩家:[%s]千年雪域二层寻宝去了!!!!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]千年雪域二层寻宝去了!!!!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]千年雪域二层寻宝去了!!!!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]进入千年雪域二层寻宝去了!!! 大声喊到：有种的来杀我啊! 250 255 30
+SENDMSG 0 勇敢的玩家:[%s]进入千年雪域二层寻宝去了!!! 大声喊到：有种的来杀我啊! 250 255 30
+SENDMSG 0 勇敢的玩家:[%s]进入千年雪域二层寻宝去了!!! 大声喊到：有种的来杀我啊! 250 255 30
+
+#ELSEACT
+MESSAGEBOX 需要5000元宝用来进入地图，且人物等级达到55级。

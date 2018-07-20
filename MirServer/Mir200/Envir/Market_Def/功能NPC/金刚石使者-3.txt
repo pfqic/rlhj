@@ -1,0 +1,1885 @@
+[@main]
+<COLOR=clLime ①级回收进入：><极品首饰系列> → <COLOR=clAqua  1000元宝>  + <☆☆☆☆☆>   <一键全收/@极品首饰>\
+<COLOR=clLime ②级回收进入：><至尊首饰系列> → <COLOR=clAqua  2000元宝>  + <☆☆☆☆☆>   <一键全收/@至尊首饰>\
+<COLOR=clLime ③级回收进入：><暴风首饰系列> → <COLOR=clAqua 10000元宝>  + <10颗金刚石>   <一键全收/@暴风首饰>\
+<COLOR=clLime ④级回收进入：><传说首饰系列> → <COLOR=clAqua 20000元宝>  + <20颗金刚石>   <一键全收/@传说首饰>\
+<COLOR=clLime ⑤级回收进入：><征战首饰系列> → <COLOR=clAqua 40000元宝>  + <40颗金刚石>   <一键全收/@征战首饰>\
+<COLOR=clLime ⑥级回收进入：><不灭首饰系列> → <COLOR=clAqua 100000元宝> + <100颗金刚石>  <一键全收/@不灭首饰>\
+<COLOR=clLime ⑦级回收进入：><殺天首饰系列> → <COLOR=clAqua 150000元宝> + <150颗金刚石>  <一键全收/@殺天首饰>\
+<COLOR=clLime ⑧级回收进入：><弑血首饰系列> → <COLOR=clAqua 200000元宝> + <200颗金刚石>  <一键全收/@弑血首饰>\
+
+<武器衣服回收进入/@wuqi>        <武器衣服回收进入/@wuqi>         <武器衣服回收进入/@wuqi>
+
+[@wuqi]
+<COLOR=clLime ①级回收进入：><极品剑甲系列> → <COLOR=clAqua 1万元宝>  + <10颗金刚石>   <一键全收/@极品>\
+<COLOR=clLime ②级回收进入：><至尊剑甲系列> → <COLOR=clAqua 2万元宝>  + <15颗金刚石>   <一键全收/@至尊>\
+<COLOR=clLime ③级回收进入：><暴风剑甲系列> → <COLOR=clAqua 5万元宝>  + <20颗金刚石>   <一键全收/@暴风>\
+<COLOR=clLime ④级回收进入：><传说剑甲系列> → <COLOR=clAqua 10万元宝> + <30颗金刚石>   <一键全收/@传说>\
+<COLOR=clLime ⑤级回收进入：><征战剑甲系列> → <COLOR=clAqua 20万元宝> + <50颗金刚石>   <一键全收/@征战>\
+<COLOR=clLime ⑥级回收进入：><不灭剑甲系列> → <COLOR=clAqua 50万元宝> + <100颗金刚石>  <一键全收/@不灭>\
+<COLOR=clLime ⑦级回收进入：><殺天剑甲系列> → <COLOR=clAqua 60万元宝> + <200颗金刚石>  <一键全收/@殺天>\
+<COLOR=clLime ⑧级回收进入：><弑血剑甲系列> → <COLOR=clAqua 80万元宝> + <300颗金刚石>  <一键全收/@弑血>\
+
+[@极品首饰]
+#IF
+checkitem 极品星王战盔 1
+#ACT
+take 极品星王战盔  1
+GAMEGOLD + 1000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊!  0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊!  0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊!  0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王战链 1
+#ACT
+take 极品星王战链 1
+GAMEGOLD + 1000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王战镯 1
+#ACT
+take 极品星王战镯 1
+GAMEGOLD + 1000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+#IF
+checkitem 极品星王战戒 1
+#ACT
+take 极品星王战戒 1
+GAMEGOLD + 1000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王战带 1
+#ACT
+take 极品星王战带 1
+GAMEGOLD + 1000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王战靴 1
+#ACT
+take 极品星王战靴 1
+GAMEGOLD + 1000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+
+#IF
+checkitem 极品星王道盔 1
+#ACT
+take 极品星王道盔  1
+GAMEGOLD + 1000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊!  0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊!  0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊!  0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王道链 1
+#ACT
+take 极品星王道链 1
+GAMEGOLD + 1000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王道镯 1
+#ACT
+take 极品星王道镯 1
+GAMEGOLD + 1000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+#IF
+checkitem 极品星王道戒 1
+#ACT
+take 极品星王道戒 1
+GAMEGOLD + 1000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王道带 1
+#ACT
+take 极品星王道带 1
+GAMEGOLD + 1000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王道靴 1
+#ACT
+take 极品星王道靴 1
+GAMEGOLD + 1000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+
+#IF
+checkitem 极品星王魔盔 1
+#ACT
+take 极品星王魔盔  1
+GAMEGOLD + 1000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊!  0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊!  0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊!  0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王魔链 1
+#ACT
+take 极品星王魔链 1
+GAMEGOLD + 1000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王魔镯 1
+#ACT
+take 极品星王魔镯 1
+GAMEGOLD + 1000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+#IF
+checkitem 极品星王魔戒 1
+#ACT
+take 极品星王魔戒 1
+GAMEGOLD + 1000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王魔带 1
+#ACT
+take 极品星王魔带 1
+GAMEGOLD + 1000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#IF
+checkitem 极品星王魔靴 1
+#ACT
+take 极品星王魔靴 1
+GAMEGOLD + 1000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品首饰
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有极品首饰系列装备，无法回收！
+GOTO @@CheckNo
+
+
+
+[@至尊首饰]
+#IF
+checkitem 至尊★星王战盔 1
+#ACT
+take 至尊★星王战盔 1
+GAMEGOLD + 2000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊首饰
+#IF
+checkitem 至尊★星王战链 1
+#ACT
+take 至尊★星王战链 1
+GAMEGOLD + 2000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊首饰
+break
+#IF
+checkitem 至尊★星王战镯 1
+#ACT
+take 至尊★星王战镯 1
+GAMEGOLD + 2000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊首饰
+break
+#IF
+checkitem 至尊★星王战戒 1
+#ACT
+take 至尊★星王战戒 1
+GAMEGOLD + 2000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊首饰
+break
+#IF
+checkitem 至尊★星王战带 1
+#ACT
+take 至尊★星王战带 1
+GAMEGOLD + 2000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊首饰
+break
+#IF
+checkitem 至尊★星王战靴 1
+#ACT
+take 至尊★星王战靴 1
+GAMEGOLD + 2000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊首饰
+break
+
+#IF
+checkitem 至尊★星王道盔 1
+#ACT
+take 至尊★星王道盔 1
+GAMEGOLD + 2000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊首饰
+#IF
+checkitem 至尊★星王道链 1
+#ACT
+take 至尊★星王道链 1
+GAMEGOLD + 2000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊首饰
+break
+#IF
+checkitem 至尊★星王道镯 1
+#ACT
+take 至尊★星王道镯 1
+GAMEGOLD + 2000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊首饰
+break
+#IF
+checkitem 至尊★星王道戒 1
+#ACT
+take 至尊★星王道戒 1
+GAMEGOLD + 2000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊首饰
+break
+#IF
+checkitem 至尊★星王道带 1
+#ACT
+take 至尊★星王道带 1
+GAMEGOLD + 2000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊首饰
+break
+#IF
+checkitem 至尊★星王道靴 1
+#ACT
+take 至尊★星王道靴 1
+GAMEGOLD + 2000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊首饰
+break
+
+
+
+#IF
+checkitem 至尊★星王魔盔 1
+#ACT
+take 至尊★星王魔盔 1
+GAMEGOLD + 2000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊首饰
+#IF
+checkitem 至尊★星王魔链 1
+#ACT
+take 至尊★星王魔链 1
+GAMEGOLD + 2000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊首饰
+break
+#IF
+checkitem 至尊★星王魔镯 1
+#ACT
+take 至尊★星王魔镯 1
+GAMEGOLD + 2000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊首饰
+break
+#IF
+checkitem 至尊★星王魔戒 1
+#ACT
+take 至尊★星王魔戒 1
+GAMEGOLD + 2000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊首饰
+break
+#IF
+checkitem 至尊★星王魔带 1
+#ACT
+take 至尊★星王魔带 1
+GAMEGOLD + 2000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊首饰
+break
+#IF
+checkitem 至尊★星王魔靴 1
+#ACT
+take 至尊★星王魔靴 1
+GAMEGOLD + 2000
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊首饰
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有至尊首饰系列装备，无法回收！
+GOTO @@CheckNo
+
+[@暴风首饰]
+#IF
+checkitem 暴风∷星王战盔 1
+#ACT
+take 暴风∷星王战盔 1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风首饰
+break
+#IF
+checkitem 暴风∷星王战链 1
+#ACT
+take 暴风∷星王战链 1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风首饰
+break
+#IF
+checkitem 暴风∷星王战镯 1
+#ACT
+take 暴风∷星王战镯 1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风首饰
+break
+#IF
+checkitem 暴风∷星王战戒 1
+#ACT
+take 暴风∷星王战戒 1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风首饰
+break
+#IF
+checkitem 暴风∷星王战带 1
+#ACT
+take 暴风∷星王战带 1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风首饰
+break
+#IF
+checkitem 暴风∷星王战靴 1
+#ACT
+take 暴风∷星王战靴 1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风首饰
+break
+
+
+#IF
+checkitem 暴风∷星王道盔 1
+#ACT
+take 暴风∷星王道盔 1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风首饰
+break
+#IF
+checkitem 暴风∷星王道链 1
+#ACT
+take 暴风∷星王道链 1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风首饰
+break
+#IF
+checkitem 暴风∷星王道镯 1
+#ACT
+take 暴风∷星王道镯 1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风首饰
+break
+#IF
+checkitem 暴风∷星王道戒 1
+#ACT
+take 暴风∷星王道戒 1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风首饰
+break
+#IF
+checkitem 暴风∷星王道带 1
+#ACT
+take 暴风∷星王道带 1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风首饰
+break
+#IF
+checkitem 暴风∷星王道靴 1
+#ACT
+take 暴风∷星王道靴 1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风首饰
+break
+
+
+#IF
+checkitem 暴风∷星王魔盔 1
+#ACT
+take 暴风∷星王魔盔 1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风首饰
+break
+#IF
+checkitem 暴风∷星王魔链 1
+#ACT
+take 暴风∷星王魔链 1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风首饰
+break
+#IF
+checkitem 暴风∷星王魔镯 1
+#ACT
+take 暴风∷星王魔镯 1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风首饰
+break
+#IF
+checkitem 暴风∷星王魔戒 1
+#ACT
+take 暴风∷星王魔戒 1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风首饰
+break
+#IF
+checkitem 暴风∷星王魔带 1
+#ACT
+take 暴风∷星王魔带 1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风首饰
+break
+#IF
+checkitem 暴风∷星王魔靴 1
+#ACT
+take 暴风∷星王魔靴 1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风首饰
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有暴风首饰系列装备，无法回收！
+GOTO @@CheckNo
+
+
+
+[@传说首饰]
+#IF
+checkitem 传说※星王道带 1
+#ACT
+take 传说※星王道带 1
+GAMEGOLD + 20000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说首饰
+break
+#IF
+checkitem 传说※星王魔带 1
+#ACT
+take 传说※星王魔带 1
+GAMEGOLD + 20000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说首饰
+break
+#IF
+checkitem 传说※星王圣带 1
+#ACT
+take 传说※星王圣带 1
+GAMEGOLD + 20000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说首饰
+break
+#IF
+checkitem 传说※星王道靴 1
+#ACT
+take 传说※星王道靴 1
+GAMEGOLD + 20000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说首饰
+break
+#IF
+checkitem 传说※星王魔靴 1
+#ACT
+take 传说※星王魔靴 1
+GAMEGOLD + 20000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说首饰
+break
+#IF
+checkitem 传说※星王魔戒 1
+#ACT
+take 传说※星王魔戒 1
+GAMEGOLD + 20000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说首饰
+break
+#IF
+checkitem 传说※星王魔镯 1
+#ACT
+take 传说※星王魔镯 1
+GAMEGOLD + 20000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说首饰
+break
+#IF
+checkitem 传说※星王魔链 1
+#ACT
+take 传说※星王魔链 1
+GAMEGOLD + 20000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说首饰
+break
+#IF
+checkitem 传说※星王魔盔 1
+#ACT
+take 传说※星王魔盔 1
+GAMEGOLD + 20000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说首饰
+break
+#IF
+checkitem 传说※星王道戒 1
+#ACT
+take 传说※星王道戒 1
+GAMEGOLD + 20000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说首饰
+break
+#IF
+checkitem 传说※星王道镯 1
+#ACT
+take 传说※星王道镯 1
+GAMEGOLD + 20000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说首饰
+break
+#IF
+checkitem 传说※星王道链 1
+#ACT
+take 传说※星王道链 1
+GAMEGOLD + 20000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说首饰
+break
+#IF
+checkitem 传说※星王道盔 1
+#ACT
+take 传说※星王道盔 1
+GAMEGOLD + 20000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说首饰
+break
+#IF
+checkitem 传说※星王圣靴 1
+#ACT
+take 传说※星王圣靴 1
+GAMEGOLD + 20000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说首饰
+break
+#IF
+checkitem 传说※星王圣戒 1
+#ACT
+take 传说※星王圣戒 1
+GAMEGOLD + 20000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说首饰
+break
+#IF
+checkitem 传说※星王圣镯 1
+#ACT
+take 传说※星王圣镯 1
+GAMEGOLD + 20000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说首饰
+break
+#IF
+checkitem 传说※星王圣链 1
+#ACT
+take 传说※星王圣链 1
+GAMEGOLD + 20000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说首饰
+break
+#IF
+checkitem 传说※星王圣盔 1
+#ACT
+take 传说※星王圣盔 1
+GAMEGOLD + 20000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说首饰
+break
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有传说系列装备，无法回收！
+GOTO @@CheckNo
+
+
+
+[@征战首饰]
+#IF
+checkitem 征战¤星王道靴 1
+#ACT
+take 征战¤星王道靴 1
+GAMEGOLD + 40000
+GAMEDIAMOND + 40
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战首饰
+break
+#IF
+checkitem 征战¤星王道带 1
+#ACT
+take 征战¤星王道带 1
+GAMEGOLD + 40000
+GAMEDIAMOND + 40
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战首饰
+break
+#IF
+checkitem 征战¤星王魔靴 1
+#ACT
+take 征战¤星王魔靴 1
+GAMEGOLD + 40000
+GAMEDIAMOND + 40
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战首饰
+break
+#IF
+checkitem 征战¤星王魔带 1
+#ACT
+take 征战¤星王魔带 1
+GAMEGOLD + 40000
+GAMEDIAMOND + 40
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战首饰
+break
+#IF
+checkitem 征战¤星王魔戒 1
+#ACT
+take 征战¤星王魔戒 1
+GAMEGOLD + 40000
+GAMEDIAMOND + 40
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战首饰
+break
+#IF
+checkitem 征战¤星王魔镯 1
+#ACT
+take 征战¤星王魔镯 1
+GAMEGOLD + 40000
+GAMEDIAMOND + 40
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战首饰
+break
+#IF
+checkitem 征战¤星王魔链 1
+#ACT
+take 征战¤星王魔链 1
+GAMEGOLD + 40000
+GAMEDIAMOND + 40
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战首饰
+break
+#IF
+checkitem 征战¤星王魔盔 1
+#ACT
+take 征战¤星王魔盔 1
+GAMEGOLD + 40000
+GAMEDIAMOND + 40
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战首饰
+break
+#IF
+checkitem 征战¤星王道戒 1
+#ACT
+take 征战¤星王道戒 1
+GAMEGOLD + 40000
+GAMEDIAMOND + 40
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战首饰
+break
+#IF
+checkitem 征战¤星王道镯 1
+#ACT
+take 征战¤星王道镯 1
+GAMEGOLD + 40000
+GAMEDIAMOND + 40
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战首饰
+break
+#IF
+checkitem 征战¤星王道链 1
+#ACT
+take 征战¤星王道链 1
+GAMEGOLD + 40000
+GAMEDIAMOND + 40
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战首饰
+break
+#IF
+checkitem 征战¤星王道盔 1
+#ACT
+take 征战¤星王道盔 1
+GAMEGOLD + 40000
+GAMEDIAMOND + 40
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量元宝和大量金刚石。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战首饰
+break
+#IF
+checkitem 征战¤星王圣靴 1
+#ACT
+take 征战¤星王圣靴 1
+GAMEGOLD + 40000
+GAMEDIAMOND + 40
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战首饰
+break
+#IF
+checkitem 征战¤星王圣带 1
+#ACT
+take 征战¤星王圣带 1
+GAMEGOLD + 40000
+GAMEDIAMOND + 40
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战首饰
+break
+#IF
+checkitem 征战¤星王圣戒 1
+#ACT
+take 征战¤星王圣戒 1
+GAMEGOLD + 40000
+GAMEDIAMOND + 40
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战首饰
+break
+#IF
+checkitem 征战¤星王圣镯 1
+#ACT
+take 征战¤星王圣镯 1
+GAMEGOLD + 40000
+GAMEDIAMOND + 40
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战首饰
+break
+#IF
+checkitem 征战¤星王圣链 1
+#ACT
+take 征战¤星王圣链 1
+GAMEGOLD + 40000
+GAMEDIAMOND + 40
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战首饰
+break
+#IF
+checkitem 征战¤星王圣盔 1
+#ACT
+take 征战¤星王圣盔 1
+GAMEGOLD + 40000
+GAMEDIAMOND + 40
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战首饰
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有征战系列装备，无法回收！
+GOTO @@CheckNo
+
+
+
+[@不灭首饰]
+#IF
+checkitem 不灭◎星王神靴 1
+#ACT
+take 不灭◎星王神靴 1
+GAMEGOLD + 100000
+GAMEDIAMOND + 100
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @不灭首饰
+break
+#IF
+checkitem 不灭◎星王神带 1
+#ACT
+take 不灭◎星王神带 1
+GAMEGOLD + 100000
+GAMEDIAMOND + 100
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @不灭首饰
+break
+#IF
+checkitem 不灭┇星王神戒 1
+#ACT
+take 不灭┇星王神戒 1
+GAMEGOLD + 100000
+GAMEDIAMOND + 100
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @不灭首饰
+break
+#IF
+checkitem 不灭┇星王神镯 1
+#ACT
+take 不灭┇星王神镯 1
+GAMEGOLD + 100000
+GAMEDIAMOND + 100
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @不灭首饰
+break
+#IF
+checkitem 不灭◎星王神链 1
+#ACT
+take 不灭◎星王神链 1
+GAMEGOLD + 100000
+GAMEDIAMOND + 100
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @不灭首饰
+break
+#IF
+checkitem 不灭┇星王神盔 1
+#ACT
+take 不灭┇星王神盔 1
+GAMEGOLD + 100000
+GAMEDIAMOND + 100
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @不灭首饰
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有不灭系列装备，无法回收！
+GOTO @@CheckNo
+
+
+[@殺天首饰]
+#IF
+checkitem 殺天㊣星王神盔 1
+#ACT
+take 殺天㊣星王神盔 1
+GAMEGOLD + 150000
+GAMEDIAMOND + 150
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @殺天首饰
+break
+#IF
+checkitem 殺天㊣星王神链 1
+#ACT
+take 殺天㊣星王神链 1
+GAMEGOLD + 150000
+GAMEDIAMOND + 150
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @殺天首饰
+break
+#IF
+checkitem 殺天㊣星王神镯 1
+#ACT
+take 殺天㊣星王神镯 1
+GAMEGOLD + 150000
+GAMEDIAMOND + 150
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @殺天首饰
+break
+#IF
+checkitem 殺天㊣星王神戒 1
+#ACT
+take 殺天㊣星王神戒 1
+GAMEGOLD + 150000
+GAMEDIAMOND + 150
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @殺天首饰
+break
+#IF
+checkitem 殺天㊣星王神带 1
+#ACT
+take 殺天㊣星王神带 1
+GAMEGOLD + 150000
+GAMEDIAMOND + 150
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @殺天首饰
+break
+#IF
+checkitem  殺天㊣星王神靴 1
+#ACT
+take 殺天㊣星王神靴 1
+GAMEGOLD + 150000
+GAMEDIAMOND + 150
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @殺天首饰
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有殺天系列装备，无法回收！
+GOTO @@CheckNo
+
+
+
+[@弑血首饰]
+#IF
+checkitem 弑血メ殺戮神靴（圣） 1
+#ACT
+take 弑血メ殺戮神靴（圣） 1
+GAMEGOLD + 200000
+GAMEDIAMOND + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @弑血首饰
+break
+#IF
+checkitem 弑血メ殺戮神带（圣） 1
+#ACT
+take  弑血メ殺戮神带（圣） 1
+GAMEGOLD + 200000
+GAMEDIAMOND + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @弑血首饰
+break
+#IF
+checkitem  弑血メ殺戮神戒（圣） 1
+#ACT
+take 弑血メ殺戮神戒（圣） 1
+GAMEGOLD + 200000
+GAMEDIAMOND + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @弑血首饰
+break
+#IF
+checkitem 弑血メ殺戮神镯（圣） 1
+#ACT
+take 弑血メ殺戮神镯（圣） 1
+GAMEGOLD + 200000
+GAMEDIAMOND + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @弑血首饰
+break
+#IF
+checkitem 弑血メ殺戮神链（圣） 1
+#ACT
+take 弑血メ殺戮神链（圣） 1
+GAMEGOLD + 200000
+GAMEDIAMOND + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @弑血首饰
+break
+#IF
+checkitem  弑血メ殺戮神盔（圣） 1
+#ACT
+take 弑血メ殺戮神盔（圣） 1
+GAMEGOLD + 200000
+GAMEDIAMOND + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @弑血首饰
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有弑血系列装备，无法回收！
+GOTO @@CheckNo
+
+
+
+
+
+[@极品]
+#IF
+checkitem  极品星王圣剑  1
+#ACT
+take 极品星王圣剑  1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品
+break
+#IF
+checkitem  极品星王魔剑  1
+#ACT
+take 极品星王魔剑  1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品
+break
+#IF
+checkitem  极品星王道剑  1
+#ACT
+take 极品星王道剑  1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品
+#IF
+checkitem  极品星王圣甲  1
+#ACT
+take 极品星王圣甲  1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品
+#IF
+checkitem  极品星王圣衣  1
+#ACT
+take 极品星王圣衣  1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品
+break
+
+#IF
+checkitem  极品星王道袍  1
+#ACT
+take 极品星王道袍  1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品
+#IF
+checkitem  极品星王道衣  1
+#ACT
+take 极品星王道衣  1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品
+break
+#IF
+checkitem  极品星王魔袍  1
+#ACT
+take 极品星王魔袍  1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品
+#IF
+checkitem  极品星王魔衣  1
+#ACT
+take 极品星王魔衣  1
+GAMEGOLD + 10000
+GAMEDIAMOND + 10
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收极品剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @极品
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有极品剑甲系列装备，无法回收！
+GOTO @@CheckNo
+
+
+[@至尊]
+#IF
+checkitem  至尊★星王圣剑  1
+#ACT
+take 至尊★星王圣剑  1
+GAMEGOLD + 20000
+GAMEDIAMOND + 15
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊
+break
+#IF
+checkitem  至尊★星王魔剑  1
+#ACT
+take 至尊★星王魔剑  1
+GAMEGOLD + 20000
+GAMEDIAMOND + 15
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊
+break
+#IF
+checkitem  至尊★星王道剑  1
+#ACT
+take 至尊★星王道剑  1
+GAMEGOLD + 20000
+GAMEDIAMOND + 15
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊
+break
+
+#IF
+checkitem  至尊★星王圣甲  1
+#ACT
+take 至尊★星王圣甲  1
+GAMEGOLD + 20000
+GAMEDIAMOND + 15
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊
+break
+#IF
+checkitem  至尊★星王圣衣  1
+#ACT
+take 至尊★星王圣衣  1
+GAMEGOLD + 20000
+GAMEDIAMOND + 15
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊
+break
+#IF
+checkitem  至尊★星王魔袍  1
+#ACT
+take 至尊★星王魔袍  1
+GAMEGOLD + 20000
+GAMEDIAMOND + 15
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊
+break
+#IF
+checkitem  至尊★星王魔衣  1
+#ACT
+take 至尊★星王魔衣  1
+GAMEGOLD + 20000
+GAMEDIAMOND + 15
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊
+break
+
+#IF
+checkitem  至尊★星王道袍  1
+#ACT
+take 至尊★星王道袍  1
+GAMEGOLD + 20000
+GAMEDIAMOND + 15
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊
+break
+#IF
+checkitem  至尊★星王道衣  1
+#ACT
+take 至尊★星王道衣  1
+GAMEGOLD + 20000
+GAMEDIAMOND + 15
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收至尊剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @至尊
+break
+
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有至尊剑甲系列装备，无法回收！
+GOTO @@CheckNo
+
+
+[@暴风]
+#IF
+checkitem  暴风∷星王圣剑  1
+#ACT
+take 暴风∷星王圣剑  1
+GAMEGOLD + 50000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风
+break
+#IF
+checkitem  暴风∷星王魔剑  1
+#ACT
+take 暴风∷星王魔剑  1
+GAMEGOLD + 50000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风
+break
+#IF
+checkitem  暴风∷星王道剑  1
+#ACT
+take 暴风∷星王道剑  1
+GAMEGOLD + 50000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风
+
+#IF
+checkitem  暴风∷星王圣甲  1
+#ACT
+take 暴风∷星王圣甲  1
+GAMEGOLD + 50000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风
+#IF
+checkitem  暴风∷星王圣衣  1
+#ACT
+take 暴风∷星王圣衣  1
+GAMEGOLD + 50000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风
+
+#IF
+checkitem  暴风∷星王道袍  1
+#ACT
+take 暴风∷星王道袍  1
+GAMEGOLD + 50000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风
+#IF
+checkitem  暴风∷星王道衣  1
+#ACT
+take 暴风∷星王道衣  1
+GAMEGOLD + 50000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风
+
+#IF
+checkitem  暴风∷星王魔袍  1
+#ACT
+take 暴风∷星王魔袍  1
+GAMEGOLD + 50000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风
+#IF
+checkitem  暴风∷星王魔衣  1
+#ACT
+take 暴风∷星王魔衣  1
+GAMEGOLD + 50000
+GAMEDIAMOND + 20
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收暴风剑甲，获得大量金刚石大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @暴风
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有暴风剑甲系列装备，无法回收！
+GOTO @@CheckNo
+
+
+[@传说]
+#IF
+checkitem 传说※星王魔剑 1
+#ACT
+take 传说※星王魔剑 1
+GAMEGOLD + 100000
+GAMEDIAMOND + 30
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说
+break
+
+#IF
+checkitem 传说※星王道剑 1
+#ACT
+take 传说※星王道剑 1
+GAMEGOLD + 100000
+GAMEDIAMOND + 30
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说
+break
+#IF
+checkitem 传说※星王圣剑 1
+#ACT
+take 传说※星王圣剑 1
+GAMEGOLD + 100000
+GAMEDIAMOND + 30
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说
+break
+
+
+#IF
+checkitem 传说※星王魔衣 1
+#ACT
+take 传说※星王魔衣 1
+GAMEGOLD + 100000
+GAMEDIAMOND + 30
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说
+break
+#IF
+checkitem 传说※星王魔甲 1
+#ACT
+take 传说※星王魔甲 1
+GAMEGOLD + 100000
+GAMEDIAMOND + 30
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说
+break
+#IF
+checkitem 传说※星王道衣 1
+#ACT
+take 传说※星王道衣 1
+GAMEGOLD + 100000
+GAMEDIAMOND + 30
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说
+break
+#IF
+checkitem 传说※星王道甲 1
+#ACT
+take 传说※星王道甲 1
+GAMEGOLD + 100000
+GAMEDIAMOND + 30
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说
+break
+#IF
+checkitem 传说※星王圣衣 1
+#ACT
+take 传说※星王圣衣 1
+GAMEGOLD + 100000
+GAMEDIAMOND + 30
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说
+break
+#IF
+checkitem  传说※星王圣甲 1
+#ACT
+take 传说※星王圣甲 1
+GAMEGOLD + 100000
+GAMEDIAMOND + 30
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @传说
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有传说剑甲系列装备，无法回收！
+GOTO @@CheckNo
+
+
+
+
+
+[@征战]
+#IF
+checkitem 征战¤星王魔衣 1
+#ACT
+take 征战¤星王魔衣 1
+GAMEGOLD + 200000
+GAMEDIAMOND + 50
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战
+break
+#IF
+checkitem 征战¤星王魔甲 1
+#ACT
+take 征战¤星王魔甲 1
+GAMEGOLD + 200000
+GAMEDIAMOND + 50
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战
+break
+#IF
+checkitem 征战¤星王道衣 1
+#ACT
+take 征战¤星王道衣 1
+GAMEGOLD + 200000
+GAMEDIAMOND + 50
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战
+break
+
+
+#IF
+checkitem 征战¤星王道甲 1
+#ACT
+take 征战¤星王道甲 1
+GAMEGOLD + 200000
+GAMEDIAMOND + 50
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战
+break
+#IF
+checkitem 征战¤星王圣衣 1
+#ACT
+take 征战¤星王圣衣 1
+GAMEGOLD + 200000
+GAMEDIAMOND + 50
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战
+break
+#IF
+checkitem 征战¤星王圣甲 1
+#ACT
+take 征战¤星王圣甲 1
+GAMEGOLD + 200000
+GAMEDIAMOND + 50
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战
+break
+#IF
+checkitem 征战¤星王魔剑 1
+#ACT
+take 征战¤星王魔剑 1
+GAMEGOLD + 200000
+GAMEDIAMOND + 50
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战
+break
+#IF
+checkitem 征战¤星王道剑 1
+#ACT
+take 征战¤星王道剑 1
+GAMEGOLD + 200000
+GAMEDIAMOND + 50
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战
+break
+#IF
+checkitem  征战¤星王圣剑 1
+#ACT
+take 征战¤星王圣剑  1
+GAMEGOLD + 200000
+GAMEDIAMOND + 50
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收传说剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @征战
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有征战剑甲系列装备，无法回收！
+GOTO @@CheckNo
+
+
+
+
+
+
+
+[@不灭]
+#IF
+checkitem 不灭┇星王神剑 1
+#ACT
+take 不灭┇星王神剑 1
+GAMEGOLD + 500000
+GAMEDIAMOND + 100
+SENDMSG 0 玩家〖<$USERNAME>〗回收不灭剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收不灭剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收不灭剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @不灭
+break
+#IF
+checkitem 不灭◎星王神甲 1
+#ACT
+take 不灭◎星王神甲 1
+GAMEGOLD + 500000
+GAMEDIAMOND + 100
+SENDMSG 0 玩家〖<$USERNAME>〗回收不灭剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收不灭剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收不灭剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @不灭
+break
+#IF
+checkitem 不灭◎星王神衣 1
+#ACT
+take 不灭◎星王神衣 1
+GAMEGOLD + 500000
+GAMEDIAMOND + 100
+SENDMSG 0 玩家〖<$USERNAME>〗回收不灭剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收不灭剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收不灭剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @不灭
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有不灭剑甲，无法回收！
+GOTO @@CheckNo
+
+
+
+[@殺天]
+#IF
+checkitem 殺天㊣星王神衣 1
+#ACT
+take 殺天㊣星王神衣 1
+GAMEGOLD + 600000
+GAMEDIAMOND + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收殺天剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收殺天剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收殺天剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @殺天
+break
+#IF
+checkitem 殺天㊣星王神甲 1
+#ACT
+take 殺天㊣星王神甲 1
+GAMEGOLD + 600000
+GAMEDIAMOND + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收殺天剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收殺天剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收殺天剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @殺天
+break
+#IF
+checkitem 殺天㊣星王神剑 1
+#ACT
+take 殺天㊣星王神剑 1
+GAMEGOLD + 600000
+GAMEDIAMOND + 200
+SENDMSG 0 玩家〖<$USERNAME>〗回收殺天剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收殺天剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收殺天剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @殺天
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有殺天剑甲，无法回收！
+GOTO @@CheckNo
+
+
+
+[@弑血]
+#IF
+checkitem 弑血メ殺戮神剑（圣） 1
+#ACT
+take 弑血メ殺戮神剑（圣） 1
+GAMEGOLD + 800000
+GAMEDIAMOND + 300
+SENDMSG 0 玩家〖<$USERNAME>〗回收弑血剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收弑血剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收弑血剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @弑血
+break
+#IF
+checkitem 弑血メ殺戮神衣（圣） 1
+#ACT
+take 弑血メ殺戮神衣（圣） 1
+GAMEGOLD + 800000
+GAMEDIAMOND + 300
+SENDMSG 0 玩家〖<$USERNAME>〗回收弑血剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收弑血剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收弑血剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @弑血
+break
+#IF
+checkitem 弑血メ殺戮神甲（圣） 1
+#ACT
+take 弑血メ殺戮神甲（圣） 1
+GAMEGOLD + 800000
+GAMEDIAMOND + 300
+SENDMSG 0 玩家〖<$USERNAME>〗回收弑血剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收弑血剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+SENDMSG 0 玩家〖<$USERNAME>〗回收弑血剑甲，获得大量金刚石和大量元宝。你还不抓紧打装备啊! 0 146
+DELAYGOTO 1 @弑血
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有弑血剑甲，无法回收！
+GOTO @@CheckNo

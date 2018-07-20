@@ -1,0 +1,463 @@
+[@传送]
+{
+<COLOR=clLime ========================★安全区域★========================>\
+※ <比奇城堡/@比奇城堡> ※ <银杏山谷/@银杏山谷> ※ <比奇村庄/@比奇村庄> ※ <比奇皇宫/@比奇皇宫> ※<魔龙城堡/@魔龙城堡> ※ \
+※ <盟重土城/@盟重土城> ※ <白日天门/@白日天门> ※ <封魔神谷/@封魔神谷> ※ <苍月小岛/@苍月小岛> ※<沙城区域/@沙城区域1> ※ \
+<COLOR=clLime ==★新手普通区域(藏宝阁，幻境，王者，万恶，均有2个BOSS)★==>\
+※ <蜈蚣洞穴/@蜈蚣洞口> ※ <幻境一层/@环境洞口> ※ <石墓六层/@石墓洞口> ※ <尸王大殿/@沙城区域> ※\
+※ <赤月老巢/@赤月老巢> ※ <祖玛七层/@祖玛洞口> ※ <霸者大厅/@封魔洞口> ※ <牛魔六层/@牛魔洞口> ※\
+※ <沙藏宝阁/@沙藏宝阁> ※ <幻境七层/@挑战幻境> ※ <王者禁地/@王者禁地> ※ <万恶之源/@万恶之源> ※\
+
+
+[@魔龙城堡]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+mapmove 6 123 158
+break
+#ELSESAY
+需要2000金币用来支付我们的服务费用!\ \
+
+
+[@沙城区域1]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+mapmove 3 706 407
+break
+#ELSESAY
+需要2000金币用来支付我们的服务费用!
+
+
+[@魔龙东郊]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+mapmove 6 471 376
+break
+#ELSESAY
+需要2000金币用来支付我们的服务费用!\ \
+
+[@魔龙西郊]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+mapmove 6 460 68
+break
+#ELSESAY
+需要2000金币用来支付我们的服务费用!\ \
+
+[@圣域]
+您每次进入都需要收取50W费用。每次只可以在\
+圣域内停留一个小时，一小时后您将会重新回到您\
+进圣域的地方；如果中途下线，那您也会自动离开圣域。\
+圣域的神秘面纱，或许只有您才能真正揭开。\
+　\
+<确定进入/@进入>                            <关闭/@exit>
+
+[@进入]
+#IF
+CHECKGOLD 500000
+#ACT
+TAKE 金币 500000
+TIMERECALL 60
+MAP B101
+BREAK
+#ELSEACT
+MESSAGEBOX 进入需要50W，请确认有足够数量的金币
+BREAK
+
+[@充值介绍]
+①　小面额可选择短信充值\
+　　固定电话 网银在线 神州行卡 盛大点卡 支付宝 财富通\
+　　联通充值卡 征途卡 搜狐、久游、俊网一卡通 声讯等\
+　　点击“元宝充值”→ 选择适合自己的方式自行充值! \ 
+
+
+[@贵族介绍]
+<---------------------会员打"@服务"半价传送------------->\
+<Boss皇宫>   <40元宝传送> <150万金币传送> \
+<---------------------------会员打"@服务" 每日可领取工资>\
+<玛雅神殿>   <60元宝传送> <200万金币传送>\
+<---------------------会员打"@服务"免费传送------------->\
+<困惑殿堂>　　<堕落坟场>　　<死亡神殿>　　<深渊魔域>　　<钳虫巢穴>　\
+<地狱烈焰>　　<死亡棺材>　　<魔龙大殿>　　<尸王大殿>　　<王者禁地>\
+<赤月老巢>　　<万恶之源>　　<沙藏宝阁>　　<龙源血路>　　<牛魔寺庙>　\
+
+
+
+
+[@环境洞口]
+#IF
+checkgold 10000
+#ACT
+take 金币 10000
+mapmove H001 74 68
+break
+#ELSESAY
+需要10000金币用来支付我们的服务费用!
+
+
+
+
+[@挑战魔龙]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+mapmove 6 125 158
+break
+#ELSESAY
+需要2000金币用来支付我们的服务费用!
+
+
+[@挑战幻境]
+#if
+#act
+mapmove H007 161 172
+#ELSESAY
+需要10元宝用来支付我们的服务费用!
+
+[@比奇城堡]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+mapmove 0 333 268
+break
+#ELSESAY
+需要2000金币用来支付我们的服务费用!
+
+
+[@银杏山谷]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+mapmove 0 650 624
+break
+#ELSESAY
+需要2000金币用来支付我们的服务费用!
+
+[@比奇村庄]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+mapmove 0 290 615
+break
+#ELSESAY
+需要2000金币用来支付我们的服务费用!
+
+[@沙城区域]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+mapmove q004
+break
+#ELSESAY
+需要2000金币用来支付我们的服务费用!
+
+
+[@盟重土城]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+mapmove 3 333 333
+break
+#ELSESAY
+需要2000金币用来支付我们的服务费用!
+
+
+[@白日天门]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+mapmove 11 177 324
+break
+#ELSESAY
+需要2000金币用来支付我们的服务费用!
+
+[@封魔神谷]
+#ACT
+mapmove 4 241 203
+
+[@苍月小岛]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+mapmove 5 140 338
+break
+#ELSESAY
+需要2000金币用来支付我们的服务费用!
+
+[@未知暗殿]
+#IF
+checkgold 2000
+#ACT
+mapmove M001
+take 金币 2000
+break
+#ELSESAY
+需要2000金币用来支付我们的服务费用!
+
+[@矿区洞口]
+#IF
+checkgold 500
+#ACT
+mapmove 0 659 218
+take 金币 500
+break
+#ELSESAY
+需要500金币用来支付我们的服务费用!
+
+[@蜈蚣洞口]
+#IF
+checkgold 1
+#ACT
+take 金币 1
+mapmove 3 142 92
+break
+#ELSESAY
+需要1金币用来支付我们的服务费用!
+
+[@沃玛洞口]
+#IF
+checkgold 1
+#ACT
+take 金币 1
+mapmove D021 71 69
+break
+#ELSESAY
+需要1金币用来支付我们的服务费用!
+
+[@石墓洞口]
+#IF
+checkgold 1
+#act
+take 金币 1
+mapmove D716
+#ELSESAY
+你没有1金币用来支付我们的服务费用!
+
+[@赤月洞口]
+#IF
+checkgold 1
+#act
+take 金币 1
+mapmove D1004
+#ELSESAY
+你没有1金币用来支付我们的服务费用!
+
+[@祖玛洞口]
+#IF
+checkgold 1
+#act
+take 金币 1
+mapmove D5071
+#ELSESAY
+你没有1金币用来支付我们的服务费用!
+
+[@牛魔洞口]
+#IF
+checkgold 1
+#act
+take 金币 1
+mapmove D2076
+#ELSESAY
+你没有1金币用来支付我们的服务费用!
+
+[@尸魔洞口]
+#IF 
+checkgold 1
+#ACT
+take 金币 1
+mapmove 5 522 615
+break 
+#ELSESAY 
+你没有1金币用来支付我们的服务费用!
+
+[@骨魔洞口]
+#IF 
+checkgold 1
+#ACT
+take 金币 1
+mapmove D2067
+break 
+#ELSESAY 
+你没有1金币用来支付我们的服务费用!
+
+[@封魔洞口]
+#IF 
+checkgold 1
+#ACT
+take 金币 1
+mapmove D2008
+break 
+#ELSESAY 
+你没有1金币用来支付我们的服务费用!
+
+;----------------超级传送地图开始--------------------
+
+[@Boss皇宫]
+#if
+CHECKGAMEGOLD > 19
+#act
+GAMEGOLD - 20
+MAPMOVE BOSSG
+SENDMSG 0 玩家[%s],进入BOSS皇宫,本地图BOSS为双倍爆率!
+#ELSEACT
+MESSAGEBOX 需要20元宝用来支付我们的服务费用!
+
+
+
+[@玛雅神殿]
+#if
+CHECKGAMEGOLD > 19
+#act
+GAMEGOLD - 20
+MAPMOVE Fama1
+SENDMSG 0 玩家[%s],进入玛雅神殿,神殿皇宫拥有超大BOSS,建议组队前往!
+#ELSEACT
+MESSAGEBOX 需要20元宝用来支付我们的服务费用!
+
+[@王者禁地]
+#if
+#act
+mapmove H106
+#ELSESAY
+
+[@龙源血路]
+#if
+CHECKGAMEGOLD > 19
+#act
+GAMEGOLD - 20
+mapmove 65
+#ELSESAY
+需要20元宝用来支付我们的服务费用!
+
+[@沙藏宝阁]
+#if
+#act
+mapmove H204
+#ELSESAY
+
+[@赤月老巢]
+#if
+checkgold 1000
+#ACT
+take 金币 1000
+mapmove D10062
+#ELSESAY
+需要1000金币用来支付我们的服务费用!
+
+[@死亡棺材]
+#if
+checkgold 1
+#ACT
+take 金币 1
+mapmove D606
+#ELSESAY
+需要1金币用来支付我们的服务费用!
+
+[@尸王殿]
+#if
+checkgold 1
+#ACT
+take 金币 1
+mapmove Q004
+#ELSESAY
+需要1金币用来支付我们的服务费用!
+
+[@祖玛七层]
+#if
+checkgold 1
+#ACT
+take 金币 1
+mapmove D5072
+#ELSESAY
+需要1金币用来支付我们的服务费用!
+
+[@万恶之源]
+#if
+#act
+mapmove wane1
+#ELSESAY
+
+[@牛魔寺庙]
+#if
+checkgold 1
+#ACT
+take 金币 1
+mapmove D2079
+#ELSESAY
+需要1金币用来支付我们的服务费用!
+
+[@魔龙大殿]
+#if
+CHECKGAMEGOLD > 19
+#act
+GAMEGOLD - 20
+mapmove EM100
+#ELSESAY
+需要20元宝用来支付我们的服务费用!
+
+[@抉择之地]
+#if
+checkgold 1
+#ACT
+take 金币 1
+mapmove D1004
+#ELSESAY
+需要1金币用来支付我们的服务费用!
+
+[@困惑殿堂]
+#if
+#ACT
+MAPMOVE T140
+#ELSESAY
+需要50万金币用来支付我们的服务费用!
+
+[@堕落坟场]
+#if
+#ACT
+MAPMOVE T115
+#ELSESAY
+需要50万金币用来支付我们的服务费用!
+
+[@死亡神殿]
+#if
+#ACT
+MAPMOVE T118
+#ELSESAY
+需要50万金币用来支付我们的服务费用!
+
+[@地狱烈焰]
+#if
+#ACT
+MAPMOVE T139
+#ELSESAY
+需要50万金币用来支付我们的服务费用!
+
+[@深渊魔域]
+#if
+#ACT
+MAPMOVE T119
+#ELSESAY
+需要50万金币用来支付我们的服务费用!
+
+[@钳虫巢穴]
+#if
+#ACT
+MAPMOVE T132
+#ELSESAY
+需要50万金币用来支付我们的服务费用!
+}

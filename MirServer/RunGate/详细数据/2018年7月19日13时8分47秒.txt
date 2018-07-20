@@ -1,0 +1,34 @@
+[2018-7-19 13:8:47] [1.180.210.5] 角色名:喜欢你	Ident:1018		Recog:0		Param:0		tag:0		series:46		string:
+[2018-7-19 13:8:47] [1.180.210.5] 角色名:喜欢你	Ident:84		Recog:786446		Param:0		tag:0		series:0		string:
+[2018-7-19 13:8:47] [1.180.210.5] 角色名:喜欢你	Ident:81		Recog:1		Param:0		tag:0		series:0		string:
+[2018-7-19 13:8:47] [1.180.210.5] 角色名:喜欢你	Ident:10431		Recog:1310720		Param:0		tag:0		series:0		string:
+[2018-7-19 13:8:47] [1.180.210.5] 角色名:喜欢你	Ident:10433		Recog:0		Param:0		tag:0		series:0		string:
+[2018-7-19 13:8:47] [1.180.210.5] 角色名:喜欢你	Ident:1200		Recog:262778576		Param:1		tag:0		series:0		string:
+[2018-7-19 13:8:50] [1.180.210.5] 角色名:喜欢你	Ident:3013		Recog:786438		Param:0		tag:3		series:0		string:
+[2018-7-19 13:8:51] [1.180.210.5] 角色名:喜欢你	Ident:3013		Recog:917508		Param:0		tag:5		series:0		string:
+[2018-7-19 13:8:53] [1.180.210.5] 角色名:喜欢你	Ident:3011		Recog:983045		Param:0		tag:3		series:0		string:
+[2018-7-19 13:8:54] [1.180.210.5] 角色名:喜欢你	Ident:3011		Recog:1048580		Param:0		tag:5		series:0		string:
+[2018-7-19 13:8:54] [1.180.210.5] 角色名:喜欢你	Ident:3013		Recog:20775239		Param:0		tag:5		series:0		string:
+[2018-7-19 13:8:55] [1.180.210.5] 角色名:喜欢你	Ident:3013		Recog:20906309		Param:0		tag:5		series:0		string:
+[2018-7-19 13:8:56] [1.180.210.5] 角色名:喜欢你	Ident:3011		Recog:20971845		Param:0		tag:4		series:0		string:
+[2018-7-19 13:8:56] [1.180.210.5] 角色名:喜欢你	Ident:3013		Recog:21102915		Param:0		tag:5		series:0		string:
+[2018-7-19 13:8:57] [1.180.210.5] 角色名:喜欢你	Ident:3013		Recog:21233989		Param:0		tag:3		series:0		string:
+[2018-7-19 13:8:58] [1.180.210.5] 角色名:喜欢你	Ident:3013		Recog:21365063		Param:0		tag:3		series:0		string:
+[2018-7-19 13:8:58] [1.180.210.5] 角色名:喜欢你	Ident:3013		Recog:21496137		Param:0		tag:3		series:0		string:
+[2018-7-19 13:8:59] [1.180.210.5] 角色名:喜欢你	Ident:3013		Recog:21627209		Param:0		tag:4		series:0		string:
+[2018-7-19 13:9:3] [1.180.210.5] 角色名:喜欢你	Ident:1006		Recog:249149404		Param:0		tag:0		series:0		string:
+[2018-7-19 13:9:4] [1.180.210.5] 角色名:喜欢你	Ident:1006		Recog:249149412		Param:0		tag:0		series:0		string:
+[2018-7-19 13:9:4] [1.180.210.5] 角色名:喜欢你	Ident:1006		Recog:249149420		Param:0		tag:0		series:0		string:
+[2018-7-19 13:10:35] [1.180.210.5] 角色名:喜欢你	Ident:3030		Recog:0		Param:0		tag:0		series:0		string:@重读商人 all 
+[2018-7-19 13:10:51] [1.180.210.5] 角色名:喜欢你	Ident:3030		Recog:0		Param:0		tag:0		series:0		string:@重读商人 all 
+[2018-7-19 13:12:23] [1.180.210.5] 角色名:喜欢你	Ident:3030		Recog:0		Param:0		tag:0		series:0		string:@重读商人 all 
+[2018-7-19 13:17:11] [1.180.210.5] 角色名:喜欢你	Ident:3030		Recog:0		Param:0		tag:0		series:0		string:@飞 jqpd
+[2018-7-19 13:17:13] [1.180.210.5] 角色名:喜欢你	Ident:3013		Recog:1441806		Param:0		tag:1		series:0		string:
+[2018-7-19 13:17:13] [1.180.210.5] 角色名:喜欢你	Ident:3013		Recog:1310736		Param:0		tag:1		series:0		string:
+[2018-7-19 13:17:14] [1.180.210.5] 角色名:喜欢你	Ident:3013		Recog:1179664		Param:0		tag:0		series:0		string:
+[2018-7-19 13:17:15] [1.180.210.5] 角色名:喜欢你	Ident:3011		Recog:1114127		Param:0		tag:7		series:0		string:
+[2018-7-19 13:17:16] [1.180.210.5] 角色名:喜欢你	Ident:1010		Recog:234737552		Param:0		tag:0		series:0		string:
+[2018-7-19 13:18:5] [1.180.210.5] 角色名:喜欢你	Ident:3030		Recog:0		Param:0		tag:0		series:0		string:@重读商人 all 
+[2018-7-19 13:19:48] [1.180.210.5] 角色名:喜欢你	Ident:3030		Recog:0		Param:0		tag:0		series:0		string:@重读商人 all 
+[2018-7-19 13:24:38] [1.180.210.5] 角色名:喜欢你	Ident:3030		Recog:0		Param:0		tag:0		series:0		string:@重读商人 all 
+[2018-7-19 13:25:28] [1.180.210.5] 角色名:喜欢你	Ident:3030		Recog:0		Param:0		tag:0		series:0		string:@重读商人 all 

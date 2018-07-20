@@ -1,0 +1,6 @@
+[@main]
+#IF
+CHECKLEVELEX > 0
+#ACT
+#CALL [\系统功能\验证回收.txt] @盟重回收
+BREAK

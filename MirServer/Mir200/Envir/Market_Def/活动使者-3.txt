@@ -1,0 +1,45 @@
+()
+%100
+[@main]
+<COLOR=clAqua 为回馈亲爱的玩家！本服活动多多！具体时间请自己体验！>\
+<COLOR=clRed 土城跑酷--开区30分钟一次-随机装备,大量经验>    <去看看/@跑酷>\
+<COLOR=clRed 黑市商人--120分钟一次-随机收装备,每次3个名额>  <去看看/@黑市>\
+<COLOR=clRed 激情派对--2小时一次--可获得大量经验+元宝>      <去看看/@激情>\
+<COLOR=clRed 剑甲教主--每天6次--可暴出高档剑甲>             <去看看/@槐树>\
+<COLOR=clRed 斗勋教主--每天6次--可暴出高级勋章斗笠>         <去看看/@蜈蚣>\
+<COLOR=clRed 元宝树妖--每小时1次--暴出1万元宝>              <去看看/@激情1>\
+<COLOR=clFuchsia 【友情提示】:每晚22点40分.行会争霸奖励88888元宝!!!>\
+
+
+[@黑市]
+#ACT
+mapmove GA0  70 72
+
+[@跑酷]
+#ACT
+mapmove 3  333 333
+
+[@激情]
+#ACT
+mapmove 3 349 336 
+give 回城卷
+[@激情1]
+#ACT
+mapmove 3 358 338 
+give 回城卷
+[@土]
+#ACT
+mapmove 3 333 333 
+give 回城卷
+[@蜈蚣]
+#ACT
+mapmove 3 142 92 
+give 回城卷
+[@槐树]
+#ACT
+mapmove jianjia 20 10
+give 回城卷
+[@猪]
+#ACT
+mapmove D716
+give 回城卷

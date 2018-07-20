@@ -1,0 +1,7 @@
+(@buy @sell @repair @s_repair )
+%200
++10
++11
++15
+[@main]
+#CALL [\城市商人\衣服店.txt] @衣服

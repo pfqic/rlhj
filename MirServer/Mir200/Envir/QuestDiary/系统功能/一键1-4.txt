@@ -1,0 +1,842 @@
+[@快速回收11]
+{
+#IF
+checkitem 裁决之杖 1
+#ACT
+take 裁决之杖 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收祖玛装备一件！获得10元宝+2w经验！ 0 146
+INC M10 20000
+INC M20 10
+INC M30 1
+#IF
+checkitem 骨玉权杖 1
+#ACT
+take 骨玉权杖 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收祖玛装备一件！获得10元宝+2w经验！ 0 146
+INC M10 20000
+INC M20 10
+INC M30 1
+#IF
+checkitem 龙纹剑 1
+#ACT
+take 龙纹剑 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收祖玛装备一件！获得10元宝+2w经验！ 0 146
+INC M10 20000
+INC M20 10
+INC M30 1
+#IF
+checkitem 绿色项链 1
+#ACT
+take 绿色项链 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收祖玛装备一件！获得10元宝+2w经验！ 0 146
+INC M10 20000
+INC M20 10
+INC M30 1
+#IF
+checkitem 恶魔铃铛 1
+#ACT
+take 恶魔铃铛 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收祖玛装备一件！获得10元宝+2w经验！ 0 146
+INC M10 20000
+INC M20 10
+INC M30 1
+#IF
+checkitem 灵魂项链 1
+#ACT
+take 灵魂项链 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收祖玛装备一件！获得10元宝+2w经验！ 0 146
+INC M10 20000
+INC M20 10
+INC M30 1
+#IF
+checkitem 力量戒指 1
+#ACT
+take 力量戒指 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收祖玛装备一件！获得10元宝+2w经验！ 0 146
+INC M10 20000
+INC M20 10
+INC M30 1
+#IF
+checkitem 紫碧螺 1
+#ACT
+take 紫碧螺 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收祖玛装备一件！获得10元宝+2w经验！ 0 146
+INC M10 20000
+INC M20 10
+INC M30 1
+#IF
+checkitem 泰坦戒指 1
+#ACT
+take 泰坦戒指 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收祖玛装备一件！获得10元宝+2w经验！ 0 146
+INC M10 20000
+INC M20 10
+INC M30 1
+#IF
+checkitem 骑士手镯 1
+#ACT
+take 骑士手镯 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收祖玛装备一件！获得10元宝+2w经验！ 0 146
+INC M10 20000
+INC M20 10
+INC M30 1
+#IF
+checkitem 龙之手镯 1
+#ACT
+take 龙之手镯 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收祖玛装备一件！获得10元宝+2w经验！ 0 146
+INC M10 20000
+INC M20 10
+INC M30 1
+#IF
+checkitem 三眼手镯 1
+#ACT
+take 三眼手镯 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收祖玛装备一件！获得10元宝+2w经验！ 0 146
+INC M10 20000
+INC M20 10
+INC M30 1
+
+#IF
+checkitem 法神头盔 1
+#ACT
+take 法神头盔 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收赤月装备一件！获得30元宝+5w经验！ 0 146
+INC M10 50000
+INC M20 30
+INC M30 1
+#IF
+checkitem 法神项链 1
+#ACT
+take 法神项链 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收赤月装备一件！获得30元宝+5w经验！ 0 146
+INC M10 50000
+INC M20 30
+INC M30 1
+#IF
+checkitem 法神手镯 1
+#ACT
+take 法神手镯 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收赤月装备一件！获得30元宝+5w经验！ 0 146
+INC M10 50000
+INC M20 30
+INC M30 1
+#IF
+checkitem 法神戒指 1
+#ACT
+take 法神戒指 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收赤月装备一件！获得30元宝+5w经验！ 0 146
+INC M10 50000
+INC M20 30
+INC M30 1
+#IF
+checkitem 天尊头盔 1
+#ACT
+take 天尊头盔 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收赤月装备一件！获得30元宝+5w经验！ 0 146
+INC M10 50000
+INC M20 30
+INC M30 1
+#IF
+checkitem 天尊项链 1
+#ACT
+take 天尊项链 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收赤月装备一件！获得30元宝+5w经验！ 0 146
+INC M10 50000
+INC M20 30
+INC M30 1
+#IF
+checkitem 天尊手镯 1
+#ACT
+take 天尊手镯 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收赤月装备一件！获得30元宝+5w经验！ 0 146
+INC M10 50000
+INC M20 30
+INC M30 1
+#IF
+checkitem 天尊戒指 1
+#ACT
+take 天尊戒指 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收赤月装备一件！获得30元宝+5w经验！ 0 146
+INC M10 50000
+INC M20 30
+INC M30 1
+#IF
+checkitem 圣战头盔 1
+#ACT
+take 圣战头盔 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收赤月装备一件！获得30元宝+5w经验！ 0 146
+INC M10 50000
+INC M20 30
+INC M30 1
+#IF
+checkitem 圣战项链 1
+#ACT
+take 圣战项链 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收赤月装备一件！获得30元宝+5w经验！ 0 146
+INC M10 50000
+INC M20 30
+INC M30 1
+#IF
+checkitem 圣战手镯 1
+#ACT
+take 圣战手镯 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收赤月装备一件！获得30元宝+5w经验！ 0 146
+INC M10 50000
+INC M20 30
+INC M30 1
+#IF
+checkitem 圣战戒指 1
+#ACT
+take 圣战戒指 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收赤月装备一件！获得30元宝+5w经验！ 0 146
+INC M10 50000
+INC M20 30
+INC M30 1
+
+
+#IF
+checkitem 烈焰魔戒 1
+#ACT
+take 烈焰魔戒 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收雷霆装备一件！获得60元宝+10w经验！ 0 146
+INC M10 100000
+INC M20 60
+INC M30 1
+#IF
+checkitem 烈焰护腕 1
+#ACT
+take 烈焰护腕 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收雷霆装备一件！获得60元宝+10w经验！ 0 146
+INC M10 100000
+INC M20 60
+INC M30 1
+#IF
+checkitem 烈焰项链 1
+#ACT
+take 烈焰项链 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收雷霆装备一件！获得60元宝+10w经验！ 0 146
+INC M10 100000
+INC M20 60
+INC M30 1
+#IF
+checkitem 烈焰魔靴 1
+#ACT
+take 烈焰魔靴 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收雷霆装备一件！获得60元宝+10w经验！ 0 146
+INC M10 100000
+INC M20 60
+INC M30 1
+#IF
+checkitem 烈焰腰带 1
+#ACT
+take 烈焰腰带 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收雷霆装备一件！获得60元宝+10w经验！ 0 146
+INC M10 100000
+INC M20 60
+INC M30 1
+#IF
+checkitem 光芒腰带 1
+#ACT
+take 光芒腰带 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收雷霆装备一件！获得60元宝+10w经验！ 0 146
+INC M10 100000
+INC M20 60
+INC M30 1
+#IF
+checkitem 光芒道靴 1
+#ACT
+take 光芒道靴 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收雷霆装备一件！获得60元宝+10w经验！ 0 146
+INC M10 100000
+INC M20 60
+INC M30 1
+#IF
+checkitem 光芒项链 1
+#ACT
+take 光芒项链 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收雷霆装备一件！获得60元宝+10w经验！ 0 146
+INC M10 100000
+INC M20 60
+INC M30 1
+#IF
+checkitem 光芒护腕 1
+#ACT
+take 光芒护腕 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收雷霆装备一件！获得60元宝+10w经验！ 0 146
+INC M10 100000
+INC M20 60
+INC M30 1
+#IF
+checkitem 光芒道戒 1
+#ACT
+take 光芒道戒 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收雷霆装备一件！获得60元宝+10w经验！ 0 146
+INC M10 100000
+INC M20 60
+INC M30 1
+#IF
+checkitem 雷霆战靴 1
+#ACT
+take 雷霆战靴 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收雷霆装备一件！获得60元宝+10w经验！ 0 146
+INC M10 100000
+INC M20 60
+INC M30 1
+#IF
+checkitem 雷霆腰带 1
+#ACT
+take 雷霆腰带 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收雷霆装备一件！获得60元宝+10w经验！ 0 146
+INC M10 100000
+INC M20 60
+INC M30 1
+#IF
+checkitem 雷霆项链 1
+#ACT
+take 雷霆项链 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收雷霆装备一件！获得60元宝+10w经验！ 0 146
+INC M10 100000
+INC M20 60
+INC M30 1
+#IF
+checkitem 雷霆护腕 1
+#ACT
+take 雷霆护腕 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收雷霆装备一件！获得60元宝+10w经验！ 0 146
+INC M10 100000
+INC M20 60
+INC M30 1
+#IF
+checkitem 雷霆战戒 1
+#ACT
+take 雷霆战戒 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收雷霆装备一件！获得60元宝+10w经验！ 0 146
+INC M10 100000
+INC M20 60
+INC M30 1
+#IF
+checkitem 天龙盔 1
+#ACT
+take 天龙盔 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收雷霆装备一件！获得60元宝+10w经验！ 0 146
+INC M10 100000
+INC M20 60
+INC M30 1
+#IF
+checkitem 魔龙盔 1
+#ACT
+take 魔龙盔 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收雷霆装备一件！获得60元宝+10w经验！ 0 146
+INC M10 100000
+INC M20 60
+INC M30 1
+#IF
+checkitem 圣龙盔 1
+#ACT
+take 圣龙盔 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收雷霆装备一件！获得60元宝+10w经验！ 0 146
+INC M10 100000
+INC M20 60
+INC M30 1
+
+
+#IF
+checkitem 圣魔戒指 1
+#ACT
+take 圣魔戒指 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收战神装备一件！获得120元宝+30w经验！ 0 146
+INC M10 300000
+INC M20 120
+INC M30 1
+#IF
+checkitem 圣魔手镯 1
+#ACT
+take 圣魔手镯 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收战神装备一件！获得120元宝+30w经验！ 0 146
+INC M10 300000
+INC M20 120
+INC M30 1
+#IF
+checkitem 圣魔项链 1
+#ACT
+take 圣魔项链 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收战神装备一件！获得120元宝+30w经验！ 0 146
+INC M10 300000
+INC M20 120
+INC M30 1
+#IF
+checkitem 圣魔法靴 1
+#ACT
+take 圣魔法靴 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收战神装备一件！获得120元宝+30w经验！ 0 146
+INC M10 300000
+INC M20 120
+INC M30 1
+#IF
+checkitem 圣魔腰带 1
+#ACT
+take 圣魔腰带 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收战神装备一件！获得120元宝+30w经验！ 0 146
+INC M10 300000
+INC M20 120
+INC M30 1
+#IF
+checkitem 真魂腰带 1
+#ACT
+take 真魂腰带 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收战神装备一件！获得120元宝+30w经验！ 0 146
+INC M10 300000
+INC M20 120
+INC M30 1
+#IF
+checkitem 真魂道靴 1
+#ACT
+take 真魂道靴 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收战神装备一件！获得120元宝+30w经验！ 0 146
+INC M10 300000
+INC M20 120
+INC M30 1
+#IF
+checkitem 真魂项链 1
+#ACT
+take 真魂项链 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收战神装备一件！获得120元宝+30w经验！ 0 146
+INC M10 300000
+INC M20 120
+INC M30 1
+#IF
+checkitem 真魂手镯 1
+#ACT
+take 真魂手镯 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收战神装备一件！获得120元宝+30w经验！ 0 146
+INC M10 300000
+INC M20 120
+INC M30 1
+#IF
+checkitem 真魂戒指 1
+#ACT
+take 真魂戒指 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收战神装备一件！获得120元宝+30w经验！ 0 146
+INC M10 300000
+INC M20 120
+INC M30 1
+#IF
+checkitem 战神腰带 1
+#ACT
+take 战神腰带 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收战神装备一件！获得120元宝+30w经验！ 0 146
+INC M10 300000
+INC M20 120
+INC M30 1
+#IF
+checkitem 战神圣靴 1
+#ACT
+take 战神圣靴 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收战神装备一件！获得120元宝+30w经验！ 0 146
+INC M10 300000
+INC M20 120
+INC M30 1
+#IF
+checkitem 战神项链 1
+#ACT
+take 战神项链 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收战神装备一件！获得120元宝+30w经验！ 0 146
+INC M10 300000
+INC M20 120
+INC M30 1
+#IF
+checkitem 战神手镯 1
+#ACT
+take 战神手镯 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收战神装备一件！获得120元宝+30w经验！ 0 146
+INC M10 300000
+INC M20 120
+INC M30 1
+#IF
+checkitem 战神戒指 1
+#ACT
+take 战神戒指 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收战神装备一件！获得120元宝+30w经验！ 0 146
+INC M10 300000
+INC M20 120
+INC M30 1
+#IF
+checkitem 真魂头盔 1
+#ACT
+take 真魂头盔 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收战神装备一件！获得120元宝+30w经验！ 0 146
+INC M10 300000
+INC M20 120
+INC M30 1
+#IF
+checkitem 圣魔头盔 1
+#ACT
+take 圣魔头盔 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收战神装备一件！获得120元宝+30w经验！ 0 146
+INC M10 300000
+INC M20 120
+INC M30 1
+#IF
+checkitem 战神头盔 1
+#ACT
+take 战神头盔 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收战神装备一件！获得120元宝+30w经验！ 0 146
+INC M10 300000
+INC M20 120
+INC M30 1
+
+
+#IF
+checkitem 星王战链 1
+#ACT
+take 星王战链 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收星王战链一件！获得500元宝+80w经验！ 0 146
+INC M10 800000
+INC M20 500
+INC M30 1
+#IF
+checkitem 星王战靴 1
+#ACT
+take 星王战靴 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收星王战靴一件！获得500元宝+80w经验！ 0 146
+INC M10 800000
+INC M20 500
+INC M30 1
+#IF
+checkitem 星王战带 1
+#ACT
+take 星王战带 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收星王战带一件！获得500元宝+80w经验！ 0 146
+INC M10 800000
+INC M20 500
+INC M30 1
+#IF
+checkitem 星王战盔 1
+#ACT
+take 星王战盔 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收星王战盔一件！获得500元宝+80w经验！ 0 146
+INC M10 800000
+INC M20 500
+INC M30 1
+#IF
+checkitem 星王战镯 1
+#ACT
+take 星王战镯 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收星王战镯一件！获得500元宝+80w经验！ 0 146
+INC M10 800000
+INC M20 500
+INC M30 1
+#IF
+checkitem 星王战戒 1
+#ACT
+take 星王战戒 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收星王战戒一件！获得500元宝+80w经验！ 0 146
+INC M10 800000
+INC M20 500
+INC M30 1
+#IF
+checkitem 星王道靴 1
+#ACT
+take 星王道靴 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收星王道靴一件！获得500元宝+80w经验！ 0 146
+INC M10 800000
+INC M20 500
+INC M30 1
+#IF
+checkitem 星王道带 1
+#ACT
+take 星王道带 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收星王道带一件！获得500元宝+80w经验！ 0 146
+INC M10 800000
+INC M20 500
+INC M30 1
+#IF
+checkitem 星王道盔 1
+#ACT
+take 星王道盔 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收星王道盔一件！获得500元宝+80w经验！ 0 146
+INC M10 800000
+INC M20 500
+INC M30 1
+#IF
+checkitem 星王道镯 1
+#ACT
+take 星王道镯 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收星王道镯一件！获得500元宝+80w经验！ 0 146
+INC M10 800000
+INC M20 500
+INC M30 1
+#IF
+checkitem 星王道戒 1
+#ACT
+take 星王道戒 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收星王道戒一件！获得500元宝+80w经验！ 0 146
+INC M10 800000
+INC M20 500
+INC M30 1
+#IF
+checkitem 星王道链 1
+#ACT
+take 星王道链 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收星王道链一件！获得500元宝+80w经验！ 0 146
+INC M10 800000
+INC M20 500
+INC M30 1
+#IF
+checkitem 星王法靴 1
+#ACT
+take 星王法靴 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收星王法靴一件！获得500元宝+80w经验！ 0 146
+INC M10 800000
+INC M20 500
+INC M30 1
+#IF
+checkitem 星王法带 1
+#ACT
+take 星王法带 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收星王法带一件！获得500元宝+80w经验！ 0 146
+INC M10 800000
+INC M20 500
+INC M30 1
+#IF
+checkitem 星王法盔 1
+#ACT
+take 星王法盔 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收星王法盔一件！获得500元宝+80w经验！ 0 146
+INC M10 800000
+INC M20 500
+INC M30 1
+#IF
+checkitem 星王法镯 1
+#ACT
+take 星王法镯 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收星王法镯一件！获得500元宝+80w经验！ 0 146
+INC M10 800000
+INC M20 500
+INC M30 1
+#IF
+checkitem 星王法戒 1
+#ACT
+take 星王法戒 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收星王法戒一件！获得500元宝+80w经验！ 0 146
+INC M10 800000
+INC M20 500
+INC M30 1
+#IF
+checkitem 星王法链 1
+#ACT
+take 星王法链 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收星王法链一件！获得500元宝+80w经验！ 0 146
+INC M10 800000
+INC M20 500
+INC M30 1
+
+#IF
+checkitem 天师长袍 1
+#ACT
+take 天师长袍 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收天师长袍一件！获得80元宝+20w经验！ 0 146
+INC M10 200000
+INC M20 80
+INC M30 1
+#IF
+checkitem 天尊道袍 1
+#ACT
+take 天尊道袍 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收天尊道袍一件！获得80元宝+20w经验！ 0 146
+INC M10 200000
+INC M20 80
+INC M30 1
+#IF
+checkitem 霓裳羽衣 1
+#ACT
+take 霓裳羽衣 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收霓裳羽衣一件！获得80元宝+20w经验！ 0 146
+INC M10 200000
+INC M20 80
+INC M30 1
+#IF
+checkitem 法神披风 1
+#ACT
+take 法神披风 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收法神披风一件！获得80元宝+20w经验！ 0 146
+INC M10 200000
+INC M20 80
+INC M30 1
+#IF
+checkitem 圣战宝甲 1
+#ACT
+take 圣战宝甲 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收圣战宝甲一件！获得80元宝+20w经验！ 0 146
+INC M10 200000
+INC M20 80
+INC M30 1
+#IF
+checkitem 天魔神甲 1
+#ACT
+take 天魔神甲 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收天魔神甲一件！获得80元宝+20w经验！ 0 146
+INC M10 200000
+INC M20 80
+INC M30 1
+#IF
+checkitem 龙牙 1
+#ACT
+take 龙牙 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收龙牙一件！获得80元宝+20w经验！ 0 146
+INC M10 200000
+INC M20 80
+INC M30 1
+#IF
+checkitem 逍遥扇 1
+#ACT
+take 逍遥扇 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收逍遥扇一件！获得80元宝+20w经验！ 0 146
+INC M10 200000
+INC M20 80
+INC M30 1
+#IF
+checkitem 怒斩 1
+#ACT
+take 怒斩 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收怒斩一件！获得80元宝+20w经验！ 0 146
+INC M10 200000
+INC M20 80
+INC M30 1
+
+#IF
+checkitem 雷霆战甲(男) 1
+#ACT
+take 雷霆战甲(男) 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收雷霆战甲(男)一件！获得150元宝+50w经验！ 0 146
+INC M10 500000
+INC M20 150
+INC M30 1
+#IF
+checkitem 雷霆战甲(女) 1
+#ACT
+take 雷霆战甲(女) 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收雷霆战甲(女)一件！获得150元宝+50w经验！ 0 146
+INC M10 500000
+INC M20 150
+INC M30 1
+#IF
+checkitem 烈焰魔衣(男) 1
+#ACT
+take 烈焰魔衣(男) 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收烈焰魔衣(男)一件！获得150元宝+50w经验！ 0 146
+INC M10 500000
+INC M20 150
+INC M30 1
+#IF
+checkitem 烈焰魔衣(女) 1
+#ACT
+take 烈焰魔衣(女) 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收烈焰魔衣(女)一件！获得150元宝+50w经验！ 0 146
+INC M10 500000
+INC M20 150
+INC M30 1
+#IF
+checkitem 光芒道袍(男) 1
+#ACT
+take 光芒道袍(男) 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收光芒道袍(男)一件！获得150元宝+50w经验！ 0 146
+INC M10 500000
+INC M20 150
+INC M30 1
+#IF
+checkitem 光芒道袍(女) 1
+#ACT
+take 光芒道袍(女) 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收光芒道袍(女)一件！获得150元宝+50w经验！ 0 146
+INC M10 500000
+INC M20 150
+INC M30 1
+#IF
+checkitem 屠龙 1
+#ACT
+take 屠龙 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收屠龙一件！获得500元宝+80w经验！ 0 146
+INC M10 800000
+INC M20 500
+INC M30 1
+#IF
+checkitem 嗜魂法杖 1
+#ACT
+take 嗜魂法杖 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收嗜魂法杖一件！获得500元宝+80w经验！ 0 146
+INC M10 800000
+INC M20 500
+INC M30 1
+#IF
+checkitem 霸者之刃 1
+#ACT
+take 霸者之刃 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收霸者之刃一件！获得500元宝+80w经验！ 0 146
+INC M10 800000
+INC M20 500
+INC M30 1
+
+#IF
+checkitem 开天 1
+#ACT
+take 开天 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收开天一件！获得1000元宝+100w经验！ 0 146
+INC M10 1000000
+INC M20 1000
+INC M30 1
+#IF
+checkitem 玄天 1
+#ACT
+take 玄天 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收玄天一件！获得1000元宝+100w经验！ 0 146
+INC M10 1000000
+INC M20 1000
+INC M30 1
+#IF
+checkitem 镇天 1
+#ACT
+take 镇天 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收镇天一件！获得1000元宝+100w经验！ 0 146
+INC M10 1000000
+INC M20 1000
+INC M30 1
+#IF
+checkitem 凤天魔甲 1
+#ACT
+take 凤天魔甲 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收凤天魔甲一件！获得1000元宝+100w经验！ 0 146
+INC M10 1000000
+INC M20 1000
+INC M30 1
+#IF
+checkitem 凰天魔衣 1
+#ACT
+take 凰天魔衣 1
+SENDMSG 0 玩家〖<$USERNAME>〗成功回收凰天魔衣一件！获得1000元宝+100w经验！ 0 146
+INC M10 1000000
+INC M20 1000
+INC M30 1
+
+#IF
+LARGE M30 0
+#ACT
+CHANGEEXP + <$STR(M10)>
+GAMEGOLD + <$STR(M20)>
+CALCVAR HUMAN 测试回收增加 + <$STR(M20)>
+DELAYGOTO 1 @Mir2m2测试回收保存数据
+SENDMSG 0 〖提示〗玩家【<$USERNAME>】快速一键回收了(<$STR(M30)>)件星王级以下的装备,获得经验+(<$STR(M10)>),元宝+(<$STR(M20)>)颗！ 0  146
+MOV M10 0
+MOV M20 0
+MOV M30 0
+break
+#elseact
+SENDMSG 7 〖提示〗你身上没有星王级以下的装备，无法回收！ 
+break
+
+[@Mir2m2测试回收脚本加载]
+#CALL [\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收脚本.txt] @Mir2m2测试回收保存数据
+
+
+}

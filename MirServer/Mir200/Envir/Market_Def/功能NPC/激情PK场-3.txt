@@ -1,0 +1,36 @@
+[@MAIN]
+╔═══════════════════════════╗\
+║           <COLOR=clFuchsia ★★★★>行会激情争霸地图<COLOR=clFuchsia ★★★★>           ║\
+║┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅║\
+║                    <行会激情争霸①/@ZB01>                    ║\
+║                                                      ║\
+║                    <行会激情争霸②/@ZB02>                    ║\
+║                                                      ║\
+║                    <行会激情争霸③/@ZB03>                    ║\
+╚═══════════════════════════╝\
+
+
+[@ZB01]
+#IF
+#ACT
+MAP HHPK1
+SENDMSG 0 〖%s〗进入了[行会激情PK战场①],是兄弟的速度来支援,不要等着收尸啊  250 0
+BREAK
+
+
+[@ZB02]
+#IF
+#ACT
+MAP HHPK2
+SENDMSG 0 〖%s〗进入了[行会激情PK战场②],是兄弟的速度来支援,不要等着收尸啊  250 0
+BREAK
+
+
+
+[@ZB03]
+#IF
+#ACT
+MAP HHPK3
+SENDMSG 0 〖%s〗进入了[行会激情PK战场③],是兄弟的速度来支援,不要等着收尸啊  250 0
+BREAK
+

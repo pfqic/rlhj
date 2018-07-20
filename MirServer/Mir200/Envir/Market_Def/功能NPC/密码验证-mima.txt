@@ -1,0 +1,24 @@
+[@main]
+为了保障玩家的帐号安全，在帐号被盗或者被骗，\
+只要你设置了二级密码，<COLOR=$FB0640 IP不一致上线必须输入二级密码！>\
+警请各位玩家不要泄露自己的帐号密码保护，避免不必要的损失！\ \
+<输入密码/@输入密码>\
+
+[@输入密码]
+#IF
+CHECKLEVELEX > 0
+#ACT
+QUERYVALUE 5 1 7 @密保格式 请输入你设置的密码保护 NPC
+BREAK
+
+[@密保格式]
+#IF
+EQUAL M5 <$HUMAN(二级密码)>
+#ACT
+ADDLINELIST QuestDiary\数据文件\IP数据.txt <$USERNAME><$IPADDR>
+MAPMOVE 3 330 330
+SENDMSG 6 [提示:]当前IP已添加为安全IP!祝你游戏愉快!
+BREAK
+#ELSEACT
+SENDMSG 6 [提示:]密码错误!
+BREAK

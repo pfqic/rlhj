@@ -1,0 +1,215 @@
+()
+%100
+[@main]
+<COLOR=clLime ─☆→> <COLOR=clRed 这里可以为你打造武器衣服> <COLOR=clLime ←☆─>\
+<神龙圣链 = 倚天圣链+金刚石10000颗+倚天碎片2个+200积分+80W元宝/@神龙圣链>\
+<神龙圣镯 = 倚天圣镯+金刚石10000颗+倚天碎片2个+200积分+80W元宝/@神龙圣镯>\
+<神龙圣戒 = 倚天圣戒+金刚石10000颗+倚天碎片2个+200积分+80W元宝/@神龙圣戒>\
+<神龙圣带 = 倚天圣带+金刚石10000颗+倚天碎片2个+200积分+80W元宝/@神龙圣带>\
+<神龙圣靴 = 倚天圣靴+金刚石10000颗+倚天碎片2个+200积分+80W元宝/@神龙圣靴>\
+<神龙圣盔 = 倚天圣盔+金刚石10000颗+倚天碎片2个+200积分+80W元宝/@神龙圣盔>\
+<神龙勋章 = 倚天勋章+金刚石10000颗+倚天碎片2个+200积分+80W元宝/@神龙勋章>\
+〖<COLOR=clLime ─☆→> <下一页/@main-2> <COLOR=clLime ←☆─>〗
+<COLOR=clFuchsia 网银冲值1元=4积分>  你目前有积分：<$HUMAN(消费积分)>个
+
+[@main-2]
+<COLOR=clLime ─☆→> <COLOR=clRed 这里可以为你打造武器衣服> <COLOR=clLime ←☆─>\ \
+<神龙武器 = 倚天武器+160W元宝+20000金刚石+1000充值积分/@神龙圣剑>\ \
+<神龙男衣 = 件倚天男衣+160W元宝+20000金刚石+1000充值积分/@神龙圣甲>\ \
+<神龙女衣 = 件倚天女衣+160W元宝+20000金刚石+1000充值积分/@神龙圣衣>\ \
+〖<COLOR=clLime ─☆→> <上一页/@main> <COLOR=clLime ←☆─>〗
+
+
+[@神龙圣剑]
+#IF
+CHECKITEM 倚天圣剑 1
+CHECKGAMEGOLD > 1599999
+CHECKGAMEDIAMOND > 19999
+CHECKVAR HUMAN 消费积分 > 999
+#ACT
+CALCVAR HUMAN 消费积分 - 1000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+GAMEGOLD - 1600000
+GAMEDIAMOND - 20000
+Take 倚天圣剑 1
+GIVE 神龙圣剑 1
+SENDMSG 5 恭喜你，打造成功
+BREAK
+#ELSEACT
+MESSAGEBOX [提示]：材料都没齐全，自己想想办法吧！
+
+[@神龙圣甲]
+#IF
+CHECKITEM 倚天圣甲 1
+CHECKGAMEGOLD > 1599999
+CHECKGAMEDIAMOND > 19999
+CHECKVAR HUMAN 消费积分 > 999
+#ACT
+CALCVAR HUMAN 消费积分 - 1000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+GAMEGOLD - 1600000
+GAMEDIAMOND - 20000
+Take 倚天圣甲 1
+GIVE 神龙圣甲 1
+SENDMSG 5 恭喜你，打造成功
+BREAK
+#ELSEACT
+MESSAGEBOX [提示]：材料都没齐全，自己想想办法吧！
+
+[@神龙圣衣]
+#IF
+CHECKITEM 倚天圣衣 1
+CHECKGAMEGOLD > 1599999
+CHECKGAMEDIAMOND > 19999
+CHECKVAR HUMAN 消费积分 > 999
+#ACT
+CALCVAR HUMAN 消费积分 - 1000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+GAMEGOLD - 1600000
+GAMEDIAMOND - 20000
+Take 倚天圣衣 1
+GIVE 神龙圣衣 1
+SENDMSG 5 恭喜你，打造成功
+BREAK
+#ELSEACT
+MESSAGEBOX [提示]：材料都没齐全，自己想想办法吧！
+
+[@神龙勋章]
+#IF
+CHECKITEM 倚天勋章 1
+CHECKITEM 倚天碎片 2
+CHECKGAMEGOLD > 799999
+CHECKGAMEDIAMOND > 9999
+CHECKVAR HUMAN 消费积分 > 199
+#ACT
+CALCVAR HUMAN 消费积分 - 200
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+GAMEGOLD - 800000
+GAMEDIAMOND - 10000
+Take 倚天勋章 1
+Take 倚天碎片 2
+GIVE 神龙勋章 1
+SENDMSG 5 恭喜你，打造成功
+BREAK
+#ELSEACT
+MESSAGEBOX [提示]：材料都没齐全，自己想想办法吧！
+
+[@神龙圣盔]
+#IF
+CHECKITEM 倚天圣盔 1
+CHECKITEM 倚天碎片 2
+CHECKGAMEGOLD > 799999
+CHECKGAMEDIAMOND > 9999
+CHECKVAR HUMAN 消费积分 > 199
+#ACT
+CALCVAR HUMAN 消费积分 - 200
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+GAMEGOLD - 800000
+GAMEDIAMOND - 10000
+Take 倚天圣盔 1
+Take 倚天碎片 2
+GIVE 神龙圣盔 1
+SENDMSG 5 恭喜你，打造成功
+BREAK
+#ELSEACT
+MESSAGEBOX [提示]：材料都没齐全，自己想想办法吧！
+
+[@神龙圣靴]
+#IF
+CHECKITEM 倚天圣靴 1
+CHECKITEM 倚天碎片 2
+CHECKGAMEGOLD > 799999
+CHECKGAMEDIAMOND > 9999
+CHECKVAR HUMAN 消费积分 > 199
+#ACT
+CALCVAR HUMAN 消费积分 - 200
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+GAMEGOLD - 800000
+GAMEDIAMOND - 10000
+Take 倚天圣靴 1
+Take 倚天碎片 2
+GIVE 神龙圣靴 1
+SENDMSG 5 恭喜你，打造成功
+BREAK
+#ELSEACT
+MESSAGEBOX [提示]：材料都没齐全，自己想想办法吧！
+
+[@神龙圣带]
+#IF
+CHECKITEM 倚天圣带 1
+CHECKITEM 倚天碎片 2
+CHECKGAMEGOLD > 799999
+CHECKGAMEDIAMOND > 9999
+CHECKVAR HUMAN 消费积分 > 199
+#ACT
+CALCVAR HUMAN 消费积分 - 200
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+GAMEGOLD - 800000
+GAMEDIAMOND - 10000
+Take 倚天圣带 1
+Take 倚天碎片 2
+GIVE 神龙圣带 1
+SENDMSG 5 恭喜你，打造成功
+BREAK
+#ELSEACT
+MESSAGEBOX [提示]：材料都没齐全，自己想想办法吧！
+
+[@神龙圣戒]
+#IF
+CHECKITEM 倚天圣戒 1
+CHECKITEM 倚天碎片 2
+CHECKGAMEGOLD > 799999
+CHECKGAMEDIAMOND > 9999
+CHECKVAR HUMAN 消费积分 > 199
+#ACT
+CALCVAR HUMAN 消费积分 - 200
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+GAMEGOLD - 800000
+GAMEDIAMOND - 10000
+Take 倚天圣戒 1
+Take 倚天碎片 2
+GIVE 神龙圣戒 1
+SENDMSG 5 恭喜你，打造成功
+BREAK
+#ELSEACT
+MESSAGEBOX [提示]：材料都没齐全，自己想想办法吧！
+
+[@神龙圣镯]
+#IF
+CHECKITEM 倚天圣镯 1
+CHECKITEM 倚天碎片 2
+CHECKGAMEGOLD > 799999
+CHECKGAMEDIAMOND > 9999
+CHECKVAR HUMAN 消费积分 > 199
+#ACT
+CALCVAR HUMAN 消费积分 - 200
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+GAMEGOLD - 800000
+GAMEDIAMOND - 10000
+Take 倚天圣镯 1
+Take 倚天碎片 2
+GIVE 神龙圣镯 1
+SENDMSG 5 恭喜你，打造成功
+BREAK
+#ELSEACT
+MESSAGEBOX [提示]：材料都没齐全，自己想想办法吧！
+
+[@神龙圣链]
+#IF
+CHECKITEM 倚天圣链 1
+CHECKITEM 倚天碎片 2
+CHECKGAMEGOLD > 799999
+CHECKGAMEDIAMOND > 9999
+CHECKVAR HUMAN 消费积分 > 199
+#ACT
+CALCVAR HUMAN 消费积分 - 200
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+GAMEGOLD - 800000
+GAMEDIAMOND - 10000
+Take 倚天圣链 1
+Take 倚天碎片 2
+GIVE 神龙圣链 1
+SENDMSG 5 恭喜你，打造成功
+BREAK
+#ELSEACT
+MESSAGEBOX [提示]：材料都没齐全，自己想想办法吧！

@@ -1,0 +1,50 @@
+()
+%100
+[@main]
+╔════════════════════════════╗\
+║<COLOR=clLime Hot:> <COLOR=clFuchsia ◎◎◎◎◎◆◆◆◆◎安全泡点◎◆◆◆◆◎◎◎◎◎◎> ║\
+║<COLOR=clFuchsia    可安全泡点到100级,人物英雄每秒经验+500W      >        ║\
+║<COLOR=clFuchsia    至尊泡点每秒5000W经验      扣除20000元宝每秒 >        ║\
+╚════════════════════════════╝\\
+　----------<安全泡点/@安全>----------------<至尊泡点/@至尊>------------\
+
+
+[@安全]
+#if
+CHECKLEVELEX > 0
+CHECKLEVELEX < 100
+#act
+MOVR P7 16
+INC P7 323
+MOVR P8 16
+INC P8 323
+mapmove 3 <$STR(P7)> <$STR(P8)>
+SetScTimer 9 1
+SENDMSG 0 恭喜勇敢的玩家『%s』进入了【安全泡点】海量经验任你泡，升级爽翻天！ 245 0
+SENDMSG 0 恭喜勇敢的玩家『%s』进入了【安全泡点】海量经验任你泡，升级爽翻天！ 245 0
+SENDMSG 0 恭喜勇敢的玩家『%s』进入了【安全泡点】海量经验任你泡，升级爽翻天！ 245 0
+SENDMSG 0 恭喜勇敢的玩家『%s』进入了【安全泡点】海量经验任你泡，升级爽翻天！ 245 0
+break
+#elsesay
+请检查您的等级是否已超过100级\
+<确定/@exit>
+
+
+
+
+[@至尊]
+#if
+CHECKLEVELEX > 0
+CHECKLEVELEX < 130
+#act
+KillScTimer 9
+mapmove zzpd 
+SetScTimer 1 1
+SENDMSG 0 恭喜土豪玩家『%s』进入了【至尊泡点】海量经验任你泡，升级爽翻天！ 245 0
+SENDMSG 0 恭喜土豪玩家『%s』进入了【至尊泡点】海量经验任你泡，升级爽翻天！ 245 0
+SENDMSG 0 恭喜土豪玩家『%s』进入了【至尊泡点】海量经验任你泡，升级爽翻天！ 245 0
+SENDMSG 0 恭喜土豪玩家『%s』进入了【至尊泡点】海量经验任你泡，升级爽翻天！ 245 0
+break
+#elsesay
+请检查您的等级是否已超过130级\
+<确定/@exit>

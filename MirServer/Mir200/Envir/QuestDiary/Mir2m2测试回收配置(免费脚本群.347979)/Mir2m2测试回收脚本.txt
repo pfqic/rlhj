@@ -1,0 +1,90 @@
+[@Mir2m2测试回收脚本QM]
+{
+#IF
+CHECK [0] 0
+#ACT
+MOV S10 <$GLOBAL(测试回收开区)>
+DEC S10 2 100
+#IF
+EQUAL S10 ?
+#ACT
+VAR Integer GLOBAL 测试回收开区
+MOV S10 
+#ELSEACT
+MOV S10 
+#IF
+CheckStringList ..\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收开区.txt 测试
+#ACT
+CALCVAR GLOBAL 测试回收开区 = 2
+CLEARNAMELIST ..\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收帐号\Mir2m2测试回收帐号.ini
+CLEARNAMELIST ..\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收开区.txt
+ADDLINELIST ..\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收开区.txt 测试(已清空数据)
+#IF
+CHECKVAR GLOBAL 测试回收开区 < 2
+CheckStringList ..\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收开区.txt 测试(已清空数据)
+#ACT
+CALCVAR GLOBAL 测试回收开区 = 2
+#IF
+CHECK [0] 0
+#ACT
+VAR String  HUMAN 测试回收帐号
+VAR Integer HUMAN 测试回收数量
+VAR Integer HUMAN 测试回收读取
+VAR Integer HUMAN 测试回收增加
+CLEARNAMELIST ..\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收帐号\Mir2m2测试帐号获取.txt
+addaccountlist ..\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收帐号\Mir2m2测试帐号获取.txt
+MOV S10 
+READRANDOMSTR .\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收帐号\Mir2m2测试帐号获取.txt S10
+CALCVAR HUMAN 测试回收帐号 = <$STR(S10)>
+MOV S10 
+#IF
+checkaccountlist ..\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收帐号\Mir2m2测试回收帐号.ini
+#ACT
+MOV S10 
+READRANDOMSTR .\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收数据\<$HUMAN(测试回收帐号)>.ini S10
+MOV P9 <$STR(S10)>
+CALCVAR HUMAN 测试回收数量 = <$STR(P9)>
+MOV S10 
+CALCVAR HUMAN 测试回收读取 = 1
+
+[@Mir2m2测试回收清空数据]
+#IF
+CHECK [0] 0
+#ACT
+CALCVAR HUMAN 测试回收数量 = 0
+CALCVAR HUMAN 测试回收读取 = 0
+}
+
+[@Mir2m2测试回收保存数据]
+{
+#IF
+CHECKVAR GLOBAL 测试回收开区 < 1
+#ACT
+CALCVAR HUMAN 测试回收增加 = 0
+BREAK
+#IF
+CHECKVAR HUMAN 测试回收增加 < 1
+#ACT
+BREAK
+#IF
+CHECKVAR HUMAN 测试回收帐号 = 
+#ACT
+CLEARNAMELIST ..\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收帐号\Mir2m2测试帐号获取.txt
+addaccountlist ..\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收帐号\Mir2m2测试帐号获取.txt
+MOV S10 
+READRANDOMSTR .\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收帐号\Mir2m2测试帐号获取.txt S10
+CALCVAR HUMAN 测试回收帐号 = <$STR(S10)>
+MOV S10
+#IF
+CHECK [0] 0
+#ACT
+CALCVAR HUMAN 测试回收数量 + <$HUMAN(测试回收增加)>
+CALCVAR HUMAN 测试回收增加 = 0
+CLEARNAMELIST ..\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收数据\<$HUMAN(测试回收帐号)>.ini
+ADDLINELIST .\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收数据\<$HUMAN(测试回收帐号)>.ini <$HUMAN(测试回收数量)>
+#IF
+CHECKVAR HUMAN 测试回收读取 = 0
+#ACT
+CALCVAR HUMAN 测试回收读取 = 1
+addaccountlist ..\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收帐号\Mir2m2测试回收帐号.ini
+}

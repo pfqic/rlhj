@@ -1,0 +1,54 @@
+2018/7/19 13:06:56 已读取 0个行会信息...
+2018/7/19 13:06:56 已读取 1个城堡信息...
+2018/7/19 13:06:56 连接SQL数据成功...
+2018/7/19 13:06:57 脚本错误 第:16 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:06:57 脚本错误 第:24 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:06:57 脚本错误 第:32 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:06:57 脚本错误 第:40 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:06:57 脚本错误 第:48 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:06:57 #CALL 文件不存在: D:\MirServer\Mir200\Envir\QuestDiary\系统功能\星王剑甲.txt
+2018/7/19 13:06:57 初始化 248个交易NPC...
+2018/7/19 13:06:57 初始化 7个管理NPC...
+2018/7/19 13:06:58 游戏网关端口(127.0.0.1:5000)已打开...
+2018/7/19 13:06:58 登录服务器(127.0.0.1:5600)连接成功...
+2018/7/19 13:06:58 游戏网关[0](127.0.0.1:57539)已打开..
+2018/7/19 13:07:01 数据库服务器(127.0.0.1:6000)连接成功...
+2018/7/19 13:10:36 脚本错误 第:16 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:10:36 脚本错误 第:23 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:10:36 脚本错误 第:30 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:10:36 脚本错误 第:37 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:10:36 脚本错误 第:44 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:10:52 脚本错误 第:16 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:10:52 脚本错误 第:23 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:10:52 脚本错误 第:30 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:10:52 脚本错误 第:37 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:10:52 脚本错误 第:44 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:11:53 在线数: 1(1)
+2018/7/19 13:12:23 脚本错误 第:16 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:12:23 脚本错误 第:23 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:12:23 脚本错误 第:30 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:12:23 脚本错误 第:37 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:12:23 脚本错误 第:44 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:16:53 在线数: 1(1)
+2018/7/19 13:18:05 脚本错误 第:16 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:18:05 脚本错误 第:23 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:18:05 脚本错误 第:30 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:18:05 脚本错误 第:37 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:18:05 脚本错误 第:44 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:19:48 脚本错误 第:15 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:19:48 脚本错误 第:22 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:19:48 脚本错误 第:29 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:19:48 脚本错误 第:36 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:19:48 脚本错误 第:43 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:21:53 在线数: 1(1)
+2018/7/19 13:24:39 脚本错误 第:16 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:24:39 脚本错误 第:23 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:24:39 脚本错误 第:30 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:24:39 脚本错误 第:37 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:24:39 脚本错误 第:44 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:25:28 脚本错误 第:16 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:25:28 脚本错误 第:23 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:25:28 脚本错误 第:30 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:25:28 脚本错误 第:37 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:25:28 脚本错误 第:44 行: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/激情泡点-3.txt
+2018/7/19 13:26:05 游戏网关[0](127.0.0.1:57539)已关闭..

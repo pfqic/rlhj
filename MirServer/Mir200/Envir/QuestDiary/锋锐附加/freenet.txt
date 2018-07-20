@@ -1,0 +1,493 @@
+[@领取附加]
+{
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\01.txt
+#ACT
+GAMEPOINT + 0
+GAMEDIAMOND + 1
+delaccountlist ..\QuestDiary\锋锐附加\01.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买0个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买1个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\1.txt
+#ACT
+GAMEPOINT + 1
+GAMEDIAMOND + 10
+delaccountlist ..\QuestDiary\锋锐附加\1.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买1个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买10个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\10.txt
+#ACT
+GAMEPOINT + 10
+GAMEDIAMOND + 100
+delaccountlist ..\QuestDiary\锋锐附加\10.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买10个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买100个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\100.txt
+#ACT
+GAMEPOINT + 100
+GAMEDIAMOND + 1000
+delaccountlist ..\QuestDiary\锋锐附加\100.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买100个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买1000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\1000.txt
+#ACT
+GAMEPOINT + 1000
+GAMEDIAMOND + 10000
+delaccountlist ..\QuestDiary\锋锐附加\1000.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买1000个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买10000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\10000.txt
+#ACT
+GAMEPOINT + 10000
+GAMEDIAMOND + 100000
+delaccountlist ..\QuestDiary\锋锐附加\10000.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买10000个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买100000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\02.txt
+#ACT
+GAMEPOINT + 0
+GAMEDIAMOND + 2
+delaccountlist ..\QuestDiary\锋锐附加\02.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买0个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买2个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\2.txt
+#ACT
+GAMEPOINT + 2
+GAMEDIAMOND + 20
+delaccountlist ..\QuestDiary\锋锐附加\2.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买2个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买20个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\20.txt
+#ACT
+GAMEPOINT + 20
+GAMEDIAMOND + 200
+delaccountlist ..\QuestDiary\锋锐附加\20.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买20个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买200个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\200.txt
+#ACT
+GAMEPOINT + 200
+GAMEDIAMOND + 2000
+delaccountlist ..\QuestDiary\锋锐附加\200.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买200个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买2000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\2000.txt
+#ACT
+GAMEPOINT + 2000
+GAMEDIAMOND + 20000
+delaccountlist ..\QuestDiary\锋锐附加\2000.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买2000个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买20000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\20000.txt
+#ACT
+GAMEPOINT + 20000
+GAMEDIAMOND + 200000
+delaccountlist ..\QuestDiary\锋锐附加\20000.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买20000个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买200000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\03.txt
+#ACT
+GAMEPOINT + 0
+GAMEDIAMOND + 3
+delaccountlist ..\QuestDiary\锋锐附加\03.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买0个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买3个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\3.txt
+#ACT
+GAMEPOINT + 3
+GAMEDIAMOND + 30
+delaccountlist ..\QuestDiary\锋锐附加\3.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买3个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买30个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\30.txt
+#ACT
+GAMEPOINT + 30
+GAMEDIAMOND + 300
+delaccountlist ..\QuestDiary\锋锐附加\30.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买30个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买300个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\300.txt
+#ACT
+GAMEPOINT + 300
+GAMEDIAMOND + 3000
+delaccountlist ..\QuestDiary\锋锐附加\300.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买300个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买3000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\3000.txt
+#ACT
+GAMEPOINT + 3000
+GAMEDIAMOND + 30000
+delaccountlist ..\QuestDiary\锋锐附加\3000.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买3000个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买30000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\30000.txt
+#ACT
+GAMEPOINT + 30000
+GAMEDIAMOND + 300000
+delaccountlist ..\QuestDiary\锋锐附加\30000.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买30000个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买300000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\04.txt
+#ACT
+GAMEPOINT + 0
+GAMEDIAMOND + 4
+delaccountlist ..\QuestDiary\锋锐附加\04.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买0个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买4个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\4.txt
+#ACT
+GAMEPOINT + 4
+GAMEDIAMOND + 40
+delaccountlist ..\QuestDiary\锋锐附加\4.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买4个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买40个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\40.txt
+#ACT
+GAMEPOINT + 40
+GAMEDIAMOND + 400
+delaccountlist ..\QuestDiary\锋锐附加\40.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买40个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买400个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\400.txt
+#ACT
+GAMEPOINT + 400
+GAMEDIAMOND + 4000
+delaccountlist ..\QuestDiary\锋锐附加\400.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买400个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买4000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\4000.txt
+#ACT
+GAMEPOINT + 4000
+GAMEDIAMOND + 40000
+delaccountlist ..\QuestDiary\锋锐附加\4000.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买4000个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买40000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\40000.txt
+#ACT
+GAMEPOINT + 40000
+GAMEDIAMOND + 400000
+delaccountlist ..\QuestDiary\锋锐附加\40000.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买40000个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买400000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\05.txt
+#ACT
+GAMEPOINT + 0
+GAMEDIAMOND + 5
+delaccountlist ..\QuestDiary\锋锐附加\05.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买0个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买5个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\5.txt
+#ACT
+GAMEPOINT + 5
+GAMEDIAMOND + 50
+delaccountlist ..\QuestDiary\锋锐附加\5.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买5个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买50个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\50.txt
+#ACT
+GAMEPOINT + 50
+GAMEDIAMOND + 500
+delaccountlist ..\QuestDiary\锋锐附加\50.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买50个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买500个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\500.txt
+#ACT
+GAMEPOINT + 500
+GAMEDIAMOND + 5000
+delaccountlist ..\QuestDiary\锋锐附加\500.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买500个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买5000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\5000.txt
+#ACT
+GAMEPOINT + 5000
+GAMEDIAMOND + 50000
+delaccountlist ..\QuestDiary\锋锐附加\5000.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买5000个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买50000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\50000.txt
+#ACT
+GAMEPOINT + 50000
+GAMEDIAMOND + 500000
+delaccountlist ..\QuestDiary\锋锐附加\50000.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买50000个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买500000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\06.txt
+#ACT
+GAMEPOINT + 1
+GAMEDIAMOND + 6
+delaccountlist ..\QuestDiary\锋锐附加\06.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买1个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买6个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\6.txt
+#ACT
+GAMEPOINT + 6
+GAMEDIAMOND + 60
+delaccountlist ..\QuestDiary\锋锐附加\6.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买6个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买60个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\60.txt
+#ACT
+GAMEPOINT + 60
+GAMEDIAMOND + 600
+delaccountlist ..\QuestDiary\锋锐附加\60.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买60个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买600个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\600.txt
+#ACT
+GAMEPOINT + 600
+GAMEDIAMOND + 6000
+delaccountlist ..\QuestDiary\锋锐附加\600.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买600个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买6000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\6000.txt
+#ACT
+GAMEPOINT + 6000
+GAMEDIAMOND + 60000
+delaccountlist ..\QuestDiary\锋锐附加\6000.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买6000个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买60000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\60000.txt
+#ACT
+GAMEPOINT + 60000
+GAMEDIAMOND + 600000
+delaccountlist ..\QuestDiary\锋锐附加\60000.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买60000个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买600000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\07.txt
+#ACT
+GAMEPOINT + 1
+GAMEDIAMOND + 7
+delaccountlist ..\QuestDiary\锋锐附加\07.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买1个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买7个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\7.txt
+#ACT
+GAMEPOINT + 7
+GAMEDIAMOND + 70
+delaccountlist ..\QuestDiary\锋锐附加\7.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买7个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买70个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\70.txt
+#ACT
+GAMEPOINT + 70
+GAMEDIAMOND + 700
+delaccountlist ..\QuestDiary\锋锐附加\70.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买70个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买700个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\700.txt
+#ACT
+GAMEPOINT + 700
+GAMEDIAMOND + 7000
+delaccountlist ..\QuestDiary\锋锐附加\700.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买700个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买7000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\7000.txt
+#ACT
+GAMEPOINT + 7000
+GAMEDIAMOND + 70000
+delaccountlist ..\QuestDiary\锋锐附加\7000.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买7000个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买70000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\70000.txt
+#ACT
+GAMEPOINT + 70000
+GAMEDIAMOND + 700000
+delaccountlist ..\QuestDiary\锋锐附加\70000.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买70000个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买700000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\08.txt
+#ACT
+GAMEPOINT + 1
+GAMEDIAMOND + 8
+delaccountlist ..\QuestDiary\锋锐附加\08.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买1个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买8个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\8.txt
+#ACT
+GAMEPOINT + 8
+GAMEDIAMOND + 80
+delaccountlist ..\QuestDiary\锋锐附加\8.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买8个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买80个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\80.txt
+#ACT
+GAMEPOINT + 80
+GAMEDIAMOND + 800
+delaccountlist ..\QuestDiary\锋锐附加\80.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买80个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买800个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\800.txt
+#ACT
+GAMEPOINT + 800
+GAMEDIAMOND + 8000
+delaccountlist ..\QuestDiary\锋锐附加\800.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买800个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买8000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\8000.txt
+#ACT
+GAMEPOINT + 8000
+GAMEDIAMOND + 80000
+delaccountlist ..\QuestDiary\锋锐附加\8000.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买8000个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买80000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\80000.txt
+#ACT
+GAMEPOINT + 80000
+GAMEDIAMOND + 800000
+delaccountlist ..\QuestDiary\锋锐附加\80000.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买80000个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买800000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\09.txt
+#ACT
+GAMEPOINT + 1
+GAMEDIAMOND + 9
+delaccountlist ..\QuestDiary\锋锐附加\09.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买1个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买9个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\9.txt
+#ACT
+GAMEPOINT + 9
+GAMEDIAMOND + 90
+delaccountlist ..\QuestDiary\锋锐附加\9.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买9个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买90个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\90.txt
+#ACT
+GAMEPOINT + 90
+GAMEDIAMOND + 900
+delaccountlist ..\QuestDiary\锋锐附加\90.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买90个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买900个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\900.txt
+#ACT
+GAMEPOINT + 900
+GAMEDIAMOND + 9000
+delaccountlist ..\QuestDiary\锋锐附加\900.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买900个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买9000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\9000.txt
+#ACT
+GAMEPOINT + 9000
+GAMEDIAMOND + 90000
+delaccountlist ..\QuestDiary\锋锐附加\9000.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买9000个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买90000个金刚石
+goto @领取附加
+#IF
+checkaccountlist ..\QuestDiary\锋锐附加\90000.txt
+#ACT
+GAMEPOINT + 90000
+GAMEDIAMOND + 900000
+delaccountlist ..\QuestDiary\锋锐附加\90000.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买90000个游戏点数
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，购买900000个金刚石
+goto @领取附加
+#ELSESAY
+您当前还没有充值或已领取成功,请查看自己的元宝数量!\
+<返回/@main>
+}
+

@@ -1,0 +1,145 @@
+[@Mir2m2测试回收脚本NPC]
+{
+#IF
+CHECKVAR GLOBAL 测试回收开区 > 0
+#ACT
+MOV S10 <COLOR=$00006BEF
+INC S10 
+INC S10 测试区>
+MOV S11 <COLOR=$00B317E3
+INC S11 
+INC S11 正式开区后可在这里取回测试区回收的元宝>
+MOV S12 正式区
+#ELSEACT
+MOV S10 <COLOR=clGreen
+INC S10 
+INC S10 正式开区>
+MOV S11 <COLOR=$00B317E3
+INC S11 
+INC S11 您在【测试区关闭前】回收的元宝才可以取回>
+MOV S12 测试区
+
+#IF
+ISADMIN
+#ACT
+MOV S11 　<GM点此修改为
+INC S11 <$STR(S12)>
+INC S11 /@Mir2m2测试回收开区模式>　<点此清空已存入的数据/@Mir2m2测试回收清理数据>
+
+#IF
+CHECKVAR HUMAN 测试回收数量 < 20000000
+#ACT
+MOV P9 <$HUMAN(测试回收数量)>
+MUL P9 $(测试回收比例)
+DIV P9 100
+#ELSEACT
+MOV P9 <$HUMAN(测试回收数量)>
+DIV P9 100
+MUL P9 $(测试回收比例)
+
+#IF
+CHECKLEVELEX > 0
+#ACT
+#SAY
+<COLOR=clFuchsia ▁▂▃▄▅▆▇██ ><COLOR=clAqua 【↓↓测试返还↓↓】> <COLOR=clFuchsia ██▇▆▅▄▃▂▁ > \
+<COLOR=clyellow ┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄>\
+<COLOR=clLime ⒈测试区通过装备回收得到的元宝,开区后可以在我这里领取>\
+\ \
+<COLOR=clred ⒉您当前在测试区回收的元宝数量为 ：><$HUMAN(测试回收数量)>  \
+\ \
+<COLOR=clFuchsia ⒊正式开区后可取回（取回比例$(测试回收比例)%）：><$STR(P9)> \
+<COLOR=clyellow ┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄>\
+<本区状态>：<$STR(S10)>                  <取回测试区回收的元宝/@Mir2m2测试回收全部取回>                    \ 
+
+
+
+
+[@Mir2m2测试回收开区模式]
+#IF
+ISADMIN
+#ELSEACT
+break
+#IF
+CHECKVAR GLOBAL 测试回收开区 > 0
+#ACT
+CALCVAR GLOBAL 测试回收开区 = 0
+CLEARNAMELIST ..\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收开区.txt
+MESSAGEBOX 已将本区修改为【正式开区】
+GOTO @Mir2m2测试回收脚本NPC
+#ELSEACT
+CALCVAR GLOBAL 测试回收开区 = 2
+CLEARNAMELIST ..\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收开区.txt
+ADDLINELIST ..\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收开区.txt 测试(已清空数据)
+MESSAGEBOX 已将本区修改为【测试区】
+GOTO @Mir2m2测试回收脚本NPC
+
+[@Mir2m2测试回收清理数据]
+#IF
+ISADMIN
+#ELSEACT
+break
+#IF
+CHECKLEVELEX > 0
+#ACT
+QUERYVALUE 0 2 0 @Mir2m2测试回收清理数据B 是否确定将本区玩家已存入的元宝数据清空？\　\清空后数据不可恢复，请谨慎操作！
+[@Mir2m2测试回收清理数据B]
+#IF
+ISADMIN
+#ELSEACT
+break
+#IF
+CHECKVAR GLOBAL 测试回收开区 > 0
+#ACT
+CALCVAR GLOBAL 测试回收开区 = 2
+CLEARNAMELIST ..\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收开区.txt
+ADDLINELIST ..\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收开区.txt 测试(已清空数据)
+#IF
+CHECKLEVELEX > 0
+#ACT
+CLEARNAMELIST ..\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收帐号\Mir2m2测试回收帐号.ini
+GMEXECUTE $(测试回收触发) @Mir2m2测试回收清空数据
+MESSAGEBOX 已将本区玩家回收的元宝数据清空！
+GOTO @Mir2m2测试回收脚本NPC
+
+[@Mir2m2测试回收全部取回]
+#IF
+CHECKVAR GLOBAL 测试回收开区 > 0
+#ACT
+MESSAGEBOX 对不起，本区当前为【测试区】！\　\请正式开区后再取回！
+GOTO @Mir2m2测试回收脚本NPC
+break
+#IF
+CHECKVAR HUMAN 测试回收数量 < 1
+#ACT
+MESSAGEBOX 对不起，您在测试区没有回收的元宝，无法取回！
+break
+#IF
+CHECKVAR HUMAN 测试回收数量 < 20000000
+#ACT
+MOV P9 <$HUMAN(测试回收数量)>
+MUL P9 $(测试回收比例)
+DIV P9 100
+#ELSEACT
+MOV P9 <$HUMAN(测试回收数量)>
+DIV P9 100
+MUL P9 $(测试回收比例)
+#IF
+SMALL P9 1
+#ACT
+MESSAGEBOX 对不起，可取回的元宝数量小于1，无法取回！
+break
+#ELSEACT
+sendmsg 5 恭喜【%s】成功取回了测试区回收获得的【<$STR(P9)>元宝】！ 250 255 10
+sendmsg 0 恭喜【%s】成功取回了测试区回收获得的【<$STR(P9)>元宝】！ 253 0
+sendmsg 0 恭喜【%s】成功取回了测试区回收获得的【<$STR(P9)>元宝】！ 253 0
+sendmsg 0 恭喜【%s】成功取回了测试区回收获得的【<$STR(P9)>元宝】！ 253 0
+MESSAGEBOX 恭喜您成功取回了测试区回收获得的【<$STR(P9)>元宝】！
+GAMEGOLD + <$STR(P9)>
+CALCVAR HUMAN 测试回收数量 = 0
+CLEARNAMELIST ..\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收数据\<$HUMAN(测试回收帐号)>.ini
+ADDLINELIST .\QuestDiary\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收数据\<$HUMAN(测试回收帐号)>.ini 0
+GOTO @Mir2m2测试回收脚本NPC
+
+[@Mir2m2测试回收常量加载]
+#CALL [\Mir2m2测试回收配置(免费脚本群.347979)\Mir2m2测试回收常量.ini] @Mir2m2测试回收常量
+}

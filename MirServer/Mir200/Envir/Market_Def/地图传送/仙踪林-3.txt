@@ -1,0 +1,26 @@
+()
+%100
+[@main]
+<COLOR=clAqua 【仙踪林】> <COLOR=clRed Hot~ >                      <COLOR=clLime 降龙合击，邀你來戰!>\
+<COLOR=clGray ------------------------------------------------------------>　\
+<COLOR=clRed BOOS名称：>4万，6万，10万血BOSS\
+<COLOR=clRed 怪物刷新：>大BOSS类40分钟，魔龙教主类20分钟\
+<COLOR=clRed 爆率介绍：>星王、极品、次终极、终极\
+<COLOR=clRed 进入条件：><COLOR=clFuchsia 4000元宝 等级52级>\
+<COLOR=clGray ------------------------------------------------------------>　\
+　　※ <我要进入/@仙踪林> ※      　　　　       ※ <关闭对话/@exit> ※
+
+
+[@仙踪林]
+#if
+CHECKLEVELEX > 51
+CHECKGAMEGOLD > 3999
+#act
+GAMEGOLD - 4000
+mapmove shang2
+SENDMSG 0 勇敢的玩家:[%s]进入仙踪林寻宝去了!!! 253 0 10
+SENDMSG 0 勇敢的玩家:[%s]进入仙踪林寻宝去了!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]进入仙踪林寻宝去了!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]进入仙踪林寻宝去了!!! 253 0
+#ELSEACT
+MESSAGEBOX 需要4000元宝用来进入地图，且人物等级达到52级。

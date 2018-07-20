@@ -1,0 +1,141 @@
+[@MAIN]
+<COLOR=clSkyBlue 五年诚信经营，打造品牌游戏，每天多个新区开放，打造激情天堂>\ \
+╔━━━━┳━━━━━━━━━━━━━━━━━━┳━━━━╗\
+┃<COLOR=clFuchsia 经验镖车>┃<COLOR=clFuchsia 奖励:1000万-5000万经验(随机分配)> ┃<接受任务/@JSRW>┃\
+╠━━━━╋━━━━━━━━━━━━━━━━━━╋━━━━┫\
+┃<COLOR=clFuchsia 经验镖车>┃<COLOR=clFuchsia 奖励:1000万-5000万经验(随机分配)> ┃<接受任务/@JSRW>┃\
+╚━━━━┻━━━━━━━━━━━━━━━━━━┻━━━━╝\
+　 　<COLOR=clLime 请把镖车拉运到：押镖之路(二)的镖务总管处换取酬劳>\
+　 　　 <COLOR=clAqua 您今天押镖次数为：><$HUMAN(押镖次数)><COLOR=clAqua 次><COLOR=clRed (每角色每天可押镖3次)>
+
+[@JSRW]
+#IF
+#ACT
+QUERYVALUE 2 2 10 ~JSRW 押送【经验镖车】需要押金：1000颗元宝\　\任务完成后退回押金，并奖励经验1000万-5000万经验(随机分配)\　\途中小退下线或镖车遭到破坏，视为任务失败，没收押金\　\请确定是否进行押镖？
+
+[~JSRW]
+#IF
+CHECKGAMEGOLD < 1000
+#ACT
+MESSAGEBOX 接受押镖任务需要1000颗元宝做为押金，元宝可以通过装备回收获得！
+break
+
+#IF
+ISESCORTING
+#SAY
+您还没有完成上一次押镖任务.如果你要重新开始,请先放弃上一\
+次未完成的护送任务。\ \
+注意：放弃任务为任务失败！\ \
+<放弃任务/@放弃任务>    <送我至镖车丢失的地点/@flyto>\ \
+<返回/@main>\
+#ACT
+break
+
+#IF
+HOUR 19 24
+MIN 0 60
+RANDOM 20
+CHECKGAMEGOLD > 999
+CHECKVAR HUMAN 押镖次数 < 3
+#ACT
+SET [099] 1
+GAMEGOLD - 1000
+STARTESCORT 无敌镖车
+CALCVAR HUMAN 押镖次数 + 1
+SAVEVAR HUMAN 押镖次数 ..\QuestDiary\数据文件\变量.txt
+MESSAGEBOX 恭喜你接到了【无敌镖车】\一直往前走,直到看见镖务总管为止!
+SENDMSG 0 玩家【%s】接受了(无敌镖车)，前往杀害他的镖车可获得1000个元宝哦，机会不可错过！ 253 246 60
+break
+
+#IF
+HOUR 19 24
+MIN 0 60
+RANDOM 6
+CHECKGAMEGOLD > 999
+CHECKVAR HUMAN 押镖次数 < 3
+#ACT
+SET [099] 1
+GAMEGOLD - 1000
+STARTESCORT 超级镖车
+CALCVAR HUMAN 押镖次数 + 1
+SAVEVAR HUMAN 押镖次数 ..\QuestDiary\数据文件\变量.txt
+MESSAGEBOX 恭喜你接到了【超级镖车】\一直往前走,直到看见镖务总管为止!
+SENDMSG 0 玩家【%s】接受了(超级镖车)，前往杀害他的镖车可获得1000个元宝哦，机会不可错过！ 253 246 60
+break
+
+#IF
+HOUR 19 24
+MIN 0 60
+RANDOM 4
+CHECKGAMEGOLD > 999
+CHECKVAR HUMAN 押镖次数 < 3
+#ACT
+SET [099] 1
+GAMEGOLD - 1000
+STARTESCORT 高级镖车
+CALCVAR HUMAN 押镖次数 + 1
+SAVEVAR HUMAN 押镖次数 ..\QuestDiary\数据文件\变量.txt
+MESSAGEBOX 恭喜你接到了【高级镖车】\一直往前走,直到看见镖务总管为止!
+SENDMSG 0 玩家【%s】接受了(高级镖车)，前往杀害他的镖车可获得1000个元宝哦，机会不可错过！ 253 246 60
+break
+
+#IF
+HOUR 19 24
+MIN 0 60
+CHECKGAMEGOLD > 999
+CHECKVAR HUMAN 押镖次数 < 3
+#ACT
+SET [099] 1
+GAMEGOLD - 1000
+STARTESCORT 普通镖车
+CALCVAR HUMAN 押镖次数 + 1
+SAVEVAR HUMAN 押镖次数 ..\QuestDiary\数据文件\变量.txt
+MESSAGEBOX 恭喜你接到了【普通镖车】\一直往前走,直到看见镖务总管为止!
+SENDMSG 0 玩家【%s】接受了(普通镖车)，前往杀害他的镖车可获得1000个元宝哦，机会不可错过！ 253 246 60
+break
+#elsesay
+接受任务失败：\ \
+1.您今天已经完成了3次押镖任务！\ \
+2.您的元宝不足1000颗，无法接受任务！\ \
+3.押镖时间为每天的19点至24点！\ \
+<离开/@EXIT>
+
+[@放弃任务]
+#IF
+#SAY
+任务注销成功.可以再次接任务拉车！
+#ACT
+set [090] 0
+GIVEUPESCORT
+break
+
+[@flyto]
+#IF
+CHECKGAMEGOLD > 99
+#ACT
+GAMEGOLD - 100
+MoveToEscort
+break
+#elseact
+messagebox 你没有【100】个元宝.不能送你过去
+break
+
+[@isEscorting]
+#SAY
+你的托运任务正在执行中，不能再接此任务\
+<寻找镖车/@flyto>   <关闭/@exit>
+
+[@EscortFail]
+#SAY
+接镖车任务失败，数据中不存在镖车！\
+<关闭/@exit>
+
+[@MoveToEscort_Fail_1]
+#SAY
+你目前没有正在托运的镖车！\
+<关闭/@exit>
+
+[@MoveToEscort_Fail_2]
+#SAY
+移动到目标失败！\
+<关闭/@exit>

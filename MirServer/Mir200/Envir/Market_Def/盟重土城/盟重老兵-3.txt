@@ -1,0 +1,241 @@
+[@main]
+听说魔龙教主复活了!他的领地“魔龙血域”也已重现大陆!\
+好象藏着大量财宝的魔龙殿的入口也出现在魔龙沼泽附近\
+不过那么邪恶的地方,你真的打算去吗?\
+<去商店/@talkwith>               <去交易市场/@前往>\
+<城市传送/@move1>             <去交易市场/@前往>\
+<关闭/@exit>\
+
+[@入口传送]
+<$SERVERNAME>防盛大1.80极品星王版\
+┄┄┄┄┄┄┄┄┄┄┄<COLOR=clLime 入口传送地图>┄┄┄┄┄┄┄┄┄┄┄\
+<矿区洞口/@矿区洞口>        <蜈蚣洞口/@蜈蚣洞口>        <沃玛洞口/@沃玛洞口>\
+<石墓洞口/@石墓洞口>        <祖玛洞口/@祖玛洞口>        <封魔洞口/@封魔洞口>\
+<牛魔洞口/@牛魔洞口>        <骨魔洞口/@骨魔洞口>        <尸魔洞口/@尸魔洞口>\
+<赤月洞口/@赤月洞口>\
+┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄\
+
+
+[@前往]
+#IF
+#ACT
+MAPMOVE GA0 70 72
+SENDMSG 0 〖%s〗进入〖交易市场〗是老板还是小贩?请把握商机 255 0
+SENDMSG 0 〖%s〗进入〖交易市场〗是老板还是小贩?请把握商机 255 0
+SENDMSG 0 〖%s〗进入〖交易市场〗是老板还是小贩?请把握商机 255 0
+SENDMSG 0 〖%s〗进入〖交易市场〗是老板还是小贩?请把握商机 255 0
+BREAK
+
+[@矿区洞口]
+#IF
+checkgold 3000
+#ACT
+mapmove 0 659 218
+take 金币 3000
+break
+#ELSESAY
+需要3000金币用来支付我们的服务费用!\
+
+[@蜈蚣洞口]
+#IF
+checkgold 5000
+#ACT
+take 金币 5000
+mapmove 3 142 92
+break
+#ELSESAY
+需要5000金币用来支付我们的服务费用!\
+
+[@沃玛洞口]
+#IF
+checkgold 5000
+#ACT
+take 金币 5000
+mapmove D021 71 69
+break
+#ELSESAY
+需要5000金币用来支付我们的服务费用!\
+
+[@石墓洞口]
+#IF
+checkgold 1000
+#act
+take 金币 1000
+mapmove D710 27 20
+#ELSESAY
+你没有1000金币用来支付我们的服务费用!\
+
+[@赤月洞口]
+#IF
+checkgold 5000
+#act
+take 金币 5000
+mapmove 12 89 13
+#ELSESAY
+你没有5000金币用来支付我们的服务费用!\
+
+[@祖玛洞口]
+#IF
+checkgold 5000
+#act
+take 金币 5000
+mapmove 0157 17 17
+#ELSESAY
+你没有5000金币用来支付我们的服务费用!\
+
+[@牛魔洞口]
+#IF
+checkgold 5000
+#act
+take 金币 5000
+mapmove 5 658 463
+#ELSESAY
+你没有5000金币用来支付我们的服务费用!\
+
+[@尸魔洞口]
+#IF 
+checkgold 5000
+#ACT
+take 金币 5000
+mapmove 5 522 615
+break 
+#ELSESAY 
+你没有5000金币用来支付我们的服务费用!\
+
+[@骨魔洞口]
+#IF 
+checkgold 5000
+#ACT
+take 金币 5000
+mapmove 5 545 131
+break 
+#ELSESAY 
+你没有5000金币用来支付我们的服务费用!\
+
+[@封魔洞口]
+#IF 
+checkgold 5000
+#ACT
+take 金币 5000
+mapmove 4 60 71
+break 
+#ELSESAY 
+你没有5000金币用来支付我们的服务费用!\
+
+
+[@move1]
+不要相信什么凌波微步,其实这个东西很\
+简单,只要你付钱,什么问题不能解决呢?\
+来吧,小伙子这个世界充满危险,让我送你一程吧!\
+<向毒蛇山谷移动/@毒蛇>\
+<向比奇省移动/@比奇>\
+<向封魔谷移动/@封魔>\
+<向白日门移动/@白日>\
+<向苍月岛移动/@苍月>\
+<返 回/@Main>
+
+[@毒蛇]
+#IF
+checkgold 1
+#ACT
+take 金币 1
+mapmove 2 500 480
+break
+#ELSESAY
+你没有1金币用来支付我们的服务费用!\
+请努力赚钱哦:)\
+
+[@盟重]
+#IF
+checkgold 1
+#ACT
+take 金币 1
+mapmove 3 332 332
+break
+#ELSESAY
+你没有1金币用来支付我们的服务费用!\
+请努力赚钱哦:)\
+
+[@比奇]
+#IF
+checkgold 1
+#ACT
+take 金币 1
+mapmove 0 330 270
+break
+#ELSESAY
+你没有1金币用来支付我们的服务费用!\
+请努力赚钱哦:)\
+
+[@封魔]
+#IF
+checkgold 1
+#ACT
+take 金币 1
+mapmove 4 242 202
+break
+#ELSESAY
+你没有1金币用来支付我们的服务费用!\
+请努力赚钱哦:)\
+
+[@苍月]
+#IF
+CHECKGOLD 1
+#ACT
+TAKE 金币 1
+mapmove 5 139 330
+#ELSESAY
+你开玩笑吗？你没钱还想移动？\
+我再也不想见到你。\ 
+<返回/@main>
+
+[@白日]
+#IF
+checkgold 1
+#ACT
+take 金币 1
+mapmove 11 177 324
+break
+#ELSESAY
+你没有1金币用来支付我们的服务费用!\
+请努力赚钱哦:)\
+
+[@魔龙]
+#IF
+checkgold 1
+#ACT
+take 金币 1
+mapmove 6 123 157
+break
+#ELSESAY
+你没有1金币用来支付我们的服务费用!\
+请努力赚钱哦:)\
+
+
+
+[@talkwith]
+你要去哪个商店？这个是免费服务！\ \
+<铁匠铺/@Gwe>    <布料店/@Gpo>\
+<首饰店/@Gza>    <客栈/@Gwh>\
+<书店/@Gbo>\
+
+[@Gwe]
+#IF
+#ACT
+map 0159
+[@Gpo]
+#IF
+#ACT
+map 0149
+[@Gza]
+#IF
+#ACT
+map 0158
+[@Gwh]
+#IF
+#ACT
+map 0145
+[@Gbo]
+#IF
+#ACT
+map 0161

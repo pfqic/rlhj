@@ -1,0 +1,27 @@
+[@main]
+#IF
+CHECKLEVELEX > 49
+#say
+<COLOR=clSKYBLUE 严厉打击各种脱机、加速外挂！> \ 
+<COLOR=clFuchsia 一经查实、大小号全删、封机器码！> \ \
+<COLOR=clSKYBLUE 担保QQ仅用于账号、元宝担保！>\
+<COLOR=clFuchsia 谈比例待遇的勿扰！> \ \
+担保QQ：40202577 元宝担保不收费！\ 
+担保QQ：40202577 账号担保收20元手续费！\
+<不经担保、私下交易被骗概不处理！/@exit>
+
+#ELSEACT
+MESSAGEBOX 请50级后再来查看。
+
+[@了解3]
+┄┄┄┄┄┄┄┄┄<推广本服介绍>┄┄┄┄┄┄┄┄┄ \ \
+<COLOR=clFuchsia 1.100+活人以上的合击群。YY群。QQ群都可以> \
+<COLOR=clLime 2.宣传词在官网上复制> \
+<COLOR=clFuchsia 3.推广后记得截图发给管理>\
+<COLOR=clSKYBLUE 4.推广一个群奖励1万YB。上限20个群>  \ \
+<COLOR=clLime 请加担保QQ：40202577 交流QQ群： 202822841>\
+
+<返回/@main>
+
+
+

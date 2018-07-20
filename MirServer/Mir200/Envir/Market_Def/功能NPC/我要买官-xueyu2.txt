@@ -1,0 +1,554 @@
+[@main]
+<领取52级奖励/@52>    <COLOR=clGray →>    <COLOR=clSkyBlue 九品知县><COLOR=clYellow [封号]>    <COLOR=#254 上线攻、魔、道+2点>\
+<领取54级奖励/@53>    <COLOR=clGray →>    <COLOR=clSkyBlue 八品知府><COLOR=clYellow [封号]>    <COLOR=#254 上线攻、魔、道+5点>\
+<领取56级奖励/@54>    <COLOR=clGray →>    <COLOR=clSkyBlue 七品太守><COLOR=clYellow [封号]>    <COLOR=#254 上线攻、魔、道+10点>\
+<领取58级奖励/@55>    <COLOR=clGray →>    <COLOR=clSkyBlue 六品巡抚><COLOR=clYellow [封号]>    <COLOR=#254 上线攻、魔、道+15点>\
+<领取60级奖励/@56>    <COLOR=clGray →>    <COLOR=clSkyBlue 五品提督><COLOR=clYellow [封号]>    <COLOR=#254 上线攻、魔、道+20点>\
+<领取62级奖励/@57>    <COLOR=clGray →>    <COLOR=clSkyBlue 四品总督><COLOR=clYellow [封号]>    <COLOR=#254 上线攻、魔、道+25点>\
+<领取65级奖励/@58>    <COLOR=clGray →>    <COLOR=clSkyBlue 三品尚书><COLOR=clYellow [封号]>    <COLOR=#254 上线攻、魔、道+30点>\
+<领取70级奖励/@59>    <COLOR=clGray →>    <COLOR=clSkyBlue 二品太傅><COLOR=clYellow [封号]>    <COLOR=#254 上线攻、魔、道+40点>\
+<领取75级奖励/@60>    <COLOR=clGray →>    <COLOR=clSkyBlue 一统天下><COLOR=clYellow [封号]>    <COLOR=#254 可获得一枚绝世神装.>\
+领取后小退,（主号+英雄）属性生效!!! <COLOR=clFuchsia 一统天下封号攻、魔、道+50点>
+[@60]
+#IF
+CHECK [75] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+
+
+#IF
+CHECK [52] 0
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [54] 0
+#ACT
+MESSAGEBOX 请从八品知府努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [56] 0
+#ACT
+MESSAGEBOX 请从七品太守努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [58] 0
+#ACT
+MESSAGEBOX 请从六品巡抚努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [60] 0
+#ACT
+MESSAGEBOX 请从五品提督努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [62] 0
+#ACT
+MESSAGEBOX 请从四品总督努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [65] 0
+#ACT
+MESSAGEBOX 请从三品尚书努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [70] 0
+#ACT
+MESSAGEBOX 请从二品太傅努力升官吧！~~~
+BREAK
+
+
+#IF
+CHECKLEVELEX < 75
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够领取此奖励!!
+BREAK
+
+#IF
+CHECKITEM 书页 10
+#ELSEact
+MESSAGEBOX 你的书页不足10张
+BREAK
+
+#IF
+CHECKGAMEGOLD < 300000
+#ACT
+MESSAGEBOX 你的元宝不足300000
+BREAK
+
+#IF
+#ACT
+GAMEGOLD - 300000
+take 书页 10
+SET [75] 1
+give 复活护腕
+SENDMSG 0 恭喜玩家〖%s〗已领取【一统天下】封号、获得复活护腕一件 250 0
+MESSAGEBOX 领取成功.恭喜你领取的(75级)[一统天下(封号)]+[上线攻魔道属性+50]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+break
+
+[@59]
+#IF
+CHECK [70] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+
+
+
+#IF
+CHECK [52] 0
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [54] 0
+#ACT
+MESSAGEBOX 请从八品知府努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [56] 0
+#ACT
+MESSAGEBOX 请从七品太守努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [58] 0
+#ACT
+MESSAGEBOX 请从六品巡抚努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [60] 0
+#ACT
+MESSAGEBOX 请从五品提督努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [62] 0
+#ACT
+MESSAGEBOX 请从四品总督努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [65] 0
+#ACT
+MESSAGEBOX 请从三品尚书努力升官吧！~~~
+BREAK
+
+
+#IF
+CHECKLEVELEX < 70
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够领取此奖励!!
+BREAK
+
+#IF
+CHECKITEM 书页 8
+#ELSEact
+MESSAGEBOX 你的书页不足8张
+BREAK
+
+#IF
+CHECKGAMEGOLD < 250000
+#ACT
+MESSAGEBOX 你的元宝不足250000
+BREAK
+
+#IF
+#ACT
+GAMEGOLD - 250000
+take 书页 8
+SET [70] 1
+MESSAGEBOX 领取成功.恭喜你领取的(70级)[二品太傅(封号)]+[上线攻魔道属性+40]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+break
+
+[@58]
+#IF
+CHECK [65] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+
+#IF
+CHECK [52] 0
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [54] 0
+#ACT
+MESSAGEBOX 请从八品知府努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [56] 0
+#ACT
+MESSAGEBOX 请从七品太守努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [58] 0
+#ACT
+MESSAGEBOX 请从六品巡抚努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [60] 0
+#ACT
+MESSAGEBOX 请从五品提督努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [62] 0
+#ACT
+MESSAGEBOX 请从四品总督努力升官吧！~~~
+BREAK
+
+
+#IF
+CHECKLEVELEX < 65
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够领取此奖励!!
+BREAK
+
+
+#IF
+CHECKITEM 书页 6
+#ELSEact
+MESSAGEBOX 你的书页不足6张
+BREAK
+
+
+#IF
+CHECKGAMEGOLD < 200000
+#ACT
+MESSAGEBOX 你的元宝不足200000
+BREAK
+
+#IF
+#ACT
+gamegold - 200000
+take 书页 6
+SET [65] 1
+MESSAGEBOX 领取成功.恭喜你领取的(65级)[三品尚书(封号)]+[上线攻魔道属性+30]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+break
+
+[@57]
+#IF
+CHECK [62] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+
+#IF
+CHECK [52] 0
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [54] 0
+#ACT
+MESSAGEBOX 请从八品知府努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [56] 0
+#ACT
+MESSAGEBOX 请从七品太守努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [58] 0
+#ACT
+MESSAGEBOX 请从六品巡抚努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [60] 0
+#ACT
+MESSAGEBOX 请从五品提督努力升官吧！~~~
+BREAK
+
+
+#IF
+CHECKLEVELEX < 62
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够领取此奖励!!
+
+BREAK
+
+#IF
+CHECKITEM 书页 5
+#ELSEact
+MESSAGEBOX 你的书页不足5张
+BREAK
+
+#IF
+CHECKGAMEGOLD < 150000
+#ACT
+MESSAGEBOX 你的元宝不足150000
+BREAK
+
+
+#if
+#act
+gamegold - 150000
+take 书页 5
+SET [62] 1
+MESSAGEBOX 领取成功.恭喜你领取的(62级)[四品总督(封号)]+[上线攻魔道属性+25]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+break
+
+[@56]
+#IF
+CHECK [60] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+
+#IF
+CHECK [52] 0
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [54] 0
+#ACT
+MESSAGEBOX 请从八品知府努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [56] 0
+#ACT
+MESSAGEBOX 请从七品太守努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [58] 0
+#ACT
+MESSAGEBOX 请从六品巡抚努力升官吧！~~~
+BREAK
+
+
+#IF
+CHECKLEVELEX < 60
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够领取此奖励!!
+
+BREAK
+
+#IF
+CHECKITEM 书页 4
+#ELSEact
+MESSAGEBOX 你的书页不足4张
+BREAK
+
+#IF
+CHECKGAMEGOLD < 100000
+#ACT
+MESSAGEBOX 你的元宝不足100000
+BREAK
+
+#IF
+#ACT
+SET [60] 1
+GAMEGOLD - 100000
+take 书页 4
+MESSAGEBOX 领取成功.恭喜你领取的(60级)[五品提督(封号)]+[上线攻魔道属性+20]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+break
+
+[@55]
+#IF
+CHECK [58] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+#IF
+CHECK [52] 0
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [54] 0
+#ACT
+MESSAGEBOX 请从八品知府努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [56] 0
+#ACT
+MESSAGEBOX 请从七品太守努力升官吧！~~~
+BREAK
+#IF
+CHECKLEVELEX < 58
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够领取此奖励!!
+BREAK
+
+#IF
+CHECKITEM 书页 3
+#ELSEact
+MESSAGEBOX 你的书页不足3张
+BREAK
+
+#IF
+CHECKGAMEGOLD < 80000
+#ACT
+MESSAGEBOX 你的元宝不足80000
+BREAK
+
+#IF
+#ACT
+GAMEGOLD - 80000
+take 书页 3
+SET [58] 1
+MESSAGEBOX 领取成功.恭喜你领取的(58级)[六品巡抚(封号)]+[上线攻魔道属性+15]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+break
+
+[@54]
+#IF
+CHECK [56] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+
+#IF
+CHECK [52] 0
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [54] 0
+#ACT
+MESSAGEBOX 请从八品知府努力升官吧！~~~
+BREAK
+
+#IF
+CHECKLEVELEX < 56
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够领取此奖励!!
+BREAK
+
+#IF
+CHECKITEM 书页 2
+#ELSEact
+MESSAGEBOX 你的书页不足2张
+BREAK
+
+#IF
+CHECKGAMEGOLD < 50000
+#ACT
+MESSAGEBOX 你的元宝不足50000
+BREAK
+
+#IF
+#ACT
+SET [56] 1
+GAMEGOLD - 50000
+take 书页 2
+MESSAGEBOX 领取成功.恭喜你领取的(56级)[七品太守(封号)]+[上线攻魔道属性+10]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+break
+
+[@53]
+#IF
+CHECK [54] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+
+#IF
+CHECK [52] 0
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+#IF
+CHECKLEVELEX < 54
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够领取此奖励!!
+BREAK
+
+#IF
+CHECKITEM 书页 2
+#ELSEact
+MESSAGEBOX 你的书页不足2张
+BREAK
+
+#IF
+CHECKGAMEGOLD < 20000
+#ACT
+MESSAGEBOX 你的元宝不足20000
+BREAK
+
+#IF
+#ACT
+SET [54] 1
+GAMEGOLD - 20000
+take 书页 2
+MESSAGEBOX 领取成功.恭喜你领取的(54级)[八品知府(封号)]+[上线攻魔道属性+5]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+break
+
+[@52]
+#IF
+CHECK [52] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+
+
+#IF
+CHECKLEVELEX < 52
+#ACT
+MESSAGEBOX 你的等级不够无法领取
+BREAK
+
+#IF
+CHECKITEM 书页 2
+#ELSEact
+MESSAGEBOX 你的书页不足2张
+BREAK
+
+#IF
+CHECKGAMEGOLD < 10000
+#ACT
+MESSAGEBOX 你的元宝不足10000
+BREAK
+
+#IF
+#ACT
+SET [52] 1
+GAMEGOLD - 10000
+take 书页 2
+MESSAGEBOX 领取成功.恭喜你领取的(52级)[九品知县(封号)]+[上线攻魔道属性+2]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+break

@@ -1,0 +1,124 @@
+()
+%100
+[@main]
+#SAY
+尊敬的〖<$USERNAME>〗,为回馈广大玩家对本服的支持与厚爱！设此奖励！\
+每日限量领取一次，请根据自己的赞助等级领取对应奖项！\
+您的当前赞助点:<$GAMEPOINT>\
+<COLOR=clAqua ……………………………………………………………………………>\
+<黄金赞助→每日回馈/@黄金>   <COLOR=clFuchsia 舍利子*5+金刚石300+经验>\
+<钻石赞助→每日回馈/@钻石>   <COLOR=clFuchsia 舍利子*8+星王勋章+金刚石400+经验>\
+<降龙赞助→每日回馈/@卧龙回>   <COLOR=clFuchsia 舍利子*10+金刚石600+星王勋章、斗笠+经验>\
+<累计200元→每日回馈/@普通>  <COLOR=clFuchsia 舍利子*15+金刚石1000+极品星王勋章、斗笠+经验>\
+[@卧龙回] 
+#IF
+checknamelist ..\QuestDiary\数据文件\经验奖励.txt
+#act
+#say  
+今天你已经领过了,一天只能领一次哦！\\
+#ELSEACT
+Delaycall 5 @卧龙1
+[@卧龙1]
+#IF
+CheckGamePoint > 99
+CheckGamePoint < 200
+CHECKBAGSIZE  15
+#act
+addnamelist ..\QuestDiary\数据文件\经验奖励.txt
+give 舍利子 10
+give 星王勋章
+give 星王斗笠
+GAMEDIAMOND + 600
+CHANGEEXP + 50000000
+CHANGEEXP + 50000000
+SENDMSG 7 请收下今日福利，祝您游戏愉快！！！
+SENDMSG 5 降龙赞助大使〖<$USERNAME>〗已领取今日福利！！！奖励丰厚，快去充值吧！ 251 0 300
+SENDMSG 0 降龙赞助大使〖<$USERNAME>〗已领取今日福利！！！奖励丰厚，快去充值吧！ 251 0
+SENDMSG 0 降龙赞助大使〖<$USERNAME>〗已领取今日福利！！！奖励丰厚，快去充值吧！ 251 0
+SENDMSG 0 降龙赞助大使〖<$USERNAME>〗已领取今日福利！！！奖励丰厚，快去充值吧！ 251 0
+#ELSEACT
+messagebox 【提示】:【请认准自己的赞助封号，并留出15个背包空格】\
+BREAK
+[@普通]
+#IF
+checknamelist ..\QuestDiary\数据文件\经验奖励.txt
+#act
+#say 
+今天你已经领过了,一天只能领一次哦！\\
+#ELSEACT
+Delaycall 5 @普通1
+[@普通1]
+#if
+CheckGamePoint > 199 
+CHECKBAGSIZE  18
+#ACT
+addnamelist ..\QuestDiary\数据文件\经验奖励.txt
+Changeexp  +  50000000
+Changeexp  +  50000000
+Changeexp  +  50000000
+Changeexp  +  50000000
+GAMEDIAMOND + 1000
+give 舍利子 15
+give 极品星王斗笠
+give 极品星王勋章
+SENDMSG 7 请收下今日福利，祝您游戏愉快！！！
+SENDMSG 5 大老板〖<$USERNAME>〗已领取今日福利！！！奖励丰厚，快去充值吧！ 251 0 300
+SENDMSG 0 大老板〖<$USERNAME>〗已领取今日福利！！！奖励丰厚，快去充值吧！ 251 0
+SENDMSG 0 大老板〖<$USERNAME>〗已领取今日福利！！！奖励丰厚，快去充值吧！ 251 0
+SENDMSG 0 大老板〖<$USERNAME>〗已领取今日福利！！！奖励丰厚，快去充值吧！ 251 0
+#ELSEACT
+messagebox 【提示】:【请认准自己的赞助封号，并留出18个背包空格】\
+BREAK
+[@黄金]
+#IF
+checknamelist ..\QuestDiary\数据文件\经验奖励.txt
+#act
+#say 
+今天你已经领过了,一天只能领一次哦！\\
+#ELSEACT
+Delaycall 5 @黄金1
+[@黄金1]
+#IF
+CheckGamePoint > 29 
+CheckGamePoint < 50
+CHECKBAGSIZE  8
+#act
+addnamelist ..\QuestDiary\数据文件\经验奖励.txt
+Changeexp  +  30000000
+give 舍利子 5
+GAMEDIAMOND + 300
+SENDMSG 7 请收下今日福利，祝您游戏愉快！！！
+SENDMSG 5 黄金赞助大使〖<$USERNAME>〗已领取今日福利！！！奖励丰厚，快去充值吧！ 251 0 300
+SENDMSG 0 黄金赞助大使〖<$USERNAME>〗已领取今日福利！！！奖励丰厚，快去充值吧！ 251 0
+SENDMSG 0 黄金赞助大使〖<$USERNAME>〗已领取今日福利！！！奖励丰厚，快去充值吧！ 251 0
+SENDMSG 0 黄金赞助大使〖<$USERNAME>〗已领取今日福利！！！奖励丰厚，快去充值吧！ 251 0
+#ELSEACT
+messagebox 【提示】:【请认准自己的赞助封号，并留出8个背包空格】\
+BREAK
+[@钻石]
+#IF
+checknamelist ..\QuestDiary\数据文件\经验奖励.txt
+#act
+#say 
+今天你已经领过了,一天只能领一次哦！\\
+#ELSEACT
+Delaycall 5 @钻石1
+[@钻石1]
+#IF
+CheckGamePoint > 49
+CheckGamePoint < 100
+CHECKBAGSIZE  10
+#act
+addnamelist ..\QuestDiary\数据文件\经验奖励.txt
+Changeexp  +  50000000
+give 舍利子 8
+give 星王勋章
+GAMEDIAMOND + 400
+SENDMSG 7 请收下今日福利，祝您游戏愉快！！！
+SENDMSG 5 钻石赞助大使〖<$USERNAME>〗已领取今日福利！！！奖励丰厚，快去充值吧！ 251 0 300
+SENDMSG 0 钻石赞助大使〖<$USERNAME>〗已领取今日福利！！！奖励丰厚，快去充值吧！ 251 0
+SENDMSG 0 钻石赞助大使〖<$USERNAME>〗已领取今日福利！！！奖励丰厚，快去充值吧！ 251 0
+SENDMSG 0 钻石赞助大使〖<$USERNAME>〗已领取今日福利！！！奖励丰厚，快去充值吧！ 251 0
+#ELSEACT
+messagebox 【提示】:【请认准自己的赞助封号，并留出10个背包空格】\
+BREAK

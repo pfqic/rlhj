@@ -1,0 +1,1793 @@
+[@main]
+欢迎你光临：<$SERVERNAME>\
+<COLOR=CLLime 看看有什么可以帮你？>\ \
+
+╔═══════════════════════════╗\
+║        <转职变性/@main-1>          <四级技能/@四级>                    ║\
+╚═══════════════════════════╝\
+
+[@官位]
+<领取52级奖励/@52>    <COLOR=clGray →>    <COLOR=clSkyBlue 九品知县><COLOR=clYellow [封号]>    <COLOR=#254 上线攻、魔、道+2点>\
+<领取54级奖励/@53>    <COLOR=clGray →>    <COLOR=clSkyBlue 八品知府><COLOR=clYellow [封号]>    <COLOR=#254 上线攻、魔、道+5点>\
+<领取56级奖励/@54>    <COLOR=clGray →>    <COLOR=clSkyBlue 七品太守><COLOR=clYellow [封号]>    <COLOR=#254 上线攻、魔、道+10点>\
+<领取58级奖励/@55>    <COLOR=clGray →>    <COLOR=clSkyBlue 六品巡抚><COLOR=clYellow [封号]>    <COLOR=#254 上线攻、魔、道+15点>\
+<领取60级奖励/@56>    <COLOR=clGray →>    <COLOR=clSkyBlue 五品提督><COLOR=clYellow [封号]>    <COLOR=#254 上线攻、魔、道+20点>\
+<领取62级奖励/@57>    <COLOR=clGray →>    <COLOR=clSkyBlue 四品总督><COLOR=clYellow [封号]>    <COLOR=#254 上线攻、魔、道+25点>\
+<领取65级奖励/@58>    <COLOR=clGray →>    <COLOR=clSkyBlue 三品尚书><COLOR=clYellow [封号]>    <COLOR=#254 上线攻、魔、道+30点>\
+<领取70级奖励/@59>    <COLOR=clGray →>    <COLOR=clSkyBlue 二品太傅><COLOR=clYellow [封号]>    <COLOR=#254 上线攻、魔、道+40点>\
+<领取75级奖励/@60>    <COLOR=clGray →>    <COLOR=clSkyBlue 一统天下><COLOR=clYellow [封号]>    <COLOR=#254 上线攻、魔、道+50点>\
+领取后小退,（主号+英雄）属性生效!!!
+
+[@60]
+#IF
+CHECK [75] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+
+
+#IF
+CHECK [52] 0
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [54] 0
+#ACT
+MESSAGEBOX 请从八品知府努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [56] 0
+#ACT
+MESSAGEBOX 请从七品太守努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [58] 0
+#ACT
+MESSAGEBOX 请从六品巡抚努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [60] 0
+#ACT
+MESSAGEBOX 请从五品提督努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [62] 0
+#ACT
+MESSAGEBOX 请从四品总督努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [65] 0
+#ACT
+MESSAGEBOX 请从三品尚书努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [70] 0
+#ACT
+MESSAGEBOX 请从二品太傅努力升官吧！~~~
+BREAK
+
+
+#IF
+CHECKLEVELEX < 75
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够领取此奖励!!
+BREAK
+
+
+#IF
+CHECKGAMEGOLD < 3000000
+#ACT
+MESSAGEBOX 你的元宝不足3000000
+BREAK
+
+#IF
+#ACT
+GAMEGOLD - 3000000
+SET [75] 1
+MESSAGEBOX 领取成功.恭喜你领取的(75级)[一统天下(封号)]+[上线攻魔道属性+50]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+break
+
+[@59]
+#IF
+CHECK [70] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+
+
+
+#IF
+CHECK [52] 0
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [54] 0
+#ACT
+MESSAGEBOX 请从八品知府努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [56] 0
+#ACT
+MESSAGEBOX 请从七品太守努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [58] 0
+#ACT
+MESSAGEBOX 请从六品巡抚努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [60] 0
+#ACT
+MESSAGEBOX 请从五品提督努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [62] 0
+#ACT
+MESSAGEBOX 请从四品总督努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [65] 0
+#ACT
+MESSAGEBOX 请从三品尚书努力升官吧！~~~
+BREAK
+
+
+#IF
+CHECKLEVELEX < 70
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够领取此奖励!!
+BREAK
+
+
+
+#IF
+CHECKGAMEGOLD < 2500000
+#ACT
+MESSAGEBOX 你的元宝不足2500000
+BREAK
+
+#IF
+#ACT
+GAMEGOLD - 2500000
+SET [70] 1
+MESSAGEBOX 领取成功.恭喜你领取的(70级)[二品太傅(封号)]+[上线攻魔道属性+40]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+break
+
+[@58]
+#IF
+CHECK [65] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+
+#IF
+CHECK [52] 0
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [54] 0
+#ACT
+MESSAGEBOX 请从八品知府努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [56] 0
+#ACT
+MESSAGEBOX 请从七品太守努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [58] 0
+#ACT
+MESSAGEBOX 请从六品巡抚努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [60] 0
+#ACT
+MESSAGEBOX 请从五品提督努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [62] 0
+#ACT
+MESSAGEBOX 请从四品总督努力升官吧！~~~
+BREAK
+
+
+#IF
+CHECKLEVELEX < 65
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够领取此奖励!!
+BREAK
+
+
+
+
+#IF
+CHECKGAMEGOLD < 2000000
+#ACT
+MESSAGEBOX 你的元宝不足2000000
+BREAK
+
+#IF
+#ACT
+gamegold - 2000000
+SET [65] 1
+MESSAGEBOX 领取成功.恭喜你领取的(65级)[三品尚书(封号)]+[上线攻魔道属性+30]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+break
+
+[@57]
+#IF
+CHECK [62] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+
+#IF
+CHECK [52] 0
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [54] 0
+#ACT
+MESSAGEBOX 请从八品知府努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [56] 0
+#ACT
+MESSAGEBOX 请从七品太守努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [58] 0
+#ACT
+MESSAGEBOX 请从六品巡抚努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [60] 0
+#ACT
+MESSAGEBOX 请从五品提督努力升官吧！~~~
+BREAK
+
+
+#IF
+CHECKLEVELEX < 62
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够领取此奖励!!
+
+BREAK
+
+
+#IF
+CHECKGAMEGOLD < 1500000
+#ACT
+MESSAGEBOX 你的元宝不足1500000
+BREAK
+
+
+#if
+#act
+gamegold - 1500000
+SET [62] 1
+MESSAGEBOX 领取成功.恭喜你领取的(62级)[四品总督(封号)]+[上线攻魔道属性+25]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+break
+
+[@56]
+#IF
+CHECK [60] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+
+#IF
+CHECK [52] 0
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [54] 0
+#ACT
+MESSAGEBOX 请从八品知府努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [56] 0
+#ACT
+MESSAGEBOX 请从七品太守努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [58] 0
+#ACT
+MESSAGEBOX 请从六品巡抚努力升官吧！~~~
+BREAK
+
+
+#IF
+CHECKLEVELEX < 60
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够领取此奖励!!
+
+BREAK
+
+
+
+#IF
+CHECKGAMEGOLD < 1000000
+#ACT
+MESSAGEBOX 你的元宝不足1000000
+BREAK
+
+#IF
+#ACT
+SET [60] 1
+GAMEGOLD - 1000000
+MESSAGEBOX 领取成功.恭喜你领取的(60级)[五品提督(封号)]+[上线攻魔道属性+20]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+break
+
+[@55]
+#IF
+CHECK [58] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+#IF
+CHECK [52] 0
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [54] 0
+#ACT
+MESSAGEBOX 请从八品知府努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [56] 0
+#ACT
+MESSAGEBOX 请从七品太守努力升官吧！~~~
+BREAK
+#IF
+CHECKLEVELEX < 58
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够领取此奖励!!
+BREAK
+
+
+
+#IF
+CHECKGAMEGOLD < 800000
+#ACT
+MESSAGEBOX 你的元宝不足800000
+BREAK
+
+#IF
+#ACT
+GAMEGOLD - 800000
+SET [58] 1
+MESSAGEBOX 领取成功.恭喜你领取的(58级)[六品巡抚(封号)]+[上线攻魔道属性+15]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+break
+
+[@54]
+#IF
+CHECK [56] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+
+#IF
+CHECK [52] 0
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+
+#IF
+CHECK [54] 0
+#ACT
+MESSAGEBOX 请从八品知府努力升官吧！~~~
+BREAK
+
+#IF
+CHECKLEVELEX < 56
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够领取此奖励!!
+BREAK
+
+
+
+#IF
+CHECKGAMEGOLD < 500000
+#ACT
+MESSAGEBOX 你的元宝不足500000
+BREAK
+
+#IF
+#ACT
+SET [56] 1
+GAMEGOLD - 500000
+take 书页 2
+MESSAGEBOX 领取成功.恭喜你领取的(56级)[七品太守(封号)]+[上线攻魔道属性+10]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+break
+
+[@53]
+#IF
+CHECK [54] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+
+#IF
+CHECK [52] 0
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+#IF
+CHECKLEVELEX < 54
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够领取此奖励!!
+BREAK
+
+
+
+#IF
+CHECKGAMEGOLD < 200000
+#ACT
+MESSAGEBOX 你的元宝不足200000
+BREAK
+
+#IF
+#ACT
+SET [54] 1
+GAMEGOLD - 200000
+MESSAGEBOX 领取成功.恭喜你领取的(54级)[八品知府(封号)]+[上线攻魔道属性+5]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+break
+
+[@52]
+#IF
+CHECK [52] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+
+
+#IF
+CHECKLEVELEX < 52
+#ACT
+MESSAGEBOX 你的等级不够无法领取
+BREAK
+
+
+#IF
+CHECKGAMEGOLD < 100000
+#ACT
+MESSAGEBOX 你的元宝不足100000
+BREAK
+
+#IF
+#ACT
+SET [52] 1
+GAMEGOLD - 100000
+MESSAGEBOX 领取成功.恭喜你领取的(52级)[九品知县(封号)]+[上线攻魔道属性+2]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+break
+
+
+
+[@四级]
+<COLOR=clLime ◆这是一个神魅无穷的时代◆>\
+打破尘封已久的武学禁锢,<自创武功>强化技能!\
+<COLOR=clFuchsia 3职业超炫尚未面世的技能强化秘籍.耀目登场!>\
+只需要<COLOR=clAqua 【技能神石】+【元宝】>就可以啦.<COLOR=clLime 此宝石可打怪爆出>\ \
+<战士四级强化技能/@301>     <法师四级强化技能/@302>     <道士四级强化技能/@303>\ \
+<战英雄四级强化技能/@304>   <法英雄四级强化技能/@305>   <道英雄四级强化技能/@306>\
+[@306]
+#IF
+CHECKHEROONLINE
+#ELSEACT
+MESSAGEBOX 对不起您的英雄没有招出来我无法为您服务......
+BREAK
+#say
+<道英雄四级施 毒 术/@421> 等级100级+技能神石3个+200万元宝就可以练成四级!\
+<道英雄四级噬血术/@422>   等级100级+技能神石5个+200万元宝就可以练成四级!\
+<道英雄四级无极真气/@423> 等级100级+技能神石5个+200万元宝就可以练成四级!\
+<COLOR=clFuchsia 道英雄灵魂火符,英雄忠诚100%自动学习!!!!>\ \
+<COLOR=clAqua 已修炼的四级技能重复点击,技能神石将消失!请看清楚要练的技能后再点击!>
+[@423]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 5
+H.CHECKMAGICLEVEL 英雄无极真气 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 5
+H.SKILLLEVEL 英雄无极真气 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石5个。 \
+4：需要元宝200万。\ \
+[@422]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 5
+H.CHECKMAGICLEVEL 英雄噬血术 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 5
+H.SKILLLEVEL 英雄噬血术 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石5个。 \
+4：需要元宝200万。\ \
+
+[@421]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 3
+H.CHECKMAGICLEVEL 英雄施毒术 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 3
+H.SKILLLEVEL 英雄施毒术 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石3个。 \
+4：需要元宝200万。\ \
+
+[@305]
+#IF
+CHECKHEROONLINE
+#ELSEACT
+MESSAGEBOX 对不起您的英雄没有招出来我无法为您服务......
+BREAK
+#say
+<法英雄四级雷电术/@417>   等级100级+技能神石3个+200万元宝就可以练成四级!\
+<法英雄四级流星火雨/@418> 等级100级+技能神石5个+200万元宝就可以练成四级!\
+<法英雄四级魔法盾/@419>   等级100级+技能神石5个+200万元宝就可以练成四级!\
+<法英雄四级冰咆哮/@420>   等级100级+技能神石3个+200万元宝就可以练成四级!\
+<COLOR=clFuchsia 法师英雄灭天火,英雄忠诚100%自动学习!!!!>\ \
+<COLOR=clAqua 已修炼的四级技能重复点击,技能神石将消失!请看清楚要练的技能后再点击!>
+[@420]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 3
+H.CHECKMAGICLEVEL 英雄冰咆哮 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 3
+H.SKILLLEVEL 英雄冰咆哮 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石3个。 \
+4：需要元宝200万。\ \
+
+[@419]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 5
+H.CHECKMAGICLEVEL 英雄魔法盾 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 5
+H.SKILLLEVEL 英雄魔法盾 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石5个。 \
+4：需要元宝200万。\ \
+
+[@418]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 5
+H.CHECKMAGICLEVEL 英雄流星火雨 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 5
+H.SKILLLEVEL 英雄流星火雨 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石5个。 \
+4：需要元宝200万。\ \
+
+[@417]
+#IF
+CHECKLEVELEX > 99
+CHECKGAMEGOLD > 1999999
+CHECKITEM 技能神石 3
+H.CHECKMAGICLEVEL 英雄雷电术 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 3
+H.SKILLLEVEL 英雄雷电术 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石3个。 \
+4：需要元宝200万。\ \
+
+
+[@304]
+#IF
+CHECKHEROONLINE
+#ELSEACT
+MESSAGEBOX 对不起您的英雄没有招出来我无法为您服务......
+BREAK
+#say
+<战英雄四级基本剑术/@4111>   等级100级+技能神石3个+200万元宝就可以练成四级!\
+<战英雄四级攻杀剑术/@414>   等级100级+技能神石3个+200万元宝就可以练成四级!\
+<战英雄四级刺杀剑术/@415>   等级100级+技能神石3个+200万元宝就可以练成四级!\
+<战英雄四级开天斩/@416>     等级100级+技能神石5个+200万元宝就可以练成四级!\
+<战英雄四级逐日剑法/@4112>   等级100级+技能神石5个+200万元宝就可以练成四级!\
+<COLOR=clFuchsia 战士英雄四级烈火剑法,英雄忠诚100%自动学习!!!!>\ \
+<COLOR=clAqua 已修炼的四级技能重复点击,技能神石将消失!请看清楚要练的技能后再点击!>
+[@4112]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 5
+H.CHECKMAGICLEVEL 英雄逐日剑法 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 5
+H.SKILLLEVEL 英雄逐日剑法 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石5个。 \
+4：需要元宝200万。\ \
+
+[@416]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 5
+H.CHECKMAGICLEVEL 英雄开天斩 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 5
+H.SKILLLEVEL 英雄开天斩 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石5个。 \
+4：需要元宝200万。\ \
+
+[@415]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 3
+H.CHECKMAGICLEVEL 英雄刺杀剑术 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 3
+H.SKILLLEVEL 英雄刺杀剑术 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石3个。 \
+4：需要元宝200万。\ \
+
+[@414]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 3
+H.CHECKMAGICLEVEL 英雄攻杀剑术 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 3
+H.SKILLLEVEL 英雄攻杀剑术 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石3个。 \
+4：需要元宝200万。\ \
+
+[@4111]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 3
+H.CHECKMAGICLEVEL 英雄基本剑术 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 3
+H.SKILLLEVEL 英雄基本剑术 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石3个。 \
+4：需要元宝200万。\ \
+
+[@303]
+<道士四级施 毒 术/@410>  等级100级+技能神石3个+200万元宝就可以练成四级!\
+<道士四级灵魂火符/@411>  等级100级+技能神石3个+200万元宝就可以练成四级!\
+<道士四级无极真气/@412>  等级100级+技能神石5个+200万元宝就可以练成四级!\
+<道士四级噬血术/@413>    等级100级+技能神石5个+200万元宝就可以练成四级!\ \
+<COLOR=clAqua 已修炼的四级技能重复点击,技能神石将消失!请看清楚要练的技能后再点击!>
+[@413]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 5
+CHECKMAGICLEVEL 噬血术 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 5
+SkillLevel 噬血术 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石5个。 \
+4：需要元宝200万。\ \
+
+[@412]
+#IF
+CHECKLEVELEX > 99
+CHECKGAMEGOLD > 1999999
+CHECKITEM 技能神石 5
+CHECKMAGICLEVEL 无极真气 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 5
+SkillLevel 无极真气 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石5个。 \
+4：需要元宝200万。\ \
+
+[@411]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 3
+CHECKMAGICLEVEL 灵魂火符 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 3
+SkillLevel 灵魂火符 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石3个。 \
+4：需要元宝200万。\ \
+
+[@410]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 3
+CHECKMAGICLEVEL 施毒术 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 3
+SkillLevel 施毒术 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石3个。 \
+4：需要元宝200万。\ \
+
+[@302]
+<法师四级流星火雨/@405>   等级100级+技能神石5个+200万元宝就可以练成四级!\
+<法师四级火  墙/@406>     等级100级+技能神石3个+200万元宝就可以练成四级!\
+<法师四级冰咆哮/@408>     等级100级+技能神石3个+200万元宝就可以练成四级!\
+<法师四级灭天火/@409>     等级100级+技能神石5个+200万元宝就可以练成四级!\ \
+<COLOR=clAqua 已修炼的四级技能重复点击,技能神石将消失!请看清楚要练的技能后再点击!>
+[@409]
+#IF
+CHECKLEVELEX > 99
+CHECKGAMEGOLD > 1999999
+CHECKITEM 技能神石 5
+CHECKMAGICLEVEL 灭天火 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 5
+SkillLevel 灭天火 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石5个。 \
+4：需要元宝200万。\ \
+
+[@408]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 3
+CHECKMAGICLEVEL 冰咆哮 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 3
+SkillLevel 冰咆哮 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石3个。 \
+4：需要元宝200万。\ \
+
+[@406]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 3
+CHECKMAGICLEVEL 火墙 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 3
+SkillLevel 火墙 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石3个。 \
+4：需要元宝200万。\ \
+
+[@405]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 5
+CHECKMAGICLEVEL 流星火雨 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 5
+SkillLevel 流星火雨 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石5个。 \
+4：需要元宝200万。\ \
+
+[@301]
+<战士四级基本剑术/@4114>   等级100级+技能神石3个+200万元宝就可以练成四级!\
+<战士四级攻杀剑术/@401>   等级100级+技能神石3个+200万元宝就可以练成四级!\
+<战士四级刺杀剑术/@402>   等级100级+技能神石3个+200万元宝就可以练成四级!\
+<战士四级烈火剑法/@404>   等级100级+技能神石3个+200万元宝就可以练成四级!\
+<战士四级逐日剑法/@4113>   等级100级+技能神石5个+200万元宝就可以练成四级!\
+<战士四级开天斩/@4115>     等级100级+技能神石5个+200万元宝就可以练成四级!\
+<COLOR=clAqua 已修炼的四级技能重复点击,技能神石将消失!请看清楚要练的技能后再点击!>
+[@4115]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 5
+CHECKMAGICLEVEL 开天斩 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 5
+SkillLevel 开天斩 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够99级。 \
+3：需要技能神石5个。 \
+4：需要元宝200万。\ \
+
+[@4113]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 5
+CHECKMAGICLEVEL 逐日剑法 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 5
+SkillLevel 逐日剑法 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石5个。 \
+4：需要元宝200万。\ \
+
+[@404]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 3
+CHECKMAGICLEVEL 烈火剑法 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 3
+SkillLevel 烈火剑法 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石3个。 \
+4：需要元宝200万。\ \
+
+[@402]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 3
+CHECKMAGICLEVEL 刺杀剑术 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 3
+SkillLevel 刺杀剑术 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石3个。 \
+4：需要元宝200万。\ \
+
+[@401]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 3
+CHECKMAGICLEVEL 攻杀剑术 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 3
+SkillLevel 攻杀剑术 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石3个。 \
+4：需要元宝200万。\ \
+
+[@4114]
+#IF
+CHECKGAMEGOLD > 1999999
+CHECKLEVELEX > 99
+CHECKITEM 技能神石 3
+CHECKMAGICLEVEL 基本剑术 > 2
+#ACT
+gamegold - 2000000
+TAKE 技能神石 3
+SkillLevel 基本剑术 = 4
+GOTO @MAIN
+BREAK
+#ELSESAY
+. \
+条件不足，无法修炼4级技能!\ \
+1：有可能您的技能还未达3级。 \
+2：等级还不够100级。 \
+3：需要技能神石3个。 \
+4：需要元宝200万。\ \
+
+
+
+
+
+[@main-1]
+欢迎你光临：<$SERVERNAME>   <COLOR=CLLime 转职后自动学完新职业基本技能！>\ \
+你是否对自己的英雄职业不满意？是的，我想<变更英雄职业/@变更英雄职业>\
+你是否对自己的英雄异性的滋味？是的，我想<变更英雄性别/@英雄性别变更>\ \
+你是否对现在的职业已经厌烦？  是的，我想<变更职业/@职业变更>\
+你是否想尝试做异性的滋味？    是的，我想<变更性别/@性别变更>\ \
+
+
+
+　　　　　　　　　　　　　　　　　　　　
+[@经脉]
+#IF
+#ACT
+#SAY
+<COLOR=clLime 本服提供的奇经八脉，不乏味有追求，只要达到一定等级>\
+<COLOR=clLime 我就可以帮你打通奇经八脉>\
+<COLOR=clLime 不掉级，经脉系统自动赠送额外属性点，自由分配!>\
+<COLOR=clLime 自己在仔细看下面介绍吧.>\
+
+
+
+<奇经八脉条件/@zslhui>              <重新分配属性点/@fenpei>\
+是不是极具诱惑力呢，<COLOR=clLime 本系统专为长期玩家打造>\
+〓〓〓〓〓〓〓〓〓〓<打通奇经八脉/@zslhui>〓〓〓〓〓〓〓〓〓〓〓\
+
+
+[@fenpei]
+<COLOR=clLime 我可以帮你重新分配属性>\
+<COLOR=clLime 每次收费5万元宝！>\
+<COLOR=clLime 当前经验清零！>\
+<COLOR=clLime 请慎重选择！>\ \
+
+<我要重新分配/@fen>       <算了吧/@exit>
+
+[@fen]
+#IF
+CHECKBONUSPOINT = 1500
+#ACT
+gamegold - 50000
+BonusPoint = 0
+renewlevel 0 0 1500
+SENDMSG 5 重新获得1500点属性自由分配,当前经验清零！
+
+
+#IF
+CHECKBONUSPOINT = 1000
+#ACT
+gamegold - 50000
+BonusPoint = 0
+renewlevel 0 0 1000
+SENDMSG 5 重新获得1000点属性自由分配,当前经验清零！
+
+
+
+#IF
+CHECKBONUSPOINT = 600
+#ACT
+gamegold - 50000
+BonusPoint = 0
+renewlevel 0 0 600
+SENDMSG 5 重新获得600点属性自由分配,当前经验清零！
+
+
+#IF
+CHECKBONUSPOINT = 300
+#ACT
+gamegold - 50000
+BonusPoint = 0
+renewlevel 0 0 300
+SENDMSG 5 重新获得300点属性自由分配,当前经验清零！
+
+
+
+#IF
+CHECKBONUSPOINT = 100
+#ACT
+gamegold - 50000
+BonusPoint = 0
+renewlevel 0 0 100
+SENDMSG 5 重新获得100点属性自由分配,当前经验清零！
+
+
+
+#ELSESAY
+
+我已经尽力了，请自己注意查看成功了没？
+
+
+[@zslhui]
+
+<打通一次都会得到额外的属性点，不掉级，经验清零!>\
+一次：玛法勇士    <等级50 花费1万元宝 +2技能神石    可得100>属性点 \
+二次：玛法英雄    <等级55 花费3万元宝 +4技能神石    可得200>属性点 \
+三次：玛法战神    <等级60 花费5万元宝 +6技能神石    可得300>属性点 \
+四次：玛法霸主    <等级65 花费10万元宝+2000金刚石   可得400>属性点 \
+五次：玛法主宰者  <等级75 花费20万元宝+5000金刚石   可得500>属性点 \
+
+<打通第一次/@qqq1> <打通第二次/@qqq2> <打通第三次/@qqq3> <打通第四次/@qqq4> <打通第五次/@qqq5>\
+
+<返回/@main>\
+
+[@qqq5]
+#if
+CHECKGAMEDIAMOND > 4999
+checkrenewlevel = 4
+CHECKLEVELEX > 74
+checkgamegold > 199999
+#act
+GAMEDIAMOND - 5000
+gamegold - 200000
+renewlevel 1 0 500
+#CALL [\\登陆\封号.txt] @FH
+SENDMSG 0 恭喜%s在奇经八脉努力奋斗成【玛法主宰者】 251 244
+SENDMSG 0 恭喜%s在奇经八脉努力奋斗成【玛法主宰者】 251 244
+SENDMSG 5 经脉获得500点属性自由分配！
+break
+#ELSESAY
+. \
+条件不足，无法完成经脉任务!\ \
+1：有可能您已经完成过此道经脉任务。 \
+2：等级还不够。 \
+3：需要金刚石5000颗。 \
+4：元宝不足。\ \
+<返回/@zslhui> <关闭/@exit>\
+
+
+
+[@qqq4]
+#if
+CHECKGAMEDIAMOND > 1999
+checkrenewlevel = 3
+CHECKLEVELEX > 64
+checkgamegold > 99999
+#act
+GAMEDIAMOND - 2000
+gamegold - 100000
+renewlevel 1 0 400
+#CALL [\\登陆\封号.txt] @FH
+SENDMSG 0 恭喜%s在奇经八脉努力奋斗成【玛法霸主】 251 244
+SENDMSG 0 恭喜%s在奇经八脉努力奋斗成【玛法霸主】 251 244
+SENDMSG 5 经脉获得400点属性自由分配！
+break
+#ELSESAY
+. \
+条件不足，无法完成经脉任务!\ \
+1：有可能您已经完成过此道经脉任务。 \
+2：等级还不够。 \
+3：需要金刚石2000颗。 \
+4：元宝不足。\ \
+<返回/@zslhui> <关闭/@exit>\
+
+
+
+[@qqq3]
+#if
+CHECKITEM 技能神石 6
+checkrenewlevel = 2
+CHECKLEVELEX > 59
+checkgamegold > 49999
+#act
+take 技能神石 6
+gamegold - 50000
+renewlevel 1 0 300
+#CALL [\\登陆\封号.txt] @FH
+SENDMSG 0 恭喜%s在奇经八脉努力奋斗成【玛法战神】 251 244
+SENDMSG 0 恭喜%s在奇经八脉努力奋斗成【玛法战神】 251 244
+SENDMSG 5 经脉获得300点属性自由分配！
+break
+#ELSESAY
+. \
+条件不足，无法完成经脉任务!\ \
+1：有可能您已经完成过此道经脉任务。 \
+2：等级还不够。 \
+3：需要技能神石6个。 \
+4：元宝不足。\ \
+<返回/@zslhui> <关闭/@exit>\
+
+
+
+
+[@qqq1]
+#if
+CHECKITEM 技能神石 2
+checkrenewlevel = 0
+CHECKLEVELEX > 49
+checkgamegold > 9999
+#act
+take 技能神石 2
+gamegold - 10000
+renewlevel 1 0 100
+#CALL [\\登陆\封号.txt] @FH
+SENDMSG 0 恭喜%s在奇经八脉努力奋斗成【玛法勇士】 251 244
+SENDMSG 0 恭喜%s在奇经八脉努力奋斗成【玛法勇士】 251 244
+SENDMSG 5 经脉获得100点属性自由分配！
+break
+#ELSESAY
+. \
+条件不足，无法完成经脉任务!\ \
+1：有可能您已经完成过此道经脉任务。 \
+2：等级还不够。 \
+3：需要技能神石2个。 \
+4：元宝不足。\ \
+<返回/@zslhui> <关闭/@exit>\
+
+
+[@qqq2]
+#if
+CHECKITEM 技能神石 4
+checkrenewlevel = 1
+CHECKLEVELEX > 54
+checkgamegold > 29999
+#act
+take 技能神石 4
+gamegold - 30000
+renewlevel 1 0 200
+#CALL [\\登陆\封号.txt] @FH
+SENDMSG 0 恭喜%s在奇经八脉努力奋斗成【玛法英雄】 251 244
+SENDMSG 0 恭喜%s在奇经八脉努力奋斗成【玛法英雄】 251 244
+SENDMSG 5 经脉获得200点属性自由分配！
+break
+#ELSESAY
+. \
+条件不足，无法完成经脉任务!\ \
+1：有可能您已经完成过此道经脉任务。 \
+2：等级还不够。 \
+3：需要技能神石4个。 \
+4：元宝不足。\ \
+<返回/@zslhui> <关闭/@exit>\
+
+
+
+
+
+[@英雄性别变更]
+#IF
+CHECKHEROONLINE
+#ELSEACT
+MESSAGEBOX 对不起您的英雄没有招出来我无法为您服务......
+BREAK
+#IF
+H.gender man
+#SAY
+是不是做英雄猛男没什么意思呀，想不想尝尝做英雄淑女的滋味呀！！！\
+变性手术费用10000元宝一次，考虑好了再来\
+『<尝尝/@towoman英雄>』\ \
+〖<返回/@main〗 〖<关闭/@exit>〗
+#ELSESAY
+是不是做英雄淑女挺累的，想不想尝尝做英雄猛男的滋味呀！！！\
+变性手术费用10000元宝一次，考虑好了再来\
+『<尝尝/@toman英雄>』\ \
+〖<返回/@main>〗 〖<关闭/@exit>〗
+[@toman英雄]
+#IF
+CHECKGAMEGOLD > 9999
+#ACT
+GAMEGOLD - 10000
+H.CHANGEGENDER 0
+#SAY
+呵呵，你英雄已经变成一位猛男了。\ \
+<返回/@职业转换>
+#ELSEACT
+MESSAGEBOX 对不起，您的元宝已经不足10000个。
+[@towoman英雄]
+#IF
+CHECKGAMEGOLD > 9999
+#ACT
+GAMEGOLD - 10000
+H.CHANGEGENDER 1
+#SAY
+呵呵，你英雄已经变成一位淑女了。\ \
+〖<返回/@main>〗 〖<关闭/@exit>〗
+#ELSEACT
+MESSAGEBOX 对不起，您的元宝已经不足10000个。
+[@性别变更]
+#IF
+gender man
+#SAY
+是不是做猛男没什么意思呀，想不想尝尝做淑女的滋味呀！！！\\
+变性手术费用10000元宝一次，考虑好了再来\
+『<尝尝/@towoman>』\ \
+〖<返回/@main>〗 〖<关闭/@exit>〗
+#ELSESAY
+是不是做淑女挺累的，想不想尝尝做猛男的滋味呀！！！\\
+变性手术费用10000元宝一次，考虑好了再来\
+『<尝尝/@toman>』\ \
+〖<返回/@main>〗 〖<关闭/@exit>〗
+[@toman]
+#IF
+CHECKGAMEGOLD > 9999
+#ACT
+GAMEGOLD - 10000
+CHANGEGENDER 0
+#SAY
+呵呵，你已经变成一位猛男了。\ \
+<返回/@变性转职>
+#ELSEACT
+MESSAGEBOX 对不起，您的元宝已经不足10000个。
+[@towoman]
+#IF
+CHECKGAMEGOLD > 9999
+#ACT
+GAMEGOLD - 10000
+CHANGEGENDER 1
+#SAY
+呵呵，你已经变成一位淑女了。\ \
+〖<返回/@main>〗 〖<关闭/@exit>〗
+#ELSEACT
+MESSAGEBOX 对不起，您的元宝已经不足10000个。
+[@职业变更]
+#IF
+CHECKJOB warrior
+#SAY
+是不是战士不好玩呀，换换别的职业试试吧！\ \
+转职一次10000元宝哦，考虑好了再来\ \
+『<玩玩法师/@法师>』\
+『<玩玩道士/@道士>』\ \
+〖<返回/@main>〗〖<关闭/@exit>〗
+#ACT
+break
+#IF
+CHECKJOB wizard
+#SAY
+是不是法师不好玩呀，换换别的职业试试吧！\ \
+转职一次10000元宝哦，考虑好了再来\ \
+『<玩玩战士/@战士>』\
+『<玩玩道士/@道士>』\ \
+〖<返回/@main>〗〖<关闭/@exit>〗
+#ACT
+break
+#IF
+CHECKJOB taoist
+#SAY
+是不是道士不好玩呀，换换别的职业试试吧！\ \
+转职一次10000元宝哦，考虑好了再来\ \
+『<玩玩战士/@战士>』\
+『<玩玩法师/@法师>』\ \
+〖<返回/@main>〗〖<关闭/@exit>〗
+#ACT
+break
+[@战士]
+#IF
+Checkjob Warrior
+#ACT
+MESSAGEBOX 你就是战士职业，不需要再转成战士。
+BREAK
+#IF
+CHECKGAMEGOLD < 10000
+#ACT
+MESSAGEBOX 你的元宝不足10000颗，无法转职。
+BREAK
+#IF
+CheckLevelEx > 0
+#ACT
+GAMEGOLD - 10000
+CHANGEJOB Warrior
+DelNoJobSkill
+CLEARSKILL
+ADDSKILL 基本剑术 3
+ADDSKILL 攻杀剑术 3
+ADDSKILL 刺杀剑术 3
+ADDSKILL 半月弯刀 3
+ADDSKILL 烈火剑法 3
+ADDSKILL 野蛮冲撞 3
+SENDMSG 0 恭喜[%S]转职成功，成功转职为一名战士，学会战士全部技能。 255 180
+MOV D99 1
+DELAYCALL 1 ~TS5AndTS6
+BREAK
+[@法师]
+#IF
+Checkjob Wizard
+#ACT
+MESSAGEBOX 你就是法师职业，不需要再转成法师。
+BREAK
+#IF
+CHECKGAMEGOLD < 10000
+#ACT
+MESSAGEBOX 你的元宝不足10000颗，无法转职。
+BREAK
+#IF
+CheckLevelEx > 0
+#ACT
+GAMEGOLD - 10000
+CHANGEJOB Wizard
+DelNoJobSkill
+CLEARSKILL
+ADDSKILL 雷电术 3
+ADDSKILL 抗拒火环 3
+ADDSKILL 疾光电影 3
+ADDSKILL 诱惑之光 3
+ADDSKILL 瞬息移动 3
+ADDSKILL 爆裂火焰 3
+ADDSKILL 火墙 3
+ADDSKILL 地狱雷光 3
+ADDSKILL 魔法盾 3
+ADDSKILL 圣言术 3
+ADDSKILL 冰咆哮 3
+SENDMSG 0 恭喜[%S]转职成功，成功转职为一名法师，学会法师全部技能。 255 180
+MOV D99 1
+DELAYCALL 1 ~TS5AndTS6
+BREAK
+[@道士]
+#IF
+Checkjob Taoist
+#ACT
+MESSAGEBOX 你就是道士职业，不需要再转成道士。
+BREAK
+#IF
+CHECKGAMEGOLD < 10000
+#ACT
+MESSAGEBOX 你的元宝不足10000颗，无法转职。
+BREAK
+#IF
+CheckLevelEx > 0
+#ACT
+GAMEGOLD - 10000
+CHANGEJOB Taoist
+DelNoJobSkill
+CLEARSKILL
+ADDSKILL 治愈术 3
+ADDSKILL 精神力战法 3
+ADDSKILL 施毒术 3
+ADDSKILL 灵魂火符 3
+ADDSKILL 幽灵盾 3
+ADDSKILL 神圣战甲术 3
+ADDSKILL 集体隐身术 3
+ADDSKILL 隐身术 3
+ADDSKILL 群体治愈术 3
+ADDSKILL 召唤神兽 3
+SENDMSG 0 恭喜[%S]转职成功，成功转职为一名道士，学会道士全部技能。 255 180
+MOV D99 1
+DELAYCALL 1 ~TS5AndTS6
+BREAK
+
+
+[@变更英雄职业]
+想把你的英雄变更为其它职业的英雄？\
+<转职英雄不会掉等级>，并且转职完后勿必小退。\
+只要你交纳10000个元宝，我即可将你的英雄成功转职。\
+但是合击技能将会被删除，只给予新职业的部分技能、\
+是否同意将英雄转职呢？\
+<我同意将英雄转成战士/@同意英雄转职1>\
+<我同意将英雄转成法师/@同意英雄转职2>\
+<我同意将英雄转成道士/@同意英雄转职3>\
+[@同意英雄转职1]
+#IF
+CHECKHEROONLINE
+#ELSEACT
+MESSAGEBOX 请先召唤出你的英雄，再选择英雄转职。
+BREAK
+#IF
+H.Checkjob Warrior
+#ACT
+MESSAGEBOX 你的英雄就是战士职业，不需要再转成战士。
+BREAK
+#IF
+CHECKGAMEGOLD < 10000
+#ACT
+MESSAGEBOX 你的元宝不足10000颗，无法转职。
+BREAK
+#IF
+CHECKHEROONLINE
+#ACT
+GAMEGOLD - 10000
+H.CHANGEJOB Warrior
+H.DelNoJobSkill
+H.ADDSKILL 英雄护体神盾 3
+H.ADDSKILL 英雄基本剑术 3
+H.ADDSKILL 英雄攻杀剑术 3
+H.ADDSKILL 英雄刺杀剑术 3
+H.ADDSKILL 英雄半月弯刀 3
+H.ADDSKILL 英雄野蛮冲撞 3
+H.ADDSKILL 英雄烈火剑法 3
+H.SENDMSG 0 恭喜[%S]转职成功，成功转职为一名战士，学会战士全部技能。 255 180
+MOV D99 1
+DELAYCALL 1 ~TS5AndTS6
+BREAK
+[@同意英雄转职2]
+#IF
+CHECKHEROONLINE
+#ELSEACT
+MESSAGEBOX 请先召唤出你的英雄，再选择英雄转职。
+BREAK
+#IF
+H.Checkjob Wizard
+#ACT
+MESSAGEBOX 你的英雄就是法师职业，不需要再转成法师。
+BREAK
+#IF
+CHECKGAMEGOLD < 10000
+#ACT
+MESSAGEBOX 你的元宝不足10000颗，无法转职。
+BREAK
+#IF
+CHECKHEROONLINE
+#ACT
+GAMEGOLD - 10000
+H.CHANGEJOB Wizard
+H.DelNoJobSkill
+H.ADDSKILL 英雄护体神盾 3
+H.ADDSKILL 英雄火球术 3
+H.ADDSKILL 英雄抗拒火环 3
+H.ADDSKILL 英雄地狱火 3
+H.ADDSKILL 英雄雷电术 3
+H.ADDSKILL 英雄疾光电影 3
+H.ADDSKILL 英雄火墙 3
+H.ADDSKILL 英雄爆裂火焰 3
+H.ADDSKILL 英雄地狱雷光 3
+H.ADDSKILL 英雄魔法盾 3
+H.ADDSKILL 英雄圣言术 3
+H.ADDSKILL 英雄冰咆哮 3
+H.SENDMSG 0 恭喜[%S]转职成功，成功转职为一名法师，学会法师全部技能。 255 180
+MOV D99 1
+DELAYCALL 1 ~TS5AndTS6
+BREAK
+[@同意英雄转职3]
+#IF
+CHECKHEROONLINE
+#ELSEACT
+MESSAGEBOX 请先召唤出你的英雄，再选择英雄转职。
+BREAK
+#IF
+H.Checkjob Taoist
+#ACT
+MESSAGEBOX 你的英雄就是道士职业，不需要再转成道士。
+BREAK
+#IF
+CHECKGAMEGOLD < 10000
+#ACT
+MESSAGEBOX 你的元宝不足10000颗，无法转职。
+BREAK
+#IF
+CHECKHEROONLINE
+#ACT
+GAMEGOLD - 10000
+H.CHANGEJOB Taoist
+H.DelNoJobSkill
+H.ADDSKILL 英雄护体神盾 3
+H.ADDSKILL 英雄治愈术 3
+H.ADDSKILL 英雄精神战法 3
+H.ADDSKILL 英雄施毒术 3
+H.ADDSKILL 英雄灵魂火符 3
+H.ADDSKILL 英雄幽灵盾 3
+H.ADDSKILL 英雄神圣战甲 3
+H.ADDSKILL 英雄隐身术 3
+H.ADDSKILL 英雄集体隐身 3
+H.ADDSKILL 英雄群体治愈 3
+H.ADDSKILL 英雄召唤神兽 3
+H.SENDMSG 0 恭喜[%S]转职成功，成功转职为一名道士，学会道士全部技能。 255 180
+MOV D99 1
+DELAYCALL 1 ~TS5AndTS6
+BREAK
+
+
+[~TS5AndTS6]
+#IF
+EQUAL D99 0
+#ACT
+BREAK
+#IF
+CHECKJOB Warrior
+H.Checkjob Warrior
+#ACT
+MOV D99 0
+H.DelSkill 破魂斩
+H.DelSkill 噬魂沼泽
+H.DelSkill 火龙气焰
+H.DelSkill 雷霆一击
+H.DelSkill 劈星斩
+H.DelSkill 末日审判
+H.ADDSKILL 破魂斩
+MESSAGEBOX 转职成功！
+BREAK
+#IF
+CHECKJOB Taoist
+H.CHECKJOB Taoist
+#ACT
+MOV D99 0
+H.DelSkill 破魂斩
+H.DelSkill 噬魂沼泽
+H.DelSkill 火龙气焰
+H.DelSkill 雷霆一击
+H.DelSkill 劈星斩
+H.DelSkill 末日审判
+H.ADDSKILL 噬魂沼泽
+MESSAGEBOX 转职成功！
+BREAK
+#IF
+CHECKJOB Wizard
+H.CHECKJOB Wizard
+#ACT
+MOV D99 0
+H.DelSkill 破魂斩
+H.DelSkill 噬魂沼泽
+H.DelSkill 火龙气焰
+H.DelSkill 雷霆一击
+H.DelSkill 劈星斩
+H.DelSkill 末日审判
+H.ADDSKILL 火龙气焰
+MESSAGEBOX 转职成功！
+BREAK
+#IF
+CHECKJOB Warrior
+H.CHECKJOB Wizard
+#ACT
+MOV D99 0
+H.DelSkill 破魂斩
+H.DelSkill 噬魂沼泽
+H.DelSkill 火龙气焰
+H.DelSkill 雷霆一击
+H.DelSkill 劈星斩
+H.DelSkill 末日审判
+H.ADDSKILL 雷霆一击
+MESSAGEBOX 转职成功！
+BREAK
+#IF
+CHECKJOB Wizard
+H.CHECKJOB Warrior
+#ACT
+MOV D99 0
+H.DelSkill 破魂斩
+H.DelSkill 噬魂沼泽
+H.DelSkill 火龙气焰
+H.DelSkill 雷霆一击
+H.DelSkill 劈星斩
+H.DelSkill 末日审判
+H.ADDSKILL 雷霆一击
+MESSAGEBOX 转职成功！
+BREAK
+#IF
+CHECKJOB Warrior
+H.CHECKJOB Taoist
+#ACT
+MOV D99 0
+H.DelSkill 破魂斩
+H.DelSkill 噬魂沼泽
+H.DelSkill 火龙气焰
+H.DelSkill 雷霆一击
+H.DelSkill 劈星斩
+H.DelSkill 末日审判
+H.ADDSKILL 劈星斩
+MESSAGEBOX 转职成功！
+BREAK
+#IF
+CHECKJOB Taoist
+H.CHECKJOB Warrior
+#ACT
+MOV D99 0
+H.DelSkill 破魂斩
+H.DelSkill 噬魂沼泽
+H.DelSkill 火龙气焰
+H.DelSkill 雷霆一击
+H.DelSkill 劈星斩
+H.DelSkill 末日审判
+H.ADDSKILL 劈星斩
+MESSAGEBOX 转职成功！
+BREAK
+#IF
+CHECKJOB Taoist
+H.CHECKJOB Wizard
+#ACT
+MOV D99 0
+H.DelSkill 破魂斩
+H.DelSkill 噬魂沼泽
+H.DelSkill 火龙气焰
+H.DelSkill 雷霆一击
+H.DelSkill 劈星斩
+H.DelSkill 末日审判
+H.ADDSKILL 末日审判
+MESSAGEBOX 转职成功！
+BREAK
+#IF
+CHECKJOB Wizard
+H.CHECKJOB Taoist
+#ACT
+MOV D99 0
+H.DelSkill 破魂斩
+H.DelSkill 噬魂沼泽
+H.DelSkill 火龙气焰
+H.DelSkill 雷霆一击
+H.DelSkill 劈星斩
+H.DelSkill 末日审判
+H.ADDSKILL 末日审判
+MESSAGEBOX 转职成功！
+BREAK
+#ELSEACT
+MESSAGEBOX 如需英雄转职。请先召唤出英雄
+BREAK

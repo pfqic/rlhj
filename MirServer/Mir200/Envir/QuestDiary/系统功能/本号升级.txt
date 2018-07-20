@@ -1,0 +1,297 @@
+[@升级]
+{
+#IF
+checklevelex > 130
+#ACT
+SENDMSG 3  颤抖吧！！！凡人！！！我已达到最高等级！！！ 255 241
+CHANGELEVEL = 130
+break
+
+
+#IF
+checklevelex > 129
+IsOnMap zzpd
+#ACT
+CHANGELEVEL = 130
+KillScTimer 1
+MOVR P7 16
+INC P7 323
+MOVR P8 16
+INC P8 323
+mapmove 3 <$STR(P7)> <$STR(P8)>
+messagebox 你已达到最高等级！
+SENDMSG 3  颤抖吧！！！凡人！！！我已达到最高等级！！！ 255 241
+
+#if
+checklevelex = 130
+CheckStringList  ..\QuestDiary\如龙数据\区状态.txt 测试区
+#act
+ADDACCOUNTLIST  ..\QuestDiary\如龙数据\130级记录.txt
+GMEXECUTE 解除禁言 <$USERNAME>
+messagebox [提示]：恭喜你！！你已达到130级，开区请领取50元充值卷奖励！！
+SENDMSG 3  恭喜<$USERNAME>在测试区等级达到130，系统自动记录下他的功勋，正式开区领取50元充值卷奖励！！！ 255 241
+SENDMSG 3  恭喜<$USERNAME>在测试区等级达到130，系统自动记录下他的功勋，正式开区领取50元充值卷奖励！！！ 255 241
+SENDMSG 3  恭喜<$USERNAME>在测试区等级达到130，系统自动记录下他的功勋，正式开区领取50元充值卷奖励！！！ 255 241
+break
+
+
+#if
+checklevelex = 110
+CheckStringList  ..\QuestDiary\如龙数据\区状态.txt 测试区
+#act
+ADDACCOUNTLIST ..\QuestDiary\如龙数据\110级记录.txt
+messagebox [提示]：恭喜你！！你已达到110级，开区请领取20元充值卷奖励！！
+SENDMSG 3  恭喜<$USERNAME>在测试区等级达到110，系统自动记录下他的功勋，正式开区领取20元充值卷奖励！！！ 255 241
+SENDMSG 3  恭喜<$USERNAME>在测试区等级达到110，系统自动记录下他的功勋，正式开区领取20元充值卷奖励！！！ 255 241
+SENDMSG 3  恭喜<$USERNAME>在测试区等级达到110，系统自动记录下他的功勋，正式开区领取20元充值卷奖励！！！ 255 241
+break
+
+#if
+checklevelex = 100
+CheckStringList  ..\QuestDiary\如龙数据\区状态.txt 测试区
+#act
+ADDACCOUNTLIST  ..\QuestDiary\如龙数据\100级记录.txt
+messagebox [提示]：恭喜你！！你已达到100级，开区请领取10元充值卷奖励！！
+SENDMSG 3  恭喜<$USERNAME>在测试区等级达到100，系统自动记录下他的功勋，正式开区领取10元充值卷奖励！！！ 255 241
+SENDMSG 3  恭喜<$USERNAME>在测试区等级达到100，系统自动记录下他的功勋，正式开区领取10元充值卷奖励！！！ 255 241
+SENDMSG 3  恭喜<$USERNAME>在测试区等级达到100，系统自动记录下他的功勋，正式开区领取10元充值卷奖励！！！ 255 241
+break
+
+
+
+
+#if
+CHECKLEVELEX = 45
+#act
+GIVE 聚灵珠(小)
+GIVE 四倍卷轴
+sendmsg 0 ◆恭喜玩家[<$USERNAME>]升到45级，系统自动奖励他【聚灵珠】+四倍卷轴！！！本服散人好混，新手升级福利多多！！！
+sendmsg 0 ◆恭喜玩家[<$USERNAME>]升到45级，系统自动奖励他【聚灵珠】+四倍卷轴！！！本服散人好混，新手升级福利多多！！！
+sendmsg 0 ◆恭喜玩家[<$USERNAME>]升到45级，系统自动奖励他【聚灵珠】+四倍卷轴！！！本服散人好混，新手升级福利多多！！！
+sendmsg 0 ◆恭喜玩家[<$USERNAME>]升到45级，系统自动奖励他【聚灵珠】+四倍卷轴！！！本服散人好混，新手升级福利多多！！！
+
+
+#IF
+checkjob wizard
+checklevelex = 7
+#ACT
+ADDSKILL 火球术 3
+break
+
+#IF
+checkjob wizard
+checklevelex = 12
+#ACT
+ADDSKILL 抗拒火环 3
+break
+
+#IF
+checkjob wizard
+checklevelex = 13
+#ACT
+ADDSKILL 诱惑之光 3
+break
+
+#IF
+checkjob wizard
+checklevelex = 16
+#ACT
+ADDSKILL 地狱火 3
+break
+
+#IF
+checkjob wizard
+checklevelex = 17
+#ACT
+ADDSKILL 雷电术 3
+break
+
+#IF
+checkjob wizard
+checklevelex = 19
+#ACT
+ADDSKILL 瞬息移动 3
+break
+
+#IF
+checkjob wizard
+checklevelex = 19
+#ACT
+ADDSKILL 大火球 3
+break
+
+#IF
+checkjob wizard
+checklevelex = 22
+#ACT
+ADDSKILL 爆裂火焰 3
+break
+
+#IF
+checkjob wizard
+checklevelex = 24
+#ACT
+ADDSKILL 火墙 3
+break
+
+#IF
+checkjob wizard
+checklevelex = 26
+#ACT
+ADDSKILL 疾光电影 3
+break
+
+#IF
+checkjob wizard
+checklevelex = 30
+#ACT
+ADDSKILL 地狱雷光 3
+break
+
+#IF
+checkjob wizard
+checklevelex = 31
+#ACT
+ADDSKILL 魔法盾 3
+break
+
+#IF
+checkjob wizard
+checklevelex = 32
+#ACT
+ADDSKILL 圣言术 3
+break
+
+#IF
+checkjob wizard
+checklevelex = 35
+#ACT
+ADDSKILL 冰咆哮 3
+break
+
+#IF
+checkjob taoist
+checklevelex = 7
+#ACT
+ADDSKILL 治愈术 3
+break
+
+#IF
+checkjob taoist
+checklevelex = 9
+#ACT
+ADDSKILL 精神力战法 3
+break
+
+#IF
+checkjob taoist
+checklevelex = 14
+#ACT
+ADDSKILL 施毒术 3
+break
+
+#IF
+checkjob taoist
+checklevelex = 18
+#ACT
+ADDSKILL 灵魂火符 3
+break
+
+#IF
+checkjob taoist
+checklevelex = 20
+#ACT
+ADDSKILL 隐身术 3
+break
+
+#IF
+checkjob taoist
+checklevelex = 21
+#ACT
+ADDSKILL 集体隐身术 3
+break
+
+#IF
+checkjob taoist
+checklevelex = 22
+#ACT
+ADDSKILL 幽灵盾 3
+break
+
+#IF
+checkjob taoist
+checklevelex = 25
+#ACT
+ADDSKILL 神圣战甲术 3
+break
+
+#IF
+checkjob taoist
+checklevelex = 26
+#ACT
+ADDSKILL 心灵启示 3
+break
+
+#IF
+checkjob taoist
+checklevelex = 28
+#ACT
+ADDSKILL 困魔咒 3
+break
+
+#if
+checkjob taoist
+checklevelex = 33
+#act
+ADDSKILL 群体治愈术 3
+break
+
+#if
+checkjob taoist
+checklevelex = 35
+#act
+ADDSKILL 召唤神兽 3
+break
+
+#IF
+checkjob warrior
+CHECKLEVELEX = 7
+#ACT
+ADDSKILL 基本剑术 3
+break
+
+#IF
+checkjob warrior
+checklevelex = 19
+#ACT
+ADDSKILL 攻杀剑术 3
+break
+
+#IF
+checkjob warrior
+checklevelex = 25
+#ACT
+ADDSKILL 刺杀剑术 3
+break
+
+#IF
+checkjob warrior
+checklevelex = 28
+#ACT
+ADDSKILL 半月弯刀 3
+break
+
+#IF
+checkjob warrior
+checklevelex = 30
+#ACT
+ADDSKILL 野蛮冲撞 3
+break
+
+#IF
+checkjob warrior
+checklevelex = 35
+#ACT
+ADDSKILL 烈火剑法 3
+break
+}

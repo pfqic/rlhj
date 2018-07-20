@@ -1,0 +1,29 @@
+[@main]
+\ 
+你从<$LOGINTIME>进入游戏 当前在线时长：<$LOGINLONG>\
+年轻的勇士，你想杀进诱惑洞穴吗？\
+里面可藏有你想找的终极装备！\  \
+本层免费传送\  \
+
+
+<怕什么，杀进老窝去！/@rflw>     <这狗日的地方太恐怖了，我闪！！/@exit>
+
+
+[@rflw]
+#if
+CHECKLEVELEX > 39
+#ACT
+MAPMOVE HL002
+SENDMSG 0 不怕死的[%s]闯进了【雷炎神殿】!
+break
+#ELSEACT
+MessageBox  进入要求等级40级，您的级别不够！
+break
+
+
+
+
+
+
+
+

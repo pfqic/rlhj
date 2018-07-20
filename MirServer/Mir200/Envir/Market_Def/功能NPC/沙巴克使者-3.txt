@@ -1,0 +1,68 @@
+[@main]
+你想要问我一些什么东西？\
+\
+<想问攻城的时间？/@aboutwar>     \      
+\
+╔━━━━━━━━━━━━━━━━━━━━━━━━━━━╗\
+┊<COLOR=clAqua 提示：每传送一次需要10元宝的过路费>                    ┊\
+┠┈┈┈┈┈┬┬┈┈┈┈┈┬┈┬┈┈┈┈┈┬┬┈┈┈┈┈┨\
+┊<沙城武器店/@YF01>┊┊<沙城首饰店/@YF02>┊  ┊<沙城正大门/@YF03>┊┊<沙城复活点/@YF04>┊\
+╚─────┴┴─────┴┈┴─────┴┴─────╝\                                         
+
+[@aboutwar]
+<◆最近的攻城战役预告:>\
+战役开始时间： <$CASTLEWARDATE> , 8:00开始。\ \
+<◆详细攻城时间表：/@listwar>\
+<关闭./@exit>\
+
+[@listwar]
+<$LISTOFWAR>\
+<知道了./@exit>\
+
+[@YF01]
+#IF
+CHECKGAMEGOLD > 9
+#ACT
+MAPMOVE 3 638 309
+#ACT
+GAMEGOLD - 10
+BREAK
+#ELSEACT
+MESSAGEBOX 您的元宝不足，无法进入！
+BREAK
+
+[@YF02]
+#IF
+CHECKGAMEGOLD > 9
+#ACT
+MAPMOVE 3 663 286
+#ACT
+GAMEGOLD - 10
+BREAK
+#ELSEACT
+MESSAGEBOX 您的元宝不足，无法进入！
+BREAK
+
+[@YF03]
+#IF
+CHECKGAMEGOLD > 9
+#ACT
+MAPMOVE 3 674 332
+#ACT
+GAMEGOLD - 10
+BREAK
+#ELSEACT
+MESSAGEBOX 您的元宝不足，无法进入！
+BREAK
+
+[@YF04]
+#IF
+CHECKGAMEGOLD > 9
+#ACT
+MAPMOVE 3 649 293
+#ACT
+GAMEGOLD - 10
+BREAK
+#ELSEACT
+MESSAGEBOX 您的元宝不足，无法进入！
+BREAK

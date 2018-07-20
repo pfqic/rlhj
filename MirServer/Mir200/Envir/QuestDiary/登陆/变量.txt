@@ -1,0 +1,29 @@
+[@BL]
+{
+#IF
+#ACT
+VAR String  HUMAN 地图号
+VAR Integer HUMAN 坐标X
+VAR Integer HUMAN 坐标Y
+VAR Integer HUMAN 二级密码
+VAR Integer HUMAN 押镖次数
+VAR Integer HUMAN 消费积分
+VAR Integer HUMAN 元宝消费
+VAR Integer HUMAN XV
+VAR Integer HUMAN RMB
+VAR Integer HUMAN XZ
+VAR Integer HUMAN 转生级数
+
+;LOADVAR HUMAN RMB   ..\QuestDiary\数据文件\人民币.txt
+;LOADVAR HUMAN 押镖次数 ..\QuestDiary\数据文件\变量.txt
+LOADVAR HUMAN 坐标X ..\QuestDiary\数据文件\密码数据.txt
+LOADVAR HUMAN 坐标Y ..\QuestDiary\数据文件\密码数据.txt
+LOADVAR HUMAN 地图号 ..\QuestDiary\数据文件\密码数据.txt
+LOADVAR HUMAN 二级密码 ..\QuestDiary\数据文件\密码数据.txt
+LOADVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+LOADVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+LOADVAR HUMAN XV ..\QuestDiary\数据文件\杀敌阵亡.txt
+LOADVAR HUMAN XZ ..\QuestDiary\数据文件\杀敌阵亡.txt
+LOADVAR HUMAN 转生级数  ..\QuestDiary\如龙数据\转生变量Save.txt
+
+}

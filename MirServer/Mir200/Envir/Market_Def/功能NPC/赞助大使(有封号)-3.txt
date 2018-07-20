@@ -1,0 +1,219 @@
+()
+%100
+[@main]
+<COLOR=clAqua 为了回馈广大赞助大使对我们给力传奇的支持与资助，特设此奖励！>\
+<COLOR=clAqua …………………………………………………………………………………>\
+<领取→赞助大使※/@11>     <COLOR=clLime 积分200个可领取>   <每天领04个聚灵珠(超)/@21>\
+<领取→高级赞助大使※/@12> <COLOR=clLime 积分400个可领取>   <每天领08个聚灵珠(超)/@22>\
+<领取→黄金赞助大使※/@13> <COLOR=clLime 积分1000个可领取>  <每天领15个聚灵珠(超)/@23>\
+<领取→钻石赞助大使※/@14> <COLOR=clLime 积分2000个可领取>  <每天领20个聚灵珠(超)/@24>\
+<领取→土豪赞助大使※/@15> <COLOR=clLime 积分4000个可领取>  <每天领30个聚灵珠(超)/@25>\ 
+<领取→总统赞助大使※/@16> <COLOR=clLime 积分10000个可领取> <每天领30个聚灵珠(超)/@26>\ \
+<COLOR=clFuchsia 网银冲值1元=2积分>  你目前有积分：<$HUMAN(消费积分)>个  【<查看更多大使奖励/@55>】\
+
+[@55]
+<COLOR=clAqua 为了回馈广大赞助大使对我们给力传奇的支持与资助，特设此奖励！>\
+<COLOR=clAqua …………………………………………………………………………………>\
+    <赞助大使※><COLOR=clRed 送1.1倍经验+上线1.1倍攻击>→<COLOR=clLime 聚灵珠(超)免费释放经验>
+<高级赞助大使※><COLOR=clRed 送1.2倍经验+上线1.2倍攻击>→<COLOR=clLime 聚灵珠(超)免费释放经验>
+<黄金赞助大使※><COLOR=clRed 送1.4倍经验+上线1.3倍攻击>→<COLOR=clLime 聚灵珠(超)免费释放经验>
+<钻石赞助大使※><COLOR=clRed 送1.7倍经验+上线1.4倍攻击>→<COLOR=clLime 聚灵珠(超)免费释放经验>
+<土豪赞助大使※><COLOR=clRed 送2.0倍经验+上线1.5倍攻击>→<COLOR=clLime 聚灵珠(超)免费释放经验>
+<总统赞助大使※><COLOR=clRed 送2.2倍经验+上线1.8倍攻击>→<COLOR=clLime 聚灵珠(超)免费释放经验>
+<COLOR=clFuchsia 注意：本服赞助大使在上古三大地图均可获得每2秒50000经验奖励！>
+
+
+
+[@11]
+#IF
+CHECK [13] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+#IF
+CHECKVAR HUMAN 消费积分 > 200
+#ACT
+SET [13] 1
+MESSAGEBOX 领取成功.恭喜你领取的累计充值达到100元[※赞助大使※(封号)]\　\请您下线上线后就可以获得封号奖励了!!
+#CALL [\\登陆\封号.txt] @FH
+#ELSEACT
+MESSAGEBOX 领取失败!!你的累计充值没有达到!!
+BREAK
+
+[@12]
+#IF
+CHECK [12] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+#IF
+CHECKVAR HUMAN 消费积分 > 400
+#ACT
+SET [12] 1
+MESSAGEBOX 领取成功.恭喜你领取的累计充值达到200元[※高级赞助大使※(封号)]\　\请您下线上线后就可以获得封号奖励了!!
+#CALL [\\登陆\封号.txt] @FH
+#ELSEACT
+MESSAGEBOX 领取失败!!你的累计充值没有达到!!
+BREAK
+
+[@13]
+#IF
+CHECK [11] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+#IF
+CHECKVAR HUMAN 消费积分 > 1000
+#ACT
+SET [11] 1
+MESSAGEBOX 领取成功.恭喜你领取的累计充值达到500元[※黄金赞助大使※(封号)]\　\请您下线上线后就可以获得封号奖励了!!
+#CALL [\\登陆\封号.txt] @FH
+#ELSEACT
+MESSAGEBOX 领取失败!!你的累计充值没有达到!!
+break
+
+[@14]
+#IF
+CHECK [14] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+#IF
+CHECKVAR HUMAN 消费积分 > 2000
+#ACT
+SET [14] 1
+MESSAGEBOX 领取成功.恭喜你领取的累计充值达到1000元[※钻石赞助大使※(封号)]\　\请您下线上线后就可以获得封号奖励了!!
+#CALL [\\登陆\封号.txt] @FH
+#ELSEACT
+MESSAGEBOX 领取失败!!你的累计充值没有达到!!
+break
+
+[@15]
+#IF
+CHECK [15] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+#IF
+CHECKVAR HUMAN 消费积分 > 4000
+#ACT
+SET [15] 1
+MESSAGEBOX 领取成功.恭喜你领取的累计充值达到2000元[※土豪赞助大使※(封号)]\　\请您下线上线后就可以获得封号奖励了!!
+#CALL [\\登陆\封号.txt] @FH
+#ELSEACT
+MESSAGEBOX 领取失败!!你的累计充值没有达到!!
+break
+
+
+[@16]
+#IF
+CHECK [16] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+#IF
+CHECKVAR HUMAN 消费积分 > 10000
+#ACT
+SET [16] 1
+MESSAGEBOX 领取成功.恭喜你领取的累计充值达到5000元[※总统赞助大使※(封号)]\　\请您下线上线后就可以获得封号奖励了!!
+#CALL [\\登陆\封号.txt] @FH
+#ELSEACT
+MESSAGEBOX 领取失败!!你的累计充值没有达到!!
+break
+
+[@21]
+#IF
+CHECK [21] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+#IF
+CHECKVAR HUMAN 消费积分 > 200
+#ACT
+give 聚灵珠(超) 4
+SET [21] 1
+MESSAGEBOX 领取聚灵珠(超)成功.
+#ELSEACT
+MESSAGEBOX 领取失败!!你的累计充值没有达到!!
+BREAK
+
+[@22]
+#IF
+CHECK [22] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+#IF
+CHECKVAR HUMAN 消费积分 > 400
+#ACT
+give 聚灵珠(超) 8
+SET [22] 1
+MESSAGEBOX 领取聚灵珠(超)成功.
+#ELSEACT
+MESSAGEBOX 领取失败!!你的累计充值没有达到!!
+BREAK
+
+[@23]
+#IF
+CHECK [23] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+#IF
+CHECKVAR HUMAN 消费积分 > 1000
+#ACT
+SET [23] 1
+give 聚灵珠(超) 15
+MESSAGEBOX 领取聚灵珠(超)成功.
+#ELSEACT
+MESSAGEBOX 领取失败!!你的累计充值没有达到!!
+break
+
+[@24]
+#IF
+CHECK [24] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+#IF
+CHECKVAR HUMAN 消费积分 > 2000
+#ACT
+SET [24] 1
+give 聚灵珠(超) 20
+MESSAGEBOX 领取聚灵珠(超)成功.
+#ELSEACT
+MESSAGEBOX 领取失败!!你的累计充值没有达到!!
+break
+
+[@25]
+#IF
+CHECK [25] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+#IF
+CHECKVAR HUMAN 消费积分 > 4000
+#ACT
+SET [25] 1
+give 聚灵珠(超) 30
+MESSAGEBOX 领取聚灵珠(超)成功.
+#ELSEACT
+MESSAGEBOX 领取失败!!你的累计充值没有达到!!
+break
+
+
+[@26]
+#IF
+CHECK [26] 1
+#ACT
+MESSAGEBOX 你已经领取过此级别的奖励.禁止重复领取!!!
+BREAK
+#IF
+CHECKVAR HUMAN 消费积分 > 10000
+#ACT
+SET [26] 1
+give 聚灵珠(超) 40
+MESSAGEBOX 领取聚灵珠(超)成功.
+#ELSEACT
+MESSAGEBOX 领取失败!!你的累计充值没有达到!!
+break

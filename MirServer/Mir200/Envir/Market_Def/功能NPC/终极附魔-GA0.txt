@@ -1,0 +1,193 @@
+[@MAIN]
+#if
+checklevelex > 129
+#act
+goto @kai
+#elseact
+messagebox 你还太弱小！130以后再来吧！！！
+[@kai]
+<COLOR=clMaroon 王者是无比的寂寞,吾已等待了千年...>\
+<COLOR=clLime 吾终于找到了一种可以加持在武器上的功法>\
+<COLOR=clRed 只是对武器的韧性有很高的要求.... > \
+<COLOR=clMoneyGreen 只对终极、次终极武器才有效！>\
+<COLOR=clLime 每次附魔收取> <2000万元宝> + <2万金刚石>\
+<COLOR=clRed 【提示】：附魔会清空武器的所有加持属性！！！ > \
+<COLOR=clRed 【提示】：武器只能附魔一种技能！！！ > \
+<COLOR=clRed 【提示】：请先附魔武器，然后再加暴击，加属性点！！！ > \
+<武器附魔/@附魔>               <清除附魔，回到原点/@原点>
+
+[@原点]
+清除附魔不可逆转，你确定吗？\
+<清除吧！/@清除>       <@算了/@exit>
+
+[@清除]
+你想免费清除那种武器？\
+<如龍◆天下仙剑（帝）/@龙帝>    <如龍◆天下仙剑（尊）/@龙尊> \
+<缥缈№灭世仙剑（帝）/@飘帝>    <缥缈№灭世仙剑（帝）/@飘尊>
+
+
+[@龙帝]
+#if
+checkitem 如龍◆天下仙剑（帝） 1
+#act
+take 如龍◆天下仙剑（帝） 1
+give 如龍◆天下仙剑（终） 1
+sendmsg 7  清除成功！
+#elseact
+messagebox 你都没有，何谈清除？
+break
+
+
+
+
+[@龙尊]
+#if
+checkitem 如龍◆天下仙剑（尊） 1
+#act
+take 如龍◆天下仙剑（尊） 1
+give 如龍◆天下仙剑（终） 1
+sendmsg 7  清除成功！
+#elseact
+messagebox 你都没有，何谈清除？
+break
+
+
+
+
+[@飘帝]
+#if
+checkitem 缥缈№灭世仙剑（帝） 1
+#act
+take 缥缈№灭世仙剑（帝） 1
+give 缥缈№灭世仙剑（神） 1
+sendmsg 7  清除成功！
+#elseact
+messagebox 你都没有，何谈清除？
+break
+
+
+[@飘尊]
+#if
+checkitem 缥缈№灭世仙剑（尊） 1
+#act
+take 缥缈№灭世仙剑（尊） 1
+give 缥缈№灭世仙剑（神） 1
+sendmsg 7  清除成功！
+#elseact
+messagebox 你都没有，何谈清除？
+break
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[@附魔]
+你是不是觉得 倚天辟地 太乏味了呢？\
+武器附加技能：\ \
+<COLOR=clRed 【提示】：附魔时，请将武器放入背包即可，无需穿戴！ > \ \
+<五岳独尊/@五岳独尊>    在一定时间内，自身防石化，周围人或者怪防御魔御大幅度下降      \  
+
+<神龙附体/@神龙附体>    在一定时间内，攻击伤害大幅增强
+
+
+[@五岳独尊]
+你想给什么武器附魔？\ \
+
+<缥缈№灭世仙剑（神）/@缥缈1>             <如龍◆天下仙剑（终）/@如龍1>
+
+
+[@缥缈1]
+#if
+checkitem  缥缈№灭世仙剑（神）  1
+checkgamegold > 19999999
+CHECKGAMEDIAMOND >  19999
+#act
+take  缥缈№灭世仙剑（神）  1
+gamegold - 20000000
+GAMEDIAMOND >  20000
+give 缥缈№灭世仙剑（尊） 1
+SENDMSG 0  恭喜勇敢的玩家:[%s]附魔[缥缈№灭世仙剑（独尊）]成功!!! 249 255
+SENDMSG 0  恭喜勇敢的玩家:[%s]附魔[缥缈№灭世仙剑（独尊）]成功!!! 249 255
+SENDMSG 0  恭喜勇敢的玩家:[%s]附魔[缥缈№灭世仙剑（独尊）]成功!!! 249 255
+SENDMSG 0  恭喜勇敢的玩家:[%s]附魔[缥缈№灭世仙剑（独尊）]成功!!! 249 255
+#elseact
+messagebox 【提示】：材料不够！请先装备好材料再来！
+close
+
+[@如龍1]
+#if
+checkitem  如龍◆天下仙剑（终）  1
+checkgamegold > 19999999
+CHECKGAMEDIAMOND >  19999
+#act
+take  如龍◆天下仙剑（终）  1
+gamegold - 20000000
+GAMEDIAMOND >  20000
+give 如龍◆天下仙剑（尊） 1
+SENDMSG 0  恭喜勇敢的玩家:[%s]附魔[如龍◆天下仙剑（尊）]成功!!! 249 255
+SENDMSG 0  恭喜勇敢的玩家:[%s]附魔[如龍◆天下仙剑（尊）]成功!!! 249 255
+SENDMSG 0  恭喜勇敢的玩家:[%s]附魔[如龍◆天下仙剑（尊）]成功!!! 249 255
+SENDMSG 0  恭喜勇敢的玩家:[%s]附魔[如龍◆天下仙剑（尊）]成功!!! 249 255
+#elseact
+messagebox 【提示】：材料不够！请先装备好材料再来！
+close
+
+
+
+
+
+[@神龙附体]
+你想给什么武器附魔？\ \
+
+<缥缈№灭世仙剑（神）/@缥缈3>             <如龍◆天下仙剑（终）/@如龍3>
+
+
+[@缥缈3]
+#if
+checkitem  缥缈№灭世仙剑（神）  1
+checkgamegold > 19999999
+CHECKGAMEDIAMOND >  19999
+#act
+take  缥缈№灭世仙剑（神）  1
+gamegold - 20000000
+GAMEDIAMOND >  20000
+give 缥缈№灭世仙剑（帝） 1
+SENDMSG 0  恭喜勇敢的玩家:[%s]附魔[缥缈№灭世仙剑（帝）]成功!!! 249 255
+SENDMSG 0  恭喜勇敢的玩家:[%s]附魔[缥缈№灭世仙剑（帝）]成功!!! 249 255
+SENDMSG 0  恭喜勇敢的玩家:[%s]附魔[缥缈№灭世仙剑（帝）]成功!!! 249 255
+SENDMSG 0  恭喜勇敢的玩家:[%s]附魔[缥缈№灭世仙剑（帝）]成功!!! 249 255
+#elseact
+messagebox 【提示】：材料不够！请先装备好材料再来！
+close
+
+[@如龍3]
+#if
+checkitem  如龍◆天下仙剑（终）  1
+checkgamegold > 19999999
+CHECKGAMEDIAMOND >  19999
+#act
+take  如龍◆天下仙剑（终）  1
+gamegold - 20000000
+GAMEDIAMOND >  20000
+give 如龍◆天下仙剑（帝） 1
+SENDMSG 0  恭喜勇敢的玩家:[%s]附魔[如龍◆天下仙剑（帝）]成功!!! 249 255
+SENDMSG 0  恭喜勇敢的玩家:[%s]附魔[如龍◆天下仙剑（帝）]成功!!! 249 255
+SENDMSG 0  恭喜勇敢的玩家:[%s]附魔[如龍◆天下仙剑（帝）]成功!!! 249 255
+SENDMSG 0  恭喜勇敢的玩家:[%s]附魔[如龍◆天下仙剑（帝）]成功!!! 249 255
+#elseact
+messagebox 【提示】：材料不够！请先装备好材料再来！
+close

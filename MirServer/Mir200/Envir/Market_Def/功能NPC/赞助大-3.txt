@@ -1,0 +1,23 @@
+()
+%100
+[@main]
+<COLOR=clAqua 为了回馈广大赞助大使对我们给力传奇的支持与资助，特设此奖励！>\
+<COLOR=clAqua …………………………………………………………………………………>\
+<COLOR=clYellow 网银单笔充值  100元>  额外赠送  20元   <COLOR=clYellow 每天晚上8点充值,积分送100%,限时10分钟.>\
+<COLOR=clYellow 网银单笔充值  200元>  额外赠送  50元   <COLOR=clYellow 每天晚上8点充值,积分送100%,限时10分钟.>\
+<COLOR=clYellow 网银单笔充值  300元>  额外赠送  80元   <COLOR=clYellow 每天晚上8点充值,积分送100%,限时10分钟.>\
+<COLOR=clYellow 网银单笔充值  500元>  额外赠送 150元   <COLOR=clYellow 每天晚上8点充值,积分送100%,限时10分钟.>\
+<COLOR=clYellow 网银单笔充值 1000元>  额外赠送 350元   <COLOR=clYellow 每天晚上8点充值,积分送100%,限时10分钟.>\
+<COLOR=clFuchsia 网银冲值1元=4积分+10金刚石>  你目前有积分：<$HUMAN(消费积分)>个  <查看下一页/@55>\
+<COLOR=clAqua 说明：以上额外赠送金额系统自动赠送，玩家充值后直接领取即可！>\
+
+[@55]
+<COLOR=clAqua 为了回馈广大赞助大使对我们给力传奇的支持与资助，特设此奖励！>\
+<COLOR=clAqua …………………………………………………………………………………>\
+<COLOR=clYellow 网银单笔充值 2000元>  额外赠送  800元   <COLOR=clYellow 每天晚上8点充值,积分送100%,限时10分钟.>\
+<COLOR=clYellow 网银单笔充值 3000元>  额外赠送 1400元   <COLOR=clYellow 每天晚上8点充值,积分送100%,限时10分钟.>\ 
+<COLOR=clYellow 网银单笔充值 4000元>  额外赠送 2000元   <COLOR=clYellow 每天晚上8点充值,积分送100%,限时10分钟.>\
+<COLOR=clYellow 网银单笔充值 5000元>  额外赠送 2500元   <COLOR=clYellow 每天晚上8点充值,积分送100%,限时10分钟.>\
+;<COLOR=clYellow 网银单笔充值10000元>  额外赠送 5000元   <COLOR=clYellow 每天晚上8点充值,积分送100%,限时10分钟.>\
+<COLOR=clFuchsia 网银冲值1元=4积分+10金刚石>  你目前有积分：<$HUMAN(消费积分)>个  <返回上一页/@55>\
+<COLOR=clAqua 说明：以上额外赠送金额系统自动赠送，玩家充值后直接领取即可！>\

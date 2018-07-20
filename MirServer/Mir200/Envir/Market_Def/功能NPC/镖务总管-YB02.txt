@@ -1,0 +1,61 @@
+[@MAIN]
+恩，是从欧阳镖头送过来的吧？\
+一路辛苦啦，我来点点看东西少了没！ \
+稍等给你丰厚的报酬哦！嘿嘿\   \
+<完成任务/@endtask>
+
+[@endtask]
+#ACT
+FINISHESCORT
+
+[@FinishEscort_Fail_1]
+你没有镖车啊，提交什么任务！？\
+<关闭/@exit>
+
+[@FinishEscort_Fail_2]
+镖车距离我太远了，叫我如何核查货物呢？\
+<关闭/@exit>
+
+[@FinishEscort_无敌镖车]
+#ACT
+SET [099] 0
+GAMEGOLD + 1000
+CHANGEEXP + 40000000
+GIVEUPESCORT
+SENDMSG 0 恭喜玩家%s成功将【无敌镖车】押到.完成任务获得【4000万经验】奖励！ 253 215
+SENDMSG 0 恭喜玩家%s成功将【无敌镖车】押到.完成任务获得【4000万经验】奖励！ 253 215 30
+CLOSE
+BREAK
+
+[@FinishEscort_超级镖车]
+#ACT
+SET [099] 0
+GAMEGOLD + 1000
+CHANGEEXP + 25000000
+GIVEUPESCORT
+SENDMSG 0 恭喜玩家%s成功将【超级镖车】押到.完成任务获得【2500万经验】奖励！ 253 215
+SENDMSG 0 恭喜玩家%s成功将【超级镖车】押到.完成任务获得【2500万经验】奖励！ 253 215 30
+CLOSE
+BREAK
+
+[@FinishEscort_高级镖车]
+#ACT
+SET [099] 0
+GAMEGOLD + 1000
+CHANGEEXP + 15000000
+GIVEUPESCORT
+SENDMSG 0 恭喜玩家%s成功将【高级镖车】押到.完成任务获得【1500万经验】奖励！ 253 215
+SENDMSG 0 恭喜玩家%s成功将【高级镖车】押到.完成任务获得【1500万经验】奖励！ 253 215 30
+CLOSE
+BREAK
+
+[@FinishEscort_普通镖车]
+#ACT
+SET [099] 0
+GAMEGOLD + 1000
+CHANGEEXP + 10000000
+GIVEUPESCORT
+SENDMSG 0 恭喜玩家%s成功将【普通镖车】押到.完成任务获得【1000万经验】奖励！ 253 215
+SENDMSG 0 恭喜玩家%s成功将【普通镖车】押到.完成任务获得【1000万经验】奖励！ 253 215 30
+CLOSE
+BREAK

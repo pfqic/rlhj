@@ -1,0 +1,72 @@
+(@@InPutInteger @@InPutString )
+[@main]
+#IF
+EQUAL A90
+#ACT
+MOV A90 /暂无/
+MOV G95 5000
+#IF
+#SAY
+<COLOR=clFuchsia ╔♂╗    ┏┯┓┏┯┓┏┯┓┏┯┓┏┯┓┏┯┓    ╔♀╗>\
+<COLOR=clFuchsia ┃欢┃※※┠><COLOR=clYellow 行><COLOR=clFuchsia ┨┠><COLOR=clYellow 会><COLOR=clFuchsia ┨┠><COLOR=clYellow 必><COLOR=clFuchsia ┨┠><COLOR=clYellow 争><COLOR=clFuchsia ┨┠><COLOR=clYellow 之><COLOR=clFuchsia ┨┠><COLOR=clYellow 地><COLOR=clFuchsia ┨※※┃欢┃>\
+<COLOR=clFuchsia ┃迎┃    ┗┷┛┗┷┛┗┷┛┗┷┛┗┷┛┗┷┛    ┃迎┃>\
+<COLOR=clFuchsia ┃光┃    ┌────────────────┐    ┃光┃>\
+<COLOR=clFuchsia ┃临┃    │><COLOR=clYellow 地图介绍：小怪20分钟★大怪40分钟><COLOR=clFuchsia │    ┃临┃>\
+<COLOR=clFuchsia ╚♂╝    └────────────────┘    ╚♀╝>\
+<COLOR=clAqua 当前地图属于:[><$STR(A90)><COLOR=clOlive ]行会> ★ <COLOR=clAqua 当前地图价格:><COLOR=clOlive [><$STR(G95)><COLOR=clAqua ]元宝>\
+<COLOR=clAqua 抢占介绍:必须是行会掌门人 输入元宝数量大于当前地图价格>\
+　        [<抢占地图/@@InPutInteger36>]               [<进入地图/@进入>]
+
+
+[@@InPutInteger36]
+#IF
+ISGUILDMASTER
+#ELSEACT
+MessageBox 快去让你们行会掌门人来抢占地图！
+break
+#IF
+CHECKGAMEGOLD > <$STR(G95)>
+#Act
+DelayGoto 1 @InPutInteger36
+#ELSEAct
+MessageBox 你的元宝数量不足！请冲值。
+GOTO @main
+break
+
+[@InPutInteger36]
+#If
+CHECKGAMEGOLD > <$STR(M36)>
+LARGE M36 <$STR(G95)>
+#ACT
+GameGold - <$STR(M36)>
+MOV A90 <$GUILDNAME>
+MOV G95 <$STR(M36)>
+SendMSG 0 提示：[必争之地]已经被[<$STR(A90)>]行会抢占! 0 151 30
+SendMSG 0 提示：[必争之地]已经被[<$STR(A90)>]行会抢占! 0 151 30
+SendMSG 0 提示：[必争之地]已经被[<$STR(A90)>]行会抢占! 0 151 30
+SendMSG 0 提示：[必争之地]已经被[<$STR(A90)>]行会抢占! 0 151
+SendMSG 0 提示：[必争之地]已经被[<$STR(A90)>]行会抢占! 0 151
+SendMSG 0 提示：[必争之地]已经被[<$STR(A90)>]行会抢占! 0 151
+GMEXECUTE 集体传送 hanghuibiz 0159
+GOTO @main
+break
+
+[@进入]
+#IF
+HAVEGUILD
+#ELSEACT
+MessageBox 行会都没有凑什么热闹，给我走开！
+break
+
+#IF
+EQUAL A90 <$GUILDNAME>
+#ACT
+MAPMOVE hanghuibiz
+SendMSG 0 提示：[%s]进入了[必争之地]寻找BOSS去了! 0 151 30
+SendMSG 0 提示：[%s]进入了[必争之地]寻找BOSS去了! 0 151 30
+SendMSG 0 提示：[%s]进入了[必争之地]寻找BOSS去了! 0 151 30
+SendMSG 0 提示：[%s]进入了[必争之地]寻找BOSS去了! 0 151
+SendMSG 0 提示：[%s]进入了[必争之地]寻找BOSS去了! 0 151
+SendMSG 0 提示：[%s]进入了[必争之地]寻找BOSS去了! 0 151
+#ELSEACT
+MessageBox 当前地图属于[<$STR(A90)>]行会！要不要入会一起混啊?

@@ -1,0 +1,35 @@
+[2018-6-19 23:17:29] [127.0.0.1] 角色名:喜欢你	Ident:1018		Recog:0		Param:0		tag:0		series:46		string:
+[2018-6-19 23:17:30] [127.0.0.1] 角色名:喜欢你	Ident:84		Recog:786446		Param:0		tag:0		series:0		string:
+[2018-6-19 23:17:30] [127.0.0.1] 角色名:喜欢你	Ident:81		Recog:1		Param:0		tag:0		series:0		string:
+[2018-6-19 23:17:30] [127.0.0.1] 角色名:喜欢你	Ident:10431		Recog:1310720		Param:0		tag:0		series:0		string:
+[2018-6-19 23:17:30] [127.0.0.1] 角色名:喜欢你	Ident:10433		Recog:0		Param:0		tag:0		series:0		string:
+[2018-6-19 23:17:30] [127.0.0.1] 角色名:喜欢你	Ident:1200		Recog:348670960		Param:0		tag:0		series:0		string:
+[2018-6-19 23:17:30] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:0		Param:0		tag:26		series:0		string:
+[2018-6-19 23:17:39] [127.0.0.1] 角色名:喜欢你	Ident:3030		Recog:0		Param:0		tag:0		series:0		string:@11 征战¤星王道剑
+[2018-6-19 23:17:43] [127.0.0.1] 角色名:喜欢你	Ident:1003		Recog:1073741906		Param:1		tag:0		series:0		string:征战¤星王道剑
+[2018-6-19 23:17:51] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:0		Param:0		tag:26		series:0		string:
+[2018-6-19 23:17:57] [127.0.0.1] 角色名:喜欢你	Ident:3030		Recog:0		Param:0		tag:0		series:0		string:@11 征战¤星王魔剑
+[2018-6-19 23:18:1] [127.0.0.1] 角色名:喜欢你	Ident:1003		Recog:1073741907		Param:1		tag:0		series:0		string:征战¤星王魔剑
+[2018-6-19 23:18:3] [127.0.0.1] 角色名:喜欢你	Ident:1003		Recog:1073741906		Param:1		tag:0		series:0		string:征战¤星王道剑
+[2018-6-19 23:18:5] [127.0.0.1] 角色名:喜欢你	Ident:1003		Recog:1073741907		Param:1		tag:0		series:0		string:征战¤星王魔剑
+[2018-6-19 23:18:11] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:0		Param:0		tag:26		series:0		string:
+[2018-6-19 23:18:17] [127.0.0.1] 角色名:喜欢你	Ident:3013		Recog:21889348		Param:0		tag:7		series:0		string:
+[2018-6-19 23:18:18] [127.0.0.1] 角色名:喜欢你	Ident:3013		Recog:21758278		Param:0		tag:1		series:0		string:
+[2018-6-19 23:18:19] [127.0.0.1] 角色名:喜欢你	Ident:3013		Recog:21627206		Param:0		tag:0		series:0		string:
+[2018-6-19 23:18:32] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:0		Param:0		tag:26		series:0		string:
+[2018-6-19 23:18:52] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:0		Param:0		tag:26		series:0		string:
+[2018-6-19 23:19:13] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:0		Param:0		tag:26		series:0		string:
+[2018-6-19 23:19:33] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:0		Param:0		tag:26		series:0		string:
+[2018-6-19 23:19:53] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:0		Param:0		tag:26		series:0		string:
+[2018-6-19 23:20:14] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:0		Param:0		tag:26		series:0		string:
+[2018-6-19 23:20:35] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:0		Param:0		tag:26		series:0		string:
+[2018-6-19 23:20:55] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:0		Param:0		tag:26		series:0		string:
+[2018-6-19 23:21:16] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:0		Param:0		tag:26		series:0		string:
+[2018-6-19 23:21:36] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:0		Param:0		tag:26		series:0		string:
+[2018-6-19 23:21:56] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:0		Param:0		tag:26		series:0		string:
+[2018-6-19 23:22:17] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:0		Param:0		tag:26		series:0		string:
+[2018-6-19 23:22:37] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:0		Param:0		tag:26		series:0		string:
+[2018-6-19 23:22:58] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:0		Param:0		tag:26		series:0		string:
+[2018-6-19 23:23:18] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:0		Param:0		tag:26		series:0		string:
+[2018-6-19 23:23:39] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:0		Param:0		tag:26		series:0		string:
+[2018-6-19 23:23:59] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:0		Param:0		tag:26		series:0		string:

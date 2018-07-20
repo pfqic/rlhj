@@ -1,0 +1,659 @@
+(@@InPutInteger @@InPutString )
+[@MAIN]
+#if
+check [365] 1
+#ACT
+MESSAGEBOX 你已经下注了【玩家坐庄】赌博，不能同时玩两种赌博系统！
+BREAK
+
+#IF
+LARGE I74 5
+#ACT
+MESSAGEBOX 赌博进行中！错误代码:<$STR(I74)>！\稍等即可开始游戏！
+BREAK
+
+#if
+check [009] 0
+#ACT
+DELNAMELIST ..\QuestDiary\临时名单\压注单双.txt
+DELNAMELIST ..\QuestDiary\临时名单\压注大小.txt
+DELNAMELIST ..\QuestDiary\临时名单\压注点数.txt
+SET [008] 0
+SET [009] 0
+MOV M26 0
+MOV M27 0
+MOV M28 0
+MOV S27
+MOV S28
+MOV S29
+MOV S30
+MOV S31
+
+#IF
+equal H70 1
+ISADMIN
+#SAY
+【<开启赌城/@开启赌城>】
+#ACT
+BREAK
+
+#IF
+equal H70 1
+#ACT
+BREAK
+#SAY
+赌场目前正在关闭，请注意下次开放时间！
+
+#IF
+ISADMIN
+#ACT
+BREAK
+#SAY
+━━━━━━━━━━━━【<后台管理/@后台>】━━━━━━━━━━━━\
+【 <大/@大> 】：<$STR(I54)>人押<$STR(I55)>注 【 <中/@中> 】：<$STR(I56)>人押<$STR(I57)>注 【 <小/@小> 】：<$STR(I58)>人押<$STR(I59)>注\
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\
+【<一点/@一点>】：<$STR(I60)>人押<$STR(I61)>注 【<二点/@二点>】：<$STR(I62)>人押<$STR(I63)>注 【<三点/@三点>】：<$STR(I64)>人押<$STR(I65)>注\
+【<四点/@四点>】：<$STR(I66)>人押<$STR(I67)>注 【<五点/@五点>】：<$STR(I68)>人押<$STR(I69)>注 【<六点/@六点>】：<$STR(I70)>人押<$STR(I71)>注\
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\
+　　　【<查看规则/@规则>】　　　【<返回盟重/@返回到盟重>】　　　　【<刷新显示/@main>】\
+离开局时间还剩下<$STR(I72)>秒，请抓紧时间下注！【赌注只能压<$STR(H71)>-<$STR(H75)>】\
+历史记录：【<$STR(A47)>】你当前押了：【<$STR(S27)>】！\
+#ELSESAY
+　　　【<查看规则/@规则>】　　　【<返回盟重/@返回到盟重>】　　　　【<刷新显示/@main>】\
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\
+【 <大/@大> 】：<$STR(I54)>人押<$STR(I55)>注  【 <中/@中> 】：<$STR(I56)>人押<$STR(I57)>注  【 <小/@小> 】：<$STR(I58)>人押<$STR(I59)>注\
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\
+【<一点/@一点>】：<$STR(I60)>人押<$STR(I61)>注  【<二点/@二点>】：<$STR(I62)>人押<$STR(I63)>注  【<三点/@三点>】：<$STR(I64)>人押<$STR(I65)>注\
+【<四点/@四点>】：<$STR(I66)>人押<$STR(I67)>注  【<五点/@五点>】：<$STR(I68)>人押<$STR(I69)>注  【<六点/@六点>】：<$STR(I70)>人押<$STR(I71)>注\
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\
+离开局时间还剩下<$STR(I72)>秒，请抓紧时间下注！【赌注只能压<$STR(H71)>-<$STR(H75)>】\
+历史记录：【<$STR(A47)>】你当前押了：【<$STR(S27)>】！\
+
+[@后台]
+#IF
+ISADMIN
+#SAY
+<输入赢钱后收的税率/@@InPutInteger11>  当前税率为：<$STR(H71)>%\
+<输入多方赢钱的机率/@@InPutInteger12>  当前赢率为：<$STR(H72)>%\
+<输入最大的下注限制/@@InPutInteger13>  限制下注为：<$STR(H71)>-<$STR(H75)>\
+<输入你想要开的点数/@@InPutInteger14>  共有<$STR(H73)>人赌过,当前收支为:<$STR(H74)>\　\
+【<重置变量/@重置赌城>】  【<关闭赌城/@关闭赌城>】  【<刷新显示/@后台>】 【<赌场卡点修复/@手动>】\ \
+3倍:【 <大/@大> 】 【 <中/@中> 】 【 <小/@小> 】       \
+5倍:【<一点/@一点>】 【<二点/@二点>】 【<三点/@三点>】 【<四点/@四点>】 【<五点/@五点>】 【<六点/@六点>】\　\
+机率状态：【<$STR(A58)>】 \
+#ACT
+BREAK
+#ELSEACT
+BREAK
+
+
+[@重置赌城]
+#IF
+ISADMIN
+#ACT
+MOV A47
+SENDMSG 5 重置成功！
+BREAK
+#ELSEACT
+BREAK
+
+[@@InPutInteger14]
+#IF
+ISADMIN
+#ACT
+DelayGoto 1 ~@@InPutInteger14
+BREAK
+#ELSEACT
+BREAK
+
+[~@@InPutInteger14]
+#IF
+ISADMIN
+LARGE M14 0
+SMALL M14 7
+#ACT
+MOV I73 <$STR(M14)>
+SENDMSG 5 设置成功，本局开：<$STR(I73)>点！
+BREAK
+#ELSEACT
+BREAK
+
+[@@InPutInteger13]
+#IF
+ISADMIN
+#ACT
+DelayGoto 1 ~@@InPutInteger13
+BREAK
+#ELSEACT
+BREAK
+
+[~@@InPutInteger13]
+#IF
+ISADMIN
+LARGE M13 0
+#ACT
+MOV H75 <$STR(M13)>
+SENDMSG 5 设置成功，最大下注限制为：<$STR(H75)>！
+BREAK
+
+[@@InPutInteger12]
+#IF
+ISADMIN
+#ACT
+DelayGoto 1 ~@@InPutInteger12
+BREAK
+#ELSEACT
+BREAK
+
+[~@@InPutInteger12]
+#IF
+ISADMIN
+LARGE M12 0
+SMALL M12 100
+#ACT
+MOV H72 <$STR(M12)>
+SENDMSG 5 设置成功，多方赢钱机率为：<$STR(H72)>%！
+BREAK
+#ELSEACT
+MessageBox 错误提示：机率为大于1小于100！
+BREAK
+
+[@@InPutInteger11]
+#IF
+ISADMIN
+#ACT
+DelayGoto 1 ~@@InPutInteger11
+BREAK
+#ELSEACT
+BREAK
+
+[~@@InPutInteger11]
+#IF
+ISADMIN
+#ACT
+MOV H71 <$STR(M11)>
+SENDMSG 5 设置成功，当前税率为：<$STR(H71)>%！
+BREAK
+#ELSEACT
+BREAK
+
+[@关闭赌城]
+#IF
+CheckLevelEx > 0
+#ACT
+mov H70 1
+SENDMSG 0 系统公告：赌场暂时关闭，请各位玩家等待下次开放时间！ 151 219
+SENDMSG 0 系统公告：赌场暂时关闭，请各位玩家等待下次开放时间！ 151 219
+BREAK
+
+[@开启赌城]
+#IF
+CheckLevelEx > 0
+#ACT
+mov H70 0
+SENDMSG 0  系统公告：赌场正式营业！玩家可由盟重超级传送员处进入！ 151 219
+SENDMSG 0  系统公告：赌场正式营业！玩家可由盟重超级传送员处进入！ 151 219
+BREAK
+
+[@六点]
+#IF
+CHECKNAMELIST ..\QuestDiary\临时名单\压注点数.txt
+#ACT
+MessageBox 错误提示：你已经下过注压《点数》了，不能重复下注！
+BREAK
+#IF
+SMALL M28 1
+EQUAL S30
+#ACT
+MOV S26 六点
+MOV M24 6
+DelayGoto 1 @压显示
+BREAK
+#ELSEACT
+MessageBox 错误提示：你已经下过注压《点数》了，不能重复下注！
+BREAK
+
+[@五点]
+#IF
+CHECKNAMELIST ..\QuestDiary\临时名单\压注点数.txt
+#ACT
+MessageBox 错误提示：你已经下过注压《点数》了，不能重复下注！
+BREAK
+#IF
+SMALL M28 1
+EQUAL S30
+#ACT
+MOV S26 五点
+MOV M24 6
+DelayGoto 1 @压显示
+BREAK
+#ELSEACT
+MessageBox 错误提示：你已经下过注压《点数》了，不能重复下注！
+BREAK
+
+[@四点]
+#IF
+CHECKNAMELIST ..\QuestDiary\临时名单\压注点数.txt
+#ACT
+MessageBox 错误提示：你已经下过注压《点数》了，不能重复下注！
+BREAK
+#IF
+SMALL M28 1
+EQUAL S30
+#ACT
+MOV S26 四点
+MOV M24 6
+DelayGoto 1 @压显示
+BREAK
+#ELSEACT
+MessageBox 错误提示：你已经下过注压《点数》了，不能重复下注！
+BREAK
+
+[@三点]
+#IF
+CHECKNAMELIST ..\QuestDiary\临时名单\压注点数.txt
+#ACT
+MessageBox 错误提示：你已经下过注压《点数》了，不能重复下注！
+BREAK
+#IF
+SMALL M28 1
+EQUAL S30
+#ACT
+MOV S26 三点
+MOV M24 6
+DelayGoto 1 @压显示
+BREAK
+#ELSEACT
+MessageBox 错误提示：你已经下过注压《点数》了，不能重复下注！
+BREAK
+
+[@二点]
+#IF
+CHECKNAMELIST ..\QuestDiary\临时名单\压注点数.txt
+#ACT
+MessageBox 错误提示：你已经下过注压《点数》了，不能重复下注！
+BREAK
+#IF
+SMALL M28 1
+EQUAL S30
+#ACT
+MOV S26 二点
+MOV M24 6
+DelayGoto 1 @压显示
+BREAK
+#ELSEACT
+MessageBox 错误提示：你已经下过注压《点数》了，不能重复下注！
+BREAK
+
+[@一点]
+#IF
+CHECKNAMELIST ..\QuestDiary\临时名单\压注点数.txt
+#ACT
+MessageBox 错误提示：你已经下过注压《点数》了，不能重复下注！
+BREAK
+#IF
+SMALL M28 1
+EQUAL S30
+#ACT
+MOV S26 一点
+MOV M24 6
+DelayGoto 1 @压显示
+BREAK
+#ELSEACT
+MessageBox 错误提示：你已经下过注压《点数》了，不能重复下注！
+BREAK
+
+[@小]
+#IF
+CHECKNAMELIST ..\QuestDiary\临时名单\压注大小.txt
+#ACT
+MessageBox 错误提示：你已经下过注压《大小》了，不能重复下注！
+BREAK
+#IF
+SMALL M27 1
+EQUAL S29
+#ACT
+MOV S26 小
+MOV M24 3
+DelayGoto 1 @压显示
+BREAK
+#ELSEACT
+MessageBox 错误提示：你已经下过注压《大小》了，不能重复下注！
+BREAK
+
+[@中]
+#IF
+CHECKNAMELIST ..\QuestDiary\临时名单\压注大小.txt
+#ACT
+MessageBox 错误提示：你已经下过注压《大小》了，不能重复下注！
+BREAK
+#IF
+SMALL M27 1
+EQUAL S29
+#ACT
+MOV S26 中
+MOV M24 3
+DelayGoto 1 @压显示
+BREAK
+#ELSEACT
+MessageBox 错误提示：你已经下过注压《大小》了，不能重复下注！
+BREAK
+
+[@大]
+#IF
+CHECKNAMELIST ..\QuestDiary\临时名单\压注大小.txt
+#ACT
+MessageBox 错误提示：你已经下过注压《大小》了，不能重复下注！
+BREAK
+#IF
+SMALL M27 1
+EQUAL S29
+#ACT
+MOV S26 大
+MOV M24 3
+DelayGoto 1 @压显示
+BREAK
+#ELSEACT
+MessageBox 错误提示：你已经下过注压《大小》了，不能重复下注！
+BREAK
+
+[@双]
+#IF
+CHECKNAMELIST ..\QuestDiary\临时名单\压注单双.txt
+#ACT
+MessageBox 错误提示：你已经下过注压《单双》了，不能重复下注！
+BREAK
+#IF
+SMALL M26 1
+EQUAL S28
+#ACT
+MOV S26 双
+MOV M24 2
+DelayGoto 1 @压显示
+BREAK
+#ELSEACT
+MessageBox 错误提示：你已经下过注压《单双》了，不能重复下注！
+BREAK
+
+[@单]
+#IF
+CHECKNAMELIST ..\QuestDiary\临时名单\压注单双.txt
+#ACT
+MessageBox 错误提示：你已经下过注压《单双》了，不能重复下注！
+BREAK
+#IF
+SMALL M26 1
+EQUAL S28
+#ACT
+MOV S26 单
+MOV M24 2
+DelayGoto 1 @压显示
+BREAK
+#ELSEACT
+MessageBox 错误提示：你已经下过注压《单双》了，不能重复下注！
+BREAK
+
+[@压显示]
+你当前选择押【<$STR(S26)>】，赔率【<$STR(M24)>】倍！\ \
+你拥有元宝数量：【<$GAMEGOLD>】颗！\ \
+<点击输入你要下注的元宝数量/@@InPutInteger25>\ \ \
+                                                   <重新选择下注类型/@main>\
+
+[@@InPutInteger25]
+#if
+check [008] 0
+#ACT
+SET [008] 1
+DelayGoto 1 @Inger25
+BREAK
+#ELSEACT
+MessageBox 错误提示：非法下注！
+BREAK
+
+[@Inger25]
+#IF
+LARGE I74 2
+#ACT
+SET [008] 0
+MessageBox 错误提示：距离开局不足【<$STR(I72)>】秒了，禁止下注！\下次行动要快哦！
+BREAK
+
+#IF
+LARGE M25 <$STR(H75)>
+#ACT
+SET [008] 0
+MessageBox 错误提示：最大下注不能超过<$STR(H75)>！
+BREAK
+
+#IF
+small M25 <$STR(H71)>
+#ACT
+SET [008] 0
+MessageBox 错误提示：最小下注不能少于<$STR(H71)>！
+BREAK
+
+#IF
+EQUAL S26
+#ACT
+SET [008] 0
+MessageBox 错误提示：非法数据！
+BREAK
+
+#IF
+CheckStringList ..\QuestDiary\临时名单\限制下注.txt <$STR(S26)>
+#ELSEACT
+SET [008] 0
+MessageBox 错误提示：非法数据<$STR(S26)>！
+BREAK
+
+#IF
+CHECKGAMEGOLD < <$STR(M25)>
+#ACT
+SET [008] 0
+MessageBox 错误提示：你的元宝不足「<$STR(M25)>」颗，不能进行下注！
+break
+
+#if
+check [008] 0
+#ACT
+MessageBox 错误提示：非法数据！
+BREAK
+
+#IF
+EQUAL S26 单
+#ACT
+MOV S28 单
+GameGold - <$STR(M25)>
+MOV M26 <$STR(M25)>
+INC I50 1
+INC I51 <$STR(M25)>
+INC S27 <$STR(S28)><$STR(M26)>注，
+addnamelist ..\QuestDiary\临时名单\压注单双.txt
+
+
+#IF
+EQUAL S26 双
+#ACT
+MOV S28 双
+GameGold - <$STR(M25)>
+MOV M26 <$STR(M25)>
+INC I52 1
+INC I53 <$STR(M25)>
+INC S27 <$STR(S28)><$STR(M26)>注，
+addnamelist ..\QuestDiary\临时名单\压注单双.txt
+
+
+#IF
+EQUAL S26 大
+#ACT
+MOV S29 大
+GameGold - <$STR(M25)>
+MOV M27 <$STR(M25)>
+INC I54 1
+INC I55 <$STR(M25)>
+INC S27 <$STR(S29)><$STR(M27)>注，
+addnamelist ..\QuestDiary\临时名单\压注大小.txt
+
+
+#IF
+EQUAL S26 中
+#ACT
+MOV S29 中
+GameGold - <$STR(M25)>
+MOV M27 <$STR(M25)>
+INC I56 1
+INC I57 <$STR(M25)>
+INC S27 <$STR(S29)><$STR(M27)>注，
+addnamelist ..\QuestDiary\临时名单\压注大小.txt
+
+#IF
+EQUAL S26 小
+#ACT
+MOV S29 小
+GameGold - <$STR(M25)>
+MOV M27 <$STR(M25)>
+INC I58 1
+INC I59 <$STR(M25)>
+INC S27 <$STR(S29)><$STR(M27)>注，
+addnamelist ..\QuestDiary\临时名单\压注大小.txt
+
+#IF
+EQUAL S26 一点
+#ACT
+MOV S30 一点
+GameGold - <$STR(M25)>
+MOV M28 <$STR(M25)>
+INC I60 1
+INC I61 <$STR(M25)>
+INC S27 <$STR(S30)><$STR(M28)>注，
+addnamelist ..\QuestDiary\临时名单\压注点数.txt
+
+#IF
+EQUAL S26 二点
+#ACT
+MOV S30 二点
+GameGold - <$STR(M25)>
+MOV M28 <$STR(M25)>
+INC I62 1
+INC I63 <$STR(M25)>
+INC S27 <$STR(S30)><$STR(M28)>注，
+addnamelist ..\QuestDiary\临时名单\压注点数.txt
+
+#IF
+EQUAL S26 三点
+#ACT
+MOV S30 三点
+GameGold - <$STR(M25)>
+MOV M28 <$STR(M25)>
+INC I64 1
+INC I65 <$STR(M25)>
+INC S27 <$STR(S30)><$STR(M28)>注，
+addnamelist ..\QuestDiary\临时名单\压注点数.txt
+
+#IF
+EQUAL S26 四点
+#ACT
+MOV S30 四点
+GameGold - <$STR(M25)>
+MOV M28 <$STR(M25)>
+INC I66 1
+INC I67 <$STR(M25)>
+INC S27 <$STR(S30)><$STR(M28)>注，
+addnamelist ..\QuestDiary\临时名单\压注点数.txt
+
+#IF
+EQUAL S26 五点
+#ACT
+MOV S30 五点
+GameGold - <$STR(M25)>
+MOV M28 <$STR(M25)>
+INC I68 1
+INC I69 <$STR(M25)>
+INC S27 <$STR(S30)><$STR(M28)>注，
+addnamelist ..\QuestDiary\临时名单\压注点数.txt
+
+#IF
+EQUAL S26 六点
+#ACT
+MOV S30 六点
+GameGold - <$STR(M25)>
+MOV M28 <$STR(M25)>
+INC I70 1
+INC I71 <$STR(M25)>
+INC S27 <$STR(S30)><$STR(M28)>注，
+addnamelist ..\QuestDiary\临时名单\压注点数.txt
+
+#IF
+SMALL I74 1
+#ACT
+MOV I74 1
+
+#IF
+CHECKLEVELEX > 0
+#ACT
+INC I36 1
+INC H73 1
+INC I75 <$STR(M25)>
+INC H74 <$STR(M25)>
+MOV M0 <$STR(M25)>
+MUL M0 <$STR(M24)>
+MOV M1 <$STR(M0)>
+MOV M2 <$STR(M0)>
+MOV M4 100
+DIV M4 <$STR(H71)>
+DIV M1 <$STR(M4)>
+DEC M2 <$STR(M1)>
+SET [008] 0
+SET [009] 1
+SENDMSG 5 玩家【%s】押了：【<$STR(M25)>】注【<$STR(S26)>】，买定离手！ 151 219
+BREAK
+#SAY
+恭喜你下注成功！你押了：【<$STR(M25)>】注【<$STR(S26)>】！\
+赔率【<$STR(M24)>】倍，假如中了的话，情况如下：\ \
+总共赢取元宝：【<$STR(M0)>】！\
+扣掉了「<$STR(H71)>」%的手续费为「<$STR(M1)>」元宝！\
+实际可得到元宝：「<$STR(M2)>」颗！请记录你现有元宝，方便对账！\ \
+你剩余的元宝数量：【<$GAMEGOLD>】颗！\
+
+[@规则]
+#IF
+CheckLevelEx > 0
+#ACT
+MessageBox 赔率介绍：\赔率2倍【单】【双】，系统开出1-6点是单数为单，双数为双！\赔率3倍【大】【中】【小】1-2点为小、3-4为中、5-6为大！\赔率6倍【猜点数】与系统开出的点数相同即中！\赢的玩家需要支付【<$STR(H71)>%】的元宝为手续费！\小赌怡情，娱乐为本，祝愿大家金玉满堂！\
+BREAK
+[@返回到盟重]
+#IF
+CheckLevelEx > 0
+#ACT
+CLOSE
+MAPMOVE 3 330 330
+BREAK
+
+[@IsInFilterList]
+#IF
+CheckLevelEx > 0
+#ACT
+MessageBox 输入数据中包含了非法字符.请重新编辑
+Break 
+
+
+
+[@手动]
+#IF
+CHECKLEVELEX > 0
+#ACT
+#ACT
+DELNAMELIST ..\QuestDiary\临时名单\压注单双.txt
+DELNAMELIST ..\QuestDiary\临时名单\压注大小.txt
+DELNAMELIST ..\QuestDiary\临时名单\压注点数.txt
+SET [008] 0
+MOV M26 0
+MOV M27 0
+MOV M28 0
+MOV S27
+MOV S28
+MOV S29
+MOV S30
+MOV S31
+MOV I74 0
+BREAK

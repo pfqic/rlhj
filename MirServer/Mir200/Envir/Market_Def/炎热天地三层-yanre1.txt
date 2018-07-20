@@ -1,0 +1,28 @@
+()
+%100
+[@main]
+<COLOR=clAqua 【禹王锁蛟三层】> <COLOR=clRed Hot~ >                      <COLOR=clLime 降龙合击，邀你來戰!>\
+<COLOR=clGray ------------------------------------------------------------>　\
+<COLOR=clRed BOOS名称：>20万血boss，8万血boss，10万血BOSS\
+<COLOR=clRed 怪物刷新：>boss类30分钟\
+<COLOR=clRed 爆率介绍：>爆各种高档装备，爆率其他地图的3倍\
+<COLOR=clRed 进入条件：><COLOR=clFuchsia 10000元宝 等级60级 >\
+<COLOR=clRed 友情提示：><COLOR=clFuchsia 此地图怪物凶险，建议提高自己战斗力再进入>\
+<COLOR=clGray ------------------------------------------------------------>　\
+　　※ <我要进入/@禹王锁蛟> ※      　　　　       ※ <关闭对话/@exit> ※
+
+[@禹王锁蛟]
+#if
+CHECKLEVELEX > 59
+CHECKGAMEGOLD > 9999
+#act
+GAMEGOLD - 10000
+mapmove yanre2
+SENDMSG 0 勇敢的玩家:[%s]禹王锁蛟三层寻宝去了!!!!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]禹王锁蛟三层寻宝去了!!!!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]禹王锁蛟三层寻宝去了!!!!!! 253 0
+SENDMSG 0 玩家:[%s]禹王锁蛟三层寻宝去了,大声喊到：有种的来杀我啊!  250 255 10
+SENDMSG 0 玩家:[%s]禹王锁蛟三层寻宝去了,大声喊到：有种的来杀我啊!  250 255 10
+SENDMSG 0 玩家:[%s]禹王锁蛟三层寻宝去了,大声喊到：有种的来杀我啊!  250 255 10
+#ELSEACT
+MESSAGEBOX 需要10000元宝用来进入地图，且人物等级达到60级。

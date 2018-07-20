@@ -1,0 +1,368 @@
+()
+%100
+[@main]
+<COLOR=clFuchsia 小伙子，让我来成就你的特戒梦想！>\
+既然遇到老夫，我就破例让你见识一下老夫的手艺吧！\ \
+<兑换/@麻痹>【麻痹戒指】<需要200金刚石>  <兑换/@传送>【传送戒指】<需要500金刚石>\
+<兑换/@护身>【护身戒指】<需要200金刚石>  <兑换/@隐身>【隐身戒指】<需要500金刚石>\
+<兑换/@复活>【复活戒指】<需要200金刚石>  <兑换/@探测>【探测项链】<需要500金刚石>\ \
+<特戒回收/@main-2>                <高级特戒合成/@合成>\
+
+
+
+[@main-2]
+#IF
+CHECKLEVELEX > 49
+#ACT
+#SAY
+<COLOR=clFuchsia 小伙子，你可以把不用的特戒给我，我可以给你金刚石！>\
+【麻痹戒指】<可获得50金刚石> <回收/@麻痹1>\
+【护身戒指】<可获得50金刚石> <回收/@护身1>\
+【复活戒指】<可获得50金刚石> <回收/@复活1>\
+【隐身戒指】<可获得200金刚石><回收/@隐身1>\
+【探测项链】<可获得200金刚石><回收/@探测1>\
+【传送戒指】<可获得200金刚石><回收/@传送1>\
+
+<退出/@exit>
+#ELSEACT
+MESSAGEBOX 请50级后再来查看。
+
+
+
+[@麻痹]
+#if
+CHECKGAMEDIAMOND > 199
+#ACT
+GAMEDIAMOND - 200
+give 麻痹戒指 1
+SENDMSG 7 恭喜您，兑换【麻痹戒指】成功！!
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【特戒兑换】处成功的兑换了【麻痹戒指】！ 251 249
+break
+#ELSEact
+messagebox 你的金刚石不够200颗？\想想办法吧。\
+
+[@护身]
+#if
+CHECKGAMEDIAMOND > 199
+#ACT
+GAMEDIAMOND - 200
+give 护身戒指 1
+SENDMSG 7 恭喜您，兑换【护身戒指】成功！!
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【特戒兑换】处成功的兑换了【护身戒指】！ 251 249
+break
+#ELSEact
+messagebox 你的金刚石不够200颗？\想想办法吧。\
+
+
+[@复活]
+#if
+CHECKGAMEDIAMOND > 199
+#ACT
+GAMEDIAMOND - 200
+give 复活戒指 1
+SENDMSG 7 恭喜您，兑换【复活戒指】成功！!
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【特戒兑换】处成功的兑换了【复活戒指】！ 251 249
+break
+#ELSEact
+messagebox 你的金刚石不够200颗？\想想办法吧。\
+
+
+[@传送]
+#if
+CHECKGAMEDIAMOND > 499
+#ACT
+GAMEDIAMOND - 500
+give 传送戒指 1
+SENDMSG 7 恭喜您，兑换【传送戒指】成功！!
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【特戒兑换】处成功的兑换了【传送戒指】！ 251 249
+break
+#ELSEact
+messagebox 你的金刚石不够500颗？\想想办法吧。\
+
+
+
+[@隐身]
+#if
+CHECKGAMEDIAMOND > 499
+#ACT
+GAMEDIAMOND - 500
+give 隐身戒指 1
+SENDMSG 7 恭喜您，兑换【隐身戒指】成功！!
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【特戒兑换】处成功的兑换了【隐身戒指】！ 251 249
+break
+#ELSEact
+messagebox 你的金刚石不够500颗？\想想办法吧。\
+
+
+
+[@探测]
+#if
+CHECKGAMEDIAMOND > 499
+#ACT
+GAMEDIAMOND - 500
+give 探测项链 1
+SENDMSG 7 恭喜您，兑换【探测项链】成功！!
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【特戒兑换】处成功的兑换了【探测项链】！ 251 249
+break
+#ELSEact
+messagebox 你的金刚石不够500颗？\想想办法吧。\
+
+
+[@麻痹1]
+#if
+checkitem 麻痹戒指 1
+#ACT
+take 麻痹戒指 1
+GAMEDIAMOND + 50
+SENDMSG 6  〖提示〗回收成功：您的当前金刚石数量为:<$GAMEDIAMOND>
+break
+#ELSEact
+messagebox 你的东西在包里吗？\不要忽悠我。\
+
+
+
+
+[@复活1]
+#if
+checkitem 复活戒指 1
+#ACT
+take 复活戒指 1
+GAMEDIAMOND + 50
+SENDMSG 6  〖提示〗回收成功：您的当前金刚石数量为:<$GAMEDIAMOND>
+break
+#ELSEact
+messagebox 你的东西在包里吗？\不要忽悠我。\
+
+
+
+
+[@护身1]
+#if
+checkitem 护身戒指 1
+#ACT
+take 护身戒指 1
+GAMEDIAMOND + 50
+SENDMSG 6  〖提示〗回收成功：您的当前金刚石数量为:<$GAMEDIAMOND>
+break
+#ELSEact
+messagebox 你的东西在包里吗？\不要忽悠我。\
+
+
+
+[@传送1]
+#if
+checkitem 传送戒指 1
+#ACT
+take 传送戒指 1
+GAMEDIAMOND + 200
+SENDMSG 6  〖提示〗回收成功：您的当前金刚石数量为:<$GAMEDIAMOND>
+break
+#ELSEact
+messagebox 你的东西在包里吗？\不要忽悠我。\
+
+
+
+[@隐身1]
+#if
+checkitem 隐身戒指 1
+#ACT
+take 隐身戒指 1
+GAMEDIAMOND + 200
+SENDMSG 6  〖提示〗回收成功：您的当前金刚石数量为:<$GAMEDIAMOND>
+break
+#ELSEact
+messagebox 你的东西在包里吗？\不要忽悠我。\
+
+
+
+[@探测1]
+#if
+checkitem 探测项链 1
+#ACT
+take 探测项链 1
+GAMEDIAMOND + 200
+SENDMSG 6  〖提示〗回收成功：您的当前金刚石数量为:<$GAMEDIAMOND>
+break
+#ELSEact
+messagebox 你的东西在包里吗？\不要忽悠我。\
+
+
+
+[@合成]
+<COLOR=clFuchsia 你需要给我一点报酬！！！>\
+高级特戒更具杀伤力！！！\
+<合成/@白银><COLOR=clLime 白银系列特戒>\
+<合成/@黄金><COLOR=clLime 黄金系列特戒>\
+<合成/@钻石><COLOR=clLime 钻石系列特戒>\
+\ \
+<返回/@main>
+
+[@钻石]
+<COLOR=clLime 想合成钻石特戒吗？>\ \
+你需要给我同类黄金特戒3个+100万元宝\ \
+<合成钻石麻痹戒指/@钻石麻痹>\
+<合成钻石复活戒指/@钻石复活>\
+<合成钻石护身戒指/@钻石护身>\ \
+<返回/@main>
+
+
+[@钻石麻痹]
+#IF
+CHECKGAMEGOLD > 999999
+checkitem 黄金麻痹戒指 3
+#ACT
+take 黄金麻痹戒指 3
+GAMEGOLD - 1000000
+give 钻石麻痹戒指 1
+SENDMSG 7 恭喜您，合成【钻石麻痹戒指】成功！!
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【特戒兑换】处成功的合成了【钻石麻痹戒指】！ 251 249
+#elseact
+messagebox 您的材料都没有准备齐全，让我怎么给你合成呢？
+break
+
+
+
+[@钻石护身]
+#IF
+CHECKGAMEGOLD > 999999
+checkitem 黄金护身戒指 3
+#ACT
+take 黄金护身戒指 3
+GAMEGOLD - 1000000
+give 钻石护身戒指 1
+SENDMSG 7 恭喜您，合成【钻石护身戒指】成功！!
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【特戒兑换】处成功的合成了【钻石护身戒指】！ 251 249
+#elseact
+messagebox 您的材料都没有准备齐全，让我怎么给你合成呢？
+break
+
+
+[@钻石复活]
+#IF
+CHECKGAMEGOLD > 999999
+checkitem 黄金复活戒指 3
+#ACT
+take 黄金复活戒指 3
+GAMEGOLD - 1000000
+give 钻石复活戒指 1
+SENDMSG 7 恭喜您，合成【钻石复活戒指】成功！!
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【特戒兑换】处成功的合成了【钻石复活戒指】！ 251 249
+#elseact
+messagebox 您的材料都没有准备齐全，让我怎么给你合成呢？
+break
+
+
+
+[@黄金]
+<COLOR=clLime 想合成黄金特戒吗？>\ \
+你需要给我同类白银特戒3个+50万元宝\ \
+<合成黄金麻痹戒指/@黄金麻痹>\
+<合成黄金复活戒指/@黄金复活>\
+<合成黄金护身戒指/@黄金护身>\ \
+<返回/@main>
+
+
+[@黄金麻痹]
+#IF
+CHECKGAMEGOLD > 499999
+checkitem 白银麻痹戒指 3
+#ACT
+take 白银麻痹戒指 3
+GAMEGOLD - 500000
+give 黄金麻痹戒指 1
+SENDMSG 7 恭喜您，合成【黄金麻痹戒指】成功！!
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【特戒兑换】处成功的合成了【黄金麻痹戒指】！ 251 249
+#elseact
+messagebox 您的材料都没有准备齐全，让我怎么给你合成呢？
+break
+
+
+
+[@黄金复活]
+#IF
+CHECKGAMEGOLD > 499999
+checkitem 白银复活戒指 3
+#ACT
+take 白银复活戒指 3
+GAMEGOLD - 500000
+give 黄金复活戒指 1
+SENDMSG 7 恭喜您，合成【黄金复活戒指】成功！!
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【特戒兑换】处成功的合成了【黄金复活戒指】！ 251 249
+#elseact
+messagebox 您的材料都没有准备齐全，让我怎么给你合成呢？
+break
+
+
+
+[@黄金护身]
+#IF
+CHECKGAMEGOLD > 499999
+checkitem 白银护身戒指 3
+#ACT
+take 白银护身戒指 3
+GAMEGOLD - 500000
+give 黄金护身戒指 1
+SENDMSG 7 恭喜您，合成【黄金护身戒指】成功！!
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【特戒兑换】处成功的合成了【黄金护身戒指】！ 251 249
+#elseact
+messagebox 您的材料都没有准备齐全，让我怎么给你合成呢？
+break
+
+
+
+[@白银]
+<COLOR=clLime 想合成白银特戒吗？>\ \
+你需要给我同类普通特戒3个+10万元宝\ \
+<合成白银麻痹戒指/@白银麻痹>\
+<合成白银复活戒指/@白银复活>\
+<合成白银护身戒指/@白银护身>\ \
+<返回/@main>
+
+[@白银麻痹]
+#IF
+CHECKGAMEGOLD > 99999
+checkitem 麻痹戒指 3
+#ACT
+take 麻痹戒指 3
+GAMEGOLD - 100000
+give 白银麻痹戒指 1
+SENDMSG 7 恭喜您，合成【白银麻痹戒指】成功！!
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【特戒兑换】处成功的合成了【白银麻痹戒指】！ 251 249
+#elseact
+messagebox 您的材料都没有准备齐全，让我怎么给你合成呢？
+break
+
+
+
+[@白银复活]
+#IF
+CHECKGAMEGOLD > 99999
+checkitem 复活戒指 3
+#ACT
+take 复活戒指 3
+GAMEGOLD - 100000
+give 白银复活戒指 1
+SENDMSG 7 恭喜您，合成【白银复活戒指】成功！!
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【特戒兑换】处成功的合成了【白银复活戒指】！ 251 249
+#elseact
+messagebox 您的材料都没有准备齐全，让我怎么给你合成呢？
+break
+
+
+[@白银护身]
+#IF
+CHECKGAMEGOLD > 99999
+checkitem 护身戒指 3
+#ACT
+take 护身戒指 3
+GAMEGOLD - 100000
+give 白银护身戒指 1
+SENDMSG 7 恭喜您，合成【白银护身戒指】成功！!
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【特戒兑换】处成功的合成了【白银护身戒指】！ 251 249
+#elseact
+messagebox 您的材料都没有准备齐全，让我怎么给你合成呢？
+break
+
+
+
+

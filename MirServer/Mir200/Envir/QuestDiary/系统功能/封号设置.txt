@@ -1,0 +1,157 @@
+[@封号设置]
+{
+#IF
+checkitemw 青铜赞助血石
+#ACT
+MOV S99 ◥■■■青■■■◤\◥■■铜■■◤\◥■大■◤\◥使◤\
+CHANGENAMECOLOR 224
+SENDMSG 1 青铜赞助大使：天空一声巨响，[<$USERNAME>]闪亮登场！
+#IF
+checkitemw 白银赞助血石
+#ACT
+MOV S99 ◥■■■白■■■◤\◥■■银■■◤\◥■大■◤\◥使◤\
+CHANGENAMECOLOR 252
+SENDMSG 1 白银赞助大使：天空一声巨响，[<$USERNAME>]闪亮登场！
+#IF
+checkitemw 黄金赞助血石
+#ACT
+MOV S99 ◥■■■黄■■■◤\◥■■金■■◤\◥■大■◤\◥使◤\
+CHANGENAMECOLOR 243
+SENDMSG 1 黄金赞助大使：天空一声巨响，[<$USERNAME>]闪亮登场！！
+#IF
+checkitemw 钻石赞助血石
+#ACT
+MOV S99 ◥■■■钻■■■◤\◥■■石■■◤\◥■大■◤\◥使◤\
+CHANGENAMECOLOR 19
+SENDMSG 1 钻石赞助大使：天空一声巨响，[<$USERNAME>]闪亮登场！！
+#IF
+CHECKLEVELEX  < 52
+#ACT
+MOV S98 ═══市井小民═══\
+#IF
+CHECKLEVELEX = 52
+#ACT
+MOV S98 ═══⑨品知县═══\
+#IF
+CHECKLEVELEX = 54
+#ACT
+MOV S98 ═══⑧品知府═══\
+#IF
+CHECKLEVELEX = 56
+#ACT
+MOV S98 ═══⑦品太守═══\
+#IF
+CHECKLEVELEX = 58
+#ACT
+MOV S98 ═══⑥品巡抚═══\
+#IF
+CHECKLEVELEX = 60
+#ACT
+MOV S98 ═══⑤品提督═══\
+#IF
+CHECKLEVELEX = 62
+#ACT
+MOV S98 ═══④品总督═══\
+#IF
+CHECKLEVELEX = 65
+#ACT
+MOV S98 ═══③品尚书═══\
+#IF
+CHECKLEVELEX = 70
+#ACT
+MOV S98 ═══②品太傅═══\
+#IF
+CHECKLEVELEX > 75
+#ACT
+MOV S98 ═══①统天下═══\
+
+
+#If
+Gender woMan
+checkGAMEGIRD > 9998
+#act
+mov S97 ═══倾国倾城═══\
+goto @给予
+break
+#If
+Gender woMan
+checkGAMEGIRD > 7999
+#act
+mov S97 ═══国色天香═══\
+goto @给予
+break
+#If
+Gender woMan
+checkGAMEGIRD > 3999
+#act
+mov S97 ═══粉黛佳人═══\
+goto @给予
+break
+
+#If
+Gender woMan
+checkGAMEGIRD > 1999
+#act
+mov S97 ═══语笑嫣然═══\
+goto @给予
+break
+#If
+Gender woMan
+checkGAMEGIRD > 999
+#act
+mov S97 ═══花容月貌═══\
+goto @给予
+break
+#if
+checkGAMEGIRD < 1000
+#act
+goto @给予
+break
+
+#If
+Gender Man
+checkGAMEGIRD > 9998
+#act
+mov S97 ═══至尊无尚═══\
+goto @给予
+break
+#If
+Gender Man
+checkGAMEGIRD > 7999
+#act
+mov S97 ═══傲视群雄═══\
+goto @给予
+break
+#If
+Gender Man
+checkGAMEGIRD > 3999
+#act
+mov S97 ═══文韬武略═══\
+goto @给予
+break
+#If
+Gender Man
+checkGAMEGIRD > 1999
+#act
+mov S97 ═══风流倜傥═══\
+goto @给予
+break
+#If
+Gender Man
+checkGAMEGIRD > 999
+#act
+mov S97 ═══玉树临风═══\
+goto @给予
+break
+#if
+checkGAMEGIRD < 1000
+#act
+goto @给予
+break
+[@给予]
+#IF
+CHECKLEVELEX > 0
+#ACT
+SETRANKLEVELNAME %s\<$STR(S99)>\<$STR(S98)>\<$STR(S97)>\人在江湖超，哪有不挨刀·被奸[<$HUMAN(XV)>]次\
+BREAK
+}

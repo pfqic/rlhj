@@ -1,0 +1,24 @@
+()
+%100
+[@main]
+<COLOR=clAqua 【遗忘之都】> <COLOR=clRed Hot~ >                      <COLOR=clLime 降龙合击，邀你來戰!>\
+<COLOR=clGray ------------------------------------------------------------>　\
+<COLOR=clRed BOOS名称：>2万血boss，4万血boss，6万血BOSS\
+<COLOR=clRed 怪物刷新：>小boss类30分钟，大BOSS类60分钟\
+<COLOR=clRed 爆率介绍：>战神系列，星王系列，极品星王系列等等\
+<COLOR=clRed 进入条件：><COLOR=clFuchsia 1000元宝>\
+<COLOR=clGray ------------------------------------------------------------>　\
+　　※ <我要进入/@帝王殿堂> ※      　　　　       ※ <关闭对话/@exit> ※
+
+[@帝王殿堂]
+#if
+CHECKGAMEGOLD > 999
+#act
+GAMEGOLD - 1000
+mapmove gaoji1
+SENDMSG 0 勇敢的玩家:[%s]进入遗忘之都寻宝去了!!! 253 0 10
+SENDMSG 0 勇敢的玩家:[%s]进入遗忘之都寻宝去了!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]进入遗忘之都寻宝去了!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]进入遗忘之都寻宝去了!!! 253 0
+#ELSEACT
+MESSAGEBOX 需要1000元宝用来进入地图。

@@ -1,0 +1,27 @@
+()
+%100
+[@main]
+<COLOR=clAqua 【恐怖练级】> <COLOR=clRed Hot~ >                      <COLOR=clLime 降龙合击，邀你來戰!>\
+<COLOR=clGray ------------------------------------------------------------>　\
+<COLOR=clRed BOOS名称：>6万血boss，10万血boss，25万血BOSS\
+<COLOR=clRed 怪物刷新：>小boss类20分钟，大BOSS类40分钟\
+<COLOR=clRed 爆率介绍：>星王系列，极品星王，次终极,终极等等\
+<COLOR=clRed 进入条件：><COLOR=clFuchsia 6000元宝，还有大量经验怪等你杀哦！>\
+<COLOR=clGray ------------------------------------------------------------>　\
+　　※ <我要进入/@夺命> ※      　　　　       ※ <关闭对话/@exit> ※
+
+
+[@夺命]
+#if
+CHECKGAMEGOLD > 5999
+#act
+GAMEGOLD - 6000
+mapmove tian99
+SENDMSG 5 勇敢的玩家:[%s]进入恐怖练级!练级、打宝两不误!!! 253 0 300
+SENDMSG 5 勇敢的玩家:[%s]进入恐怖练级!练级、打宝两不误!!! 253 0 300
+SENDMSG 5 勇敢的玩家:[%s]进入恐怖练级!练级、打宝两不误!!! 253 0 300
+SENDMSG 0 勇敢的玩家:[%s]进入恐怖练级!练级、打宝两不误!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]进入恐怖练级!练级、打宝两不误!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]进入恐怖练级!练级、打宝两不误!!! 253 0
+#ELSEACT
+MESSAGEBOX 需要6000元宝用来进入地图。

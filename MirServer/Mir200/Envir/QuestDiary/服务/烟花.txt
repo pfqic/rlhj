@@ -1,0 +1,126 @@
+[@烟花]
+{
+#ACT
+mov p99 1
+Delaycall 2000 @放花
+Gmexecute showeffect 78
+Gmexecute showeffect 79
+Gmexecute showeffect 80
+Gmexecute showeffect 81
+Gmexecute showeffect 82
+Gmexecute showeffect 83
+Gmexecute showeffect 84
+SENDMSG 0 <$USERNAME>在%m:%x:%y处释放庆典蛋糕咯、大家快去欣赏哦。
+SendScrollMsg <$USERNAME>在%m:%x:%y处释放庆典蛋糕咯、大家快去欣赏哦! 245 150 10
+break
+
+[@放花]
+#if
+equal p99 1
+#act
+Gmexecute showeffect 78
+Gmexecute showeffect 79
+Gmexecute showeffect 80
+Gmexecute showeffect 81
+Gmexecute showeffect 82
+Gmexecute showeffect 83
+Gmexecute showeffect 84
+mov p99 2
+Delaycall 2000 @放花
+break
+
+#if
+equal p99 2
+#act
+Gmexecute showeffect 78
+Gmexecute showeffect 79
+Gmexecute showeffect 80
+Gmexecute showeffect 81
+Gmexecute showeffect 82
+Gmexecute showeffect 83
+Gmexecute showeffect 84
+mov p99 3
+Delaycall 2000 @放花
+break
+#if
+equal p99 3
+#act
+Gmexecute showeffect 78
+Gmexecute showeffect 79
+Gmexecute showeffect 80
+Gmexecute showeffect 81
+Gmexecute showeffect 82
+Gmexecute showeffect 83
+Gmexecute showeffect 84
+mov p99 4
+Delaycall 2000 @放花
+break
+#if
+equal p99 4
+#act
+Gmexecute showeffect 78
+Gmexecute showeffect 79
+Gmexecute showeffect 80
+Gmexecute showeffect 81
+Gmexecute showeffect 82
+Gmexecute showeffect 83
+Gmexecute showeffect 84
+mov p99 5
+Delaycall 2000 @放花
+break
+
+#if
+equal p99 5
+#act
+Gmexecute showeffect 78
+Gmexecute showeffect 79
+Gmexecute showeffect 80
+Gmexecute showeffect 81
+Gmexecute showeffect 82
+Gmexecute showeffect 83
+Gmexecute showeffect 84
+mov p99 6
+Delaycall 2000 @放花
+break
+#if
+equal p99 6
+#act
+Gmexecute showeffect 78
+Gmexecute showeffect 79
+Gmexecute showeffect 80
+Gmexecute showeffect 81
+Gmexecute showeffect 82
+Gmexecute showeffect 83
+Gmexecute showeffect 84
+mov p99 7
+Delaycall 2000 @放花
+break
+#if
+equal p99 7
+#act
+Gmexecute showeffect 78
+Gmexecute showeffect 79
+Gmexecute showeffect 80
+Gmexecute showeffect 81
+Gmexecute showeffect 82
+Gmexecute showeffect 83
+Gmexecute showeffect 84
+mov p99 8
+Delaycall 2000 @放花
+break
+#if
+equal p99 8
+#act
+Gmexecute showeffect 78
+Gmexecute showeffect 79
+Gmexecute showeffect 80
+Gmexecute showeffect 81
+Gmexecute showeffect 82
+Gmexecute showeffect 83
+Gmexecute showeffect 84
+CLEARDELAYGOTO
+SENDMSG 0 <$USERNAME>在%m:%x:%y处释放庆典蛋糕咯!　刚刚放完了，可惜某些人没看到啊：) ！
+mov p99
+break
+
+}

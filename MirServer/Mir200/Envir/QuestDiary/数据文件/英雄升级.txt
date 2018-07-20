@@ -1,0 +1,233 @@
+[@英雄升级]
+{
+#IF
+H.checklevelex > 84
+#ACT
+SENDMSG 3  颤抖吧！！！凡人！！！我滴英雄已达到最高等级！！！ 255 241
+H.CHANGELEVEL = 85
+break
+
+#IF
+H.checkjob wizard
+H.checklevelex = 7
+#ACT
+H.ADDSKILL 英雄火球术 3
+break
+
+#IF
+H.checkjob wizard
+H.checklevelex = 12
+#ACT
+H.ADDSKILL 英雄抗拒火环 3
+break
+
+#IF
+H.checkjob wizard
+H.checklevelex = 13
+#ACT
+H.ADDSKILL 英雄诱惑之光 3
+break
+
+#IF
+H.checkjob wizard
+H.checklevelex = 16
+#ACT
+H.ADDSKILL 英雄地狱火 3
+break
+
+#IF
+H.checkjob wizard
+H.checklevelex = 17
+#ACT
+H.ADDSKILL 英雄雷电术 3
+break
+
+#IF
+H.checkjob wizard
+H.checklevelex = 19
+#ACT
+H.ADDSKILL 英雄瞬息移动 3
+break
+
+#IF
+H.checkjob wizard
+H.checklevelex = 19
+#ACT
+H.ADDSKILL 英雄大火球 3
+break
+
+#IF
+H.checkjob wizard
+H.checklevelex = 22
+#ACT
+H.ADDSKILL 英雄爆裂火焰 3
+break
+
+#IF
+H.checkjob wizard
+H.checklevelex = 24
+#ACT
+H.ADDSKILL 英雄火墙 3
+break
+
+#IF
+H.checkjob wizard
+H.checklevelex = 26
+#ACT
+H.ADDSKILL 英雄疾光电影 3
+break
+
+#IF
+H.checkjob wizard
+H.checklevelex = 30
+#ACT
+H.ADDSKILL 英雄地狱雷光 3
+break
+
+#IF
+H.checkjob wizard
+H.checklevelex = 31
+#ACT
+H.ADDSKILL 英雄魔法盾 3
+break
+
+#IF
+H.checkjob wizard
+H.checklevelex = 32
+#ACT
+H.ADDSKILL 英雄圣言术 3
+break
+
+#IF
+H.checkjob wizard
+H.checklevelex = 35
+#ACT
+H.ADDSKILL 英雄冰咆哮 3
+break
+
+#IF
+H.checkjob taoist
+H.checklevelex = 7
+#ACT
+H.ADDSKILL 英雄治愈术 3
+break
+
+#IF
+H.checkjob taoist
+H.checklevelex = 9
+#ACT
+H.ADDSKILL 英雄精神战法 3
+break
+
+#IF
+H.checkjob taoist
+H.checklevelex = 14
+#ACT
+H.ADDSKILL 英雄施毒术 3
+break
+
+#IF
+H.checkjob taoist
+H.checklevelex = 18
+#ACT
+H.ADDSKILL 英雄灵魂火符 3
+break
+
+#IF
+H.checkjob taoist
+H.checklevelex = 20
+#ACT
+H.ADDSKILL 英雄隐身术 3
+break
+
+#IF
+H.checkjob taoist
+H.checklevelex = 21
+#ACT
+H.ADDSKILL 英雄集体隐身 3
+break
+
+#IF
+H.checkjob taoist
+H.checklevelex = 22
+#ACT
+H.ADDSKILL 英雄幽灵盾 3
+break
+
+#IF
+H.checkjob taoist
+H.checklevelex = 25
+#ACT
+H.ADDSKILL 英雄神圣战甲 3
+break
+
+#IF
+H.checkjob taoist
+H.checklevelex = 26
+#ACT
+H.ADDSKILL 英雄心灵启示 3
+break
+
+#IF
+H.checkjob taoist
+H.checklevelex = 28
+#ACT
+H.ADDSKILL 英雄困魔咒 3
+break
+
+#if
+H.checkjob taoist
+H.checklevelex = 33
+#act
+H.ADDSKILL 英雄群体治愈 3
+break
+
+#if
+H.checkjob taoist
+H.checklevelex = 35
+#act
+H.ADDSKILL 英雄召唤神兽 3
+break
+
+#IF
+H.checkjob warrior
+H.CHECKLEVELEX = 7
+#ACT
+H.ADDSKILL 英雄基本剑术 3
+break
+
+#IF
+H.checkjob warrior
+H.checklevelex = 19
+#ACT
+H.ADDSKILL 英雄攻杀剑术 3
+break
+
+#IF
+H.checkjob warrior
+H.checklevelex = 25
+#ACT
+H.ADDSKILL 英雄刺杀剑术 3
+break
+
+#IF
+H.checkjob warrior
+H.checklevelex = 28
+#ACT
+H.ADDSKILL 英雄半月弯刀 3
+break
+
+#IF
+H.checkjob warrior
+H.checklevelex = 30
+#ACT
+H.ADDSKILL 英雄野蛮冲撞 3
+break
+
+#IF
+H.checkjob warrior
+H.checklevelex = 35
+#ACT
+H.ADDSKILL 英雄烈火剑法 3
+break
+}

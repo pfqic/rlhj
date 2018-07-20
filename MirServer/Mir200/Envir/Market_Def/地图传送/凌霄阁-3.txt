@@ -1,0 +1,26 @@
+()
+%100
+[@main]
+<COLOR=clAqua 【凌霄阁】> <COLOR=clRed Hot~ >                      <COLOR=clLime 降龙合击，邀你來戰!>\
+<COLOR=clGray ------------------------------------------------------------>　\
+<COLOR=clRed BOOS名称：>4万血boss，6万血boss，10万血BOSS\
+<COLOR=clRed 怪物刷新：>大BOSS类60分钟，魔龙教主类30分钟\
+<COLOR=clRed 爆率介绍：>星王系列，极品星王，次终极、终极系列等等\
+<COLOR=clRed 进入条件：><COLOR=clFuchsia 2000元宝 等级50级>\
+<COLOR=clGray ------------------------------------------------------------>　\
+　　※ <我要进入/@凌霄阁> ※      　　　　       ※ <关闭对话/@exit> ※
+
+
+[@凌霄阁]
+#if
+CHECKLEVELEX > 49
+CHECKGAMEGOLD > 1999
+#act
+GAMEGOLD - 2000
+mapmove shang1
+SENDMSG 0 勇敢的玩家:[%s]进入凌霄阁寻宝去了!!! 253 0 10
+SENDMSG 0 勇敢的玩家:[%s]进入凌霄阁寻宝去了!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]进入凌霄阁寻宝去了!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]进入凌霄阁寻宝去了!!! 253 0
+#ELSEACT
+MESSAGEBOX 需要2000元宝用来进入地图，且人物等级达到50级。

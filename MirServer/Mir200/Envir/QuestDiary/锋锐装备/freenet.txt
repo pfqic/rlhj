@@ -1,0 +1,35 @@
+[@领取装备]
+{
+#IF
+checkaccountlist ..\QuestDiary\锋锐装备\500.txt
+#ACT
+Give 赤血魔剑
+delaccountlist ..\QuestDiary\锋锐装备\500.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，获得了赤血魔剑
+goto @领取装备
+#IF
+checkaccountlist ..\QuestDiary\锋锐装备\1000.txt
+#ACT
+Give 星王神剑
+delaccountlist ..\QuestDiary\锋锐装备\1000.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，获得了星王神剑
+goto @领取装备
+#IF
+checkaccountlist ..\QuestDiary\锋锐装备\2000.txt
+#ACT
+Give 极品星王神剑
+delaccountlist ..\QuestDiary\锋锐装备\2000.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，获得了极品星王神剑
+goto @领取装备
+#IF
+checkaccountlist ..\QuestDiary\锋锐装备\3000.txt
+#ACT
+Give 降龙￠神剑
+delaccountlist ..\QuestDiary\锋锐装备\3000.txt
+SENDMSG 1  ★[%s]:玩家<$USERNAME>使用本服在线自动冲值系统，获得了降龙￠神剑
+goto @领取装备
+#ELSESAY
+您当前还没有充值或已领取成功,请查看自己的元宝数量!\
+<返回/@main>
+}
+

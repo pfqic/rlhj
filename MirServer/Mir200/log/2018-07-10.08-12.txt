@@ -1,0 +1,38 @@
+2018/7/10 8:12:24 已读取 0个行会信息...
+2018/7/10 8:12:24 已读取 1个城堡信息...
+2018/7/10 8:12:24 连接SQL数据成功...
+2018/7/10 8:12:25 ★神秘合成★ 交易NPC初始化失败(m.PEnvir=nil)
+2018/7/10 8:12:25 行会争霸管理 交易NPC初始化失败(m.PEnvir=nil)
+2018/7/10 8:12:25 初始化 233个交易NPC...
+2018/7/10 8:12:25 初始化 7个管理NPC...
+2018/7/10 8:12:26 游戏网关端口(127.0.0.1:5000)已打开...
+2018/7/10 8:12:26 登录服务器(127.0.0.1:5600)连接成功...
+2018/7/10 8:12:26 游戏网关[0](127.0.0.1:52233)已打开..
+2018/7/10 8:12:28 数据库服务器(127.0.0.1:6000)连接成功...
+2018/7/10 8:14:07 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/斗笠勋章合成-GA0.txt
+2018/7/10 8:15:01 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/斗笠勋章合成-GA0.txt
+2018/7/10 8:15:01 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/转生使者-GA0.txt
+2018/7/10 8:15:23 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/斗笠勋章合成-GA0.txt
+2018/7/10 8:15:23 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/转生使者-GA0.txt
+2018/7/10 8:17:22 在线数: 1(1)
+2018/7/10 8:18:16 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/斗笠勋章合成-GA0.txt
+2018/7/10 8:18:16 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/转生使者-GA0.txt
+2018/7/10 8:19:24 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/斗笠勋章合成-GA0.txt
+2018/7/10 8:19:24 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/转生使者-GA0.txt
+2018/7/10 8:20:45 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/斗笠勋章合成-GA0.txt
+2018/7/10 8:20:45 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/转生使者-GA0.txt
+2018/7/10 8:20:45 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/安全泡点-3.txt
+2018/7/10 8:22:10 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/斗笠勋章合成-GA0.txt
+2018/7/10 8:22:10 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/转生使者-GA0.txt
+2018/7/10 8:22:10 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/安全泡点-3.txt
+2018/7/10 8:22:10 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\0-0.txt
+2018/7/10 8:22:22 在线数: 1(1)
+2018/7/10 8:24:35 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/斗笠勋章合成-GA0.txt
+2018/7/10 8:24:35 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/转生使者-GA0.txt
+2018/7/10 8:24:35 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/安全泡点-3.txt
+2018/7/10 8:24:35 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\0-0.txt
+2018/7/10 8:24:54 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/斗笠勋章合成-GA0.txt
+2018/7/10 8:24:54 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\功能NPC/转生使者-GA0.txt
+2018/7/10 8:24:54 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\地图/安全泡点-3.txt
+2018/7/10 8:24:54 脚本文件未找到: D:\MirServer\Mir200\Envir\Market_Def\0-0.txt
+2018/7/10 8:26:33 游戏网关[0](127.0.0.1:52233)已关闭..

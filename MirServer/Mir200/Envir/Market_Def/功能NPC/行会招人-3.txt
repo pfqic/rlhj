@@ -1,0 +1,226 @@
+
+
+(@@INPUTSTRING @@INPUTINTEGER)
+%100
+[@MAIN]
+#IF
+EQUAL H2 0
+#ACT
+MOV H2 600
+#IF
+EQUAL H4 0
+#ACT
+MOV H4 500
+#IF
+EQUAL H6 0
+#ACT
+MOV H6 300
+#IF
+#ACT
+MOV S33 <COLOR=cllime
+inc s33 
+inc s33 <$STR(A61)>
+inc S33 >
+MOV S34 <COLOR=cllime
+inc s34 
+inc s34 <$STR(A63)>
+inc S34 >
+MOV S35 <COLOR=cllime
+inc s35 
+inc s35 <$STR(A65)>
+inc S35 >
+#SAY
+<查看细则/@详情>：\
+1.行会名：【<$STR(S33)>】 需：<$STR(H1)>级，掌门：<$STR(A62)>\
+╚<我要加入此行会/@入会1>(免费)              <我要委托收人/@位置1>(需<$STR(H2)>元宝)\ \
+  
+2.行会名：【<$STR(S34)>】 需：<$STR(H3)>级，掌门：<$STR(A64)>\
+╚<我要加入此行会/@入会2>(免费)              <我要委托收人/@位置2>(需<$STR(H4)>元宝)\ \
+  
+3.行会名：【<$STR(S35)>】 需：<$STR(H5)>级，掌门：<$STR(A66)>\
+╚<我要加入此行会/@入会3>(免费)              <我要委托收人/@位置3>(需<$STR(H6)>元宝)\
+  
+[@详情]
+各掌门可以委托我收人。只需要设置入会的最低等级要求。\
+因能力有限，我只接受三个门派的委托。这里有三个位置\
+请各掌门根据自已的实力选择位置，注意如果有人加价，\
+你的收人广告位置就被抢了。。。之前的委托金不退还。\
+你若不同意此声明，请不要申请位置。\
+<返回/@main>
+[@入会1]
+#IF
+HAVEGUILD
+#ACT
+MESSAGEBOX 你有行会就别来趁热闹了！
+BREAK
+#IF
+EQUAL A61
+#ACT
+MESSAGEBOX 你想遁入空门？！
+BREAK
+#IF
+CHECKLEVELEX ? <$STR(H1)>
+#ACT
+AFFILIATEGUILD <$STR(A61)>
+#ELSEACT
+MESSAGEBOX 需要等级[<$STR(H1)>]以上才可以加入该行会！
+break
+[@入会2]
+#IF
+HAVEGUILD
+#ACT
+MESSAGEBOX 你有行会就别来趁热闹了！
+BREAK
+#IF
+EQUAL A63
+#ACT
+MESSAGEBOX 你想遁入空门？！
+BREAK
+#IF
+CHECKLEVELEX ? <$STR(H3)>
+#ACT
+AFFILIATEGUILD <$STR(A63)>
+#ELSEACT
+MESSAGEBOX 需要等级[<$STR(H3)>]以上才可以加入该行会！
+break
+[@入会3]
+#IF
+HAVEGUILD
+#ACT
+MESSAGEBOX 你有行会就别来趁热闹了！
+BREAK
+#IF
+EQUAL A65
+#ACT
+MESSAGEBOX 你想遁入空门？！
+BREAK
+#IF
+CHECKLEVELEX ? <$STR(H5)>
+#ACT
+AFFILIATEGUILD <$STR(A65)>
+#ELSEACT
+MESSAGEBOX 需要等级[<$STR(H5)>]以上才可以加入该行会！
+break
+[@位置1]
+#IF
+ISGUILDMASTER
+#SAY
+抢夺位置，每次至少加价1元宝。\
+①号位置的当前竞价是:<$STR(H2)>元宝\
+请输入你的<出价/@@INPUTINTEGER61>
+#ELSEACT
+MESSAGEBOX 你不是掌门，不能委托收人
+[@@INPUTINTEGER61]
+#IF 
+#ACT
+DELAYGOTO 1 ~INPUTINTEGER61
+[~INPUTINTEGER61]
+#IF
+CHECKGAMEGOLD ? <$STR(M61)>
+LARGE M61 <$STR(H2)>
+#ACT
+MOV H2 <$STR(M61)>
+GAMEGOLD - <$STR(H2)>
+MOV A61 <$GUILDNAME>
+MOV A62 <$USERNAME>
+INC A62 ；
+INC A62 <$LEVEL>
+INC A62 级！
+SENDMSG 2 <$GUILDNAME>掌门<$USERNAME>委托我收人，想入会的来老兵旁点我。。。
+#SAY
+<设置最低等级要求/@@INPUTINTEGER62>
+#ELSESAY 
+抱歉,你的元宝不足<$STR(M61)>.
+[@位置2]
+#IF
+ISGUILDMASTER
+#SAY
+抢夺位置，每次至少加价1元宝。\
+①号位置的当前竞价是:<$STR(H4)>元宝\
+请输入你的<出价/@@INPUTINTEGER63>
+#ELSEACT
+MESSAGEBOX 你不是掌门，不能委托收人
+[@@INPUTINTEGER63]
+#IF 
+#ACT
+DELAYGOTO 1 ~INPUTINTEGER63
+[~INPUTINTEGER63]
+#IF
+CHECKGAMEGOLD ? <$STR(M63)>
+LARGE M63 <$STR(H4)>
+#ACT
+MOV H4 <$STR(M63)>
+GAMEGOLD - <$STR(H4)>
+MOV A63 <$GUILDNAME>
+MOV A64 <$USERNAME>
+INC A64 ；
+INC A64 <$LEVEL>
+INC A64 级！
+SENDMSG 2 <$GUILDNAME>掌门<$USERNAME>委托我收人，想入会的来老兵旁点我。。。
+#SAY
+<设置最低等级要求/@@INPUTINTEGER64>
+#ELSESAY 
+抱歉,你的元宝不足<$STR(M63)>.
+[@位置3]
+#IF
+ISGUILDMASTER
+#SAY
+抢夺位置，每次至少加价1元宝。\
+①号位置的当前竞价是:<$STR(H6)>元宝\
+请输入你的<出价/@@INPUTINTEGER65>
+#ELSEACT
+MESSAGEBOX 你不是掌门，不能委托收人
+[@@INPUTINTEGER65]
+#IF 
+#ACT
+DELAYGOTO 1 ~INPUTINTEGER65
+[~INPUTINTEGER65]
+#IF
+CHECKGAMEGOLD ? <$STR(M65)>
+LARGE M65 <$STR(H6)>
+#ACT
+MOV H6 <$STR(M65)>
+GAMEGOLD - <$STR(H6)>
+MOV A65 <$GUILDNAME>
+MOV A66 <$USERNAME>
+INC A66 ；
+INC A66 <$LEVEL>
+INC A66 级！
+SENDMSG 2 <$GUILDNAME>掌门<$USERNAME>委托我收人，想入会的来老兵旁点我。。。
+#SAY
+<设置最低等级要求/@@INPUTINTEGER66>
+#ELSESAY 
+抱歉,你的元宝不足<$STR(M65)>.
+[@@INPUTINTEGER62]
+#IF 
+#ACT
+DELAYGOTO 1 ~INPUTINTEGER62
+[~INPUTINTEGER62]
+#IF 
+#ACT
+MOV H1 <$STR(M62)>
+messagebox 你当前所设最低等级为:<$STR(M62)>级!
+goto @MAIN
+[@@INPUTINTEGER64]
+#IF 
+#ACT
+DELAYGOTO 1 ~INPUTINTEGER64
+[~INPUTINTEGER64]
+#IF 
+#ACT
+MOV H3 <$STR(M64)>
+messagebox 你当前所设最低等级为:<$STR(M64)>级!
+goto @MAIN
+[@@INPUTINTEGER66]
+#IF 
+#ACT
+DELAYGOTO 1 ~INPUTINTEGER66
+[~INPUTINTEGER66]
+#IF 
+#ACT
+MOV H5 <$STR(M66)>
+messagebox 你当前所设最低等级为:<$STR(M66)>级!
+goto @MAIN
+
+
+

@@ -1,0 +1,272 @@
+[@装备]
+{
+#IF
+checklevelex = 40
+#ACT
+map mimab
+break
+
+#IF
+gender man
+checkjob warrior
+check [122] 0
+checklevelex = 35
+#ACT
+SET [122] 1
+GIVE 金币 200000
+GIVE 盟重传送石 1
+GIVE 在线回收赠品 1
+GIVE 重盔甲(男) 1
+GIVE 死神手套 2
+GIVE 龙之戒指 2
+GIVE 裁决之杖 1
+GIVE 幽灵项链 1
+GIVE 道士头盔 1
+TAKEON 重盔甲(男) 0
+TAKEON 裁决之杖 1
+TAKEON 幽灵项链 3
+TAKEON 道士头盔 4
+TAKEON 死神手套 5
+TAKEON 死神手套 6
+TAKEON 龙之戒指 7
+TAKEON 龙之戒指 8
+TAKE 八荒 1
+TAKE 轻型盔甲(男) 1
+QUERYBAGITEMS
+break
+
+#IF
+gender woman
+checkjob warrior
+check [123] 0
+checklevelex = 35
+#ACT
+SET [123] 1
+GIVE 金币 200000
+GIVE 盟重传送石 1
+GIVE 在线回收赠品 1
+GIVE 重盔甲(女) 1
+GIVE 死神手套 2
+GIVE 龙之戒指 2
+GIVE 裁决之杖 1
+GIVE 幽灵项链 1
+GIVE 道士头盔 1
+TAKEON 重盔甲(女) 0
+TAKEON 裁决之杖 1
+TAKEON 幽灵项链 3
+TAKEON 道士头盔 4
+TAKEON 死神手套 5
+TAKEON 死神手套 6
+TAKEON 龙之戒指 7
+TAKEON 龙之戒指 8
+TAKE 八荒 1
+TAKE 轻型盔甲(女) 1
+QUERYBAGITEMS
+break
+
+;-------------------法师----------------------
+
+#IF
+gender man
+checkjob wizard
+check [124] 0
+checklevelex = 35
+#ACT
+SET [124] 1
+GIVE 金币 200000
+GIVE 盟重传送石 1
+GIVE 在线回收赠品 1
+GIVE 魔法长袍(男) 1
+GIVE 道士头盔 1
+GIVE 思贝儿手镯 2
+GIVE 红宝石戒指 2
+GIVE 骨玉权杖 1
+GIVE 生命项链 1
+TakeON 魔法长袍(男) 0
+TakeON 骨玉权杖 1
+TakeON 生命项链 3
+TakeON 道士头盔 4
+TakeON 思贝儿手镯 5
+TakeON 思贝儿手镯 6
+TakeON 红宝石戒指 7
+TakeON 红宝石戒指 8
+TAKE 海魂 1
+TAKE 轻型盔甲(男) 1
+QUERYBAGITEMS
+break
+
+#IF
+gender woman
+checkjob wizard
+check [125] 0
+checklevelex = 35
+#ACT
+SET [125] 1
+GIVE 金币 200000
+GIVE 盟重传送石 1
+GIVE 在线回收赠品 1
+GIVE 魔法长袍(女) 1
+GIVE 道士头盔 1
+GIVE 思贝儿手镯 2
+GIVE 红宝石戒指 2
+GIVE 骨玉权杖 1
+GIVE 生命项链 1
+TakeON 魔法长袍(女) 0
+TakeON 骨玉权杖 1
+TakeON 生命项链 3
+TakeON 道士头盔 4
+TakeON 思贝儿手镯 5
+TakeON 思贝儿手镯 6
+TakeON 红宝石戒指 7
+TakeON 红宝石戒指 8
+TAKE 海魂 1
+TAKE 轻型盔甲(女) 1
+QUERYBAGITEMS
+break
+
+;-------------------道士----------------------
+
+#IF
+gender man
+checkjob taoist
+check [126] 0
+checklevelex = 35
+#ACT
+SET [126] 1
+GIVE 金币 200000
+GIVE 盟重传送石 1
+GIVE 在线回收赠品 1
+GIVE 灵魂战衣(男) 1
+GIVE 道士头盔 1
+GIVE 心灵手镯 2
+GIVE 铂金戒指 2
+GIVE 龙纹剑 1
+GIVE 天珠项链 1
+TakeON 灵魂战衣(男) 0
+TakeON 龙纹剑 1
+TakeON 天珠项链 3
+TakeON 道士头盔 4
+TakeON 心灵手镯 5
+TakeON 心灵手镯 6
+TakeON 铂金戒指 7
+TakeON 铂金戒指 8
+TAKE 半月 1
+TAKE 轻型盔甲(男) 1
+QUERYBAGITEMS
+break
+
+#IF
+gender woman
+checkjob taoist
+check [127] 0
+checklevelex = 35
+#ACT
+SET [127] 1
+GIVE 金币 200000
+GIVE 盟重传送石 1
+GIVE 在线回收赠品 1
+GIVE 灵魂战衣(女) 1
+GIVE 道士头盔 1
+GIVE 心灵手镯 2
+GIVE 铂金戒指 2
+GIVE 龙纹剑 1
+GIVE 天珠项链 1
+TakeON 灵魂战衣(女) 0
+TakeON 龙纹剑 1
+TakeON 天珠项链 3
+TakeON 道士头盔 4
+TakeON 心灵手镯 5
+TakeON 心灵手镯 6
+TakeON 铂金戒指 7
+TakeON 铂金戒指 8
+TAKE 半月 1
+TAKE 轻型盔甲(女) 1
+QUERYBAGITEMS
+break
+
+;===================15级奖励=================================
+
+#IF
+gender man
+checkjob warrior
+CHECKLEVELEX = 15
+#ACT
+GIVE 八荒 1
+GIVE 轻型盔甲(男) 1
+TAKEON 八荒 1
+TAKEON 轻型盔甲(男) 0
+TAKE 乌木剑 1
+TAKE 布衣(男) 1
+BREAK
+
+#IF
+checkjob warrior
+gender Woman
+CHECKLEVELEX = 15
+#ACT
+GIVE 八荒 1
+GIVE 轻型盔甲(女) 1
+TAKEON 八荒 1
+TAKEON 轻型盔甲(女) 0
+TAKE 乌木剑 1
+TAKE 布衣(女) 1
+BREAK
+
+#IF
+checkjob wizard
+gender man
+CHECKLEVELEX = 15
+#ACT
+GIVE 海魂 1
+GIVE 轻型盔甲(男) 1
+TAKEON 海魂 1
+TAKEON 轻型盔甲(男) 0
+TAKE 乌木剑 1
+TAKE 布衣(男) 1
+BREAK
+
+#IF
+checkjob wizard
+gender Woman
+CHECKLEVELEX = 15
+#ACT
+GIVE 海魂 1
+GIVE 轻型盔甲(女) 1
+TAKEON 海魂 1
+TAKEON 轻型盔甲(女) 0
+TAKE 乌木剑 1
+TAKE 布衣(女) 1
+BREAK
+
+#IF
+checkjob taoist
+gender man
+CHECKLEVELEX = 15
+#ACT
+GIVE 护身符(大) 2
+GIVE 灰色药粉(大量) 1
+GIVE 黄色药粉(大量) 1
+GIVE 半月 1
+GIVE 轻型盔甲(男) 1
+TAKEON 半月 1
+TAKEON 轻型盔甲(男) 0
+TAKE 乌木剑 1
+TAKE 布衣(男) 1
+BREAK
+
+#IF
+checkjob taoist
+gender Woman
+CHECKLEVELEX = 15
+#ACT
+GIVE 护身符(大) 2
+GIVE 灰色药粉(大量) 1
+GIVE 黄色药粉(大量) 1
+GIVE 半月 1
+GIVE 轻型盔甲(女) 1
+TAKEON 半月 1
+TAKEON 轻型盔甲(女) 0
+TAKE 乌木剑 1
+TAKE 布衣(女) 1
+BREAK
+}

@@ -1,0 +1,25 @@
+[@main]
+ ¤╭⌒╮╭⌒╮          欢迎光临  2秒10W经验   　　\
+ ╱◥██◣ ╭⌒╮                    <$SERVERNAME> 　　\
+︱田︱田田|╰-------------    　　\
+╬╬╬╬╬╬╬╬╬╬╬╬╬    　 　      ┆<点我进入/@JINQBA888>┆ \
+------------------------------------------------------------　\
+<COLOR=clRed BOOS名称：>8万血boss，10万血boss，10万血BOSS\
+<COLOR=clRed 怪物刷新：>小boss类30分钟，大BOSS类60分钟\
+<COLOR=clRed 爆率介绍：>星王系列，极品星王，终极系列,倚天系列等等\
+◆进入地图需要3000元宝<COLOR=clFuchsia 等级90级  每2秒扣5个元宝>◆\
+------------------------------------------------------------　\
+<COLOR=clRed 小提示：>地图等级越高暴率越高。\
+
+
+[@JINQBA888]
+#IF
+CHECKLEVELEX > 89
+CHECKGAMEGOLD > 2999
+#act
+GAMEGOLD - 3000
+MAPMOVE 90
+SetScTimer 4 2
+SENDMSG 0 不怕死的[%s],进入上古殿堂,终极装备在等你哦!
+#ELSEACT
+MESSAGEBOX 进入要求等级90级，以及3000元宝！

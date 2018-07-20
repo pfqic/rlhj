@@ -1,0 +1,261 @@
+
+[@main]
+#if
+CheckRangeMonCount BH10 15 15 100 < 1
+#ACT
+goto @jin
+#ELSEACT
+messagebox 【提示】:【等你歼灭所有怪物你在来找我】
+
+
+[@jin]
+　\
+╔═══════════════════════════╗\
+║<COLOR=clRed 年轻人:你太棒了，这你也能来！我看好你哟              > ║\
+║<COLOR=clRed 小伙子，怪物清理完毕请找我领取奖励元宝6W              >║\
+╚═══════════════════════════╝\
+╔═══════════════════════════╗\
+║     <领取奖励回城/@001>                 <领取奖励回城/@001>        ║\
+╚═══════════════════════════╝\
+
+
+[@001]
+#ACT
+mapmove 3 330 330
+GAMEGOLD + 60000
+SENDMSG 0 【%s】成功清理了九幽轮回鬼门关，领取元宝6W!!! 49 223
+#ELSEACT
+messagebox 【提示】:【怪物清理完毕找我领取奖励！！！！！！】
+
+
+[@转生]
+#IF
+CHECKLEVELEX > 54
+#ACT
+#SAY
+<COLOR=clLime 本服提供的特色转生，不乏味有追求，只要达到一定等级>\
+<COLOR=clLime 我就可以帮你完成特殊的转身>\
+<COLOR=clLime 转生掉3级，转身后系统自动赠送额外属性点，自由分配!>\
+<COLOR=clLime 自己在仔细看下面介绍吧.>\
+<注意:每次转生掉3级,经验清零，需要准备一些舍利子>→ \\
+
+
+<查看转生条件/@zslhui>              <重新分配属性点/@fenpei>\
+是不是极具诱惑力呢，<COLOR=clLime 本系统专为长期玩家打造>\
+〓〓〓〓〓〓〓〓〓〓<开  始  转  生/@zslhui>〓〓〓〓〓〓〓〓〓〓〓\
+
+#ELSEACT
+MESSAGEBOX 请55级再来看吧！！！
+
+[@fenpei]
+<COLOR=clLime 我可以帮你重新分配属性>\
+<COLOR=clLime 每次收费5万元宝！>\
+<COLOR=clLime 请慎重选择！>\ \
+
+<我要重新分配/@fen>       <算了吧/@exit>
+
+[@fen]
+#IF
+CHECKBONUSPOINT = 1500
+#ACT
+gamegold - 50000
+BonusPoint = 0
+renewlevel 0 0 1500
+SENDMSG 5 重新获得1500点属性自由分配
+
+
+#IF
+CHECKBONUSPOINT = 1000
+#ACT
+gamegold - 50000
+BonusPoint = 0
+renewlevel 0 0 1000
+SENDMSG 5 重新获得1000点属性自由分配
+
+
+
+#IF
+CHECKBONUSPOINT = 600
+#ACT
+gamegold - 50000
+BonusPoint = 0
+renewlevel 0 0 600
+SENDMSG 5 重新获得600点属性自由分配
+
+
+#IF
+CHECKBONUSPOINT = 300
+#ACT
+gamegold - 50000
+BonusPoint = 0
+renewlevel 0 0 300
+SENDMSG 5 重新获得300点属性自由分配
+
+
+
+#IF
+CHECKBONUSPOINT = 100
+#ACT
+gamegold - 50000
+BonusPoint = 0
+renewlevel 0 0 100
+SENDMSG 5 重新获得100点属性自由分配
+
+
+
+#ELSESAY
+
+我已经尽力了，请自己注意查看成功了没？
+
+
+[@zslhui]
+
+<每一次会得到额外的属性点，须从一转开始，每次掉3级>\
+一转：玛法勇士    <等级50 花费1万元宝 +2舍利子    可得100>属性点 \
+二转：玛法英雄    <等级55 花费3万元宝 +4舍利子    可得200>属性点 \
+三转：玛法战神    <等级60 花费5万元宝 +6舍利子    可得300>属性点 \
+四转：玛法霸主    <等级65 花费10万元宝+8舍利子    可得400>属性点 \
+五转：玛法主宰者  <等级75 花费20万元宝+10舍利子   可得500>属性点 \
+
+<我要一转/@qqq1> <我要二转/@qqq2> <我要三转/@qqq3> <我要四转/@qqq4> <我要五转/@qqq5>\
+
+<返回/@main>\
+<当您达到四转、五转、我都将送您一件神秘宝物，让你所向披靡>
+
+
+
+[@qqq5]
+#if
+CHECKITEM 舍利子 10
+checkrenewlevel = 4
+CHECKLEVELEX > 74
+checkgamegold > 199999
+#act
+take 舍利子 10
+ChangeLevel - 3
+gamegold - 200000
+give 麻痹戒指
+renewlevel 1 0 500
+#CALL [\\登陆\封号.txt] @FH
+SENDMSG 0 恭喜%s在转生努力奋斗成【玛法主宰者】获得麻痹戒指一枚 251 244 
+SENDMSG 0 恭喜%s在转生努力奋斗成【玛法主宰者】获得麻痹戒指一枚 251 244 
+SENDMSG 5 转生获得500点属性+麻痹戒指一枚！
+break
+#ELSESAY
+. \
+条件不足，无法完成转生任务!\ \
+1：有可能您已经完成过此道转生任务。 \
+2：等级还不够。 \
+3：需要舍利子10个。 \
+4：元宝不足。\ \
+<返回/@zslhui> <关闭/@exit>\
+
+
+
+[@qqq4]
+#if
+CHECKITEM 舍利子 8
+checkrenewlevel = 3
+CHECKLEVELEX > 64
+checkgamegold > 99999
+#act
+take 舍利子 8
+ChangeLevel - 3
+gamegold - 100000
+give 护身戒指
+renewlevel 1 0 400
+#CALL [\\登陆\封号.txt] @FH
+SENDMSG 0 恭喜%s在转生努力奋斗成【玛法霸主】获得护身戒指一枚 251 244 
+SENDMSG 0 恭喜%s在转生努力奋斗成【玛法霸主】获得护身戒指一枚 251 244 
+SENDMSG 5 转生获得400点属性自由分配！
+break
+#ELSESAY
+. \
+条件不足，无法完成转生任务!\ \
+1：有可能您已经完成过此道转生任务。 \
+2：等级还不够。 \
+3：需要舍利子8个。 \
+4：元宝不足。\ \
+<返回/@zslhui> <关闭/@exit>\
+
+
+
+[@qqq3]
+#if
+CHECKITEM 舍利子 6
+checkrenewlevel = 2
+CHECKLEVELEX > 59
+checkgamegold > 49999
+#act
+take 舍利子 6
+ChangeLevel - 3
+gamegold - 50000
+renewlevel 1 0 300
+#CALL [\\登陆\封号.txt] @FH
+SENDMSG 0 恭喜%s在转生努力奋斗成【玛法战神】 251 244 
+SENDMSG 0 恭喜%s在转生努力奋斗成【玛法战神】 251 244 
+SENDMSG 5 转生获得300点属性自由分配！
+break
+#ELSESAY
+. \
+条件不足，无法完成转生任务!\ \
+1：有可能您已经完成过此道转生任务。 \
+2：等级还不够。 \
+3：需要舍利子6个。 \
+4：元宝不足。\ \
+<返回/@zslhui> <关闭/@exit>\
+
+
+
+
+[@qqq1]
+#if
+CHECKITEM 舍利子 2
+checkrenewlevel = 0
+CHECKLEVELEX > 49
+checkgamegold > 9999
+#act
+take 舍利子 2
+ChangeLevel - 3
+gamegold - 10000
+renewlevel 1 0 100
+#CALL [\\登陆\封号.txt] @FH
+SENDMSG 0 恭喜%s在转生努力奋斗成【玛法勇士】 251 244 
+SENDMSG 0 恭喜%s在转生努力奋斗成【玛法勇士】 251 244 
+SENDMSG 5 转生获得100点属性自由分配！
+break
+#ELSESAY
+. \
+条件不足，无法完成转生任务!\ \
+1：有可能您已经完成过此道转生任务。 \
+2：等级还不够。 \
+3：需要舍利子2个。 \
+4：元宝不足。\ \
+<返回/@zslhui> <关闭/@exit>\
+
+
+[@qqq2]
+#if
+CHECKITEM 舍利子 4
+checkrenewlevel = 1
+CHECKLEVELEX > 54
+checkgamegold > 29999
+#act
+take 舍利子 4
+ChangeLevel - 3
+gamegold - 30000
+renewlevel 1 0 200
+#CALL [\\登陆\封号.txt] @FH
+SENDMSG 0 恭喜%s在转生努力奋斗成【玛法英雄】 251 244 
+SENDMSG 0 恭喜%s在转生努力奋斗成【玛法英雄】 251 244 
+SENDMSG 5 转生获得200点属性自由分配！
+break
+#ELSESAY
+. \
+条件不足，无法完成转生任务!\ \
+1：有可能您已经完成过此道转生任务。 \
+2：等级还不够。 \
+3：需要舍利子4个。 \
+4：元宝不足。\ \
+<返回/@zslhui> <关闭/@exit>\
+

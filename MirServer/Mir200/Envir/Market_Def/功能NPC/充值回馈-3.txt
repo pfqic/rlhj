@@ -1,0 +1,65 @@
+()
+%100
+[@main]
+<COLOR=clLime 你当前的消费积分为>：<$HUMAN(消费积分)> <COLOR=clRed 1元网银=1积分！积分合区不消失> \
+<COLOR=clLime 网站充值 10元=10积分兑换：><COLOR=clFuchsia  不灭斗笠 + 勋章>   <点击领取10元奖励/@10>   \
+<COLOR=clLime 网站充值 30元=30积分兑换：><COLOR=clFuchsia  殺天斗笠 + 勋章>   <点击领取30元奖励/@30>   \
+<COLOR=clLime 网站充值 50元=50积分兑换：><COLOR=clFuchsia  弑血斗笠 + 勋章>   <点击领取50元奖励/@50>   \ \
+<COLOR=clRed 【提示】：领取扣积分！请选择领取对应的回馈物品！！> \
+<COLOR=clRed 【提示】：领取扣积分！请选择领取对应的回馈物品！！> \
+<COLOR=clLime  50元回馈可以多次领取，比如充值100元可以领2次，依次类推...>\
+<COLOR=clAqua 请保持身上有3个空位 不然会掉地上>\
+
+
+
+[@10]
+#if
+CHECKVAR HUMAN 消费积分 > 9
+CheckBagSize 3
+#act
+CALCVAR HUMAN 消费积分 - 10
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+give 不灭◎星王斗笠 1
+give 不灭◎星王勋章 1
+sendmsg  6 领取成功！！！
+SENDMSG 1 〖玩家〗<$USERNAME>在【充值回馈】处使用积分领取了【不灭斗笠+勋章】！ 251 249
+SENDMSG 1 〖玩家〗<$USERNAME>在【充值回馈】处使用积分领取了【不灭斗笠+勋章】！ 251 249
+SENDMSG 1 〖玩家〗<$USERNAME>在【充值回馈】处使用积分领取了【不灭斗笠+勋章】！ 251 249
+#elseact
+messagebox  你的积分不够或者你的背包空格不足3个！
+
+
+[@30]
+#if
+CHECKVAR HUMAN 消费积分 > 29
+CheckBagSize 3
+#act
+CALCVAR HUMAN 消费积分 - 30
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+give 殺天㊣星王斗笠 1
+give 殺天㊣星王勋章 1
+sendmsg  6 领取成功！！！
+SENDMSG 1 〖玩家〗<$USERNAME>在【充值回馈】处使用积分领取了【殺天斗笠+勋章】！ 251 249
+SENDMSG 1 〖玩家〗<$USERNAME>在【充值回馈】处使用积分领取了【殺天斗笠+勋章】！ 251 249
+SENDMSG 1 〖玩家〗<$USERNAME>在【充值回馈】处使用积分领取了【殺天斗笠+勋章】！ 251 249
+#elseact
+messagebox  你的积分不够或者你的背包空格不足3个！
+
+
+
+
+[@50]
+#if
+CHECKVAR HUMAN 消费积分 > 49
+CheckBagSize 3
+#act
+CALCVAR HUMAN 消费积分 - 50
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+give 弑血メ殺戮斗笠（圣） 1
+give 弑血メ殺戮勋章（圣） 1
+sendmsg  6 领取成功！！！
+SENDMSG 1 〖玩家〗<$USERNAME>在【充值回馈】处使用积分领取了【弑血斗笠+勋章】！ 251 249
+SENDMSG 1 〖玩家〗<$USERNAME>在【充值回馈】处使用积分领取了【弑血斗笠+勋章】！ 251 249
+SENDMSG 1 〖玩家〗<$USERNAME>在【充值回馈】处使用积分领取了【弑血斗笠+勋章】！ 251 249
+#elseact
+messagebox  你的积分不够或者你的背包空格不足3个！

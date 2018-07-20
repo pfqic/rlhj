@@ -1,0 +1,100 @@
+#AUTORUN NPC MIN 5 @游戏说明
+;激情派对  活动
+#AUTORUN NPC RUNONDAY 10:45 @激情派对A
+#AUTORUN NPC RUNONDAY 10:50 @激情派对结束
+#AUTORUN NPC RUNONDAY 13:45 @激情派对A
+#AUTORUN NPC RUNONDAY 13:50 @激情派对结束
+#AUTORUN NPC RUNONDAY 16:45 @激情派对A
+#AUTORUN NPC RUNONDAY 16:50 @激情派对结束
+#AUTORUN NPC RUNONDAY 19:45 @激情派对A
+#AUTORUN NPC RUNONDAY 19:50 @激情派对结束
+#AUTORUN NPC RUNONDAY 22:45 @激情派对A
+#AUTORUN NPC RUNONDAY 22:50 @激情派对结束
+;行会争霸
+#AutoRun NPC RUNONDAY 18:00 @行会争夺提示2
+#AutoRun NPC RUNONDAY 18:10 @行会争夺提示1
+#AutoRun NPC RUNONDAY 18:35 @行会争夺关闭
+;激情夺宝
+#AutoRun NPC RUNONDAY 14:00 @夺宝1
+;武器派送
+#AutoRun NPC RUNONDAY 10:00 @武器1
+;天降财神
+#AutoRun NPC RUNONDAY 22:00 @财神1
+;
+
+
+;#AUTORUN NPC HOUR 1 @每小时
+;#AUTORUN NPC SEC  3 @地图检查
+
+
+;#AutoRun NPC SEC 90 @假消息2
+;#AutoRun NPC SEC 86 @假消息1
+;#AutoRun NPC SEC 81 @假回收1
+;#AutoRun NPC SEC 99 @假回收2
+;#AutoRun NPC SEC 55 @假进地图1
+;#AutoRun NPC SEC 130 @假回收3
+;#AutoRun NPC SEC 150 @防骗消息1
+;#AutoRun NPC RUNONDAY 19:57 @拿沙申请
+
+;#AutoRun NPC RUNONDAY 14:10 @跑动
+;#AutoRun NPC RUNONDAY 14:13 @关闭跑动
+
+;#AutoRun NPC RUNONDAY 19:00 @开放押镖
+;#AutoRun NPC RUNONDAY 23:59 @关闭押镖
+;#AutoRun NPC RUNONDAY 00:01 @每日清理
+
+
+;#AutoRun NPC MIN 90 @脱机验证
+
+;#AutoRun NPC MIN 120 @黑市商人
+;#AutoRun NPC MIN 60 @元宝树
+
+
+;#AutoRun NPC RUNONDAY 14:15 @斗勋
+;#AutoRun NPC RUNONDAY 15:15 @怪物
+
+
+;#AutoRun NPC RUNONDAY 16:15 @斗勋
+;#AutoRun NPC RUNONDAY 17:15 @怪物
+
+
+;#AutoRun NPC RUNONDAY 19:15 @斗勋
+;#AutoRun NPC RUNONDAY 20:15 @怪物
+
+
+;#AutoRun NPC RUNONDAY 22:15 @斗勋
+;#AutoRun NPC RUNONDAY 23:15 @怪物
+
+
+;#AutoRun NPC RUNONDAY 00:45 @斗勋
+;#AutoRun NPC RUNONDAY 01:45 @怪物
+
+;#AutoRun NPC RUNONDAY 02:45 @斗勋
+;#AutoRun NPC RUNONDAY 03:45 @怪物
+
+
+;#AutoRun NPC RUNONDAY 18:02 @开放赌博
+;#AutoRun NPC RUNONDAY 18:06 @开放赌博
+;#AutoRun NPC RUNONDAY 18:10 @开放赌博
+;#AutoRun NPC RUNONDAY 18:15 @开放赌博
+;#AutoRun NPC RUNONDAY 18:20 @开放赌博
+;#AutoRun NPC RUNONDAY 18:25 @开放赌博
+;#AutoRun NPC RUNONDAY 18:30 @开放赌博
+;#AutoRun NPC RUNONDAY 18:35 @开放赌博
+;#AutoRun NPC RUNONDAY 18:40 @开放赌博
+;#AutoRun NPC RUNONDAY 18:45 @开放赌博
+;#AutoRun NPC RUNONDAY 18:50 @开放赌博
+;#AutoRun NPC RUNONDAY 18:55 @开放赌博
+;#AutoRun NPC RUNONDAY 19:00 @开放赌博
+;#AutoRun NPC RUNONDAY 19:05 @开放赌博
+;#AutoRun NPC RUNONDAY 19:10 @开放赌博
+;#AutoRun NPC RUNONDAY 19:15 @开放赌博
+;#AutoRun NPC RUNONDAY 19:20 @开放赌博
+;#AutoRun NPC RUNONDAY 19:25 @开放赌博
+;#AutoRun NPC RUNONDAY 19:30 @开放赌博
+;#AutoRun NPC RUNONDAY 19:35 @开放赌博
+;#AutoRun NPC RUNONDAY 19:40 @开放赌博
+;#AutoRun NPC RUNONDAY 19:45 @开放赌博
+;#AutoRun NPC RUNONDAY 19:50 @开放赌博
+;#AutoRun NPC RUNONDAY 19:55 @开放赌博
+;#AutoRun NPC RUNONDAY 20:00 @关闭赌博

@@ -1,0 +1,17 @@
+()
+%100
+[@main] 
+#SAY
+<COLOR=clLime ─☆→> <COLOR=clRed 为回馈广大的玩家朋友特设此奖励！> <COLOR=clLime ←☆─>\
+<COLOR=clLime ─☆→> <COLOR=clRed 城主攻城后请加入-QQ群1976645821联系管理发放红包奖励> <COLOR=clLime ←☆─>\
+╔┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╗\
+┊『第一次合区攻城奖励人民币288元+120万元宝』 ┊钱虽不多，图个娱乐！\
+┊『第二次合区攻城奖励人民币188元+120万元宝』 ┊钱虽不多，图个娱乐！\
+┊『第三次合区攻城奖励人民币188元+120万元宝』 ┊钱虽不多，图个娱乐！\
+┊『第四次合区攻城奖励人民币188元+120万元宝』 ┊钱虽不多，图个娱乐！\
+╚┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╝\
+<COLOR=clLime ─☆→> <COLOR=clRed 攻城活人超过30家--追加100元奖励> <COLOR=clLime ←☆─>\
+<COLOR=clLime ─☆→> <COLOR=clRed 攻城活人超过40家--追加200元奖励> <COLOR=clLime ←☆─>\
+<COLOR=clLime ─☆→> <COLOR=clRed 攻城活人超过50家--追加300元奖励> <COLOR=clLime ←☆─>\
+<COLOR=clLime ─☆→> <COLOR=clRed 攻城活人超过60家--追加500元奖励> <COLOR=clLime ←☆─>\
+<COLOR=clLime ─☆→> <COLOR=clRed 攻城活人超过80家--追加1000元奖励> <COLOR=clLime ←☆─>\

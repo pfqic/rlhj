@@ -1,0 +1,28 @@
+[@main]
+║<COLOR=clRed 生>║<COLOR=clLime 九幽轮回阵>           <确定进入/@现在就去>\
+║<COLOR=clRed 死>║<COLOR=clFuchsia 本地图共分6层，大BOSS一小时刷新一次 >\
+║<COLOR=clRed 轮>║<COLOR=clYELLOW 此地图极其凶险，请加强战斗力来挑战   >\
+║<COLOR=clRed 回>║<COLOR=clSKYBLUE 清光本层才能进入下层.怪物抗性不一.最好职业搭配前往>       \
+║<COLOR=clRed 阵>║<COLOR=clLime 每层怪物半小时刷新一次，爆率绝对超级爽>\
+<COLOR=clYELLOW 进入条件:><COLOR=clRed 65级开始进入,需要5W元宝+500金刚石。2-5层不收费>\ 
+<COLOR=clRed 进入六层需要70级+5W元宝挑战金，挑战失败元宝不退>\
+<COLOR=clSKYBLUE 挑战成功、清理完怪物可以领取6万元宝>\
+<COLOR=clSKYBLUE 怪物比较强大、建议组队进入>\
+
+
+
+[@现在就去]
+#if
+CHECKGAMEGOLD > 49999
+CHECKLEVELEX > 64
+CHECKGAMEDIAMOND > 499
+#ACT
+GAMEGOLD - 50000
+GAMEDIAMOND - 500
+mapmove BH1
+SENDMSG 0 【%s】进入了九幽轮回阵(金)，祝愿他满载而归! 255 223 30
+SENDMSG 0 【%s】进入了九幽轮回阵(金)，祝愿他满载而归! 255 223
+SENDMSG 0 【%s】进入了九幽轮回阵(金)，祝愿他满载而归! 255 223
+SENDMSG 0 【%s】进入了九幽轮回阵(金)，祝愿他满载而归! 255 223
+#ELSEACT
+messagebox 【提示】:【进入九幽轮回阵(金)需要:5W元宝+500金刚石+等级65级】

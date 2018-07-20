@@ -1,0 +1,126 @@
+[@FH]
+{
+#IF
+CHECKVAR HUMAN 转生级数 = 1
+#ACT
+MOV S67 ═══⑨品知县═══\
+
+#IF
+CHECKVAR HUMAN 转生级数 = 2
+#ACT
+MOV S67 ═══⑧品知府═══\
+
+#IF
+CHECKVAR HUMAN 转生级数 = 3
+#ACT
+MOV S67 ═══⑦品太守═══\
+
+#IF
+CHECKVAR HUMAN 转生级数 = 4
+#ACT
+MOV S67 ═══⑥品巡抚═══\
+
+#IF
+CHECKVAR HUMAN 转生级数 = 5
+#ACT
+MOV S67 ═══⑤品提督═══\
+
+#IF
+CHECKVAR HUMAN 转生级数 = 6
+#ACT
+MOV S67 ═══④品总督═══\
+
+#IF
+CHECKVAR HUMAN 转生级数 = 7
+#ACT
+MOV S67 ═══③品尚书═══\
+
+#IF
+CHECKVAR HUMAN 转生级数 = 8
+#ACT
+MOV S67 ═══②品太傅═══\
+
+#IF
+CHECKVAR HUMAN 转生级数 = 9
+#ACT
+MOV S67 ═══①统天下═══\
+
+
+#IF
+CHECKLEVELEX > 0
+#ACt
+SETRANKLEVELNAME %S\<$STR(S77)>\<$STR(S67)>\<$STR(S1)>\斩杀[<$HUMAN(XZ)>]人·被杀[<$HUMAN(XV)>]次
+
+#IF
+CheckGamePoint  >  9
+
+#ACT
+MOV S22 ★★★★★如龍顶级赞助★★★★★
+SETRANKLEVELNAME %S\<$STR(S77)>\<$STR(S67)>\★★★★★如龍顶级赞助★★★★★\<$STR(S1)>\斩杀[<$HUMAN(XZ)>]人·被杀[<$HUMAN(XV)>]次
+KILLMONEXPRATE 600 65535
+POWERRATE 150 65535
+H.POWERRATE 150 65535
+SENDMSG 0 尊贵的如龍顶级赞助大使『<$USERNAME>』骑着他的宝马上线了.获得上线6.0倍经验,、1.5倍攻击！！！ 255 245 30
+SENDMSG 0 尊贵的如龍顶级赞助大使『<$USERNAME>』骑着他的宝马上线了.获得上线6.0倍经验,、1.5倍攻击！！！ 255 245
+SENDMSG 0 尊贵的如龍顶级赞助大使『<$USERNAME>』骑着他的宝马上线了.获得上线6.0倍经验,、1.5倍攻击！！！ 255 245
+SENDMSG 0 尊贵的如龍顶级赞助大使『<$USERNAME>』骑着他的宝马上线了.获得上线6.0倍经验,、1.5倍攻击！！！ 255 245
+Delaycall 1000 @变色1
+
+
+
+[@变色1]
+#IF
+#ACT
+CHANGENAMECOLOR 249
+Delaycall 1000 @变色2
+BREAK
+[@变色2]
+#IF
+#ACT
+CHANGENAMECOLOR 216
+Delaycall 1000 @变色3
+BREAK
+[@变色3]
+#IF
+#ACT
+CHANGENAMECOLOR 250
+Delaycall 1000 @变色4
+BREAK
+[@变色4]
+#IF
+#ACT
+CHANGENAMECOLOR 252
+Delaycall 1000 @变色5
+BREAK
+[@变色5]
+#IF
+#ACT
+CHANGENAMECOLOR 253
+Delaycall 1000 @变色6
+[@变色6]
+#IF
+#ACT
+CHANGENAMECOLOR 255
+Delaycall 1000 @变色7
+BREAK
+[@变色7]
+#IF
+#ACT
+CHANGENAMECOLOR 152
+Delaycall 1000 @变色8
+BREAK
+[@变色8]
+#IF
+#ACT
+CHANGENAMECOLOR 149
+Delaycall 1000 @变色9
+BREAK
+[@变色9]
+#IF
+#ACT
+CHANGENAMECOLOR 70
+Delaycall 1000 @变色1
+
+
+
+}

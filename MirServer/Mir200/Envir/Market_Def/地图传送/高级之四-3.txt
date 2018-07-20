@@ -1,0 +1,24 @@
+()
+%100
+[@main]
+<COLOR=clAqua 【幽灵山谷】> <COLOR=clRed Hot~ >                      <COLOR=clLime 降龙合击，邀你來戰!>\
+<COLOR=clGray ------------------------------------------------------------>　\
+<COLOR=clRed BOOS名称：>2万血boss，4万血boss，6万血BOSS\
+<COLOR=clRed 怪物刷新：>小boss类30分钟，大BOSS类60分钟\
+<COLOR=clRed 爆率介绍：>战神系列，星王系列，极品星王，终极系列等等\
+<COLOR=clRed 进入条件：><COLOR=clFuchsia 300元宝 每2秒扣2个元宝>\
+<COLOR=clGray ------------------------------------------------------------>　\
+　　※ <我要进入/@幽灵山谷> ※      　　　　       ※ <关闭对话/@exit> ※
+
+[@幽灵山谷]
+#if
+CHECKGAMEGOLD > 299
+#act
+GAMEGOLD - 300
+mapmove gaoji4
+SENDMSG 0 勇敢的玩家:[%s]进入幽灵山谷寻宝去了!!! 
+SENDMSG 0 勇敢的玩家:[%s]进入幽灵山谷寻宝去了!!! 
+SENDMSG 0 勇敢的玩家:[%s]进入幽灵山谷寻宝去了!!! 
+SENDMSG 0 勇敢的玩家:[%s]进入幽灵山谷寻宝去了!!! 
+#ELSEACT
+MESSAGEBOX 需要300元宝用来进入地图。

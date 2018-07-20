@@ -1,0 +1,23 @@
+(@@InPutString @@InPutInteger @ReclaimItem)
+[@MAIN]
+#IF 
+CHECKVAR HUMAN SGJZCJ > 0
+#act
+CloseBigDialogBox
+Close
+PlayMusic start.MP3
+#CALL [\\娱乐\水果机.txt] @水果机
+break
+
+#IF 
+large M20 0
+#act
+;sendmsg 6 M20：<$STR(M20)>
+break
+
+#IF
+#ACT
+CloseBigDialogBox
+Close
+PlayMusic start.MP3
+#CALL [\\娱乐\水果机.txt] @水果机

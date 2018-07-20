@@ -1,0 +1,30 @@
+()
+%100
+[@main]
+<COLOR=clAqua 【禹王锁蛟】> 地图共三层<COLOR=clRed Hot~ >                      <COLOR=clLime 降龙合击，邀你來戰!>\
+<COLOR=clGray ------------------------------------------------------------>　\
+<COLOR=clRed BOOS名称：>20万血boss，8万血boss，10万血BOSS\
+<COLOR=clRed 怪物刷新：>boss类30分钟\
+<COLOR=clRed 爆率介绍：>爆各种高档装备，爆率其他地图的2倍\
+<COLOR=clRed 进入条件：><COLOR=clFuchsia 10000元宝+200金刚石，等级65级>\
+<COLOR=clRed 友情提示：><COLOR=clAqua 怪物比较强大、请勇士小心!!!>\
+<COLOR=clGray ------------------------------------------------------------>　\
+　　※ <我要进入/@禹王锁蛟> ※      　　　　       ※ <关闭对话/@exit> ※
+
+[@禹王锁蛟]
+#if
+CHECKLEVELEX > 64
+CHECKGAMEGOLD > 9999
+CHECKGAMEDIAMOND > 199
+#act
+GAMEGOLD - 10000
+GAMEDIAMOND - 200
+mapmove yanre
+SENDMSG 0 勇敢的玩家:[%s]禹王锁蛟寻宝去了!!!!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]禹王锁蛟寻宝去了!!!!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]禹王锁蛟寻宝去了!!!!!! 253 0
+SENDMSG 0 勇敢的玩家:[%s]进入禹王锁蛟寻宝去了!!!大声喊到：有种的来杀我啊! 250 255 10
+SENDMSG 0 勇敢的玩家:[%s]进入禹王锁蛟寻宝去了!!!大声喊到：有种的来杀我啊! 250 255 10
+SENDMSG 0 勇敢的玩家:[%s]进入禹王锁蛟寻宝去了!!!大声喊到：有种的来杀我啊! 250 255 10
+#ELSEACT
+MESSAGEBOX 需要10000元宝+200金刚石进入地图，且人物等级达到65级。

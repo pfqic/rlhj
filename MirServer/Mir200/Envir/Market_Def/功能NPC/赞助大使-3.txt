@@ -1,0 +1,273 @@
+()
+%100
+[@main]
+<COLOR=clAqua 元宝网银比例：1:20万>       <COLOR=clAqua 无汇款比例！不要相信喊话信息！>\
+<COLOR=clAqua ……………………………………………………………………………>\
+<COLOR=clLime 累计充元宝 200万 >   <COLOR=clred 【如龙顶级大使】双号>  <COLOR=clLime 1.5倍攻击>  \\
+<领取→10元大礼包/@10> \
+<COLOR=clAqua ……………………………………………………………………………>\
+<COLOR=clLime 累计充元宝 1000万 >   <COLOR=clred 【如龙顶级大使】双号>  <COLOR=clLime 1.5倍攻击>  \\
+<领取→50元大礼包/@50> \
+<COLOR=clAqua ……………………………………………………………………………>\\
+<清理多余血石、圣心/@清理>
+
+
+
+[@10]
+#IF
+CheckGamePoint  >  9
+CHECKBAGSIZE  3
+#ACT
+give 不灭◎赞助圣石   1
+give 不灭◎赞助圣心   1
+#elseact
+messagebox 你的背包不足3个空格或者你充值的元宝不够200万！
+
+[@50]
+#IF
+CheckGamePoint  > 49
+CHECKBAGSIZE  3
+#ACT
+give 殺天㊣赞助圣心   1
+give 殺天㊣赞助圣石   1
+#elseact
+messagebox 你的背包不足3个空格或者你充值的元宝不够1000万！
+
+
+
+[@清理]
+#IF
+#ACT
+TAKE 赞助血石
+TAKE 不灭◎赞助圣石
+TAKE 殺天㊣赞助圣石
+TAKE 弑血メ赞助圣石（圣）
+TAKE 缥缈№赞助圣石（神）
+TAKE 如龍◆赞助圣石（终）
+TAKE 赞助圣心
+TAKE 如龍◆赞助圣心（终）
+TAKE 缥缈№赞助圣心（神）
+TAKE 弑血メ赞助圣心（圣）
+TAKE 殺天㊣赞助圣心
+TAKE 不灭◎赞助圣心
+SENDMSG 7 清理完毕！！！祝您游戏愉快！！！
+BREAK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[@霸王首饰]
+#IF
+checkitem 降龙￠战镯 1
+#ACT
+take 降龙￠战镯 1
+GamePoint + 5
+SENDMSG 6 〖提示〗回收成功：您的当前赞助点:<$GAMEPOINT>
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得赞助点+5! 0 146
+DELAYGOTO 1 @霸王首饰
+break
+#IF
+checkitem 降龙￠战戒 1
+#ACT
+take 降龙￠战戒 1
+GamePoint + 5
+SENDMSG 6 〖提示〗回收成功：您的当前赞助点:<$GAMEPOINT>
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得赞助点+5! 0 146
+DELAYGOTO 1 @霸王首饰
+break
+#IF
+checkitem 降龙￠战盔 1
+#ACT
+take 降龙￠战盔 1
+GamePoint + 5
+SENDMSG 6 〖提示〗回收成功：您的当前赞助点:<$GAMEPOINT>
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得赞助点+5! 0 146
+DELAYGOTO 1 @霸王首饰
+break
+#IF
+checkitem 降龙￠战链 1
+#ACT
+take 降龙￠战链 1
+GamePoint + 5
+SENDMSG 6 〖提示〗回收成功：您的当前赞助点:<$GAMEPOINT>
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得赞助点+5! 0 146
+DELAYGOTO 1 @霸王首饰
+break
+#IF
+checkitem 降龙￠战带 1
+#ACT
+take 降龙￠战带 1
+GamePoint + 5
+SENDMSG 6 〖提示〗回收成功：您的当前赞助点:<$GAMEPOINT>
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得赞助点+5! 0 146
+DELAYGOTO 1 @霸王首饰
+break
+#IF
+checkitem 降龙￠战靴 1
+#ACT
+take 降龙￠战靴 1
+GamePoint + 5
+SENDMSG 6 〖提示〗回收成功：您的当前赞助点:<$GAMEPOINT>
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得赞助点+5! 0 146
+DELAYGOTO 1 @霸王首饰
+break
+#IF
+checkitem 降龙￠道带 1
+#ACT
+take 降龙￠道带 1
+GamePoint + 5
+SENDMSG 6 〖提示〗回收成功：您的当前赞助点:<$GAMEPOINT>
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得赞助点+5! 0 146
+DELAYGOTO 1 @霸王首饰
+break
+#IF
+checkitem 降龙￠道靴 1
+#ACT
+take 降龙￠道靴 1
+GamePoint + 5
+SENDMSG 6 〖提示〗回收成功：您的当前赞助点:<$GAMEPOINT>
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得赞助点+5! 0 146
+DELAYGOTO 1 @霸王首饰
+break
+#IF
+checkitem 降龙￠道盔 1
+#ACT
+take 降龙￠道盔 1
+GamePoint + 5
+SENDMSG 6 〖提示〗回收成功：您的当前赞助点:<$GAMEPOINT>
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得赞助点+5! 0 146
+DELAYGOTO 1 @霸王首饰
+break
+#IF
+checkitem 降龙￠道链 1
+#ACT
+take 降龙￠道链 1
+GamePoint + 5
+SENDMSG 6 〖提示〗回收成功：您的当前赞助点:<$GAMEPOINT>
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得赞助点+5! 0 146
+DELAYGOTO 1 @霸王首饰
+break
+#IF
+checkitem 降龙￠道戒 1
+#ACT
+take 降龙￠道戒 1
+GamePoint + 5
+SENDMSG 6 〖提示〗回收成功：您的当前赞助点:<$GAMEPOINT>
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得赞助点+5! 0 146
+DELAYGOTO 1 @霸王首饰
+break
+#IF
+checkitem 降龙￠道镯 1
+#ACT
+take 降龙￠道镯 1
+GamePoint + 5
+SENDMSG 6 〖提示〗回收成功：您的当前赞助点:<$GAMEPOINT>
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得赞助点+5! 0 146
+DELAYGOTO 1 @霸王首饰
+break
+#IF
+checkitem 降龙￠法带 1
+#ACT
+take 降龙￠法带 1
+GamePoint + 5
+SENDMSG 6 〖提示〗回收成功：您的当前赞助点:<$GAMEPOINT>
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得赞助点+5! 0 146
+DELAYGOTO 1 @霸王首饰
+break
+#IF
+checkitem 降龙￠法靴 1
+#ACT
+take 降龙￠法靴 1
+GamePoint + 5
+SENDMSG 6 〖提示〗回收成功：您的当前赞助点:<$GAMEPOINT>
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得赞助点+5! 0 146
+DELAYGOTO 1 @霸王首饰
+break
+#IF
+checkitem 降龙￠法盔 1
+#ACT
+take 降龙￠法盔 1
+GamePoint + 5
+SENDMSG 6 〖提示〗回收成功：您的当前赞助点:<$GAMEPOINT>
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得赞助点+5! 0 146
+DELAYGOTO 1 @霸王首饰
+break
+#IF
+checkitem 降龙￠法链 1
+#ACT
+take 降龙￠法链 1
+GamePoint + 5
+SENDMSG 6 〖提示〗回收成功：您的当前赞助点:<$GAMEPOINT>
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得赞助点+5! 0 146
+DELAYGOTO 1 @霸王首饰
+break
+#IF
+checkitem 降龙￠法镯 1
+#ACT
+take 降龙￠法镯 1
+GamePoint + 5
+SENDMSG 6 〖提示〗回收成功：您的当前赞助点:<$GAMEPOINT>
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得赞助点+5! 0 146
+DELAYGOTO 1 @霸王首饰
+break
+#IF
+checkitem 降龙￠法戒 1
+#ACT
+take 降龙￠法戒 1
+GamePoint + 5
+SENDMSG 6 〖提示〗回收成功：您的当前赞助点:<$GAMEPOINT>
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得赞助点+5! 0 146
+DELAYGOTO 1 @霸王首饰
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有次终极首饰系列装备，无法回收！
+GOTO @回收赞助点
+[@霸王剑甲]
+#IF
+checkitem 降龙￠神剑 1
+#ACT
+take 降龙￠神剑 1
+GamePoint + 50
+SENDMSG 6 〖提示〗回收成功：您的当前赞助点:<$GAMEPOINT>
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得赞助点+50! 0 146
+DELAYGOTO 1 @霸王剑甲
+break
+#IF
+checkitem 降龙￠神甲 1
+#ACT
+take 降龙￠神甲 1
+GamePoint + 50
+SENDMSG 6 〖提示〗回收成功：您的当前赞助点:<$GAMEPOINT>
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得赞助点+50! 0 146
+DELAYGOTO 1 @霸王剑甲
+break
+#IF
+checkitem 降龙￠神衣 1
+#ACT
+take 降龙￠神衣 1
+GamePoint + 50
+SENDMSG 6 〖提示〗回收成功：您的当前赞助点:<$GAMEPOINT>
+SENDMSG 0 玩家〖<$USERNAME>〗回收高级装备，获得赞助点+50! 0 146
+DELAYGOTO 1 @霸王剑甲
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有次终极剑甲系列装备，无法回收！
+GOTO @回收赞助点
+

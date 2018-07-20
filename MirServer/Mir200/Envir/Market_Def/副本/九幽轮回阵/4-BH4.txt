@@ -1,0 +1,35 @@
+
+[@main]
+#if
+CheckRangeMonCount BH4 15 15 100 < 1
+#ACT
+goto @jin
+#ELSEACT
+messagebox 【提示】:【等你歼灭所有怪物你在来找我】
+
+
+[@jin]
+　\
+╔═══════════════════════════╗\
+║<COLOR=clRed  年轻人:下面更为凶险 你要小心哦>         ║\
+║<COLOR=clRed  进入条件：无！把怪物清理完毕来找我吧>   ║\
+╚═══════════════════════════╝\
+╔═══════════════════════════╗\
+║     <进入下层/@001>                          <进入下层/@001>       ║\
+╚═══════════════════════════╝\
+
+
+[@001]
+#IF
+CHECKLEVELEX > 64
+#ACT
+mapmove BH5
+SENDMSG 0 【%s】进入了九幽轮回阵(土)，祝愿他满载而归! 49 223 30
+SENDMSG 0 【%s】进入了九幽轮回阵(土)，祝愿他满载而归! 49 223
+SENDMSG 0 【%s】进入了九幽轮回阵(土)，祝愿他满载而归! 49 223
+SENDMSG 0 【%s】进入了九幽轮回阵(土)，祝愿他满载而归! 49 223
+#ELSEACT
+messagebox 【提示】:【进入九幽轮回阵(土)需要等级65级.】
+
+
+

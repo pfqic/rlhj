@@ -1,0 +1,41 @@
+[@main]
+　\
+本服为防止脱机，比奇和毒蛇都只设置一个挖矿的地图！\
+矿区内只能打怪，不能挖矿，挖矿请选择挖矿地图？\\
+　\
+<进入挖矿地图/@move1>　<开区第3天月卡限制为11级，矿区充卡后才能进入>\\
+　\
+<进入比奇矿区/@move>\\
+
+[@move]
+#if
+#act
+mapmove D421 21 372                                                   
+
+[@move1]
+　\
+<年卡玩家/@move22>　<季卡玩家/@move33>\\
+
+[@move22]
+#If
+checkNameList ..\QuestDiary\月卡\年卡名单.txt
+#Act
+mapmove D412C 22 19  
+Break
+#ELSESAY
+　\
+为防止小号多开挖矿影响公平\
+　\
+即日起未冲月卡不得进入挖矿地图\
+
+[@move33]
+#If
+checkNameList ..\QuestDiary\月卡\月卡名单.txt
+#Act
+mapmove D412A 22 19  
+Break
+#ELSESAY
+　\
+为防止小号多开挖矿影响公平\
+　\
+即日起未冲月卡不得进入挖矿地图\

@@ -1,0 +1,27 @@
+[2018-6-26 21:42:18] [127.0.0.1] 角色名:喜欢你	Ident:1018		Recog:0		Param:0		tag:0		series:46		string:
+[2018-6-26 21:42:19] [127.0.0.1] 角色名:喜欢你	Ident:84		Recog:786446		Param:0		tag:0		series:0		string:
+[2018-6-26 21:42:19] [127.0.0.1] 角色名:喜欢你	Ident:81		Recog:1		Param:0		tag:0		series:0		string:
+[2018-6-26 21:42:19] [127.0.0.1] 角色名:喜欢你	Ident:10431		Recog:1310720		Param:0		tag:0		series:0		string:
+[2018-6-26 21:42:19] [127.0.0.1] 角色名:喜欢你	Ident:10433		Recog:0		Param:0		tag:0		series:0		string:
+[2018-6-26 21:42:19] [127.0.0.1] 角色名:喜欢你	Ident:1200		Recog:343572016		Param:1		tag:0		series:0		string:
+[2018-6-26 21:42:20] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:7		Param:0		tag:26		series:0		string:
+[2018-6-26 21:42:31] [127.0.0.1] 角色名:喜欢你	Ident:3030		Recog:0		Param:0		tag:0		series:0		string:@
+[2018-6-26 21:42:38] [127.0.0.1] 角色名:喜欢你	Ident:3030		Recog:0		Param:0		tag:0		series:0		string:@飞 K001
+[2018-6-26 21:42:41] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:7		Param:0		tag:26		series:0		string:
+[2018-6-26 21:42:54] [127.0.0.1] 角色名:喜欢你	Ident:3030		Recog:0		Param:0		tag:0		series:0		string:@飞 rlsz
+[2018-6-26 21:42:56] [127.0.0.1] 角色名:喜欢你	Ident:1033		Recog:0		Param:0		tag:0		series:0		string:
+[2018-6-26 21:42:58] [127.0.0.1] 角色名:喜欢你	Ident:3013		Recog:17170621		Param:0		tag:1		series:0		string:
+[2018-6-26 21:42:59] [127.0.0.1] 角色名:喜欢你	Ident:3013		Recog:17039551		Param:0		tag:1		series:0		string:
+[2018-6-26 21:42:59] [127.0.0.1] 角色名:喜欢你	Ident:3013		Recog:16908481		Param:0		tag:1		series:0		string:
+[2018-6-26 21:43:1] [127.0.0.1] 角色名:喜欢你	Ident:1033		Recog:0		Param:0		tag:0		series:0		string:
+[2018-6-26 21:43:1] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:1		Param:0		tag:26		series:0		string:
+[2018-6-26 21:43:1] [127.0.0.1] 角色名:喜欢你	Ident:3013		Recog:16908479		Param:0		tag:6		series:0		string:
+[2018-6-26 21:43:2] [127.0.0.1] 角色名:喜欢你	Ident:3013		Recog:16908477		Param:0		tag:6		series:0		string:
+[2018-6-26 21:43:5] [127.0.0.1] 角色名:喜欢你	Ident:3011		Recog:16974012		Param:0		tag:5		series:0		string:
+[2018-6-26 21:43:7] [127.0.0.1] 角色名:喜欢你	Ident:3013		Recog:16974010		Param:0		tag:6		series:0		string:
+[2018-6-26 21:43:8] [127.0.0.1] 角色名:喜欢你	Ident:3013		Recog:16842936		Param:0		tag:7		series:0		string:
+[2018-6-26 21:43:9] [127.0.0.1] 角色名:喜欢你	Ident:3013		Recog:16711864		Param:0		tag:0		series:0		string:
+[2018-6-26 21:43:9] [127.0.0.1] 角色名:喜欢你	Ident:3013		Recog:16580792		Param:0		tag:0		series:0		string:
+[2018-6-26 21:43:10] [127.0.0.1] 角色名:喜欢你	Ident:3013		Recog:16449720		Param:0		tag:0		series:0		string:
+[2018-6-26 21:43:11] [127.0.0.1] 角色名:喜欢你	Ident:3013		Recog:16318648		Param:0		tag:0		series:0		string:
+[2018-6-26 21:43:22] [127.0.0.1] 角色名:喜欢你	Ident:3017		Recog:0		Param:0		tag:26		series:0		string:

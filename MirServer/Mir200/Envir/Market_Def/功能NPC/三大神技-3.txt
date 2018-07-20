@@ -1,0 +1,65 @@
+[@main]
+╔───────────────────────────╗  \
+┊ <COLOR=clLime  三大神技> <提示:三大神技，威力无敌，万莫轻易触摸>      ┊\
+├───────────────────────────┤\
+┊        [<十步一杀/@十步一杀>] ┊ [<死亡之眼/@死亡之眼>] ┊ [<冰霜群雨/@冰霜群雨>]        ┊\
+┊                                                      ┊\
+├───────────────────────────┤\
+┊                    [<传说中的龙卫神技>]                ┊\
+┊             [<兑换要求:50万元宝+10个技能神石>]         ┊\
+╚───────────────────────────╝\
+
+[@十步一杀]
+#if
+CHECKGAMEGOLD > 499999
+checkitem 技能神石 10
+checkjob warrior
+#act
+gamegold - 500000
+take 技能神石 10
+ADDSKILL 十步一杀
+messagebox 你已学习战士神技[十步一杀]！！谨慎施展！
+SENDMSG 2 ぐ骨灰玩家：『<$USERNAME>』在龙卫神技学习战士神技[十步一杀]！！！
+SENDMSG 2 ぐ骨灰玩家：『<$USERNAME>』在龙卫神技学习战士神技[十步一杀]！！！
+SENDMSG 2 ぐ骨灰玩家：『<$USERNAME>』在龙卫神技学习战士神技[十步一杀]！！！
+#elseact
+messagebox 你不符合学习要求！无法修炼！！
+
+
+
+
+[@死亡之眼]
+#if
+CHECKGAMEGOLD > 499999
+checkitem 技能神石 10
+checkjob Taos
+#act
+gamegold - 500000
+take 技能神石 10
+ADDSKILL 死亡之眼
+messagebox 你已学习道士神技[死亡之眼]！！谨慎施展！
+SENDMSG 2 ぐ骨灰玩家：『<$USERNAME>』在龙卫神技学习道士神技[死亡之眼]！！！
+SENDMSG 2 ぐ骨灰玩家：『<$USERNAME>』在龙卫神技学习道士神技[死亡之眼]！！！
+SENDMSG 2 ぐ骨灰玩家：『<$USERNAME>』在龙卫神技学习道士神技[死亡之眼]！！！
+#elseact
+messagebox 你不符合学习要求！无法修炼！！
+
+
+
+
+[@冰霜群雨]
+#if
+CHECKGAMEGOLD > 499999
+checkitem 技能神石 10
+checkjob Wizard
+#act
+gamegold - 500000
+take 技能神石 10
+ADDSKILL 冰霜群雨
+messagebox 你已学习法师神技[冰霜群雨]！！谨慎施展！
+SENDMSG 2 ぐ骨灰玩家：『<$USERNAME>』在龙卫神技学习法师神技[冰霜群雨]！！！
+SENDMSG 2 ぐ骨灰玩家：『<$USERNAME>』在龙卫神技学习法师神技[冰霜群雨]！！！
+SENDMSG 2 ぐ骨灰玩家：『<$USERNAME>』在龙卫神技学习法师神技[冰霜群雨]！！！
+#elseact
+messagebox 你不符合学习要求！无法修炼！！
+

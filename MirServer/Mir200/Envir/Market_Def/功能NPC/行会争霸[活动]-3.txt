@@ -1,0 +1,23 @@
+()
+%100
+[@main]
+<COLOR=clLime 本服推荐活动，只有强者才能参加(等级要求40级、必须有行会。)>\
+<COLOR=clRed 争霸时间>：每天18:00-18:35 开放,开门30分钟\
+<COLOR=clRed 参赛要求>：参加者必须加入了行会，等级最底40级\
+<COLOR=clRed 领奖要求>：行会争霸结束后,地图内最后剩下的行会为胜利方\
+<COLOR=clRed 领奖时间>：奖励领取时间：18:35-19:00,只可派一名代表\
+<COLOR=clRed 奖励物品>：最后剩下的行会为胜利方可以获得<COLOR=clRed 100万元宝>奖励\ \
+<进入争霸地图/@JR>
+[@jr]
+#IF
+HAVEGUILD
+CHECKLEVELEX > 39
+HOUR 18 18
+MIN 0 29
+#act
+mapmove E1
+SENDMSG 0 『<$GUILDNAME>』行会的『<$USERNAME>』进入了行会争霸地图...
+break
+#elseact
+messagebox 已超过允许进场时间,每天行会争霸开门时间是每天18:00-18:35！\或者你没有40级！或许你没有加入行会！
+break

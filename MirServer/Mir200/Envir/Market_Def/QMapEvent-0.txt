@@ -1,0 +1,92 @@
+[@KillPlayMon66]
+#IF
+CHECKLEVELEX > 19
+#ACT
+MOVR D66 500
+INC D66 1
+#IF
+LARGE D66 490
+#ACT
+Gmexecute 变忠诚度 4
+BREAK
+#IF
+LARGE D66 50
+#ACT
+Gmexecute 变忠诚度 2
+BREAK
+
+[@KILLPLAY66]
+#IF
+CHECKLEVELEX > 0
+#ACT
+CALCVAR HUMAN XZ + 1
+SAVEVAR HUMAN XZ ..\QuestDiary\数据文件\杀敌阵亡.txt
+Break
+
+
+[@Plunder_无敌镖车]
+#IF
+#ACT
+GAMEGOLD + 500
+SENDMSG 0 凶狠的[<$USERNAME>]将[<$ROBBER>]的【无敌镖车】破坏了，额外获得500个元宝！ 191 251
+SENDMSG 0 凶狠的[<$USERNAME>]将[<$ROBBER>]的【无敌镖车】破坏了，额外获得500个元宝！ 191 251 10
+break
+
+[@Plunder_超级镖车]
+#IF
+#ACT
+GAMEGOLD + 500
+SENDMSG 0 凶狠的[<$USERNAME>]将[<$ROBBER>]的【超级镖车】破坏了，额外获得500个元宝！ 191 251
+SENDMSG 0 凶狠的[<$USERNAME>]将[<$ROBBER>]的【超级镖车】破坏了，额外获得500个元宝！ 191 251 10
+break
+
+[@Plunder_高级镖车]
+#IF
+#ACT
+GAMEGOLD + 500
+SENDMSG 0 凶狠的[<$USERNAME>]将[<$ROBBER>]的【高级镖车】破坏了，额外获得500个元宝！ 191 251
+SENDMSG 0 凶狠的[<$USERNAME>]将[<$ROBBER>]的【高级镖车】破坏了，额外获得500个元宝！ 191 251 10
+break
+
+[@Plunder_普通镖车]
+#IF
+#ACT
+GAMEGOLD + 500
+SENDMSG 0 凶狠的[<$USERNAME>]将[<$ROBBER>]的【普通镖车】破坏了，额外获得500个元宝！ 191 251
+SENDMSG 0 凶狠的[<$USERNAME>]将[<$ROBBER>]的【普通镖车】破坏了，额外获得500个元宝！ 191 251 10
+break
+
+[@isEscorting]
+#SAY
+你的托运任务正在执行中，不能再接此任务\
+<寻找镖车/@flyto>   <关闭/@exit>
+
+[@EscortFail]
+#SAY
+接镖车任务失败，数据中不存在镖车！\
+<关闭/@exit>
+
+[@MoveToEscort_Fail_1]
+#SAY
+你目前没有正在托运的镖车！\
+<关闭/@exit>
+
+[@MoveToEscort_Fail_2]
+#SAY
+移动到目标失败！\
+<关闭/@exit>
+
+[@EscortUnderFire]
+你押运的镖车正受攻击！！！\
+<前往救急-花费100元宝/@rescue>   <关闭/@exit>
+
+[@rescue]
+#IF
+CHECKGAMEGOLD ? 100
+#ACT
+GAMEGOLD - 100
+MoveToEscort
+break
+#elseact
+messagebox 你没有【100】个元宝，我没办法帮您传送过去?
+break

@@ -1,0 +1,119 @@
+[@main]
+<COLOR=clRed 全新强化技能系统，四重技能提升。>\
+<COLOR=clRed 强化技能画面效果更精致，技能伤害也增加。>\
+<COLOR=clRed 需要材料48888金刚石+3个倚天碎片+10万元宝，土豪必备>\
+<COLOR=clAqua ──────────────────────────────>\
+<COLOR=clLime 主号:><强化逐日剑法/@逐日剑法>  <强化流星火雨/@流星火雨>  <强化噬血术/@噬血术>\ \
+<COLOR=clLime 英雄:><强化逐日剑法/@英雄逐日剑法>  <强化流星火雨/@英雄流星火雨>  <强化噬血术/@英雄噬血术>\
+<COLOR=clAqua ──────────────────────────────>\ \
+
+[@英雄噬血术] 
+#ACT 
+MOV S1 英雄噬血术
+MOV S3 Taoist 
+MOV M2 45
+DelayGoto 5 ~HEROQIANGHUA 
+
+[@噬血术]
+#ACT
+MOV S1 噬血术
+MOV S3 Taoist
+MOV M2 45
+DelayGoto 5 ~QIANGHUA 
+
+[@流星火雨]
+#ACT
+MOV S1 流星火雨
+MOV S3 Wizard
+MOV M2 45
+DelayGoto 5 ~QIANGHUA 
+
+[@英雄流星火雨] 
+#ACT 
+MOV S1 英雄流星火雨
+MOV S3 Wizard
+MOV M2 45
+DelayGoto 5 ~HEROQIANGHUA 
+
+[@逐日剑法]
+#ACT
+MOV S1 逐日剑法
+MOV S3 Warrior 
+MOV M2 45
+DelayGoto 5 ~QIANGHUA 
+
+[@英雄逐日剑法] 
+#ACT 
+MOV S1 英雄逐日剑法
+MOV S3 Warrior
+MOV M2 45
+DelayGoto 5 ~HEROQIANGHUA 
+ 
+
+[~QIANGHUA] 
+#IF 
+CHECKJOB <$STR(S3)> 
+#ACT 
+QUERYVALUE 2 2 10 @NowQIANGHUA 你确定强化4重【<$STR(S1)>】熟练度？ LEGENDM2 
+#ELSEACT 
+MESSAGEBOX 错误！你正在试图强化其它职业技能! 
+[@NowQIANGHUA] 
+#IF 
+CHECKLEVELEX < <$STR(M2)> 
+#ACT 
+MESSAGEBOX <$STR(M2)>级以上才可以强化4重<$STR(S1)>熟练度! 
+BREAK
+#IF 
+CHECKMAGICLEVEL <$STR(S1)> < 4
+#ELSEACT 
+MESSAGEBOX 你的<$STR(S1)>已经达到4重熟练度，无需继续强化! 
+BREAK
+#IF 
+CHECKMAGICNAME <$STR(S1)> 
+CHECKGAMEDIAMOND > 48887
+CHECKGAMEGOLD > 99999
+CHECKITEM 倚天碎片 3
+#ACT
+Take 倚天碎片 3
+GAMEDIAMOND - 48888
+GAMEGOLD - 100000
+SkillLevel <$STR(S1)> = 4
+SENDMSG 7 恭喜您的<$STR(S1)>技能点数强化了4重熟练度! 
+SENDMSG 0 恭喜%S成功强化4重「<$STR(S1)>」熟练度！技能再次飞跃！ 151 249 7
+break 
+#ELSEACT 
+MESSAGEBOX [提示]：材料都没齐全，或者你没有学习<$STR(S1)>！ 
+
+[~HEROQIANGHUA] 
+#IF 
+H.CHECKJOB <$STR(S3)> 
+#ACT 
+QUERYVALUE 2 2 10 @HERONowQIANGHUA 你确定强化4重【<$STR(S1)>】熟练度？ LEGENDM2 
+#ELSEACT 
+MESSAGEBOX 错误！你正在试图强化其它职业技能熟练度! 
+[@HERONowQIANGHUA] 
+#IF 
+H.CHECKLEVELEX < <$STR(M2)> 
+#ACT 
+MESSAGEBOX 你的英雄<$STR(M2)>级以上才可以强化4重<$STR(S1)>熟练度! 
+BREAK
+#IF 
+H.CHECKMAGICLEVEL <$STR(S1)> < 4
+#ELSEACT 
+MESSAGEBOX 你的<$STR(S1)>已经达到4重熟练度，无需继续强化! 
+BREAK
+#IF 
+H.CHECKMAGICNAME <$STR(S1)> 
+CHECKGAMEDIAMOND > 48887
+CHECKGAMEGOLD > 99999
+CHECKITEM 倚天碎片 3
+#ACT
+Take 倚天碎片 3
+GAMEDIAMOND - 48888
+GAMEGOLD - 100000
+H.SkillLevel <$STR(S1)> = 4
+SENDMSG 7 恭喜您英雄的<$STR(S1)>技能点数强化了4重熟练度! 
+SENDMSG 0 恭喜%S的英雄成功强化4重「<$STR(S1)>」熟练度！技能再次飞跃！ 151 249 7
+break 
+#ELSEACT 
+MESSAGEBOX [提示]：材料都没齐全，或者你没有学习<$STR(S1)>！ 

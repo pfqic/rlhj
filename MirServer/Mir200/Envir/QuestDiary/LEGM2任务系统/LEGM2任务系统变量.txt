@@ -1,0 +1,139 @@
+[@LEGM2任务系统变量]
+{
+#IF
+CheckLevelEx > 0
+#ACT
+Var String HUMAN 新手入门
+Var Integer HUMAN 新手已杀
+Var String HUMAN 初级阶段
+Var Integer HUMAN 初级已杀
+VAR String HUMAN 中级阶段
+Var Integer HUMAN 中级已杀
+VAR String HUMAN 高级阶段
+Var Integer HUMAN 高级已杀
+Var String HUMAN 傲视群雄
+Var Integer HUMAN 傲视已杀
+Var String HUMAN 初试牛刀
+Var Integer HUMAN 初试已杀
+Var String HUMAN 名扬天下
+Var Integer HUMAN 名扬已杀
+VAR String HUMAN 狂野之路
+Var Integer HUMAN 狂野已杀
+VAR String HUMAN 单枪匹马
+Var Integer HUMAN 单枪已杀
+Var String HUMAN 君临天下
+Var Integer HUMAN 君临已杀
+LOADVAR HUMAN 新手入门 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+LOADVAR HUMAN 初级阶段 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+LOADVAR HUMAN 中级阶段 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+LOADVAR HUMAN 高级阶段 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+LOADVAR HUMAN 傲视群雄 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+LOADVAR HUMAN 初试牛刀 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+LOADVAR HUMAN 名扬天下 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+LOADVAR HUMAN 狂野之路 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+LOADVAR HUMAN 单枪匹马 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+LOADVAR HUMAN 君临天下 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+LOADVAR HUMAN 新手已杀 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+LOADVAR HUMAN 初级已杀 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+LOADVAR HUMAN 中级已杀 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+LOADVAR HUMAN 高级已杀 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+LOADVAR HUMAN 傲视已杀 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+LOADVAR HUMAN 初试已杀 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+LOADVAR HUMAN 名扬已杀 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+LOADVAR HUMAN 狂野已杀 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+LOADVAR HUMAN 单枪已杀 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+LOADVAR HUMAN 君临已杀 ..\QuestDiary\LEGM2任务系统\个人变量.txt
+
+
+#if
+equal I98 0
+#ACT
+MOV I98 1
+VAR Integer GLOBAL 新手等级
+VAR Integer GLOBAL 新手数量
+VAR Integer GLOBAL 初级等级
+VAR Integer GLOBAL 初级数量
+VAR Integer GLOBAL 中级等级
+VAR Integer GLOBAL 中级数量
+VAR Integer GLOBAL 高级等级
+VAR Integer GLOBAL 高级数量
+VAR Integer GLOBAL 傲视等级
+VAR Integer GLOBAL 傲视数量
+VAR Integer GLOBAL 初试等级
+VAR Integer GLOBAL 初试数量
+VAR Integer GLOBAL 名扬等级
+VAR Integer GLOBAL 名扬数量
+VAR Integer GLOBAL 狂野等级
+VAR Integer GLOBAL 狂野数量
+VAR Integer GLOBAL 单枪等级
+VAR Integer GLOBAL 单枪数量
+VAR Integer GLOBAL 君临等级
+VAR Integer GLOBAL 君临数量
+LOADVAR GLOBAL 新手等级 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+LOADVAR GLOBAL 新手数量 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+LOADVAR GLOBAL 初级等级 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+LOADVAR GLOBAL 初级数量 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+LOADVAR GLOBAL 中级等级 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+LOADVAR GLOBAL 中级数量 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+LOADVAR GLOBAL 高级等级 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+LOADVAR GLOBAL 高级数量 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+LOADVAR GLOBAL 傲视等级 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+LOADVAR GLOBAL 傲视数量 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+LOADVAR GLOBAL 初试等级 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+LOADVAR GLOBAL 初试数量 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+LOADVAR GLOBAL 名扬等级 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+LOADVAR GLOBAL 名扬数量 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+LOADVAR GLOBAL 狂野等级 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+LOADVAR GLOBAL 狂野数量 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+LOADVAR GLOBAL 单枪等级 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+LOADVAR GLOBAL 单枪数量 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+LOADVAR GLOBAL 君临等级 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+LOADVAR GLOBAL 君临数量 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+
+
+#IF
+equal G99 0
+#ACT
+MOV G99 1
+CALCVAR GLOBAL 君临等级 = 80
+CALCVAR GLOBAL 君临数量 = 2
+SAVEVAR GLOBAL 君临等级 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+SAVEVAR GLOBAL 君临数量 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+CALCVAR GLOBAL 单枪等级 = 65
+CALCVAR GLOBAL 单枪数量 = 1
+SAVEVAR GLOBAL 单枪等级 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+SAVEVAR GLOBAL 单枪数量 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+CALCVAR GLOBAL 狂野等级 = 58
+CALCVAR GLOBAL 狂野数量 = 2
+SAVEVAR GLOBAL 狂野等级 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+SAVEVAR GLOBAL 狂野数量 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+CALCVAR GLOBAL 名扬等级 = 52
+CALCVAR GLOBAL 名扬数量 = 2
+SAVEVAR GLOBAL 名扬等级 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+SAVEVAR GLOBAL 名扬数量 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+CALCVAR GLOBAL 初试等级 = 45
+CALCVAR GLOBAL 初试数量 = 5
+SAVEVAR GLOBAL 初试等级 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+SAVEVAR GLOBAL 初试数量 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+CALCVAR GLOBAL 傲视等级 = 70
+CALCVAR GLOBAL 傲视数量 = 2
+SAVEVAR GLOBAL 傲视等级 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+SAVEVAR GLOBAL 傲视数量 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+CALCVAR GLOBAL 高级等级 = 60
+CALCVAR GLOBAL 高级数量 = 2
+SAVEVAR GLOBAL 高级等级 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+SAVEVAR GLOBAL 高级数量 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+CALCVAR GLOBAL 新手等级 = 40
+CALCVAR GLOBAL 新手数量 = 50
+SAVEVAR GLOBAL 新手等级 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+SAVEVAR GLOBAL 新手数量 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+CALCVAR GLOBAL 初级等级 = 50
+CALCVAR GLOBAL 初级数量 = 2
+SAVEVAR GLOBAL 初级等级 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+SAVEVAR GLOBAL 初级数量 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+CALCVAR GLOBAL 中级等级 = 55
+CALCVAR GLOBAL 中级数量 = 4
+SAVEVAR GLOBAL 中级等级 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+SAVEVAR GLOBAL 中级数量 ..\QuestDiary\LEGM2任务系统\固定变量.txt
+
+}

@@ -1,0 +1,569 @@
+(@@INPUTINTEGER @@INPUTSTRING)
+[@MAIN]
+#IF
+LARGE I12 5
+#ACT
+MESSAGEBOX 赌博进行中！错误代码:<$STR(I12)>！\稍等即可开始游戏！
+BREAK
+#IF
+SMALL I46 -1
+#ACT
+;全局安全系统I46系统收入元宝减去发出去的元宝不能是负数!
+MESSAGEBOX 赌博系统故障！错误代码:<$STR(I46)>-<$STR(I12)>！\请联系管理员处理！
+BREAK
+
+#IF
+ISADMIN
+#ACT
+SENDMSG 7 当前状态为：<$STR(I46)>…
+
+#IF
+check [365] 0
+#ACT
+SET [365] 0
+MOV M14 0
+MOV M15 0
+MOV M16 0
+MOV M17 0
+MOV M18 0
+MOV S23 无
+
+#IF
+EQUAL I12 0
+SMALL I19 50000
+check [365] 0
+#ACT
+break
+#SAY
+欢迎参与互动博彩，你的元宝：【<$GAMEGOLD>】；押得多赢得多哦！\
+庄家姓名：【<$STR(A34)>】　庄家本钱数：【<$STR(I19)>】\
+╔┈┈┈┈╗╔┈┈┈┈╗╔┈┈┈┈╗╔┈┈┈┈╗╔┈┈┈┈╗\
+┊<游戏规则/@游戏规则>┊┊<开始坐庄/@开始坐庄>┊┊<下注押大>┊┊<下注押小>┊┊<刷新页面/@MAIN>┊\
+╚┈┈┈┈╝╚┈┈┈┈╝╚┈┈┈┈╝╚┈┈┈┈╝╚┈┈┈┈╝\
+押大总金额：【<$STR(I13)>】　　　　　　　　　　抢庄时间：剩余<$STR(I10)>秒\
+押小总金额：【<$STR(I14)>】                    \
+你的下注情况：你下注【<$STR(M17)>】元宝押【<$STR(S23)>】　　        <回城/@回城>\
+<历史记录：/@历史>【<$STR(A36)>】\
+
+#IF
+EQUAL I12 0
+LARGE I19 49999
+check [365] 0
+#ACT
+SENDMSG 7 庄家本钱达到50000，不能再进行抢庄，请等待下注…
+
+#IF
+EQUAL I12 1
+SMALL M17 1
+LARGE I10 1
+check [365] 0
+#ACT
+break
+#SAY
+欢迎参与互动博彩，你的元宝：【<$GAMEGOLD>】；押得多赢得多哦！\
+庄家姓名：【<$STR(A34)>】　庄家本钱数：【<$STR(I19)>】\
+╔┈┈┈┈╗╔┈┈┈┈╗╔┈┈┈┈╗╔┈┈┈┈╗╔┈┈┈┈╗\
+┊<游戏规则/@游戏规则>┊┊<开始坐庄>┊┊<下注押大/@下注押大>┊┊<下注押小/@下注押小>┊┊<刷新页面/@MAIN>┊\
+╚┈┈┈┈╝╚┈┈┈┈╝╚┈┈┈┈╝╚┈┈┈┈╝╚┈┈┈┈╝\
+押大总金额：【<$STR(I13)>】　　　　　　　　　　押注时间：剩余<$STR(I10)>秒\
+押小总金额：【<$STR(I14)>】                    \
+你的下注情况：你下注【<$STR(M17)>】元宝押【<$STR(S23)>】　　        <回城/@回城>\
+<历史记录：/@历史>【<$STR(A36)>】\
+#ELSESAY
+欢迎参与互动博彩，你的元宝：【<$GAMEGOLD>】；押得多赢得多哦！\
+庄家姓名：【<$STR(A34)>】　庄家本钱数：【<$STR(I19)>】\
+╔┈┈┈┈╗╔┈┈┈┈╗╔┈┈┈┈╗╔┈┈┈┈╗╔┈┈┈┈╗\
+┊<游戏规则/@游戏规则>┊┊<开始坐庄>┊┊<下注押大>┊┊<下注押小>┊┊<刷新页面/@MAIN>┊\
+╚┈┈┈┈╝╚┈┈┈┈╝╚┈┈┈┈╝╚┈┈┈┈╝╚┈┈┈┈╝\
+押大总金额：【<$STR(I13)>】　　　　　　　　　　等待开局：剩余<$STR(I10)>秒\
+押小总金额：【<$STR(I14)>】                    \
+你的下注情况：你下注【<$STR(M17)>】元宝押【<$STR(S23)>】　　        <回城/@回城>\
+<历史记录：/@历史>【<$STR(A36)>】\
+
+[@回城]
+#IF
+RANDOM 3
+#ACT
+MAPMOVE 3 330 330
+CLOSE
+BREAK
+
+#IF
+RANDOM 2
+#ACT
+MAPMOVE 3 332 330
+CLOSE
+BREAK
+
+#IF
+RANDOM 1
+#ACT
+MAPMOVE 3 330 332
+CLOSE
+#ELSEACT
+MAPMOVE 3 329 331
+
+[@开始坐庄]
+#IF
+EQUAL I11 1
+SMALL I10 5
+#ACT
+MESSAGEBOX 错误提示：现在不是抢庄时间！ 
+MOV M14 0
+BREAK
+
+#IF
+EQUAL I12 0
+#ELSEACT
+MESSAGEBOX 错误提示：现在不是抢庄时间！ 
+MOV M14 0
+BREAK
+
+#IF
+EQUAL A34 <$USERNAME>
+#ACT
+MOV M14 0
+MESSAGEBOX 错误提示：你目前已经是庄家，不用抢庄。 
+BREAK
+#ELSESAY
+庄家姓名：【<$STR(A34)>】　庄家本钱数：【<$STR(I19)>】\
+目前你所拥有的元宝：【<$GAMEGOLD>】……\\
+╔┈┈┈┈┈┈┈┈┈┈┈┈╗1.最后抢到庄的玩家开始下注后,\
+┊<输入你要抢庄的元宝数量：/@@INPUTINTEGER14>┊  需要支付10%元宝手续费!\
+╚┈┈┈┈┈┈┈┈┈┈┈┈╝2.抢庄过程中不收取费用!\
+押大总金额：【<$STR(I13)>】　　　　　　　　　　抢庄剩余时间：<$STR(I10)>秒\
+押小总金额：【<$STR(I14)>】\
+你的下注情况：你下注【<$STR(M17)>】元宝押【<$STR(S23)>】　　<刷新/@MAIN>    <回城/@回城>\
+<历史记录：/@历史>【<$STR(A36)>】\
+
+[@@INPUTINTEGER14]
+#IF
+CHECKGAMEGOLD > 11
+#ACT
+CLOSE
+DELAYGOTO 1 ~INPUTINTEGER14
+#ELSEACT
+MESSAGEBOX 错误提示：元宝数少于11不能抢庄
+MOV M14 0
+BREAK
+
+
+[~INPUTINTEGER14]
+#IF
+EQUAL I11 1
+SMALL I10 5
+#ACT
+MESSAGEBOX 错误提示：现在不是抢庄时间！ 
+MOV M14 0
+BREAK
+
+#IF
+EQUAL I12 0
+#ELSEACT
+MESSAGEBOX 错误提示：现在不是抢庄时间！ 
+MOV M14 0
+BREAK
+
+#IF
+SMALL M14 10
+#ACT
+MESSAGEBOX 错误提示：请输入10以上的数值！
+MOV M14 0
+BREAK
+
+#IF
+LARGE M14 50000
+#ACT
+MESSAGEBOX 错误提示：请输入50000以下的数值！
+MOV M14 0
+BREAK
+
+#IF
+SMALL M14 50001
+LARGE M14 9
+#ACT
+MOV I37 <$STR(M14)>
+DIV I37 10
+MOV M0 <$STR(M14)>
+INC M0 <$STR(I37)>
+#ELSEACT
+MESSAGEBOX 错误提示：非法数据！
+MOV M14 0
+BREAK
+
+#IF
+EQUAL A34 <$USERNAME>
+#ACT
+MESSAGEBOX 错误提示：你目前已经是庄家，无法重复抢庄。
+MOV M14 0
+BREAK
+
+#IF
+CHECKGAMEGOLD < <$STR(M0)>
+#ACT
+MESSAGEBOX 错误提示：你的元宝必须大于「<$STR(M0)>」个元宝才能坐庄！
+MOV M14 0
+BREAK
+
+#IF
+check [365] 1
+#ACT
+MESSAGEBOX 错误提示：非法数据！。
+MOV M14 0
+BREAK
+
+#IF
+EQUAL I19 0
+#ACT
+SET [365] 1
+INC I46 <$STR(M14)>
+MOV I19 <$STR(M14)>
+GAMEGOLD - <$STR(M14)>
+MOV A34 <$USERNAME>
+MOV I10 60
+MOV I11 1
+MOV I47 <$STR(M14)>
+SENDMSG 2 【%S】使用<$STR(M14)>个元宝抢庄。 151 219
+;SENDMSG 0 [抢庄]【%S】掏出<$STR(I19)>元宝喊道:"小弟不才，啥都没有,就是有钱!在此坐庄,谁赞成,谁反对?" 151 0 10 
+;SENDMSG 0 [%S]需要下注的玩家请赶紧到★盟重赌场★进行下注! 151 0 10 
+;SENDMSG 2 天天赌元宝，赚的多赔的少……  151 219
+MAPMOVE B012 9 10
+BREAK
+
+#IF
+LARGE I19 0
+LARGE M14 <$STR(I19)>
+#ACT
+$STR(A34).SET [365] 0
+SET [365] 1
+MOV A0 <$USERNAME>
+$STR(A34).MAPMOVE B012 8 6
+$STR(A34).GAMEGOLD + <$STR(I19)>
+$STR(A34).SENDMSG 7 你的庄被「<$USERNAME>」用「<$STR(M14)>」元宝抢走了!
+DEC I46 <$STR(I19)>
+INC I46 <$STR(M14)>
+MOV I19 <$STR(M14)>
+MOV I47 <$STR(M14)>
+GAMEGOLD - <$STR(M14)>
+SENDMSG 2 【%S】使用<$STR(M14)>个元宝抢去了「<$STR(A34)>」庄。 151 219
+;SENDMSG 0 [抢庄]【%S】掏出<$STR(I19)>元宝喊道:"小弟不才，啥都没有,就是有钱!在此坐庄,谁赞成,谁反对?" 151 0 10 
+;SENDMSG 0 [%S]需要下注的玩家请赶紧到★盟重赌场★进行下注! 151 0 10 
+MOV A34 <$USERNAME>
+MAPMOVE B012 9 10
+BREAK
+#ELSEACT
+MESSAGEBOX 错误提示：你必须出多于【<$STR(I19)>】个元宝才能抢庄。
+MOV M14 0
+BREAK
+
+[@下注押大]
+#IF
+EQUAL I12 1
+LARGE I10 4
+#ELSEACT
+MESSAGEBOX 错误提示：现在不是下注时间！ 
+MOV M14 0
+BREAK
+
+#IF
+EQUAL A34 <$USERNAME>
+#ACT
+MESSAGEBOX 错误提示：你目前是庄家，不能下注！
+BREAK
+
+#IF
+EQUAL S23 大
+#ACT
+MESSAGEBOX 错误提示：你已经下注押了大，不能重复下注！
+BREAK
+
+#IF
+EQUAL S23 小
+#ACT
+MESSAGEBOX 错误提示：你已经下注押了小，不能重复下注！
+BREAK
+
+#IF
+SMALL I47 1
+#ACT
+MESSAGEBOX 错误提示：对不起，目前不能再下注！\否则庄家的本钱会不够赔了。
+MOV M15 0
+BREAK
+
+#IF
+LARGE M17 0
+#ACT
+MESSAGEBOX 错误提示：非法数据！
+BREAK
+#ELSESAY
+庄家姓名：【<$STR(A34)>】　庄家本钱数：【<$STR(I19)>】\
+目前你所拥有的元宝：【<$GAMEGOLD>】……\\
+╔┈┈┈┈┈┈┈┈┈┈┈┈┈┈╗\
+┊<输入你要下注押大的元宝数量：/@@INPUTINTEGER15>┊\
+╚┈┈┈┈┈┈┈┈┈┈┈┈┈┈╝\
+押大总金额：【<$STR(I13)>】　　　　　　　　　　押注时间剩余：<$STR(I10)>秒\
+押小总金额：【<$STR(I14)>】\
+你的下注情况：你下注【<$STR(M17)>】元宝押【<$STR(S23)>】　　<刷新/@MAIN>    <回城/@回城>\
+<历史记录：/@历史>【<$STR(A36)>】\
+
+[@@INPUTINTEGER15]
+#IF
+CHECKGAMEGOLD > 9
+#ACT
+CLOSE
+DELAYGOTO 1 ~INPUTINTEGER15
+#ELSEACT
+MESSAGEBOX 你10个元宝都没有，不能下注！
+MOV M15 0
+BREAK
+
+[~INPUTINTEGER15]
+#IF
+EQUAL I12 1
+LARGE I10 4
+#ELSEACT
+MESSAGEBOX 错误提示：现在不是下注时间！ 
+MOV M14 0
+BREAK
+
+#IF
+EQUAL A34 <$USERNAME>
+#ACT
+MESSAGEBOX 错误提示：你目前已经是庄家，不能下注。
+MOV M15 0
+BREAK
+
+#IF
+EQUAL S23 大
+#ACT
+MESSAGEBOX 错误提示：你已经下注押了大，无法重复下注！
+MOV M15 0
+BREAK
+
+#IF
+EQUAL S23 小
+#ACT
+MESSAGEBOX 错误提示：你已经下注押了小，无法重复下注！
+MOV M15 0
+BREAK
+
+#IF
+SMALL I47 <$STR(M15)>
+#ACT
+MESSAGEBOX 错误提示：对不起，目前你只可以下注【<$STR(I47)>】以下的元宝！\否则庄家的本钱会不够赔了。
+MOV M15 0
+BREAK
+
+#IF
+LARGE M15 25000
+#ACT
+MESSAGEBOX 错误提示：请输入25000以下的数值！
+MOV M15 0
+BREAK
+
+#IF
+SMALL M15 1
+#ACT
+MESSAGEBOX 错误提示：请输入1以上的数值！
+MOV M15 0
+BREAK
+
+#IF
+LARGE M15 0
+SMALL M15 25001
+#ELSEACT
+MESSAGEBOX 错误提示：非法数据！
+MOV M15 0
+BREAK
+
+#IF
+LARGE M17 0
+#ACT
+MESSAGEBOX 错误提示：非法数据！
+BREAK
+
+#IF
+check [365] 1
+#ACT
+MESSAGEBOX 错误提示：非法数据！。
+MOV M14 0
+BREAK
+
+#IF
+CHECKGAMEGOLD > <$STR(M15)>
+#ACT
+MOV S23 大
+SET [365] 1
+DEC I47 <$STR(M15)>
+GAMEGOLD - <$STR(M15)>
+MOV M17 <$STR(M15)>
+INC I13 <$STR(M17)>
+INC I46 <$STR(M17)>
+;SENDMSG 0 【%S】使用<$STR(M15)>个元宝下注押大。 151 219
+BREAK
+#ELSEACT
+MESSAGEBOX 错误提示：你的元宝必须大于「<$STR(M15)>」个元宝才能下注！
+MOV M15 0
+BREAK
+
+[@下注押小]
+#IF
+EQUAL I12 1
+LARGE I10 4
+#ELSEACT
+MESSAGEBOX 错误提示：现在不是下注时间！ 
+MOV M14 0
+BREAK
+
+#IF
+EQUAL A34 <$USERNAME>
+#ACT
+MESSAGEBOX 错误提示：你目前是庄家，不能下注！
+BREAK
+
+#IF
+EQUAL S23 大
+#ACT
+MESSAGEBOX 错误提示：你已经下注押了大，不能重复下注！
+BREAK
+
+#IF
+EQUAL S23 小
+#ACT
+MESSAGEBOX 错误提示：你已经下注押了小，不能重复下注！
+BREAK
+
+#IF
+SMALL I47 1
+#ACT
+MESSAGEBOX 错误提示：对不起，目前不能再下注！\否则庄家的本钱会不够赔了。
+MOV M15 0
+BREAK
+
+#IF
+LARGE M17 0
+#ACT
+MESSAGEBOX 错误提示：非法数据！
+BREAK
+
+#ELSESAY
+庄家姓名：【<$STR(A34)>】　庄家本钱数：【<$STR(I19)>】\
+目前你所拥有的元宝：【<$GAMEGOLD>】……\\
+╔┈┈┈┈┈┈┈┈┈┈┈┈┈┈╗\
+┊<输入你要下注押小的元宝数量：/@@INPUTINTEGER16>┊\
+╚┈┈┈┈┈┈┈┈┈┈┈┈┈┈╝\
+押大总金额：【<$STR(I13)>】　　　　　　　　　　押注时间剩余：<$STR(I10)>秒\
+押小总金额：【<$STR(I14)>】\
+你的下注情况：你下注【<$STR(M17)>】元宝押【<$STR(S23)>】　　<刷新/@MAIN>    <回城/@回城>\
+<历史记录：/@历史>【<$STR(A36)>】\
+
+
+[@@INPUTINTEGER16]
+#IF
+CHECKGAMEGOLD > 9
+#ACT
+CLOSE
+DELAYGOTO 1 ~INPUTINTEGER16
+#ELSEACT
+MESSAGEBOX 错误提示：你10个元宝都没有，不能下注！
+MOV M16 0
+BREAK
+
+[~INPUTINTEGER16]
+#IF
+EQUAL I12 1
+LARGE I10 4
+#ELSEACT
+MESSAGEBOX 错误提示：现在不是下注时间！ 
+MOV M14 0
+BREAK
+
+#IF
+EQUAL A34 <$USERNAME>
+#ACT
+MESSAGEBOX 错误提示：你目前是庄家，不能下注！
+BREAK
+
+#IF
+EQUAL S23 大
+#ACT
+MESSAGEBOX 错误提示：你已经下注押了大，不能重复下注！
+BREAK
+
+#IF
+EQUAL S23 小
+#ACT
+MESSAGEBOX 错误提示：你已经下注押了小，不能重复下注！
+BREAK
+
+#IF
+SMALL I47 <$STR(M16)>
+#ACT
+MESSAGEBOX 错误提示：对不起，目前你只可以下注【<$STR(I47)>】以下的元宝！\否则庄家的本钱会不够赔了。
+MOV M15 0
+BREAK
+
+#IF
+LARGE M16 25000
+#ACT
+MESSAGEBOX 错误提示：请输入25000以下的数值！
+MOV M16 0
+BREAK
+
+#IF
+SMALL M16 1
+#ACT
+MESSAGEBOX 错误提示：请输入1以上的数值！
+MOV M16 0
+BREAK
+
+#IF
+LARGE M16 0
+SMALL M16 25001
+#ELSEACT
+MESSAGEBOX 错误提示：非法数据！
+MOV M16 0
+BREAK
+
+#IF
+LARGE M17 0
+#ACT
+MESSAGEBOX 错误提示：非法数据！
+BREAK
+
+#IF
+check [365] 1
+#ACT
+MESSAGEBOX 错误提示：非法数据！。
+MOV M14 0
+BREAK
+
+#IF
+CHECKGAMEGOLD > <$STR(M16)>
+#ACT
+SET [365] 1
+MOV S23 小
+DEC I47 <$STR(M16)>
+GAMEGOLD - <$STR(M16)>
+INC I46 <$STR(M16)>
+MOV M17 <$STR(M16)>
+INC I14 <$STR(M17)>
+;SENDMSG 0 【%S】使用<$STR(M16)>个元宝下注押小。 151 219
+#ELSEACT
+MESSAGEBOX 错误提示：你的元宝必须大于「<$STR(M16)>」个元宝才能下注！
+MOV M14 0
+BREAK
+
+[@游戏规则]
+#IF
+CheckLevelEx > 0
+#ACT
+MESSAGEBOX 庄家坐庄后，其他玩家可下注，两分钟后三个骰子随机出现，\点数总和小于11代表小，点数总和大于10代表大，三个点数相同\代表豹子，每次庄家开盘后，无论输赢都不收任何费用。\押大赢大，押小赢小，豹子庄家通吃，系统不收任何税务。\正在坐庄或已下注的玩家不要下线或离开本地图，\不然产生元宝损失全部自已承担。\如果出现几人同时押一边，导致庄家不够赔爆庄，\则为防止刷元宝，本局作废，退回赌金。
+BREAK
+
+[@ISINFILTERLIST]
+#IF
+CheckLevelEx > 0
+#ACT
+MESSAGEBOX [错误]：输入数据中包含了非法字符，请重新编辑！
+BREAK

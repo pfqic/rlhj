@@ -1,0 +1,139 @@
+[@MAIN]
+#IF
+CHECKLEVELEX > 54
+#ACT
+#SAY
+╔───────────────────────────╗  \
+┊ <COLOR=clLime 装备暴击服务>   <提示:装备暴击服务最高升3点不破碎>      ┊\
+├───────────────────────────┤\
+┊ [<升级武器/@武器>] ┊ [<升级勋章/@勋章>] ┊ [<升级头盔/@头盔>] ┊ [<升级腰带/@腰带>] ┊\
+┊ [<升级手镯/@手镯>] ┊ [<升级戒指/@戒指>] ┊ [<升级盔甲/@盔甲>] ┊ [<升级鞋子/@鞋子>] ┊\
+├───────────────────────────┤\
+┊                      [<暴击使者>]                      ┊\
+┊   <COLOR=clAqua 不建议使用暴击、成功率30%.！500金刚石加一次！！ >   ┊\
+╚───────────────────────────╝\
+
+#ELSEACT
+MESSAGEBOX 请55级后再来查看。
+
+
+[@腰带]
+#if
+CHECKGAMEDIAMOND > 499
+CHECKITEMADDVALUE 10 8 < 3
+#act
+GAMEDIAMOND - 500
+UPGRADEITEMEX 10 8 4 1 0
+#ELSESAY
+升级未成功\
+1.你的腰带已经增加了3点爆击几率\
+2.你身上的金刚石不足500....\
+
+
+[@鞋子]
+#if
+CHECKGAMEDIAMOND > 499
+CHECKITEMADDVALUE 11 8 < 3
+#act
+GAMEDIAMOND - 500
+UPGRADEITEMEX 11 8 4 1 0
+#ELSESAY
+升级未成功\
+1.你的鞋子已经增加了3点爆击几率\
+2.你身上的金刚石不足500....\
+
+
+[@盔甲]
+#if
+CHECKGAMEDIAMOND > 499
+CHECKITEMADDVALUE 0 8 < 3
+#act
+GAMEDIAMOND - 500
+UPGRADEITEMEX 0 8 4 1 0
+#ELSESAY
+升级未成功\
+1.你的盔甲已经增加了3点爆击几率\
+2.你身上的金刚石不足500....\
+
+
+[@戒指]
+#if
+CHECKGAMEDIAMOND > 499
+CHECKITEMADDVALUE 7 8 < 3
+#act
+GAMEDIAMOND - 500
+UPGRADEITEMEX 7 8 4 1 0
+#ELSESAY
+升级未成功\
+1.你的右戒指已经增加了3点爆击几率\
+2.你身上的金刚石不足500....\
+3.你没有佩带右戒指\
+
+[@手镯]
+#if
+CHECKGAMEDIAMOND > 499
+CHECKITEMADDVALUE 5 8 < 3
+#act
+GAMEDIAMOND - 500
+UPGRADEITEMEX 5 8 4 1 0
+#ELSESAY
+升级未成功\
+1.你的右手镯已经增加了3点爆击几率\
+2.你身上的金刚石不足500....\
+3.你的右手没有佩带手镯\
+
+
+[@勋章]
+#if
+CHECKGAMEDIAMOND > 499
+CHECKITEMADDVALUE 2 8 < 3
+#act
+GAMEDIAMOND - 500
+UPGRADEITEMEX 2 8 4 1 0
+#ELSESAY
+升级未成功\
+1.你的勋章已经增加了3点爆击几率\
+2.你身上的金刚石不足500....\
+
+
+[@头盔]
+#if
+CHECKGAMEDIAMOND > 499
+CHECKITEMADDVALUE 4 8 < 3
+#act
+GAMEDIAMOND - 500
+UPGRADEITEMEX 4 8 4 1 0
+
+#ELSESAY
+升级未成功\
+1.你的头盔已经增加了3点爆击几率\
+2.你身上的金刚石不足500....\
+
+
+[@项链]
+#if
+CHECKGAMEDIAMOND > 499
+CHECKITEMADDVALUE 3 8 < 3
+#act
+GAMEDIAMOND - 500
+UPGRADEITEMEX 3 8 4 1 0
+
+#ELSESAY
+升级未成功\
+1.你的项链已经增加了3点爆击几率\
+2.你身上的金刚石不足500....\
+
+
+
+[@武器]
+#if
+CHECKGAMEDIAMOND > 499
+CHECKITEMADDVALUE 1 8 < 3
+#act
+GAMEDIAMOND - 500
+UPGRADEITEMEX 1 8 4 1 0
+
+#ELSESAY
+升级未成功\
+1.你的武器已经增加了3点爆击几率\
+2.你身上的金刚石不足500....\

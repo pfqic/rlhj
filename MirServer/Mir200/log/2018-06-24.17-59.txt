@@ -1,0 +1,15 @@
+2018-6-24 17:59:15 地图文件: D:\MirServer\Mir200\Map\txxf1.map 未找到！
+2018-6-24 17:59:16 Access violation at address 0780212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 17:59:18 Access violation at address 0780212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 17:59:20 Access violation at address 0780212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 17:59:22 Access violation at address 0780212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 17:59:25 Access violation at address 0780212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 17:59:27 Access violation at address 0780212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 17:59:29 Access violation at address 0780212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 17:59:31 Access violation at address 0780212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 17:59:33 Access violation at address 0780212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 17:59:35 Access violation at address 0780212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 17:59:37 Access violation at address 0780212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 17:59:39 Access violation at address 0780212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 17:59:41 Access violation at address 0780212C in module 'mSystemModule.dll'. Read of address 00001798
+2018-6-24 17:59:43 Access violation at address 0780212C in module 'mSystemModule.dll'. Read of address 00001798

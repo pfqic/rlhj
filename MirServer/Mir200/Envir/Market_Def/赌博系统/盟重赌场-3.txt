@@ -1,0 +1,24 @@
+()
+%100
+[@main]
+╭<COLOR=clLime ●>╮ <COLOR=clRED ◤>━━━━━━━━━━━━━━━━━━━━━━━━<COLOR=clRED ◥>\
+<COLOR=clLime ●><COLOR=clFuchsia 盟><COLOR=clLime ●> ┊          ≯ <COLOR=clLime 胜 负 天 定 输 赢 自 愿> ≮         ┊\
+├○┤ ┊                                                ┊\
+<COLOR=clLime ●><COLOR=clSkyBlue 重><COLOR=clLime ●> ┊<COLOR=clYellow 系统做庄：><COLOR=clAqua 由系统自动出点数，玩家可压大中小等点数>┊\
+├○┤ ┊                                                ┊\
+<COLOR=clLime ●><COLOR=clYellow 赌><COLOR=clLime ●> ┊<COLOR=clYellow 玩家做庄：><COLOR=clAqua 玩家自己坐庄，与其它玩家赌博，更刺激！>┊\
+├○┤ ┊                                                ┊\
+<COLOR=clLime ●><COLOR=clAqua 城><COLOR=clLime ●> ┊<COLOR=clYellow 诈 金 花：><COLOR=clAqua 两个玩家相互下注赌博！>  <确定进入赌城/@move>  ┊\
+╰<COLOR=clLime ●>╯ <COLOR=clRED ◣>━━━━━━━━━━━━━━━━━━━━━━━━<COLOR=clRED ◢>\
+
+[@move]
+#if
+CHECKHEROONLINE
+#ACT
+MESSAGEBOX 为了保持场内干净，不能带英雄进入！\
+BREAK
+#ELSEACT
+SETOFFLINEPLAY OFF
+KILLSLAVE SELF 100 100 300 * 10 1
+mapMOVE B012 5 11
+BREAK

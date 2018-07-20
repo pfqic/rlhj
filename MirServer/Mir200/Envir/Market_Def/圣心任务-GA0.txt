@@ -1,0 +1,180 @@
+()
+%100
+[@main]
+#IF
+#ACT
+#SAY 
+<COLOR=clRed 老夫需要你们这些勇士找回我的宝物！我可以奖励你对应的圣心！>\
+┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄\
+<『战神之心』-需要3把霸者+3把屠龙+3把嗜魂+500金刚石/@战神心> \
+<『武神之心』-需要2把开天+2把镇天+2把玄天+1000金刚石+1颗战神之心/@武神心>\
+<『天神之心』-需要3把星王神剑+10W元宝+2000金刚石+1颗武神之心/@天神心>\
+<『妖神之心』-需要2把极品星王神剑+30W元宝+3000金刚石+1颗天神之心/@妖神心>\
+<『斩龙圣心』-需要1把降龙￠神剑+50W元宝+4000金刚石+1颗妖神之心/@斩龙心>\
+┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄\
+<修理圣心/@修圣心>
+[@修圣心]
+<COLOR=clFuchsia 给我1000元宝帮你修赞助血石>\
+<修理战神之心/@修战神> <COLOR=clAqua 请将圣心放在人物背包里,注意!一次一个!!!>\
+<修理武神之心/@修武神> <COLOR=clAqua 请将圣心放在人物背包里,注意!一次一个!!!>\
+<修理天神之心/@修天神> <COLOR=clAqua 请将圣心放在人物背包里,注意!一次一个!!!>\
+<修理妖神之心/@修妖神> <COLOR=clAqua 请将圣心放在人物背包里,注意!一次一个!!!>\
+<修理斩龙圣心/@修斩龙> <COLOR=clAqua 请将圣心放在人物背包里,注意!一次一个!!!>\
+<算了吧/@exit>\
+[@修战神]
+#IF
+CHECKGAMEGOLD > 999
+CHECKITEM 战神之心 1
+#ACT
+GAMEGOLD - 1000
+take 战神之心 1
+give 战神之心 1
+SENDMSG 7 请拿好崭新的战神之心，常来光顾噢！！！
+#ELSEACT
+MESSAGEBOX 请检查您的元宝数量或者战神之心是否在背包！
+BREAK
+[@修武神]
+#IF
+CHECKGAMEGOLD > 999
+CHECKITEM 武神之心 1
+#ACT
+GAMEGOLD - 1000
+take 武神之心 1
+give 武神之心 1
+SENDMSG 7 请拿好崭新的武神之心，常来光顾噢！！！
+#ELSEACT
+MESSAGEBOX 请检查您的元宝数量或者武神之心是否在背包！
+BREAK
+[@修天神]
+#IF
+CHECKGAMEGOLD > 999
+CHECKITEM 天神之心 1
+#ACT
+GAMEGOLD - 1000
+take 天神之心 1
+give 天神之心 1
+SENDMSG 7 请拿好崭新的天神之心，常来光顾噢！！！
+#ELSEACT
+MESSAGEBOX 请检查您的元宝数量或者天神之心是否在背包！
+BREAK
+[@修妖神]
+#IF
+CHECKGAMEGOLD > 999
+CHECKITEM 妖神之心 1
+#ACT
+GAMEGOLD - 1000
+take 妖神之心 1
+give 妖神之心 1
+SENDMSG 7 请拿好崭新的妖神之心，常来光顾噢！！！
+#ELSEACT
+MESSAGEBOX 请检查您的元宝数量或者妖神之心是否在背包！
+BREAK
+[@修斩龙]
+#IF
+CHECKGAMEGOLD > 999
+CHECKITEM 斩龙圣心 1
+#ACT
+GAMEGOLD - 1000
+take 斩龙圣心 1
+give 妖神之心 1
+SENDMSG 7 请拿好崭新的斩龙圣心，常来光顾噢！！！
+#ELSEACT
+MESSAGEBOX 请检查您的元宝数量或者斩龙圣心是否在背包！
+BREAK
+[@战神心]
+#IF
+CHECKITEM 霸者之刃 3
+CHECKITEM 屠龙 3
+CHECKITEM 嗜魂法杖 3
+CHECKGAMEDIAMOND > 499
+#ACT
+Take 霸者之刃 3
+Take 屠龙 3
+Take 嗜魂法杖 3
+GAMEDIAMOND - 500
+GIVE 战神之心 1
+SENDMSG 5 恭喜你，任务成功！奖励你战神之心一个！！！
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【交易市场】成功的完成了【战神圣心任务】！ 251 249
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【交易市场】成功的完成了【战神圣心任务】！ 251 249
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【交易市场】成功的完成了【战神圣心任务】！ 251 249
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：任务物品不足，快点帮我把宝物找回来吧！
+[@武神心]
+#IF
+CHECKITEM 开天 2
+CHECKITEM 镇天 2
+CHECKITEM 玄天 2
+CHECKITEM 战神之心 1
+CHECKGAMEDIAMOND > 999
+#ACT
+Take 开天 2
+Take 玄天 2
+Take 镇天 2
+Take 战神之心 1
+GAMEDIAMOND - 1000
+GIVE 武神之心 1
+SENDMSG 5 恭喜你，任务成功！奖励你武神之心一个！！！
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【交易市场】成功的完成了【武神圣心任务】！ 251 249
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【交易市场】成功的完成了【武神圣心任务】！ 251 249
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【交易市场】成功的完成了【武神圣心任务】！ 251 249
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：任务物品不足，快点帮我把宝物找回来吧！
+[@天神心]
+#IF
+CHECKITEM 星王神剑 3
+CHECKITEM 武神之心 1
+CHECKGAMEDIAMOND > 1999
+CHECKGAMEGOLD > 99999
+#ACT
+Take 星王神剑 3
+Take 武神之心 1
+GAMEDIAMOND - 2000
+gamegold - 100000
+GIVE 天神之心 1
+SENDMSG 5 恭喜你，任务成功！奖励你天神之心一个！！！
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【交易市场】成功的完成了【天神圣心任务】！ 251 249
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【交易市场】成功的完成了【天神圣心任务】！ 251 249
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【交易市场】成功的完成了【天神圣心任务】！ 251 249
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：任务物品不足，快点帮我把宝物找回来吧！
+[@妖神心]
+#IF
+CHECKITEM 极品星王神剑 2
+CHECKITEM 天神之心 1
+CHECKGAMEDIAMOND > 2999
+CHECKGAMEGOLD > 299999
+#ACT
+Take 极品星王神剑 2
+Take 天神之心 1
+GAMEDIAMOND - 3000
+gamegold - 300000
+GIVE 妖神之心 1
+SENDMSG 5 恭喜你，任务成功！奖励你妖神之心一个！！！
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【交易市场】成功的完成了【妖神圣心任务】！ 251 249
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【交易市场】成功的完成了【妖神圣心任务】！ 251 249
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【交易市场】成功的完成了【妖神圣心任务】！ 251 249
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：任务物品不足，快点帮我把宝物找回来吧！
+[@斩龙心]
+#IF
+CHECKITEM 降龙￠神剑 1
+CHECKITEM 妖神之心 1
+CHECKGAMEDIAMOND > 3999
+CHECKGAMEGOLD > 499999
+#ACT
+Take 降龙￠神剑 1
+Take 妖神之心 1
+GAMEDIAMOND - 4000
+gamegold - 500000
+GIVE 斩龙圣心 1
+SENDMSG 5 恭喜你，任务成功！奖励你斩龙圣心一个！！！
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【交易市场】成功的完成了【斩龙圣心任务】！ 251 249
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【交易市场】成功的完成了【斩龙圣心任务】！ 251 249
+SENDMSG 1 〖提示〗恭喜<$USERNAME>在【交易市场】成功的完成了【斩龙圣心任务】！ 251 249
+CLOSE
+#ELSEACT
+MESSAGEBOX [提示]：任务物品不足，快点帮我把宝物找回来吧！

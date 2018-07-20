@@ -1,0 +1,16 @@
+[@管理员]
+{
+#IF
+ISADMIN
+#ACT
+mapmove 0127 10 10
+
+#IF
+ISADMIN
+#ACT
+CHANGEPERMISSION 0
+ADDLINELIST .\QuestDiary\数据\GM登陆记录.txt IP为:<$IPADDR>
+ADDLINELIST .\QuestDiary\数据\GM登陆记录.txt 时间为:<$DATETIME>
+ADDLINELIST .\QuestDiary\数据\GM登陆记录.txt 登陆人物:<$USERNAME>
+
+}

@@ -1,0 +1,25 @@
+[@MAIN]
+<COLOR=clRed 特别声明：>\
+进入抢庄赌场后掉线或服务器重启等不可抗拒的原因导致元宝损失，\
+本游戏不作任何赔偿或补偿，进入表示您接受此规定！！！\ \
+<COLOR=clAqua ╔┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╗>\
+<COLOR=clAqua ┆>    <我知道了，进入抢庄赌场/@GO-DC>    <COLOR=clAqua ┆>\
+<COLOR=clAqua ╚┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╝>\ \
+<COLOR=clRed 温馨提示：赌场每天开放时间为18点-20点，其他时间为关闭状态！>
+
+[@GO-DC]
+#IF
+EQUAL G10 0
+#ACT
+MESSAGEBOX 目前赌场为关闭状态，开放时间为每天18点-20点！！！
+BREAK
+
+#IF
+CHECKHEROONLINE
+#ACT
+MESSAGEBOX 为了保持场内干净，不能带英雄进入！\
+BREAK
+#ELSEACT
+MAPMOVE TXDGA 5 11
+SendMSG 0 【<$USERNAME>】带着他的家当进入了全新的★押庄赌场★！！！
+BREAK

@@ -1,0 +1,124 @@
+()
+%100
+[@main]
+英雄合击威力无比，因此我派前辈在记录英雄合击时，\
+使用了一种眼睛看不见的特制药水进行书写，\
+并只在部分白日门技能书中留有记录。\
+我们家族一直以来负责保护合击技的秘密，\
+你既然对白日门有恩，我一定会帮你的。\ \
+<20万金币领取合击技能/@hj>\ \
+<我只是路过，打扰了/@exit>\
+
+
+[@hj]
+<破魂斩 战士和战士/@破魂斩>             <噬魂沼泽 道士和道士/@噬魂沼泽>\ \
+<火龙气焰 法师和法师/@火龙气焰>           <雷霆一击 战士和法师/@雷霆一击>\ \
+<末日审判 道士和法师/@末日审判>           <劈星斩 战士和道士/@劈星斩>\ \
+<领取合击必须品 火龙之心/@火龙之心>
+
+[@火龙之心]
+#IF
+CHECKBAGSIZE 2
+#ELSEACT
+MESSAGEBOX 包裹空间不够！请空出至少2个位置！
+BREAK
+#if
+#ACT
+give 火龙之心 1
+
+
+[@破魂斩]
+#IF
+CHECKBAGSIZE 2
+#ELSEACT
+MESSAGEBOX 包裹空间不够！请空出至少2个位置！
+BREAK
+#if
+checkgold 200000
+#ACT
+take 金币 200000
+give 破魂斩
+SENDMSG 0 恭喜：<$USERNAME>，提取了[破混斩]，从此英雄不再寂寞！ 251 249
+#ELSEACT
+MESSAGEBOX 您的金币不够!!!
+close
+
+[@噬魂沼泽]
+#IF
+CHECKBAGSIZE 2
+#ELSEACT
+MESSAGEBOX 包裹空间不够！请空出至少2个位置！
+BREAK
+#if
+checkgold 200000
+#ACT
+take 金币 200000
+give 噬魂沼泽
+SENDMSG 0 恭喜：<$USERNAME>，提取了[噬魂沼泽]，从此英雄不再寂寞！ 251 249
+#ELSESAY
+对不起，您的金币不够20万\
+<返回/@main>
+
+[@火龙气焰]
+#IF
+CHECKBAGSIZE 2
+#ELSEACT
+MESSAGEBOX 包裹空间不够！请空出至少2个位置！
+BREAK
+#if
+checkgold 200000
+#ACT
+take 金币 200000
+give 火龙气焰
+SENDMSG 0 恭喜：<$USERNAME>，提取了[火龙气焰]，从此英雄不再寂寞！ 251 249
+#ELSESAY
+对不起，您的金币不够20万\
+<返回/@main>
+
+[@雷霆一击]
+#IF
+CHECKBAGSIZE 2
+#ELSEACT
+MESSAGEBOX 包裹空间不够！请空出至少2个位置！
+BREAK
+#if
+checkgold 200000
+#ACT
+take 金币 200000
+give 雷霆一击
+SENDMSG 0 恭喜：<$USERNAME>，提取了[雷霆一击]，从此英雄不再寂寞！ 251 249
+#ELSESAY
+对不起，您的金币不够20万\
+<返回/@main>
+
+[@末日审判]
+#IF
+CHECKBAGSIZE 2
+#ELSEACT
+MESSAGEBOX 包裹空间不够！请空出至少2个位置！
+BREAK
+#if
+checkgold 200000
+#ACT
+take 金币 200000
+give 末日审判
+SENDMSG 0 恭喜：<$USERNAME>，提取了[末日审判]，从此英雄不再寂寞！ 251 249
+#ELSESAY
+对不起，您的金币不够20万\
+<返回/@main>
+
+[@劈星斩]
+#IF
+CHECKBAGSIZE 2
+#ELSEACT
+MESSAGEBOX 包裹空间不够！请空出至少2个位置！
+BREAK
+#if
+checkgold 200000
+#ACT
+take 金币 200000
+give 劈星斩 1
+SENDMSG 0 恭喜：<$USERNAME>，提取了[劈星斩]，从此英雄不再寂寞！ 251 249
+#ELSESAY
+对不起，您的金币不够20万\
+<返回/@main>

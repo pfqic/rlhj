@@ -1,0 +1,43 @@
+[@main]
+╔───────────────────────────╗  \
+┊ <COLOR=clLime 激情泡点：><玩家提供免费的升级渠道，不花钱也能顶级>     ┊\
+├───────────────────────────┤\
+┊[<活动经验>]  <COLOR=clYellow 进入地图，每秒获得1亿经验，获得大量元宝>   ┊\
+┊[<COLOR=clAqua 活动时间>] <COLOR=clYellow 每天10:45※13:45※16:45※19:45※22:45准时开放>       ┊\
+├───────────────────────────┤\
+┊[<COLOR=clYellow 进入条件>] <COLOR=clFuchsia 免费进入，每次开放5分钟>                    ┊\
+┊                   <※※进入激情泡点※※/@激情泡点>               ┊\
+╚───────────────────────────╝\
+[@激情泡点]
+#IF
+HOUR 10 10
+MIN  45 50
+#ACT
+MAPMOVE jqpd
+SENDMSG 0 『<$USERNAME>』进入了激情泡点.,想要满等级的兄弟，赶紧跟上！
+#IF
+HOUR 13 13
+MIN  45 50
+#ACT
+MAPMOVE jqpd
+SENDMSG 0 『<$USERNAME>』进入了激情泡点.,想要满等级的兄弟，赶紧跟上！
+#IF
+HOUR 16 16
+MIN  45 50
+#ACT
+MAPMOVE jqpd
+SENDMSG 0 『<$USERNAME>』进入了激情泡点.,想要满等级的兄弟，赶紧跟上！
+#IF
+HOUR 19 19
+MIN  45 50
+#ACT
+MAPMOVE jqpd
+SENDMSG 0 『<$USERNAME>』进入了激情泡点.,想要满等级的兄弟，赶紧跟上！
+#IF
+HOUR 22 22
+MIN  45 50
+#ACT
+MAPMOVE jqpd
+SENDMSG 0 『<$USERNAME>』进入了激情泡点.,想要满等级的兄弟，赶紧跟上！
+#elseact
+messagebox 活动还没开始呢！升级飞快，请耐心等待！

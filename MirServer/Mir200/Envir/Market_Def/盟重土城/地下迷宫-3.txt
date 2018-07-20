@@ -1,0 +1,24 @@
+[@MAIN]
+前路将会异常凶险，最好不要孤身犯险.....\
+听去过地下宫殿的勇士说，最近地下宫殿又有新的恶魔出现！\ \
+<前往地下迷宫/@前往地下><COLOR=clLime   免费中！>\
+<返回/@MAIN>
+
+[@检测队前往地下]
+#IF
+ISGROUPMASTER
+#ACT
+DELAYGOTO 1 @组队前往地下
+#ELSESAY
+你不是所在队伍的队长，不能进入
+
+
+[@前往地下]
+#IF
+CHECKLEVELEX > 28
+#ACT
+MAPMOVE   T1061A
+SENDMSG 0  玛法勇士[<$USERNAME>]进入了地下迷宫打装备炼级去了！ 250  0
+BREAK
+#ELSESAY
+

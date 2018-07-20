@@ -1,0 +1,21 @@
+[@main]
+#say
+╔━━━━━━╗ ╔━━━━━━━━━━━━━━━━━━━╗　\
+┃<★><COLOR=clFuchsia 玄妖卍魔殿><★> ┃<COLOR=clLime 主要BOSS：如龍战帝、如龍道帝，如龍魔帝>┃　\
+┃------------┃ ┃<COLOR=clFuchsia 怪物刷新：终极90分钟，次级60分钟>　　  ┃　\
+┃↘<COLOR=clLime ━━━━>↙┃ ┃<COLOR=clLime 怪物爆率：本服所有装备>　　　          ┃　\
+┃<COLOR=clLime ┃><点击进入/@玄妖卍魔殿><COLOR=clLime ┃>┃ ┃<COLOR=clFuchsia 挑战难度：><★★★>　<COLOR=clLime 爆率指数：><★★★★★>┃　\
+┃↗<COLOR=clLime ━━━━>↖┃ ╚━━━━━━━━━━━━━━━━━━━╝　\
+┃------------┃ ╔━━━━━━━━━━━━━━━━━━━╗　\
+┃<★><COLOR=clFuchsia 传送条件><★>┃ ┃进入需要：等级130级+顶级赞助 + 100金刚石　 　　 　 \
+╚━━━━━━╝ ╚━━━━━━━━━━━━━━━━━━━╝ 
+
+[@玄妖卍魔殿]
+#if
+CHECKLEVELEX > 129
+CHECKVAR HUMAN 消费积分 > 10
+CHECKGAMEDIAMOND > 99
+#act
+mapmove zjsl1
+#elseact
+messagebox  你没有10个赞助积分或者没有100个金刚石或者你没有130级！暂时无法进入！

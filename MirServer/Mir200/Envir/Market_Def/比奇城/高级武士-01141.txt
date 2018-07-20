@@ -1,0 +1,10 @@
+[@main]
+#IF
+CHECKRANGEMONCOUNT 01141 10 10 50 > 0
+#SAY
+哦，魔鬼在作孽，快去把它们消除掉。\ \
+<关闭/@exit>
+#ELSEACT
+MAPMOVE 0114
+set [311] 1
+BREAK

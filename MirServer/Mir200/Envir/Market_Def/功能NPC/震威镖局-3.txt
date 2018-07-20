@@ -1,0 +1,23 @@
+[@MAIN]
+<COLOR=clSkyblue ╔┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╗>\
+<COLOR=clSkyblue ┆><COLOR=clLime ☆震威镖局☆>        <[进入押镖之路]/@GOLB>        <COLOR=clLime ☆震威镖局☆><COLOR=clSkyblue ┆>\
+<COLOR=clSkyblue ╚┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╝>\
+<COLOR=clRed ①：押镖时间为每天的19点至24点，每人一天可接三次任务>\
+<COLOR=clFuchsia ②：随机分配普通、高级、超级、无敌等镖车，奖励不一样>\
+<COLOR=clRed ③：押镖途中下线或者任务超过15分钟视为失败，没收押金>\
+<COLOR=clFuchsia ④：接受押镖任务需要1000元宝做押金，完成后退回全部押金>\
+<COLOR=clRed ⑤：押镖途中镖车被仇人损坏视为失败，仇人将获得1000元宝>\
+　  <COLOR=clAqua ((请把镖车拉运到：押镖之路(二)的镖务总管处换取酬劳))>\
+
+[@GOLB]
+#IF
+CHECKLEVELEX > 39
+#ACT
+give 回城卷 1
+MAPMOVE YB01 80 81
+SENDMSG 0 〖%s〗进入〖押镖之路〗嘴里念叨着：老子天下第一！准备大摇大摆的拉镖了！ 255 0
+SENDMSG 0 〖%s〗进入〖押镖之路〗嘴里念叨着：老子天下第一！准备大摇大摆的拉镖了！ 255 0
+break
+#ELSEACT
+MESSAGEBOX 40级以上玩家才可以进入此地图!
+break

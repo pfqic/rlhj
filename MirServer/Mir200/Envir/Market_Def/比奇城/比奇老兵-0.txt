@@ -1,0 +1,179 @@
+[@main]
+听说虹魔教主复活了!他的领地“封魔谷”也已重现大陆!\
+好象封魔谷的入口在沃玛森林附近\
+不过那么邪恶的地方,你真的打算去吗?\ \
+<城市传送/@move1>\
+<关闭/@exit>\
+
+[@入口传送]
+<$SERVERNAME>防盛大1.80极品星王版\
+┄┄┄┄┄┄┄┄┄┄┄<COLOR=clLime 入口传送地图>┄┄┄┄┄┄┄┄┄┄┄\
+<矿区洞口/@矿区洞口>        <蜈蚣洞口/@蜈蚣洞口>        <沃玛洞口/@沃玛洞口>\
+<石墓洞口/@石墓洞口>        <祖玛洞口/@祖玛洞口>        <封魔洞口/@封魔洞口>\
+<牛魔洞口/@牛魔洞口>        <骨魔洞口/@骨魔洞口>        <尸魔洞口/@尸魔洞口>\
+<赤月洞口/@赤月洞口>\
+┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄\
+
+[@矿区洞口]
+#IF
+checkgold 1
+#ACT
+mapmove 0 659 218
+take 金币 1
+break
+#ELSESAY
+需要1金币用来支付我们的服务费用!\
+
+[@蜈蚣洞口]
+#IF
+checkgold 1
+#ACT
+take 金币 5000
+mapmove 3 142 92
+break
+#ELSESAY
+需要1金币用来支付我们的服务费用!\
+
+[@沃玛洞口]
+#IF
+checkgold 1
+#ACT
+take 金币 1
+mapmove D021 71 69
+break
+#ELSESAY
+需要1金币用来支付我们的服务费用!\
+
+[@石墓洞口]
+#IF
+checkgold 1000
+#act
+take 金币 1000
+mapmove D710 27 20
+#ELSESAY
+你没有1000金币用来支付我们的服务费用!\
+
+[@赤月洞口]
+#IF
+checkgold 5000
+#act
+take 金币 5000
+mapmove 12 89 13
+#ELSESAY
+你没有5000金币用来支付我们的服务费用!\
+
+[@祖玛洞口]
+#IF
+checkgold 5000
+#act
+take 金币 5000
+mapmove 0157 17 17
+#ELSESAY
+你没有5000金币用来支付我们的服务费用!\
+
+[@牛魔洞口]
+#IF
+checkgold 5000
+#act
+take 金币 5000
+mapmove 5 658 463
+#ELSESAY
+你没有5000金币用来支付我们的服务费用!\
+
+[@尸魔洞口]
+#IF 
+checkgold 5000
+#ACT
+take 金币 5000
+mapmove 5 522 615
+break 
+#ELSESAY 
+你没有5000金币用来支付我们的服务费用!\
+
+[@骨魔洞口]
+#IF 
+checkgold 5000
+#ACT
+take 金币 5000
+mapmove 5 545 131
+break 
+#ELSESAY 
+你没有5000金币用来支付我们的服务费用!\
+
+[@封魔洞口]
+#IF 
+checkgold 5000
+#ACT
+take 金币 5000
+mapmove 4 60 71
+break 
+#ELSESAY 
+你没有5000金币用来支付我们的服务费用!\
+
+
+[@move1]
+不要相信什么凌波微步,其实这个东西很\
+简单,只要你付钱,什么问题不能解决呢?\
+来吧,小伙子这个世界充满危险,让我送你一程吧!\
+<向毒蛇山谷移动/@毒蛇>\
+<向盟重省移动/@盟重>\
+<向比奇省移动/@比奇>\
+<向封魔谷移动/@封魔>\
+<向白日门移动/@白日>\
+<返 回/@Main>
+
+[@毒蛇]
+#IF
+checkgold 1
+#ACT
+take 金币 1
+mapmove 2 500 480
+break
+#ELSESAY
+你没有1金币用来支付我们的服务费用!\
+请努力赚钱哦:)\
+
+[@盟重]
+#IF
+checkgold 1
+#ACT
+take 金币 1
+mapmove 3 332 332
+break
+#ELSESAY
+你没有1金币用来支付我们的服务费用!\
+请努力赚钱哦:)\
+
+[@比奇]
+#IF
+checkgold 1
+#ACT
+take 金币 1
+mapmove 0 330 270
+break
+#ELSESAY
+你没有1金币用来支付我们的服务费用!\
+请努力赚钱哦:)\
+
+[@封魔]
+#IF
+checkgold 1
+#ACT
+take 金币 1
+mapmove 4 242 202
+break
+#ELSESAY
+你没有1金币用来支付我们的服务费用!\
+请努力赚钱哦:)\
+
+[@白日]
+#IF
+checkgold 1
+#ACT
+take 金币 1
+mapmove 11 177 324
+break
+#ELSESAY
+你没有1金币用来支付我们的服务费用!\
+请努力赚钱哦:)\
+

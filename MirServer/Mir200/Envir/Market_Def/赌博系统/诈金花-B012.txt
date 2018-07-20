@@ -1,0 +1,156 @@
+[@MAIN]
+#IF
+EQUAL A21
+#SAY
+╔┈┈┈┈┈┈┈┈┈┈┈┈┬┈┬┈┈┈┈┈┈┈┈┈┈┈┈╗\
+┊　　<COLOR=clRed 小赌可以怡情养性>　　┊▓┊　　<COLOR=clRed 大赌必定劳心伤神>　　┊\
+├────────────┤<开/@CJ>├────────────┤\
+┊<COLOR=clLime 每人摸三张牌，按照牌型排>┊<始/@CJ>┊<COLOR=clLime 牌点中，2为最小，A为最大>┊\
+┊<COLOR=clLime 列><COLOR=clRed 豹子>><COLOR=clRed 顺金>><COLOR=clRed 金花>><COLOR=clRed 顺子>><COLOR=clRed 对>┊<诈/@CJ>┊<COLOR=clLime 其它牌从小到大依次为3到K>┊\
+┊<COLOR=clRed 子>><COLOR=clRed 散牌>><COLOR=clRed 特殊><COLOR=clLime ，特殊牌型比>┊<金/@CJ>┊<COLOR=clLime 花色:><COLOR=clRed 红桃>><COLOR=clRed 黑桃>><COLOR=clRed 方块>><COLOR=clRed 梅花>┊\
+┊<COLOR=clLime 豹子大，比其它牌型都要小>┊<花/@CJ>┊<COLOR=clLime 开牌按照点数和花色论输赢>┊\
+┊▓▓▓▓▓▓▓▓▓▓▓▓┊▓┊▓▓▓▓▓▓▓▓▓▓▓▓┊\
+╚┈┈┈┈┈┈┈┈┈┈┈┈┴┈┴┈┈┈┈┈┈┈┈┈┈┈┈╝\ \
+┌┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┐\
+┊<COLOR=clRed 每把下注为1000元宝，看牌后下注加倍为2000元宝。>　　　　┊\
+┊<COLOR=clRed 当你的对手拥有的元宝少于当次下注数时，系统将自动开牌。>┊\
+┊<COLOR=clRed 当下注总额超过100000元宝时，系统也将自动开牌。>　　　　┊\
+┊<COLOR=clRed 有两名玩家加入游戏后，系统将在10秒后自动开始发牌。>　　┊\
+┊<COLOR=clRed 如果有一方中途掉线，将算作自动认输，赌金归对方所有。>　┊\
+┊<COLOR=clRed 系统将收取赢得全部赌金的那一方百分之十的手续费。>　　　┊\
+└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┘\
+【<COLOR=clRed 目前参与玩家一>：<$STR(A21)>】\
+【<COLOR=clRed 目前参与玩家二>：<$STR(A22)>】\
+#ACT
+BREAK
+
+#IF
+EQUAL A22
+#SAY
+╔┈┈┈┈┈┈┈┈┈┈┈┈┬┈┬┈┈┈┈┈┈┈┈┈┈┈┈╗\
+┊　　<COLOR=clRed 小赌可以怡情养性>　　┊▓┊　　<COLOR=clRed 大赌必定劳心伤神>　　┊\
+├────────────┤<开/@CJ>├────────────┤\
+┊<COLOR=clLime 每人摸三张牌，按照牌型排>┊<始/@CJ>┊<COLOR=clLime 牌点中，2为最小，A为最大>┊\
+┊<COLOR=clLime 列><COLOR=clRed 豹子>><COLOR=clRed 顺金>><COLOR=clRed 金花>><COLOR=clRed 顺子>><COLOR=clRed 对>┊<诈/@CJ>┊<COLOR=clLime 其它牌从小到大依次为3到K>┊\
+┊<COLOR=clRed 子>><COLOR=clRed 散牌>><COLOR=clRed 特殊><COLOR=clLime ，特殊牌型比>┊<金/@CJ>┊<COLOR=clLime 花色:><COLOR=clRed 红桃>><COLOR=clRed 黑桃>><COLOR=clRed 方块>><COLOR=clRed 梅花>┊\
+┊<COLOR=clLime 豹子大，比其它牌型都要小>┊<花/@CJ>┊<COLOR=clLime 开牌按照点数和花色论输赢>┊\
+┊▓▓▓▓▓▓▓▓▓▓▓▓┊▓┊▓▓▓▓▓▓▓▓▓▓▓▓┊\
+╚┈┈┈┈┈┈┈┈┈┈┈┈┴┈┴┈┈┈┈┈┈┈┈┈┈┈┈╝\ \
+┌┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┐\
+┊<COLOR=clRed 每把下注为1000元宝，看牌后下注加倍为2000元宝。>　　　　┊\
+┊<COLOR=clRed 当你的对手拥有的元宝少于当次下注数时，系统将自动开牌。>┊\
+┊<COLOR=clRed 当下注总额超过100000元宝时，系统也将自动开牌。>　　　　┊\
+┊<COLOR=clRed 有两名玩家加入游戏后，系统将在10秒后自动开始发牌。>　　┊\
+┊<COLOR=clRed 如果有一方中途掉线，将算作自动认输，赌金归对方所有。>　┊\
+┊<COLOR=clRed 系统将收取赢得全部赌金的那一方百分之十的手续费。>　　　┊\
+└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┘\
+【<COLOR=clRed 目前参与玩家一>：<$STR(A21)>】\
+【<COLOR=clRed 目前参与玩家二>：<$STR(A22)>】\
+#ACT
+BREAK
+
+#IF
+EQUAL A21 $USERNAME
+Small H3 120
+Large H3 99
+#ACT
+GMEXECUTE 开始运行 @玩家1下注
+BREAK
+
+#IF
+EQUAL A22 $USERNAME
+Small H3 220
+Large H3 199
+#ACT
+GMEXECUTE 开始运行 @玩家2下注
+BREAK
+
+#ELSESAY
+╔┈┈┈┈┈┈┈┈┈┈┈┈┬┈┬┈┈┈┈┈┈┈┈┈┈┈┈╗\
+┊　　<COLOR=clRed 小赌可以怡情养性>　　┊▓┊　　<COLOR=clRed 大赌必定劳心伤神>　　┊\
+├────────────┤<开/@CJ>├────────────┤\
+┊<COLOR=clLime 每人摸三张牌，按照牌型排>┊<始/@CJ>┊<COLOR=clLime 牌点中，2为最小，A为最大>┊\
+┊<COLOR=clLime 列><COLOR=clRed 豹子>><COLOR=clRed 顺金>><COLOR=clRed 金花>><COLOR=clRed 顺子>><COLOR=clRed 对>┊<诈/@CJ>┊<COLOR=clLime 其它牌从小到大依次为3到K>┊\
+┊<COLOR=clRed 子>><COLOR=clRed 散牌>><COLOR=clRed 特殊><COLOR=clLime ，特殊牌型比>┊<金/@CJ>┊<COLOR=clLime 花色:><COLOR=clRed 红桃>><COLOR=clRed 黑桃>><COLOR=clRed 方块>><COLOR=clRed 梅花>┊\
+┊<COLOR=clLime 豹子大，比其它牌型都要小>┊<花/@CJ>┊<COLOR=clLime 开牌按照点数和花色论输赢>┊\
+┊▓▓▓▓▓▓▓▓▓▓▓▓┊▓┊▓▓▓▓▓▓▓▓▓▓▓▓┊\
+╚┈┈┈┈┈┈┈┈┈┈┈┈┴┈┴┈┈┈┈┈┈┈┈┈┈┈┈╝\ \
+┌┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┐\
+┊<COLOR=clRed 每把下注为1000元宝，看牌后下注加倍为2000元宝。>　　　　┊\
+┊<COLOR=clRed 当你的对手拥有的元宝少于当次下注数时，系统将自动开牌。>┊\
+┊<COLOR=clRed 当下注总额超过100000元宝时，系统也将自动开牌。>　　　　┊\
+┊<COLOR=clRed 有两名玩家加入游戏后，系统将在10秒后自动开始发牌。>　　┊\
+┊<COLOR=clRed 如果有一方中途掉线，将算作自动认输，赌金归对方所有。>　┊\
+┊<COLOR=clRed 系统将收取赢得全部赌金的那一方百分之十的手续费。>　　　┊\
+└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┘\
+【<COLOR=clRed 目前参与玩家一>：<$STR(A21)>】\
+【<COLOR=clRed 目前参与玩家二>：<$STR(A22)>】\
+
+[@CJ]
+#IF
+CHECKGAMEGOLD < 10000
+#ACT
+SendMSG 7 你的元宝少于10000颗，无法进行游戏。 0 255 10
+BREAK
+
+#IF
+EQUAL A21 $USERNAME
+#ACT
+SendMSG 7 你已经参加游戏了。 0 255 10
+BREAK
+
+#IF
+EQUAL A22 $USERNAME
+#ACT
+SendMSG 7 你已经参加游戏了。 0 255 10
+BREAK
+
+#IF
+EQUAL A21
+#ACT
+SETOFFLINEPLAY OFF
+SendMSG 7 参加游戏，等待别的玩家进入。 0 255 10
+GAMEGOLD - 50
+INC H1 50
+MOV H2 0
+MOV H3 0
+MOV A21 $USERNAME
+MOV A31 未看牌
+MOV A41
+MOV A42
+MOV A43
+MOV A44
+MOV A45
+MOV A46
+MOV H21 0
+MOV H41 0
+MOV H42 0
+MOV H43 0
+BREAK
+
+#IF
+EQUAL A22
+#ACT
+SETOFFLINEPLAY OFF
+GAMEGOLD - 50
+INC H1 50
+MOV H2 0
+MOV H3 0
+MOV A22 $USERNAME
+MOV A32 未看牌
+MOV A51
+MOV A52
+MOV A53
+MOV A54
+MOV A55
+MOV A56
+MOV H22 0
+MOV H51 0
+MOV H52 0
+MOV H53 0
+BREAK
+
+#IF
+#ACT
+SendMSG 7 目前已经有两人在游戏了，你等下一盘吧。 0 255 10
+BREAK

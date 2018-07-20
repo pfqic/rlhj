@@ -1,0 +1,754 @@
+
+
+(@@InPutInteger @@InPutString @@sendmsg @storage @getback @buy @sell @repair @s_repair @@offlinemsg @getnextpage @getPreviouspage @@InPutString @@useitemname @OnLogout_OffLinePlaying @KillByHum)
+%100
+
+[@OnLogout_OffLinePlaying]
+#ACT
+SETAUTOGETEXP 1400 1 1
+
+[@PlayDie]
+#IF
+KillByHum
+#ACT
+SENDMSG 0 〖提示〗玩家【<$USERNAME>】在<$CURRENTMAPDESC>(<$CURRENTX>:<$CURRENTY>)被【<$KILLER>】无情的杀害. 254 253
+CALCVAR HUMAN XV + 1
+SAVEVAR HUMAN XV ..\QuestDiary\数据文件\杀敌阵亡.txt
+BREAK
+
+
+#IF
+KILLBYMON
+#ACT
+SENDMSG 0 [丑闻]:凶悍的怪物<$MONKILLER>在:%m(%x:%y)把玩家[<$USERNAME>]给搞翻了！快帮他拨120抢救一下 251 0
+break
+
+
+
+[@HEROLOGIN]
+#IF
+CHECKLEVELEX > 0
+#ACT
+H.VAR Integer HUMAN 英雄转生
+H.LOADVAR HUMAN 英雄转生  ..\QuestDiary\如龙数据\英雄转生变量Save.txt
+MOV M0 0
+#IF
+H.CHECKVAR HUMAN 英雄转生 = 1
+#ACT
+MOV M0 2
+#IF
+H.CHECKVAR HUMAN 英雄转生 = 2
+#ACT
+MOV M0 5
+#IF
+H.CHECKVAR HUMAN 英雄转生 = 3
+#ACT
+MOV M0 10
+#IF
+H.CHECKVAR HUMAN 英雄转生 = 4
+#ACT
+MOV M0 15
+#IF
+H.CHECKVAR HUMAN 英雄转生 = 5
+#ACT
+MOV M0 20
+#IF
+H.CHECKVAR HUMAN 英雄转生 = 6
+#ACT
+MOV M0 25
+#IF
+H.CHECKVAR HUMAN 英雄转生 = 7
+#ACT
+MOV M0 30
+#IF
+H.CHECKVAR HUMAN 英雄转生 = 8
+#ACT
+MOV M0 40
+#IF
+H.CHECKVAR HUMAN 英雄转生 = 9
+#ACT
+MOV M0 50
+#IF
+LARGE M0 0
+#ACT
+H.AbilityAdd 4 <$STR(M0)> 720000
+H.AbilityAdd 5 <$STR(M0)> 720000
+H.AbilityAdd 6 <$STR(M0)> 720000
+SENDMSG 7 英雄官位系统已经激活.你当前获得攻魔道属性+<$STR(M0)>
+
+[@PlayLevelUp]
+#CALL [\\系统功能\本号升级.txt] @升级
+#CALL [\\系统功能\本号装备.txt] @装备
+
+[@HeroLevelUp]
+#CALL [\\系统功能\英雄升级.txt] @英雄升级
+#CALL [\\系统功能\英雄装备.txt] @英雄装备
+
+
+[@STDMODEFUNC10]
+#IF
+CHECKLEVELEX > 0
+#ACT
+KILLMONEXPRATE 400 3600
+Gmexecute showeffect 75
+SENDMSG 7 您获得了1小时四倍经验时间
+BREAK
+
+[@STDMODEFUNC11]
+#IF
+CHECKLEVELEX > 0
+#ACT
+Gmexecute showeffect 78
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯，大家快去欣赏哦！ 251 249
+
+[@STDMODEFUNC12]
+#IF
+CHECKLEVELEX > 0
+#ACT
+Gmexecute showeffect 79
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯，大家快去欣赏哦！ 251 249
+
+[@STDMODEFUNC13]
+#IF
+CHECKLEVELEX > 0
+#ACT
+Gmexecute showeffect 80
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯，大家快去欣赏哦！ 251 249
+
+[@STDMODEFUNC14]
+#IF
+CHECKLEVELEX > 0
+#ACT
+Gmexecute showeffect 81
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯，大家快去欣赏哦！ 251 249
+
+[@STDMODEFUNC15]
+#IF
+CHECKLEVELEX > 0
+#ACT
+Gmexecute showeffect 82
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯，大家快去欣赏哦！ 251 249
+
+[@STDMODEFUNC16]
+#IF
+CHECKLEVELEX > 0
+#ACT
+Gmexecute showeffect 83
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯，大家快去欣赏哦！ 251 249
+
+[@STDMODEFUNC17]
+#IF
+CHECKLEVELEX > 0
+#ACT
+Gmexecute showeffect 82
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯，大家快去欣赏哦！ 251 249
+
+[@STDMODEFUNC18]
+#IF
+CHECKLEVELEX > 0
+#ACT
+mov D57 0
+SENDMSG 0 <$USERNAME>在:%m%x:%y处释放庆典蛋糕咯！大家快去欣赏哦。 149 154
+ReadRandomStr .\QuestDiary\系统功能\烟花.txt S90
+Gmexecute showeffect <$STR(S90)>
+DELAYGOTO 2000 @蛋糕开始
+BREAK
+
+[@蛋糕开始]
+#IF
+LARGE D57 4
+#ACT
+MOV D57 0
+SENDMSG 7 庆典蛋糕释放完毕。
+BREAK
+#ELSEACT
+INC D57 1
+ReadRandomStr .\QuestDiary\系统功能\烟花.txt S90
+Gmexecute showeffect <$STR(S90)>
+DELAYGOTO 3000 @蛋糕开始
+BREAK
+
+
+[@STDMODEFUNC19]
+#IF
+GENDER woman
+#ACT
+HAIRSTYLE 0
+SENDMSG 6 发型已经变更! 
+BREAK
+#IF
+GENDER man
+#ACT
+HAIRSTYLE 0
+SENDMSG 6 发型已经变更! 
+BREAK
+
+[@STDMODEFUNC20]
+#IF
+GENDER woman
+#ACT
+HAIRSTYLE 1
+SENDMSG 6 发型已经变更! 
+BREAK
+#IF
+GENDER man
+#ACT
+HAIRSTYLE 1
+SENDMSG 6 发型已经变更! 
+BREAK
+
+[@STDMODEFUNC21]
+#IF
+random 10
+#ACT
+MAPMOVE 0 349 289
+CLOSE
+BREAK
+#IF
+random 7
+#ACT
+MAPMOVE 0 318 271
+CLOSE
+BREAK
+#IF
+random 6
+#ACT
+MAPMOVE 0 321 251
+CLOSE
+BREAK
+#IF
+random 5
+#ACT
+MAPMOVE 0 307 239
+CLOSE
+BREAK
+#IF
+random 4
+#ACT
+MAPMOVE 0 317 285
+CLOSE
+BREAK
+#IF
+#ACT
+MAPMOVE 0 333 254
+CLOSE
+BREAK
+
+[@STDMODEFUNC22]
+#IF
+CHECKLEVELEX > 0
+#ACT
+MOVR P7 16
+INC P7 323
+MOVR P8 16
+INC P8 323
+mapmove 3 <$STR(P7)> <$STR(P8)>
+CLOSE
+BREAK
+
+[@STDMODEFUNC23]
+#IF
+CHECKLEVELEX > 0
+#ACT
+CREDITPOINT + 1
+SENDMSG 7 恭喜：你获得了：声望:1
+BREAK
+
+[@STDMODEFUNC24]
+#IF
+CHECKLEVELEX > 0
+#ACT
+#CALL [\系统功能\验证回收.txt] @盟重回收
+BREAK
+
+[@STDMODEFUNC156]
+#IF
+CHECKLEVELEX > 0
+#ACT
+#CALL [\系统功能\在线回收.txt] @永久回收
+give 永久回收
+BREAK
+[@STDMODEFUNC25]
+<COLOR=CLRED 传音筒>可以将你要说出的话置顶，特别醒目！\
+每句话限制为：30个字，\
+可在置顶位置停留15秒！\
+请将要说的话，编写到传音筒内！\ \
+<传音筒/@@INPUTSTRING1>\
+[@@INPUTSTRING1]
+#IF
+CHECKLEVELEX > 0
+#ACT
+DELAYGOTO 1 ~INPUTSTRING1
+[~INPUTSTRING1]
+#IF
+CHECKLEVELEX > 0
+#ACT
+DEC S1 62 999
+SENDMSG 0 传音筒:<$USERNAME>：<$STR(S1)> 252 255 15
+CLOSE
+BREAK
+
+
+[@StdModeFunc26]
+#ACT
+CHANGEPKPOINT = 0
+SENDMSG 6 你的PK值已清洗! 
+
+
+;STDMODEFUNC 27.28.29(经验卷为空)
+
+[@StdModeFunc30]
+#IF
+#ACT
+GIVE 金币 1000000
+SENDMSG 7 提示：金币增加1000000！
+
+
+[@STDMODEFUNC31]
+#IF
+CHECKITEM 强效太阳水 6
+#ACT
+TAKE 强效太阳水 6
+GIVE 打捆太阳水 1
+CLOSE
+BREAK
+#ELSESAY
+你都没有足够的强效太阳水需要打捆，\
+还捆什么? \
+浪费... \ \
+<离 开/@EXIT>\
+
+[@STDMODEFUNC32]
+#IF
+CHECKITEM 万年雪霜 6
+#ACT
+TAKE 万年雪霜 6
+GIVE 雪霜包 1
+CLOSE
+BREAK
+#ELSESAY
+你都没有足够的万年雪霜需要打捆，\
+还捆什么? \
+浪费... \ \
+<离 开/@EXIT>\
+
+[@STDMODEFUNC33]
+#IF
+CHECKITEM 疗伤药 6
+#ACT
+TAKE 疗伤药 6
+GIVE 打捆疗伤药 1
+CLOSE
+BREAK
+#ELSESAY
+你都没有足够的疗伤药需要打捆，\
+还捆什么? \
+浪费... \ \
+<离 开/@EXIT>\
+
+;[@StdModeFunc34]
+;乾坤袋
+
+[@StdModeFunc35]
+#IF
+CHECKLEVELEX > 0
+#ACT
+GAMEDIAMOND + 1
+SENDMSG 7 恭喜：你获得了：金刚石:1
+BREAK
+
+[@StdModeFunc36]
+#IF
+CHECKLEVELEX > 0
+#ACT
+GAMEDIAMOND + 5
+SENDMSG 7 恭喜：你获得了：金刚石:5
+BREAK
+
+[@StdModeFunc37]
+#IF
+CHECKLEVELEX > 0
+#ACT
+GAMEDIAMOND + 10
+SENDMSG 7 恭喜：你获得了：金刚石:10
+BREAK
+
+[@StdModeFunc38]
+#IF
+CHECKLEVELEX > 0
+#ACT
+GAMEDIAMOND + 50
+SENDMSG 7 恭喜：你获得了：金刚石:50
+BREAK
+
+[@StdModeFunc39]
+#IF
+CHECKLEVELEX > 0
+#ACT
+GAMEDIAMOND + 100
+SENDMSG 7 恭喜：你获得了：金刚石:100
+BREAK
+
+[@StdModeFunc40]
+#IF
+CHECKLEVELEX > 0
+#ACT
+GAMEDIAMOND + 500
+SENDMSG 7 恭喜：你获得了：金刚石:500
+BREAK
+
+[@StdModeFunc41]
+#IF
+CHECKLEVELEX > 0
+#ACT
+GAMEDIAMOND + 1000
+SENDMSG 7 恭喜：你获得了：金刚石:1000
+BREAK
+
+[@StdModeFunc42]
+#IF
+CHECKLEVELEX > 0
+#ACT
+GAMEDIAMOND + 5000
+SENDMSG 7 恭喜：你获得了：金刚石:5000
+BREAK
+
+[@StdModeFunc140]
+#IF
+CHECKLEVELEX > 0
+#ACT
+GAMEDIAMOND + 10000
+SENDMSG 7 恭喜：你获得了：金刚石:10000
+BREAK
+
+[@StdModeFunc141]
+#IF
+CHECKLEVELEX > 0
+#ACT
+GAMEDIAMOND + 50000
+SENDMSG 7 恭喜：你获得了：金刚石:50000
+BREAK
+
+[@StdModeFunc43]
+#IF
+CHECKLEVELEX > 0
+#ACT
+GIVE 祝福油 1
+BREAK
+
+[@StdModeFunc44]
+#IF
+CHECKJOB WIZARD
+#ELSEACT
+MESSAGEBOX 对不起，您不是法师，无法领悟四级魔法盾！
+GIVE 四级魔法盾 1
+CLOSE
+BREAK
+#IF
+CHECKMAGICNAME 魔法盾
+#ACT
+#ELSEACT
+MESSAGEBOX 对不起，您的未学习魔法盾，无法领悟四级魔法盾！
+GIVE 四级魔法盾 1
+CLOSE
+BREAK
+#IF
+CHECKJOB WIZARD
+#ACT
+SKILLLEVEL 魔法盾 = 4
+SENDMSG 5 恭喜：您已经领悟了四级魔法盾。
+#ELSEACT
+MESSAGEBOX 对不起，您不是法师，无法领悟四级魔法盾！
+GIVE 四级魔法盾 1
+CLOSE
+BREAK
+
+[@StdModeFunc54]
+#IF
+CHECKLEVELEX > 39
+checkjob wizard
+CHECKMAGICLEVEL 魔法盾 = 3
+#ACT
+SkillLevel 魔法盾 = 4
+break
+#ELSEACT
+MESSAGEBOX 等级没有40级或不能学习此技能。
+GIVE 四级魔法盾 1
+[@@RECALLPLAYER]
+#IF
+CHECKHEROONLINE
+#ACT
+CLOSE
+MESSAGEBOX 请先设置您的英雄下线！
+#ELSEACT
+CLOSE
+RECALLPLAYER
+
+[@StdModeFunc57]
+#IF 
+CHECKITEMADDVALUE 1 3 = 7
+#Act 
+GIVE 超级祝福油
+SENDMSG 6 %s您武器幸运值已经达到7点.不能继续增加!
+#ElseAct 
+UPGRADEITEMEX 1 3 1 1 0
+SENDMSG 6 %s恭喜您武器增加了一点幸运!
+break
+
+
+[@StdModeFunc128]
+#IF
+CHECKHEROONLINE
+#ACT
+Gmexecute 变忠诚度 250
+SENDMSG 5 恭喜你的英雄增加1点忠诚度！
+BREAK
+#ELSEACT
+MESSAGEBOX 对不起，您的英雄不在线！
+GIVE 英雄忠诚加一卷 1
+
+[@StdModeFunc129]
+#IF
+CHECKHEROONLINE
+#ACT
+Gmexecute 变忠诚度 2500
+SENDMSG 5 恭喜你的英雄增加10点忠诚度！
+BREAK
+#ELSEACT
+MESSAGEBOX 对不起，您的英雄不在线！
+GIVE 英雄忠诚加十卷 1
+
+[@StdModeFunc130]
+#ACT
+GAMEGOLD + 1
+SENDMSG 6 提示:元宝增加1个.您当前的元宝为：<$GAMEGOLD>个
+
+[@StdModeFunc131]
+#ACT
+GAMEGOLD + 5
+SENDMSG 6 提示:元宝增加5个.您当前的元宝为：<$GAMEGOLD>个
+
+[@StdModeFunc132]
+#ACT
+GAMEGOLD + 10
+SENDMSG 6 提示:元宝增加10个.您当前的元宝为：<$GAMEGOLD>个
+
+[@StdModeFunc133]
+#ACT
+GAMEGOLD + 50
+SENDMSG 6 提示:元宝增加50个.您当前的元宝为：<$GAMEGOLD>个
+
+[@StdModeFunc134]
+#ACT
+GAMEGOLD + 100
+SENDMSG 6 提示:元宝增加100个.您当前的元宝为：<$GAMEGOLD>个
+
+[@StdModeFunc135]
+#ACT
+GAMEGOLD + 500
+SENDMSG 6 提示:元宝增加500个.您当前的元宝为：<$GAMEGOLD>个
+
+[@StdModeFunc136]
+#ACT
+GAMEGOLD + 1000
+SENDMSG 6 提示:元宝增加1000个.您当前的元宝为：<$GAMEGOLD>个
+
+[@StdModeFunc137]
+#ACT
+GAMEGOLD + 5000
+SENDMSG 6 提示:元宝增加5000个.您当前的元宝为：<$GAMEGOLD>个
+
+[@StdModeFunc138]
+#ACT
+GAMEGOLD + 10000
+SENDMSG 6 提示:元宝增加10000个.您当前的元宝为：<$GAMEGOLD>个
+
+[@StdModeFunc139]
+#ACT
+GAMEGOLD + 50000
+SENDMSG 6 提示:元宝增加50000个.您当前的元宝为：<$GAMEGOLD>个
+
+[@StdModeFunc155]
+#IF
+check [98] 1
+#ACT
+#SAY
+您已经领取过了，不能再领取了！\ \ \
+#ELSESAY
+<COLOR=clAqua 充值满30元，可打开首冲礼包领取【永久回收(免验)】 > \
+<COLOR=clAqua 充值满30元，可打开首冲礼包领取【星王勋章一枚】 > \
+<COLOR=clAqua 充值满30元，可打开首冲礼包领取【星王斗笠一枚】 > \
+<COLOR=clAqua 充值满30元，可打开首冲礼包领取【首冲运9小红刀】 > \ \
+<打开礼包/@libao>\
+
+[@libao]
+#IF
+check [98] 0
+CheckGamePoint > 29
+#ACT
+GIVE 永久回收
+GIVE 首冲小刀
+GIVE 星王勋章
+GIVE 星王斗笠
+SET [98] 1
+SENDMSG 0 恭喜：<$USERNAME>，打开30元首冲礼包获得【永久回收（免验）】 252 255 30
+SENDMSG 0 恭喜：<$USERNAME>，打开30元首冲礼包获得【星王勋章一枚】 252 255 30
+SENDMSG 0 恭喜：<$USERNAME>，打开30元首冲礼包获得【星王斗笠一枚】 252 255 30
+SENDMSG 0 恭喜：<$USERNAME>，打开30元首冲礼包领取【首冲运9小红刀】 252 255 30
+#ELSEACT
+MESSAGEBOX [提示]：快去充值吧，领取丰厚奖品！
+GIVE 首充礼包
+BREAK
+
+
+
+
+
+[@StdModeFunc200]
+#IF	
+#ACT
+LOADVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+CALCVAR  HUMAN 消费积分 + 1
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+SENDMSG 6 提示:充值积分增加1.您当前的充值积分为：<$HUMAN(消费积分)>个！
+
+
+[@StdModeFunc201]
+#IF	
+#ACT
+LOADVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+CALCVAR  HUMAN 消费积分 + 2
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+SENDMSG 6 提示:充值积分增加2.您当前的充值积分为：<$HUMAN(消费积分)>个！
+
+
+[@StdModeFunc202]
+#IF	
+#ACT
+LOADVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+CALCVAR  HUMAN 消费积分 + 5
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+SENDMSG 6 提示:充值积分增加5.您当前的充值积分为：<$HUMAN(消费积分)>个！
+
+
+[@StdModeFunc203]
+#IF	
+#ACT
+LOADVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+CALCVAR  HUMAN 消费积分 + 10
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+SENDMSG 6 提示:充值积分增加10.您当前的充值积分为：<$HUMAN(消费积分)>个！
+
+
+[@StdModeFunc204]
+#IF	
+#ACT
+LOADVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+CALCVAR  HUMAN 消费积分 + 20
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+SENDMSG 6 提示:充值积分增加20.您当前的充值积分为：<$HUMAN(消费积分)>个！
+
+
+
+
+[@HERONAMEFILTER]
+英雄名字中包含禁用字符\<关闭/@EXIT>
+[@CREATEHEROOK]
+您的英雄已创建成功\ \
+<关闭/@EXIT>\
+#ACT
+RecallHero
+SENDMSG 0 恭喜：<$USERNAME>，在比奇成功领取了英雄，从此游走玛法无人可挡！ 251 249
+BREAK
+[@HERONAMEEXISTS]
+英雄名字已经存在\<关闭/@EXIT>
+[@HEROOVERCHRCOUNT]
+你的帐号角色过多\<关闭/@EXIT>
+[@CREATEHEROFAIL]
+创建英雄失败\<关闭/@EXIT>
+[@CREATEHEROFAILEX]
+创建英雄失败，请稍候重试\<关闭/@EXIT>
+
+[@UserCmd1]
+#CALL [\系统功能\帮助命令.txt] @帮助
+
+[@UserCmd2]
+#IF
+CHECKGAMEGOLD > 99
+#ACT
+QUERYVALUE 10 0 60 ~全服广播 请输入你要进行全服广播的文字：(最多30个字，收费100元宝) QF
+BREAK
+#ELSEACT
+MESSAGEBOX 提示：每发送一次需要100元宝！千里传音命令【@传】
+BREAK
+
+[~全服广播]
+#IF
+EQUAL S10
+#ACT
+
+MESSAGEBOX 请输入您要发送的内容，否则无法发送！
+BREAK
+
+#IF
+CHECKGAMEGOLD > 99
+#ACT
+GAMEGOLD - 100
+SENDMSG 0 【%s】：<$STR(S10)> 255 245
+SENDMSG 0 【注：以上信息为玩家〖%s〗所发，请注意核实内容真实性，防止上当受骗，任何通过喊话系统留下QQ号的都是骗子】 170 255
+MOV S10
+BREAK
+#ELSEACT
+MESSAGEBOX 提示：每发送一次需要100元宝！千里传音命令【@传】
+BREAK
+
+[@UserCmd3]
+#CALL [\系统功能\设置攻城.txt] @设置
+BREAK
+
+
+
+
+
+
+
+
+
+
+[@UserCmd8]
+#IF
+Check [102] 1
+#SAY
+══════════『防脱机验证』══════════\
+为防止脱机外挂请在3分钟内\
+在聊天框内先使用命令〖@验证〗验证是否脱机！\
+请输入您角色名上算数题的正确答案\
+注意：输入错误将会被T下线。\
+═══════════════════════════\
+          〖<点击输入正确答案/@@InPutInteger10>〗\
+
+
+
+[@@InPutInteger10]
+#If
+CheckLevelEx > 0
+#Act
+DelayGoto 1 ~InPutInteger10
+[~InPutInteger10]
+#If
+EQUAL m10 <$STR(m16)>
+#Act
+set [102] 0
+SetRankLevelName %s\<$STR(S22)>\<$STR(S1)> 
+messagebox 提示：你已通过验证，请放心游戏！
+BREAK
+close
+#elseact
+SendMSG 5 %s.非法登录游戏
+Kick
+
+
+
+
+
+

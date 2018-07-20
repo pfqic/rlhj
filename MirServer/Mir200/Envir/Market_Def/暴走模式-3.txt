@@ -1,0 +1,37 @@
+[@main]
+
+#SAY
+这是传说中逆天的心法秘诀!<COLOR=#253 狂暴心法>,一旦开启,进入<COLOR=#253 暴走模式>\
+精血倒流,玄功逆转!激法潜能,天地唯我,如神,如魔!带来一切毁灭\
+<COLOR=#254 暴走模式>:本体、英雄<COLOR=#253 瞬间爆发1.2倍攻击HP+5000>\
+1:<COLOR=#253 【暴走模式】> 效果持续5分钟>\
+2:<COLOR=#253 【暴走模式】> 收费30000元宝+50金刚石\
+3:<COLOR=#253 【暴走模式】> 瞬间爆发小宇宙\
+4:<COLOR=#253 【暴走模式】> 小退、死亡后状态消失\ \
+<开启【暴走模式】/@kq>                    <离开/@exit>
+
+
+
+[@kq]
+#IF
+CHECKHEROONLINE
+CHECKGAMEGOLD > 29999
+CHECKGAMEDIAMOND > 49
+#ACT
+gamegold - 30000
+GAMEDIAMOND - 50 
+POWERRATE 120 300
+H.POWERRATE 120 300
+AbilityAdd 0 5000 300
+H.AbilityAdd 0 5000 300
+SENDMSG 7 成功开启[暴走模式]!!
+SENDMSG 7 成功开启[暴走模式]!!
+SENDMSG 7 成功开启[暴走模式]!!
+SENDMSG 0 【%s】成功开启[暴走模式]请远离此人，极度危险！！！ 246 69
+SENDMSG 0 【%s】成功开启[暴走模式]请远离此人，极度危险！！！ 246 69
+SENDMSG 0 【%s】成功开启[暴走模式]请远离此人，极度危险！！！ 246 69
+#ELSEACT
+MESSAGEBOX 请准备30000元宝，召唤出你的英雄一起获取暴走模式!!!
+goto @main
+
+

@@ -1,0 +1,199 @@
+[@main]
+#IF
+CheckStringList ..\QuestDiary\如龙数据\区状态.txt 测试区
+#say
+现在是测试区，功能暂不可用！等到正式开区再来吧！
+#elsesay
+<COLOR=clYellow 缥缈手镯> <COLOR=clRed 单件> <COLOR=clRed 1元充值><一键回收/@手镯>  <COLOR=clYellow 缥缈腰带> <COLOR=clRed 单件> <COLOR=clRed 1元充值><一键回收/@腰带>\
+<COLOR=clSilver ------------------------------------------------------------>\
+<COLOR=clYellow 缥缈戒指> <COLOR=clRed 单件> <COLOR=clRed 1元充值><一键回收/@戒指>  <COLOR=clYellow 缥缈靴子> <COLOR=clRed 单件> <COLOR=clRed 1元充值><一键回收/@靴子>\
+<COLOR=clSilver ------------------------------------------------------------>\
+<COLOR=clYellow 缥缈项链> <COLOR=clRed 单件> <COLOR=clRed 1元充值><一键回收/@项链>  <COLOR=clYellow 缥缈头盔> <COLOR=clRed 单件> <COLOR=clRed 1元充值><一键回收/@头盔>\
+<COLOR=clSilver ------------------------------------------------------------>\
+<COLOR=clYellow 缥缈武器> <COLOR=clRed 单件> <COLOR=clRed 20元充值><一键回收/@武器> <COLOR=clYellow 缥缈武器> <COLOR=clRed 单件> <COLOR=clRed 20元充值><一键回收/@武器>\
+<COLOR=clSilver ------------------------------------------------------------>\
+<COLOR=clYellow 缥缈神甲> <COLOR=clRed 单件> <COLOR=clRed 20元充值><一键回收/@神甲> <COLOR=clYellow 缥缈神衣> <COLOR=clRed 单件> <COLOR=clRed 20元充值><一键回收/@神衣>\
+
+
+[@手镯]
+#IF
+checkitem 缥缈№灭世仙镯（神） 1
+#ACT
+take 缥缈№灭世仙镯（神） 1
+GAMEDIAMOND + 50
+GAMEGOLD + 100000
+GAMEPOINT + 1
+CALCVAR HUMAN 消费积分 + 1
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+sendmsg 6 你当前的元宝数量为：<$GAMEGOLD>！积分为：<$HUMAN(消费积分)>！金刚石数量为：<$GAMEDIAMOND>！游戏点为：<$GAMEPOINT>点！
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值获得大量元宝,如果您也想获得,请赶快充值吧!
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了大量金刚石大量游戏点。
+SENDMSG 1 ★[%s]:玩家<$USERNAME>通过在线充值额外获得了消费积分
+DELAYGOTO 1 @手镯
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有缥缈手镯系列装备，无法回收！
+GOTO @@CheckNo
+
+[@腰带]
+#IF
+checkitem 缥缈№灭世仙带（神） 1
+#ACT
+take 缥缈№灭世仙带（神） 1
+GAMEDIAMOND + 50
+GAMEGOLD + 100000
+GAMEPOINT + 1
+CALCVAR HUMAN 消费积分 + 1
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+sendmsg 6 你当前的元宝数量为：<$GAMEGOLD>！积分为：<$HUMAN(消费积分)>！金刚石数量为：<$GAMEDIAMOND>！游戏点为：<$GAMEPOINT>点！
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值获得大量元宝,如果您也想获得,请赶快充值吧!
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了大量金刚石大量游戏点。
+SENDMSG 1 ★[%s]:玩家<$USERNAME>通过在线充值额外获得了消费积分
+DELAYGOTO 1 @腰带
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有缥缈腰带系列装备，无法回收！
+GOTO @@CheckNo
+
+[@戒指]
+#IF
+checkitem 缥缈№灭世仙戒（神） 1
+#ACT
+take 缥缈№灭世仙戒（神） 1
+GAMEDIAMOND + 50
+GAMEGOLD + 100000
+GAMEPOINT + 1
+CALCVAR HUMAN 消费积分 + 1
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+sendmsg 6 你当前的元宝数量为：<$GAMEGOLD>！积分为：<$HUMAN(消费积分)>！金刚石数量为：<$GAMEDIAMOND>！游戏点为：<$GAMEPOINT>点！
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值获得大量元宝,如果您也想获得,请赶快充值吧!
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了大量金刚石大量游戏点。
+SENDMSG 1 ★[%s]:玩家<$USERNAME>通过在线充值额外获得了消费积分
+DELAYGOTO 1 @戒指
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有缥缈戒指系列装备，无法回收！
+GOTO @@CheckNo
+
+
+[@靴子]
+#IF
+checkitem 缥缈№灭世仙靴（神） 1
+#ACT
+take 缥缈№灭世仙靴（神） 1
+GAMEDIAMOND + 50
+GAMEGOLD + 100000
+GAMEPOINT + 1
+CALCVAR HUMAN 消费积分 + 1
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+sendmsg 6 你当前的元宝数量为：<$GAMEGOLD>！积分为：<$HUMAN(消费积分)>！金刚石数量为：<$GAMEDIAMOND>！游戏点为：<$GAMEPOINT>点！
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值获得大量元宝,如果您也想获得,请赶快充值吧!
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了大量金刚石大量游戏点。
+SENDMSG 1 ★[%s]:玩家<$USERNAME>通过在线充值额外获得了消费积分
+DELAYGOTO 1 @靴子
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有缥缈靴子系列装备，无法回收！
+GOTO @@CheckNo
+
+[@项链]
+#IF
+checkitem 缥缈№灭世仙链（神） 1
+#ACT
+take 缥缈№灭世仙链（神） 1
+GAMEDIAMOND + 50
+GAMEGOLD + 100000
+GAMEPOINT + 1
+CALCVAR HUMAN 消费积分 + 1
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+sendmsg 6 你当前的元宝数量为：<$GAMEGOLD>！积分为：<$HUMAN(消费积分)>！金刚石数量为：<$GAMEDIAMOND>！游戏点为：<$GAMEPOINT>点！
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值获得大量元宝,如果您也想获得,请赶快充值吧!
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了大量金刚石大量游戏点。
+SENDMSG 1 ★[%s]:玩家<$USERNAME>通过在线充值额外获得了消费积分
+DELAYGOTO 1 @项链
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有缥缈项链系列装备，无法回收！
+GOTO @@CheckNo
+
+[@头盔]
+#IF
+checkitem 缥缈№灭世仙盔（神） 1
+#ACT
+take 缥缈№灭世仙盔（神） 1
+GAMEDIAMOND + 50
+GAMEGOLD + 100000
+GAMEPOINT + 1
+CALCVAR HUMAN 消费积分 + 1
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+sendmsg 6 你当前的元宝数量为：<$GAMEGOLD>！积分为：<$HUMAN(消费积分)>！金刚石数量为：<$GAMEDIAMOND>！游戏点为：<$GAMEPOINT>点！
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值获得大量元宝,如果您也想获得,请赶快充值吧!
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了大量金刚石大量游戏点。
+SENDMSG 1 ★[%s]:玩家<$USERNAME>通过在线充值额外获得了消费积分
+DELAYGOTO 1 @头盔
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有缥缈头盔系列装备，无法回收！
+GOTO @@CheckNo
+
+
+[@武器]
+#IF
+checkitem 缥缈№灭世仙剑（神） 1
+#ACT
+take 缥缈№灭世仙剑（神） 1
+GAMEDIAMOND + 1000
+GAMEGOLD + 2000000
+GAMEPOINT + 20
+CALCVAR HUMAN 消费积分 + 20
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+sendmsg 6 你当前的元宝数量为：<$GAMEGOLD>！积分为：<$HUMAN(消费积分)>！金刚石数量为：<$GAMEDIAMOND>！游戏点为：<$GAMEPOINT>点！
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值获得大量元宝,如果您也想获得,请赶快充值吧!
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了大量金刚石大量游戏点。
+SENDMSG 1 ★[%s]:玩家<$USERNAME>通过在线充值额外获得了消费积分
+DELAYGOTO 1 @武器
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有缥缈武器系列装备，无法回收！
+GOTO @@CheckNo
+
+[@神甲]
+#IF
+checkitem 缥缈№灭世仙甲（神） 1
+#ACT
+take 缥缈№灭世仙甲（神） 1
+GAMEDIAMOND + 1000
+GAMEGOLD + 2000000
+GAMEPOINT + 20
+CALCVAR HUMAN 消费积分 + 20
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+sendmsg 6 你当前的元宝数量为：<$GAMEGOLD>！积分为：<$HUMAN(消费积分)>！金刚石数量为：<$GAMEDIAMOND>！游戏点为：<$GAMEPOINT>点！
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值获得大量元宝,如果您也想获得,请赶快充值吧!
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了大量金刚石大量游戏点。
+SENDMSG 1 ★[%s]:玩家<$USERNAME>通过在线充值额外获得了消费积分
+DELAYGOTO 1 @神甲
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有缥缈神甲系列装备，无法回收！
+GOTO @@CheckNo
+
+
+[@神衣]
+#IF
+checkitem 缥缈№灭世仙衣（神） 1
+#ACT
+take 缥缈№灭世仙衣（神） 1
+GAMEDIAMOND + 1000
+GAMEGOLD + 2000000
+GAMEPOINT + 20
+CALCVAR HUMAN 消费积分 + 20
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+sendmsg 6 你当前的元宝数量为：<$GAMEGOLD>！积分为：<$HUMAN(消费积分)>！金刚石数量为：<$GAMEDIAMOND>！游戏点为：<$GAMEPOINT>点！
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值获得大量元宝,如果您也想获得,请赶快充值吧!
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了大量金刚石大量游戏点。
+SENDMSG 1 ★[%s]:玩家<$USERNAME>通过在线充值额外获得了消费积分
+DELAYGOTO 1 @神衣
+break
+#ELSEACT
+SENDMSG 7 〖提示〗你身上没有缥缈神衣系列装备，无法回收！
+GOTO @@CheckNo

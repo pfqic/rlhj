@@ -1,0 +1,59 @@
+[@聚灵珠]
+{
+<COLOR=CLRED 聚灵珠>最神奇之处，就是在你自身获得经验的同时，\
+还能帮你额外累积同样多的经验。\
+使用方法：将聚灵珠放在包裹内可以累积到额外的经验值。\
+当累积满后双击就可以释放获得相应经验了。\
+只要把你的聚灵珠交给我并且给我<COLOR=CLYELLOW 5元宝>，\
+我便可以给你一个<COLOR=CLRED 空的英雄聚灵珠>。\
+<COLOR=CLSKYBLUE 聚灵珠使用后人物将获得100%经验，英雄将获得10%的经验，>\
+<COLOR=CLSKYBLUE 而英雄使用英雄聚灵珠后，英雄将获得100%的经验。>\
+#ACT
+QUERYITEMDLG 放入要升级的珠子 @聚灵珠2 0
+
+[@聚灵珠2]
+#IF
+CHECKGAMEGOLD > 5
+#ELSEACT
+DELAYCALL 10 @聚灵珠
+MESSAGEBOX 升级为英雄聚灵珠需要5元宝！
+BREAK
+#IF
+CHECKDLGITEMNAME 聚灵珠(小)
+#ACT
+SENDMSG 0 恭喜玩家：%s，使用<$DLGITEMNAME>成功升级为英雄聚灵珠(小)！ 255 249
+TAKEDLGITEM
+GAMEGOLD - 5
+GIVE 英雄聚灵珠(小) 1
+MOV P0 1
+
+#IF
+CHECKDLGITEMNAME 聚灵珠(中)
+#ACT
+SENDMSG 0 恭喜玩家：%s，使用<$DLGITEMNAME>成功升级为英雄聚灵珠(中)！ 255 249
+TAKEDLGITEM
+GAMEGOLD - 5
+GIVE 英雄聚灵珠(中) 1
+MOV P0 1
+
+#IF
+CHECKDLGITEMNAME 聚灵珠(大)
+#ACT
+SENDMSG 0 恭喜玩家：%s，使用<$DLGITEMNAME>成功升级为英雄聚灵珠(大)！ 255 249
+TAKEDLGITEM
+GAMEGOLD - 5
+GIVE 英雄聚灵珠(大) 1
+MOV P0 1
+
+#IF
+EQUAL P0 1
+#ACT
+MOV P0 0
+DELAYCALL 10 @聚灵珠
+BREAK
+#ELSEACT
+SENDMSG 7 你给我的是什么东西啊？请放入要升级的聚灵珠！
+DELAYCALL 10 @聚灵珠
+BREAK
+
+}

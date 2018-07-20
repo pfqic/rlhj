@@ -1,0 +1,90 @@
+()
+%100
+[@main]
+<COLOR=clGray ------------------------------------------------------------>　\
+<COLOR=clAqua 【中级地图】> <COLOR=clRed Hot~ >               <COLOR=clLime 降龙合击，邀你來戰!>\
+<COLOR=clGray ------------------------------------------------------------>\
+       ※ <进入战破天/@迷失圣殿> ※   ※ <进入魔龙血域/@魔龙血域> ※   ※ <进入龙渊泽/@龙渊泽> ※\
+       
+<COLOR=clGray ------------------------------------------------------------>　\
+<COLOR=clLime 进入条件：1000元宝  怪物介绍：魔龙教主、卧龙送宝兽>\
+<COLOR=clLime 爆率介绍：[雷霆-战神-星王-极品星王-次终极]>\
+<COLOR=clGray ------------------------------------------------------------>\
+[@魔龙血域]
+#IF 
+large G21 7
+#ACT
+MESSAGEBOX 防止脱机外挂！开区8小时后无法进入此地图
+break
+
+#if
+CHECKGAMEGOLD > 999
+#act
+GAMEGOLD - 1000
+mapmove 66
+SENDMSG 0 玩家[%s],进入魔龙血域,魔龙血域拥有超大BOSS,建议组队前往! 50 215 
+SENDMSG 0 玩家[%s],进入魔龙血域,魔龙血域拥有超大BOSS,建议组队前往! 50 215
+SENDMSG 0 玩家[%s],进入魔龙血域,魔龙血域拥有超大BOSS,建议组队前往! 50 215 
+SENDMSG 0 玩家[%s],进入魔龙血域,魔龙血域拥有超大BOSS,建议组队前往! 50 215  
+#ELSEACT
+MESSAGEBOX 需要1000元宝用来进入地图。
+break
+
+[@法老窟]
+#if
+CHECKGAMEGOLD > 499
+#act
+GAMEGOLD - 500
+mapmove MJDY1 48 47
+SENDMSG 0 勇敢的玩家[%s]进入法老窟,本地图BOSS超多请小心哦! 50 215 10
+SENDMSG 0 勇敢的玩家[%s]进入法老窟,本地图BOSS超多请小心哦! 50 215
+SENDMSG 0 勇敢的玩家[%s]进入法老窟,本地图BOSS超多请小心哦! 50 215
+SENDMSG 0 勇敢的玩家[%s]进入法老窟,本地图BOSS超多请小心哦! 50 215
+#ELSEACT
+MESSAGEBOX 需要500元宝用来进入地图。
+[@神农洞]
+#if
+CHECKGAMEGOLD > 499
+#act
+GAMEGOLD - 500
+mapmove mishi1 84 18
+SENDMSG 0 勇敢的玩家:[%s]进入神农洞寻宝去了!!! 50 215
+SENDMSG 0 勇敢的玩家:[%s]进入神农洞寻宝去了!!! 50 215
+SENDMSG 0 勇敢的玩家:[%s]进入神农洞寻宝去了!!! 50 215
+SENDMSG 0 勇敢的玩家:[%s]进入神农洞寻宝去了!!! 50 215
+#ELSEACT
+MESSAGEBOX 需要500元宝用来进入地图。
+[@迷失圣殿]
+#IF
+large G21 7
+#ACT
+MESSAGEBOX 开区8小时后无法进入此地图！
+break
+#if
+CHECKGAMEGOLD > 999
+#act
+GAMEGOLD - 1000
+mapmove mishid 246 246
+SENDMSG 0 不怕死的[%s],进入战破天寻宝去了!!! 50 215
+SENDMSG 0 不怕死的[%s],进入战破天寻宝去了!!! 50 215
+SENDMSG 0 不怕死的[%s],进入战破天寻宝去了!!! 50 215
+SENDMSG 0 不怕死的[%s],进入战破天寻宝去了!!! 50 215
+#ELSEACT
+MESSAGEBOX 需要1000元宝用来进入地图。
+[@龙渊泽]
+#IF
+large G21 7
+#ACT
+MESSAGEBOX 开区8小时后无法进入此地图！
+break
+#if
+CHECKGAMEGOLD > 999
+#act
+GAMEGOLD - 1000
+mapmove mishig
+SENDMSG 0 不怕死的[%s],进入龙渊泽,本地图BOSS超多请小心哦! 50 215
+SENDMSG 0 不怕死的[%s],进入龙渊泽,本地图BOSS超多请小心哦! 50 215
+SENDMSG 0 不怕死的[%s],进入龙渊泽,本地图BOSS超多请小心哦! 50 215
+SENDMSG 0 不怕死的[%s],进入龙渊泽,本地图BOSS超多请小心哦! 50 215
+#ELSEACT
+MESSAGEBOX 需要1000元宝用来进入地图。

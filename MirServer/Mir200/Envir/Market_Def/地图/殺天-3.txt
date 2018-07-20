@@ -1,0 +1,25 @@
+[@main]
+ ¤╭⌒╮╭⌒╮          欢迎光临     　　\
+ ╱◥██◣ ╭⌒╮                    <$SERVERNAME> 　　\
+︱田︱田田|╰-------------    　　\
+╬╬╬╬╬╬╬╬╬╬╬╬╬ ┆<COLOR=#244 等级100级+10000元宝+50金刚石进入>┆ \
+------------------------------------------------------------　\
+<我要进入/@go>    \
+------------------------------------------------------------　\
+[@go]
+#IF
+CHECKLEVELEX > 99
+CHECKGAMEGOLD > 9999
+CHECKGAMEDIAMOND > 49
+#ACT
+GAMEGOLD - 10000
+GAMEDIAMOND - 50
+MAPMOVE stsh
+SENDMSG 0 恭喜勇敢的玩家:[%s]进入殺天●圣宫寻宝!!! 253 0
+SENDMSG 0 恭喜勇敢的玩家:[%s]进入殺天●圣宫寻宝!!! 253 0
+SENDMSG 0 恭喜勇敢的玩家:[%s]进入殺天●圣宫寻宝!!! 253 0
+SENDMSG 0 恭喜勇敢的玩家:[%s]进入殺天●圣宫寻宝!!! 253 0
+break
+CLOSE
+#elseact
+messagebox 你的等级没有100级或者你没有10000元宝或者你没有50金刚石！！

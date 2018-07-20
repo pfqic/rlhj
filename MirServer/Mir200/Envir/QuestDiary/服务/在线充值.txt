@@ -1,0 +1,109 @@
+[@充值元宝]
+{
+#IF 
+#SAY 
+①本系统支持网银,盛大,骏网,征途和神州行充值卡等\
+②<网银,盛大,征途,神州行,骏网,Q币卡等支付方式在线充值/@22>\
+③<COLOR=clLime 本服不支持短信和固定电话不支持　>\
+④<COLOR=clLime 元宝比例：游戏卡：10元=10个元宝　网银：10元=12个元宝>\
+⑤注意：本服为月卡版本，出售的物品商铺里可看到\
+　\
+⑥<季卡购买/@季卡购买>　<年卡购买/@年卡购买>　<点击进入网页充值/@22>　\
+　\
+如果你已经充值了请点击→<元宝领取/@元宝>\
+
+[@回比奇]
+#if
+checkNameList ..\QuestDiary\月卡\月卡名单.txt
+#act
+MAPMOVE 0 330 268
+#elseact
+messagebox 本服为月卡版本，需充值月卡后才能继续游戏
+SENDMSG 5 本服为月卡版本，需充值月卡后才能继续游戏
+SENDMSG 4 本服为月卡版本，需充值月卡后才能继续游戏
+
+#if
+checkNameList ..\QuestDiary\月卡\年卡名单.txt
+#act
+MAPMOVE 0 330 268
+#elseact
+messagebox 本服为月卡版本，需充值月卡后才能继续游戏
+SENDMSG 5 本服为月卡版本，需充值月卡后才能继续游戏
+SENDMSG 4 本服为月卡版本，需充值月卡后才能继续游戏
+
+
+[@仓库]
+需要帮什么忙吗？\
+目前不收保管费，请多利用。\ \
+ <保管/@storage>东西\
+ <找回/@getback>东西\
+ <关 闭/@exit>\
+[@storage]
+需要保管什么东西？\ \ \
+ <返 回/@Main>
+[@getback]
+请看目录决定找什么东西。\ \ \
+ <返 回/@Main>\
+
+
+[@仓库]
+需要帮什么忙吗？\
+目前不收保管费，请多利用。\ \
+ <保管/@storage>东西\
+ <找回/@getback>东西\
+ <关 闭/@exit>\
+[@storage]
+需要保管什么东西？\ \ \
+ <返 回/@Main>
+[@getback]
+请看目录决定找什么东西。\ \ \
+ <返 回/@Main>
+
+
+[@季卡购买]
+#IF
+CHECKBAGSIZE  1
+CHECKGAMEGOLD > 9
+#ACT
+GAMEGOLD -  10
+give 梁山季卡(90天) 1
+messagebox 购买成功，双击梁山季卡小退后即可生效!
+#elseact
+messagebox 对不起!购买梁山季卡需要支付10元宝
+SENDMSG 5 %s对不起！您当前的元宝：<$GAMEGOLD>个，因此无法购买此物品！
+
+[@年卡购买]
+#IF
+CHECKBAGSIZE  1
+CHECKGAMEGOLD > 29
+#ACT
+GAMEGOLD -  30
+give 梁山年卡-365天 1
+messagebox 购买成功，双击梁山年卡小退后即可生效!
+#elseact
+messagebox 对不起!购买梁山年卡需要支付30元宝
+SENDMSG 5 %s对不起！您当前的元宝：<$GAMEGOLD>个，因此无法购买此物品！
+
+
+
+[@11]
+#if
+#act
+WebBrowser http://www.wan170.com/yk
+break
+
+
+[@22]
+#if
+#act
+WebBrowser http://www.wan170.com/float/redirect.html?uid=5118.18220&setuptmp=1&s1=www1.998756.com&s2=www2.998756.com&s3=www3.998756.com&s4=www4.998756.com&s5=www.18du.com/ex&s6=pay.huanluo.com/ex
+break
+
+
+
+[@元宝]
+#CALL [\充值元宝\元宝.txt] @领取元宝
+
+
+
+}

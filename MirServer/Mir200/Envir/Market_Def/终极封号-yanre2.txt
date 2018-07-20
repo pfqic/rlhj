@@ -1,0 +1,215 @@
+()
+%100
+[@main]
+
+<COLOR=clAqua 无任何汇款比例！不要轻易相信喊话信息！>\
+<COLOR=clAqua ……………………………………………………………………………>\
+
+<领取→冥王赞助大使封号/@17> <COLOR=clLime 累计充值RMB 2000  6.5倍经验+1.20倍攻击+降龙赞助血石>\ \
+<领取→首席赞助大使封号/@18> <COLOR=clLime 累计充值RMB 3000  7.0倍经验+1.25倍攻击+首席赞助血石>\ \ 
+<领取赞助血石/@领取>   <修理赞助血石/@修石头>   <清理多余血石/@清理>   <领取每日回馈/@回馈>\
+
+
+[@回馈]
+尊敬的〖<$USERNAME>〗,为回馈广大玩家对本服的支持与厚爱！设此奖励！\
+每日限量领取一次，请根据自己的赞助等级领取对应奖项！\
+<COLOR=clAqua ……………………………………………………………………………>\
+<冥王赞助大使→领取每日回馈/@冥王回> <COLOR=clLime 舍利子*10+金刚石1500+经验10亿>\ \
+<首席赞助大使→领取每日回馈/@首席回> <COLOR=clLime 舍利子*10+金刚石2000+经验20亿>\
+
+
+
+
+[@冥王回]
+#IF
+checknamelist ..\QuestDiary\数据文件\经验奖励.txt
+#act
+#say 
+今天你已经领过了,一天只能领一次哦！\\
+#ELSEACT
+Delaycall 5 @冥王1
+
+[@冥王1]
+#IF
+CheckGamePoint > 1999
+CheckGamePoint < 3000 
+CHECKBAGSIZE  15
+#act
+addnamelist ..\QuestDiary\数据文件\经验奖励.txt
+give 舍利子 10
+GAMEDIAMOND + 1500
+CHANGEEXP + 1000000000
+SENDMSG 7 请收下今日福利，祝您游戏愉快！！！
+SENDMSG 0 冥王赞助大使〖<$USERNAME>〗已领取今日福利！！！奖励丰厚，快去充值吧！ 251 0
+SENDMSG 0 冥王赞助大使〖<$USERNAME>〗已领取今日福利！！！奖励丰厚，快去充值吧！ 251 0
+#ELSEACT
+messagebox 【提示】:【请认准自己的赞助封号，并留出15个背包空格】\
+BREAK
+
+
+[@首席回]
+#IF
+checknamelist ..\QuestDiary\数据文件\经验奖励.txt
+#act
+#say 
+今天你已经领过了,一天只能领一次哦！\\
+#ELSEACT
+Delaycall 5 @首席1
+
+[@首席1]
+#IF
+CHECKHEROONLINE
+CheckGamePoint > 2999
+CHECKBAGSIZE  15
+#act
+addnamelist ..\QuestDiary\数据文件\经验奖励.txt
+give 舍利子 10
+GAMEDIAMOND + 2000
+CHANGEEXP + 2000000000
+SENDMSG 7 请收下今日福利，祝您游戏愉快！！！
+SENDMSG 0 首席赞助大使〖<$USERNAME>〗已领取今日福利！！！奖励丰厚，快去充值吧！ 251 0
+SENDMSG 0 首席赞助大使〖<$USERNAME>〗已领取今日福利！！！奖励丰厚，快去充值吧！ 251 0
+#ELSEACT
+messagebox 【提示】:【请认准自己的赞助封号，留出15个背包空格，并召唤出您的英雄】\
+BREAK
+
+
+[@清理]
+<COLOR=clAqua 免费帮您清理多余的赞助血石！！！>\
+<COLOR=clAqua 免费帮您清理多余的赞助血石！！！>\
+<COLOR=clAqua 免费帮您清理多余的赞助血石！！！>\
+<COLOR=clFuchsia 请各位老板把不用的血石放入背包！！！>\
+<COLOR=clFuchsia 请各位老板把不用的血石放入背包！！！>\
+<COLOR=clFuchsia 请各位老板把不用的血石放入背包！！！>\ \
+<我要清理/@开始清理>     <我不清理/@exit>
+
+
+[@开始清理]
+#IF
+#ACT
+TAKE 赞助血石
+TAKE 高级赞助血石
+TAKE 白银赞助血石
+TAKE 黄金赞助血石
+TAKE 钻石赞助血石
+TAKE 至尊赞助血石
+TAKE 降龙赞助血石
+TAKE 首席赞助血石
+SENDMSG 7 清理完毕！！！祝您游戏愉快！！！
+BREAK
+
+
+
+
+
+
+[@领取]
+<COLOR=clAqua 赞助血石消失、累积冲值更换血石，都可以在我这里领取！！！>\
+<COLOR=clFuchsia 5000元宝领取一次 请根据冲值累积情况领取对应血石>\
+<领取冥王血石/@领取冥王> <COLOR=clAqua 累计充值RMB 2000  可领取(名字颜色→名流闪)>\ \
+<领取首席血石/@领取首席> <COLOR=clAqua 累计充值RMB 3000  可领取(名字颜色→贵族闪)>\ \
+<稍等，我去冲值/@exit>\
+
+
+[@领取冥王]
+#IF
+CHECKBAGSIZE  5
+CheckGamePoint > 1999
+CHECKGAMEGOLD > 4999
+#ACT
+GAMEGOLD - 5000
+give 降龙赞助血石 1
+SENDMSG 7 请佩带赞助血石后小退即可享有尊贵封号！！！
+#ELSEACT
+MESSAGEBOX 请检查您的元宝数量或者冲值累积是否达到！或者背包不足5格
+BREAK
+
+[@领取首席]
+#IF
+CHECKBAGSIZE  5
+CheckGamePoint > 2999
+CHECKGAMEGOLD > 4999
+#ACT
+GAMEGOLD - 5000
+give 首席赞助血石 1
+SENDMSG 7 请佩带赞助血石后小退即可享有尊贵封号！！！
+#ELSEACT
+MESSAGEBOX 请检查您的元宝数量或者冲值累积是否达到！或者背包不足5格
+BREAK
+
+[@修石头]
+<COLOR=clFuchsia 给我1000元宝帮你修赞助血石>\
+<修理冥王血石/@修冥王> <COLOR=clAqua 请将石头放在人物背包里,注意!一次一个!!!>\ \
+<修理首席血石/@修首席> <COLOR=clAqua 请将石头放在人物背包里,注意!一次一个!!!>\ \
+
+<算了吧/@exit>\
+
+
+[@修冥王]
+#IF
+CHECKGAMEGOLD > 999
+CHECKITEM 降龙赞助血石 1
+#ACT
+GAMEGOLD - 1000
+take 降龙赞助血石 1
+give 降龙赞助血石 1
+SENDMSG 7 请拿好崭新的赞助血石，常来光顾噢！！！
+#ELSEACT
+MESSAGEBOX 请检查您的元宝数量或者血石是否在背包！
+BREAK
+
+
+
+[@修首席]
+#IF
+CHECKGAMEGOLD > 999
+CHECKITEM 首席赞助血石 1
+#ACT
+GAMEGOLD - 1000
+take 首席赞助血石 1
+give 首席赞助血石 1
+SENDMSG 7 请拿好崭新的赞助血石，常来光顾噢！！！
+#ELSEACT
+MESSAGEBOX 请检查您的元宝数量或者血石是否在背包！
+BREAK
+
+
+
+[@17]
+#IF
+CHECKITEMW 降龙赞助血石
+#ACT
+SET [10] 0
+SET [11] 0
+SET [12] 0
+SET [13] 0
+SET [14] 0
+SET [15] 0
+SET [16] 0
+SET [17] 1
+SET [18] 0
+#CALL [\\登陆\封号.txt] @FH
+#ELSEACT
+MESSAGEBOX 领取失败!!请佩带好血石!!
+break
+
+
+[@18]
+#IF
+CHECKITEMW 首席赞助血石
+#ACT
+SET [10] 0
+SET [11] 0
+SET [12] 0
+SET [13] 0
+SET [14] 0
+SET [15] 0
+SET [16] 0
+SET [17] 0
+SET [18] 1
+#CALL [\\登陆\封号.txt] @FH
+#ELSEACT
+MESSAGEBOX 领取失败!!请佩带好血石!!
+break
+
+

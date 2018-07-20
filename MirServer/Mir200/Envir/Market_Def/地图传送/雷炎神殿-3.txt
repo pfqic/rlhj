@@ -1,0 +1,21 @@
+[@main]
+年轻人，看你佛缘不浅，也许我可以送你一程，不过你一人\
+前往，我怕你是有去无回呀，还是多叫上几个人吧！\
+多少勇士去了，能活着回来没几个。你确定要去寻这些宝藏吗?\
+<COLOR=clLime 怪物爆率：><COLOR=clAqua 中.小怪爆战神装备、大BOOS爆星王系列等>\
+<COLOR=clLime 主要BOSS：><COLOR=clAqua 雷炎神龙、雷炎蛛王>\
+<COLOR=clLime 传送条件：><COLOR=clAqua 40级+600元宝传送费!> \  \
+<老子就不信，不能活着回来！送我去/@yuanbjq>            <算了，我闪。/@EXIT>\
+
+[@yuanbjq]
+#if
+CHECKLEVELEX > 39
+CHECKGAMEGOLD > 599
+#ACT
+GAMEGOLD - 600
+MAPMOVE HL001 21 223
+SENDMSG 0 不怕死的[%s]闯进了【雷炎神殿】看来是凶多吉少了,建议组队前往!
+break
+#ELSEACT
+MessageBox  进入要求等级40级，您的级别不够，或者没600元宝！
+break

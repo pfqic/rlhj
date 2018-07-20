@@ -1,0 +1,4 @@
+()
+%100
+[@MAIN]
+<COLOR=clFuchsia 此功能完善中，敬请期待>

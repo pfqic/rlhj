@@ -1,0 +1,17 @@
+[@main]
+你确定要进入此地图寻宝吗???\ \
+<我确定进入/@go>      <我考虑下再进/@EXIT>\ 
+
+[@go]
+#IF
+large G21 7
+#ACT
+MESSAGEBOX 开区8小时后无法进入此地图！
+break
+#IF
+#act
+mapmove BOSS8
+SENDMSG 0 恭喜勇敢的玩家:[%s]进入BOSS皇宫二层寻宝!!! 253 0
+SENDMSG 0 恭喜勇敢的玩家:[%s]进入BOSS皇宫二层寻宝!!! 253 0
+SENDMSG 0 恭喜勇敢的玩家:[%s]进入BOSS皇宫二层寻宝!!! 253 0
+SENDMSG 0 恭喜勇敢的玩家:[%s]进入BOSS皇宫二层寻宝!!! 253 0

@@ -1,0 +1,71 @@
+[@main]
+╔───────────────────────────╗  \
+┊ <COLOR=clLime 激情夺宝14点开放，武器派送10点开放，天降财神22点开放> ┊\
+├───────────────────────────┤\
+┊ [<进入激情夺宝/@夺宝>] ┊ [<进入武器派送/@武器>] ┊ [<进入天降财神/@财神>]   ┊\
+┊                                                      ┊\
+├───────────────────────────┤\
+┊[<COLOR=clYellow 行会争霸：><COLOR=clFuchsia 每天><COLOR=clGreen 13点、15点、19点整开启><COLOR=clFuchsia 十分钟后大门关闭>]┊\
+┊                  <※※进入行会争霸※※/@争霸>                    ┊\
+╚───────────────────────────╝\
+
+[@夺宝]
+#if
+#act
+mapmove  jqdb
+give 回城卷 1
+sendmsg 0 『<$USERNAME>』进入激情夺宝地图了！祝愿他满载而归哦！！！ 255 245 30
+
+[@武器]
+#if
+#act
+mapmove wqps
+give 回城卷 1
+sendmsg 0 『<$USERNAME>』进入武器派送地图了！祝愿他满载而归哦！！！ 255 245 30
+
+[@财神]
+#if
+#act
+mapmove tjcs
+give 回城卷 1
+sendmsg 0 『<$USERNAME>』进入天降财神地图了！祝愿他满载而归哦！！！ 255 245 30
+
+[@争霸]
+<COLOR=clLime 本服推荐活动，只有强者才能参加(等级要求40级、必须有行会。)>\
+<COLOR=clRed 争霸时间>：每天13:00-13:35、15:00-15:35、19:00-19:35 开放,开门10分钟\
+<COLOR=clRed 参赛要求>：参加者必须加入了行会，等级最底40级\
+<COLOR=clRed 领奖要求>：行会争霸结束后,地图内最后剩下的行会为胜利方\
+<COLOR=clRed 领奖时间>：奖励领取时间：13:35-14:00、15:35-16:00、19:35-20:00,只可派一名代表\
+<COLOR=clRed 奖励物品>：最后剩下的行会为胜利方可以获得<COLOR=clRed 500万元宝>奖励\ \
+<进入争霸地图/@JR>
+[@JR]
+#IF
+HAVEGUILD
+CHECKLEVELEX > 39
+HOUR 13 13
+MIN 0 9
+#act
+mapmove E1
+SENDMSG 0 『<$GUILDNAME>』行会的『<$USERNAME>』进入了行会争霸地图...
+break
+#IF
+HAVEGUILD
+CHECKLEVELEX > 39
+HOUR 15 15
+MIN 0 9
+#act
+mapmove E1
+SENDMSG 0 『<$GUILDNAME>』行会的『<$USERNAME>』进入了行会争霸地图...
+break
+#IF
+HAVEGUILD
+CHECKLEVELEX > 39
+HOUR 19 19
+MIN 0 9
+#act
+mapmove E1
+SENDMSG 0 『<$GUILDNAME>』行会的『<$USERNAME>』进入了行会争霸地图...
+break
+#elseact
+messagebox 已超过允许进场时间!\每天行会争霸开门时间是每天13:00-13:10、15:00-15:10、19:00-19:10！\或者你没有40级！或许你没有加入行会！
+break

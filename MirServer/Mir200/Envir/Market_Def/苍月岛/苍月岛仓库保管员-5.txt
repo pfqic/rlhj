@@ -1,0 +1,4 @@
+(@storage @getback )
+%100
+[@main]
+#CALL [\城市商人\保管员.txt] @仓库

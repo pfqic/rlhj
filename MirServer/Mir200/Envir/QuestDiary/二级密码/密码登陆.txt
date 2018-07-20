@@ -1,0 +1,135 @@
+[@密码登陆]
+{
+#IF
+checknamelist ..\QuestDiary\数据文件\密码名单.txt
+#ELSEACT
+SENDMSG 6 ★你还没有设置二级密码，请及时去NPC(帐号二代密保)处设置，使你的帐号更安全★ 251 249 20
+SENDMSG 6 ★你还没有设置二级密码，请及时去NPC(帐号二代密保)处设置，使你的帐号更安全★ 251 249 20
+BREAK
+#IF
+CHECKSTRINGLIST ..\QuestDiary\数据文件\IP数据.txt <$USERNAME><$IPADDR>
+#ACT
+SENDMSG 6 当前IP为安全IP！祝你游戏愉快！
+SENDMSG 6 卡顿或者掉线、小退即可！
+BREAK
+#IF
+ISONMAP MIMA
+#ACT
+BREAK
+#IF
+checknamelist ..\QuestDiary\数据文件\密码名单.txt
+#ACT
+mapmove MIMA
+CALCVAR HUMAN 地图号 = <$CURRENTMAP>
+SAVEVAR HUMAN 地图号 ..\QuestDiary\数据文件\密码数据.txt
+CALCVAR HUMAN 坐标X = <$CURRENTX>
+SAVEVAR HUMAN 坐标X ..\QuestDiary\数据文件\密码数据.txt
+CALCVAR HUMAN 坐标Y = <$CURRENTY>
+SAVEVAR HUMAN 坐标Y ..\QuestDiary\数据文件\密码数据.txt
+GIVE 疗伤药 46
+BREAK
+}
+
+[@转密码]
+{
+为了保障玩家的帐号安全，在帐号被盗或者被骗，\
+只要你设置了2级密码，<COLOR=$F79600 IP不一致上线必须输入二级密码！>\
+警请各位玩家不要泄露自己的帐号密码保护，避免不必要的损失！\ \
+<设置二级密码/@设置二级密码>\
+<修改二级密码/@修改二级密码>\
+<清除二级密码/@清除二级密码>\ \
+<离开/@EXIT>
+
+[@清除二级密码]
+#IF
+checknamelist ..\QuestDiary\数据文件\密码名单.txt
+#ACT
+QUERYVALUE 4 1 7 @清除二级密码1 请输入你之前设置的二级密码： NPC
+BREAK
+#ELSEACT
+MESSAGEBOX 你还没设置二级密码清除失败!
+BREAK
+
+[@清除二级密码1]
+#IF
+EQUAL M4 <$HUMAN(二级密码)>
+#ACT
+DELLINELIST QuestDiary\数据文件\IP数据.txt <$USERNAME><$IPADDR>
+CALCVAR HUMAN 二级密码 = 0
+SAVEVAR HUMAN 二级密码 ..\QuestDiary\数据文件\密码数据.txt
+DELNAMELIST ..\QuestDiary\数据文件\密码名单.txt
+SENDMSG 6 清除成功!祝你游戏愉快!
+CLOSE
+BREAK
+#ELSEACT
+SENDMSG 6 密码错误!清除失败!
+CLOSE
+BREAK
+
+
+[@修改二级密码]
+#IF
+checknamelist ..\QuestDiary\数据文件\密码名单.txt
+#ACT
+QUERYVALUE 4 1 7 @修改二级密码1 请输入你之前设置的二级密码： NPC
+BREAK
+#ELSEACT
+MESSAGEBOX 你还没设置二级密码清除失败!
+BREAK
+
+
+[@修改二级密码1]
+#IF
+EQUAL M4 <$HUMAN(二级密码)>
+#SAY
+为了保障玩家的帐号安全，在帐号被盗或者被骗，\
+只要你设置了2级密码，<COLOR=$F79600 IP不一致上线必须输入二级密码！>\
+警请各位玩家不要泄露自己的帐号密码保护，避免不必要的损失！\ \
+<输入想要设置的密码/@修改二级密码2>\
+#ACT
+BREAK
+#ELSEACT
+SENDMSG 6 密码错误!修改失败!
+CLOSE
+BREAK
+
+[@修改二级密码2]
+#ACT
+QUERYVALUE 4 1 7 @密保格式 请输入你想设置的二级密码\(4-7)个数字\例:1234567 NPC
+BREAK
+
+[@设置二级密码]
+#IF
+checknamelist ..\QuestDiary\数据文件\密码名单.txt
+#ACT
+MESSAGEBOX 你已经设置了二级密码！
+MOV M4 0
+BREAK
+#IF
+CHECKLEVELEX > 0
+#ACT
+QUERYVALUE 4 1 7 @密保格式 请输入你想设置的二级密码\(4-7)个数字\例:1234567 NPC
+BREAK
+
+
+[@密保格式]
+;#IF
+;CheckStringList ..\QuestDiary\二级密码\简单二级.txt <$STR(M4)>
+;#ACT
+;messagebox 错误提示：二级密码过于简单，盗号严重，请认真设置二级密码\二级密码不要和游戏密码相同!
+;break
+
+#IF
+LARGE M4 999
+#ACT
+CALCVAR HUMAN  二级密码 = <$STR(M4)>
+SAVEVAR HUMAN 二级密码 ..\QuestDiary\数据文件\密码数据.txt
+ADDNAMELIST ..\QuestDiary\数据文件\密码名单.txt
+ADDLINELIST QuestDiary\数据文件\IP数据.txt <$USERNAME><$IPADDR>
+MESSAGEBOX 密码设置成功!\你设置的密码是:◆[<$STR(M4)>]◆\请牢记!
+BREAK
+#ELSEACT
+MESSAGEBOX 密码设置失败!\确认你输入的数据为4-7位的数字!
+BREAK
+
+}

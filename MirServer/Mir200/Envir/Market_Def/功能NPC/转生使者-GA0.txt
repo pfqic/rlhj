@@ -1,0 +1,1100 @@
+[@main]
+<COLOR=clLime 光阴如梭，未必是世间良药；>\
+<COLOR=clRed 念念相续，苦痛里都是执着，唯有轮回之力，可是你变的更强！> \
+<COLOR=clSkyBlue  少侠，你是否需要转生，在过去里寻找未来...>\
+<COLOR=clFuchsia [提示]：转生不掉级，不减经验！>\
+<COLOR=clFuchsia [提示]：转生可以获得海量属性，满级转生配有专属地图！！>\ \
+<人物转生/@人物转生>           <人物满级转生专属地图/@人物满级>                \
+<英雄转生/@英雄转生>           <英雄满级转生专属地图/@英雄满级>         \
+
+
+[@人物满级]
+#if
+CHECKVAR HUMAN 转生级数 = 9
+#act
+mapmove rwzs
+give 回城卷  1
+SENDMSG 0 恭喜勇敢的玩家:[%s]进入奇门·幻月之舞寻宝!!! 253 0
+SENDMSG 0 恭喜勇敢的玩家:[%s]进入奇门·幻月之舞寻宝!!! 253 0
+SENDMSG 0 恭喜勇敢的玩家:[%s]进入奇门·幻月之舞寻宝!!! 253 0
+SENDMSG 0 恭喜勇敢的玩家:[%s]进入奇门·幻月之舞寻宝!!! 253 0
+#elseact
+messagebox  你还没有满级转生！暂时无法进入！
+
+
+
+[@英雄满级]
+#if
+H.CHECKVAR HUMAN 英雄转生 = 9
+#act
+mapmove yxzs
+give 回城卷  1
+SENDMSG 0 恭喜勇敢的玩家:[%s]进入奇门·古域之门寻宝!!! 253 0
+SENDMSG 0 恭喜勇敢的玩家:[%s]进入奇门·古域之门寻宝!!! 253 0
+SENDMSG 0 恭喜勇敢的玩家:[%s]进入奇门·古域之门寻宝!!! 253 0
+SENDMSG 0 恭喜勇敢的玩家:[%s]进入奇门·古域之门寻宝!!! 253 0
+#elseact
+messagebox  你的英雄还没有满级转生！暂时无法进入！
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[@人物转生]
+<一重天/@45>    <COLOR=clGray →>    <COLOR=clSkyBlue 需要45级   九品知县><COLOR=clYellow [封号]>    <COLOR=#254 上线攻魔道+2点>\
+<二重天/@55>    <COLOR=clGray →>    <COLOR=clSkyBlue 需要55级   八品知府><COLOR=clYellow [封号]>    <COLOR=#254 上线攻魔道+5点>\
+<三重天/@65>    <COLOR=clGray →>    <COLOR=clSkyBlue 需要65级   七品太守><COLOR=clYellow [封号]>    <COLOR=#254 上线攻魔道+10点>\
+<四重天/@75>    <COLOR=clGray →>    <COLOR=clSkyBlue 需要75级   六品巡抚><COLOR=clYellow [封号]>    <COLOR=#254 上线攻魔道+15点>\
+<五重天/@85>    <COLOR=clGray →>    <COLOR=clSkyBlue 需要85级   五品提督><COLOR=clYellow [封号]>    <COLOR=#254 上线攻魔道+20点>\
+<六重天/@95>    <COLOR=clGray →>    <COLOR=clSkyBlue 需要95级   四品总督><COLOR=clYellow [封号]>    <COLOR=#254 上线攻魔道+25点>\
+<七重天/@105>    <COLOR=clGray →>    <COLOR=clSkyBlue 需要105级  三品尚书><COLOR=clYellow [封号]>    <COLOR=#254 上线攻魔道+30点>\
+<八重天/@115>    <COLOR=clGray →>    <COLOR=clSkyBlue 需要115级  二品太傅><COLOR=clYellow [封号]>    <COLOR=#254 上线攻魔道+40点>\
+<九重天/@125>    <COLOR=clGray →>    <COLOR=clSkyBlue 需要125级  一统天下><COLOR=clYellow [封号]>    <COLOR=#254 上线攻魔道+50点>\
+领取后小退,属性生效!!!
+
+[@英雄转生]
+<英雄一重天/@045>   <COLOR=clGray →>   <COLOR=clSkyBlue 需要45级   >    <COLOR=#254 上线攻魔道+2点>\
+<英雄二重天/@055>   <COLOR=clGray →>   <COLOR=clSkyBlue 需要55级   >    <COLOR=#254 上线攻魔道+5点>\
+<英雄三重天/@065>   <COLOR=clGray →>   <COLOR=clSkyBlue 需要65级   >    <COLOR=#254 上线攻魔道+10点>\
+<英雄四重天/@075>   <COLOR=clGray →>   <COLOR=clSkyBlue 需要75级   >    <COLOR=#254 上线攻魔道+15点>\
+<英雄五重天/@085>   <COLOR=clGray →>   <COLOR=clSkyBlue 需要85级   >    <COLOR=#254 上线攻魔道+20点>\
+<英雄六重天/@095>   <COLOR=clGray →>   <COLOR=clSkyBlue 需要95级   >    <COLOR=#254 上线攻魔道+25点>\
+<英雄七重天/@0105>   <COLOR=clGray →>   <COLOR=clSkyBlue 需要105级 >     <COLOR=#254 上线攻魔道+30点>\
+<英雄八重天/@0115>   <COLOR=clGray →>   <COLOR=clSkyBlue 需要115级 >     <COLOR=#254 上线攻魔道+40点>\
+<英雄九重天/@0125>   <COLOR=clGray →>   <COLOR=clSkyBlue 需要125级 >     <COLOR=#254 上线攻魔道+50点>\
+领取后小退,属性生效!!!
+
+[@0125]
+#IF
+H.CHECKVAR HUMAN 英雄转生 > 8
+#ACT
+MESSAGEBOX  你的英雄已经进行过本次转生了.禁止重复转生!!!
+BREAK
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 1
+#ACT
+MESSAGEBOX 请你的英雄先进行第一次转生吧！~~~
+BREAK
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 2
+#ACT
+MESSAGEBOX 请你的英雄先进行第二次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 3
+#ACT
+MESSAGEBOX 请你的英雄先进行第三次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 4
+#ACT
+MESSAGEBOX 请你的英雄先进行第四次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 5
+#ACT
+MESSAGEBOX 请你的英雄先进行第五次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 6
+#ACT
+MESSAGEBOX 请你的英雄先进行第六次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 7
+#ACT
+MESSAGEBOX 请你的英雄先进行第七次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 8
+#ACT
+MESSAGEBOX 请你的英雄先进行第八次转生吧！~~~
+BREAK
+
+
+#IF
+H.CHECKLEVELEX < 125
+#ACT
+MESSAGEBOX 你的英雄级别不够进行本次转生!!
+BREAK
+
+
+#IF
+CHECKGAMEGOLD < 3000000
+#ACT
+MESSAGEBOX 你的元宝不足3000000
+BREAK
+
+#IF
+#ACT
+GAMEGOLD - 3000000
+H.CALCVAR HUMAN 英雄转生 = 9
+H.SAVEVAR HUMAN 英雄转生  ..\QuestDiary\如龙数据\英雄转生变量Save.txt
+MESSAGEBOX 领取成功.恭喜你的英雄领取[上线攻魔道属性+50]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+
+break
+
+
+
+[@0115]
+#IF
+H.CHECKVAR HUMAN 英雄转生 > 7
+#ACT
+MESSAGEBOX 你的英雄已经进行过本次转生了.禁止重复转生!!!
+BREAK
+
+
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 1
+#ACT
+MESSAGEBOX 请你的英雄先进行第一次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 2
+#ACT
+MESSAGEBOX 请你的英雄先进行第二次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 3
+#ACT
+MESSAGEBOX 请你的英雄先进行第三次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 4
+#ACT
+MESSAGEBOX 请你的英雄先进行第四次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 5
+#ACT
+MESSAGEBOX 请你的英雄先进行第五次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 6
+#ACT
+MESSAGEBOX 请你的英雄先进行第六次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 7
+#ACT
+MESSAGEBOX 请你的英雄先进行第七次转生吧！~~~
+BREAK
+
+
+#IF
+H.CHECKLEVELEX < 115
+#ACT
+MESSAGEBOX 你的英雄级别不够进行本次转生!!
+BREAK
+
+
+
+#IF
+CHECKGAMEGOLD < 2500000
+#ACT
+MESSAGEBOX 你的元宝不足2500000
+BREAK
+
+#IF
+#ACT
+GAMEGOLD - 2500000
+H.CALCVAR HUMAN 英雄转生 = 8
+H.SAVEVAR HUMAN 英雄转生  ..\QuestDiary\如龙数据\英雄转生变量Save.txt
+MESSAGEBOX 领取成功.恭喜你的英雄领取[上线攻魔道属性+40]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+
+break
+
+[@0105]
+#IF
+H.CHECKVAR HUMAN 英雄转生 > 6
+#ACT
+MESSAGEBOX 你的英雄已经进行过本次转生了.禁止重复转生!!!
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 1
+#ACT
+MESSAGEBOX 请你的英雄先进行第一次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 2
+#ACT
+MESSAGEBOX 请你的英雄先进行第二次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 3
+#ACT
+MESSAGEBOX 请你的英雄先进行第三次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 4
+#ACT
+MESSAGEBOX 请你的英雄先进行第四次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 5
+#ACT
+MESSAGEBOX 请你的英雄先进行第五次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 6
+#ACT
+MESSAGEBOX 请你的英雄先进行第六次转生吧！~~~
+BREAK
+
+
+#IF
+H.CHECKLEVELEX < 105
+#ACT
+MESSAGEBOX 你的英雄级别不够进行本次转生!!
+BREAK
+
+
+
+
+#IF
+CHECKGAMEGOLD < 2000000
+#ACT
+MESSAGEBOX 你的元宝不足2000000
+BREAK
+
+#IF
+#ACT
+gamegold - 2000000
+H.CALCVAR HUMAN 英雄转生 = 7
+H.SAVEVAR HUMAN 英雄转生  ..\QuestDiary\如龙数据\英雄转生变量Save.txt
+MESSAGEBOX 领取成功.恭喜你的英雄领取[上线攻魔道属性+30]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+
+break
+
+[@095]
+#IF
+H.CHECKVAR HUMAN 英雄转生 > 5
+#ACT
+MESSAGEBOX 你的英雄已经进行过本次转生了.禁止重复转生!!!
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 1
+#ACT
+MESSAGEBOX 请你的英雄先进行第一次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 2
+#ACT
+MESSAGEBOX 请你的英雄先进行第二次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 3
+#ACT
+MESSAGEBOX 请你的英雄先进行第三次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 4
+#ACT
+MESSAGEBOX 请你的英雄先进行第四次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 5
+#ACT
+MESSAGEBOX 请你的英雄先进行第五次转生吧！~~~
+BREAK
+
+
+#IF
+H.CHECKLEVELEX < 95
+#ACT
+MESSAGEBOX 你的英雄级别不够进行本次转生!!
+
+BREAK
+
+
+#IF
+CHECKGAMEGOLD < 1500000
+#ACT
+MESSAGEBOX 你的元宝不足1500000
+BREAK
+
+
+#if
+#act
+gamegold - 1500000
+H.CALCVAR HUMAN 英雄转生 = 6
+H.SAVEVAR HUMAN 英雄转生  ..\QuestDiary\如龙数据\英雄转生变量Save.txt
+MESSAGEBOX 领取成功.恭喜你的英雄领取[上线攻魔道属性+25]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+
+break
+
+[@085]
+#IF
+H.CHECKVAR HUMAN 英雄转生 > 4
+#ACT
+MESSAGEBOX 你的英雄已经进行过本次转生了.禁止重复转生!!!
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 1
+#ACT
+MESSAGEBOX 请你的英雄先进行第一次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 2
+#ACT
+MESSAGEBOX 请你的英雄先进行第二次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 3
+#ACT
+MESSAGEBOX 请你的英雄先进行第三次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 4
+#ACT
+MESSAGEBOX 请你的英雄先进行第四次转生吧！~~~
+BREAK
+
+
+#IF
+H.CHECKLEVELEX < 85
+#ACT
+MESSAGEBOX 你的英雄级别不够进行本次转生!!
+
+BREAK
+
+
+
+#IF
+CHECKGAMEGOLD < 1000000
+#ACT
+MESSAGEBOX 你的元宝不足1000000
+BREAK
+
+#IF
+#ACT
+H.CALCVAR HUMAN 英雄转生 = 5
+H.SAVEVAR HUMAN 英雄转生  ..\QuestDiary\如龙数据\英雄转生变量Save.txt
+GAMEGOLD - 1000000
+MESSAGEBOX 领取成功.恭喜你的英雄领取[上线攻魔道属性+20]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+
+break
+
+[@075]
+#IF
+H.CHECKVAR HUMAN 英雄转生 > 3
+#ACT
+MESSAGEBOX 你的英雄已经进行过本次转生了.禁止重复转生!!!
+BREAK
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 1
+#ACT
+MESSAGEBOX 请你的英雄先进行第一次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 2
+#ACT
+MESSAGEBOX 请你的英雄先进行第二次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 3
+#ACT
+MESSAGEBOX 请你的英雄先进行第三次转生吧！~~~
+BREAK
+#IF
+H.CHECKLEVELEX < 75
+#ACT
+MESSAGEBOX 你的英雄级别不够进行本次转生!!
+BREAK
+
+
+
+#IF
+CHECKGAMEGOLD < 800000
+#ACT
+MESSAGEBOX 你的元宝不足800000
+BREAK
+
+#IF
+#ACT
+GAMEGOLD - 800000
+H.CALCVAR HUMAN 英雄转生 = 4
+H.SAVEVAR HUMAN 英雄转生  ..\QuestDiary\如龙数据\英雄转生变量Save.txt
+MESSAGEBOX 领取成功.恭喜你的英雄领取[上线攻魔道属性+15]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+
+break
+
+[@065]
+#IF
+H.CHECKVAR HUMAN 英雄转生 > 2
+#ACT
+MESSAGEBOX 你的英雄已经进行过本次转生了.禁止重复转生!!!
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 1
+#ACT
+MESSAGEBOX 请你的英雄先进行第一次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 2
+#ACT
+MESSAGEBOX 请你的英雄先进行第二次转生吧！~~~
+BREAK
+
+#IF
+H.CHECKLEVELEX < 65
+#ACT
+MESSAGEBOX 你的英雄级别不够进行本次转生!!
+BREAK
+
+
+
+#IF
+CHECKGAMEGOLD < 500000
+#ACT
+MESSAGEBOX 你的元宝不足500000
+BREAK
+
+#IF
+#ACT
+H.CALCVAR HUMAN 英雄转生 = 3
+H.SAVEVAR HUMAN 英雄转生  ..\QuestDiary\如龙数据\英雄转生变量Save.txt
+GAMEGOLD - 500000
+MESSAGEBOX 领取成功.恭喜你的英雄领取[上线攻魔道属性+10]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+
+break
+
+[@055]
+#IF
+H.CHECKVAR HUMAN 英雄转生 > 1
+#ACT
+MESSAGEBOX 你的英雄已经进行过本次转生了.禁止重复转生!!!
+BREAK
+
+#IF
+H.CHECKVAR HUMAN 英雄转生 < 1
+#ACT
+MESSAGEBOX 请你的英雄先进行第一次转生吧！~~~
+BREAK
+#IF
+H.CHECKLEVELEX < 55
+#ACT
+MESSAGEBOX 你的英雄级别不够进行本次转生!!
+BREAK
+
+
+
+#IF
+CHECKGAMEGOLD < 200000
+#ACT
+MESSAGEBOX 你的元宝不足200000
+BREAK
+
+#IF
+#ACT
+H.CALCVAR HUMAN 英雄转生 = 2
+H.SAVEVAR HUMAN 英雄转生  ..\QuestDiary\如龙数据\英雄转生变量Save.txt
+GAMEGOLD - 200000
+MESSAGEBOX 领取成功.恭喜你的英雄领取[上线攻魔道属性+5]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+
+break
+
+[@045]
+#IF
+H.CHECKVAR HUMAN 英雄转生 > 0
+#ACT
+MESSAGEBOX 你的英雄已经进行过本次转生了.禁止重复转生!!!
+BREAK
+
+
+#IF
+H.CHECKLEVELEX < 45
+#ACT
+MESSAGEBOX 你的等级不够无法领取
+BREAK
+
+
+#IF
+CHECKGAMEGOLD < 100000
+#ACT
+MESSAGEBOX 你的元宝不足100000
+BREAK
+
+#IF
+#ACT
+H.CALCVAR HUMAN 英雄转生 = 1
+H.SAVEVAR HUMAN 英雄转生  ..\QuestDiary\如龙数据\英雄转生变量Save.txt
+GAMEGOLD - 100000
+MESSAGEBOX 领取成功.恭喜你的英雄领取[上线攻魔道属性+2]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+
+break
+
+
+[@125]
+#IF
+CHECKVAR HUMAN 转生级数 > 8
+#ACT
+MESSAGEBOX  你已经进行过本次转生了.禁止重复转生!!!
+BREAK
+#IF
+CHECKVAR HUMAN 转生级数 < 1
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+#IF
+CHECKVAR HUMAN 转生级数 < 2
+#ACT
+MESSAGEBOX 请从八品知府努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 3
+#ACT
+MESSAGEBOX 请从七品太守努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 4
+#ACT
+MESSAGEBOX 请从六品巡抚努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 5
+#ACT
+MESSAGEBOX 请从五品提督努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 6
+#ACT
+MESSAGEBOX 请从四品总督努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 7
+#ACT
+MESSAGEBOX 请从三品尚书努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 8
+#ACT
+MESSAGEBOX 请从二品太傅努力升官吧！~~~
+BREAK
+
+
+#IF
+CHECKLEVELEX < 125
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够进行本次转生!!
+BREAK
+
+
+#IF
+CHECKGAMEGOLD < 3000000
+#ACT
+MESSAGEBOX 你的元宝不足3000000
+BREAK
+
+#IF
+#ACT
+GAMEGOLD - 3000000
+CALCVAR HUMAN 转生级数 = 9
+SAVEVAR HUMAN 转生级数  ..\QuestDiary\如龙数据\转生变量Save.txt
+MESSAGEBOX 领取成功.恭喜你领取的(125级)[一统天下(封号)]+[上线攻魔道属性+50]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+
+break
+
+
+
+[@115]
+#IF
+CHECKVAR HUMAN 转生级数 > 7
+#ACT
+MESSAGEBOX 你已经进行过本次转生了.禁止重复转生!!!
+BREAK
+
+
+
+#IF
+CHECKVAR HUMAN 转生级数 < 1
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 2
+#ACT
+MESSAGEBOX 请从八品知府努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 3
+#ACT
+MESSAGEBOX 请从七品太守努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 4
+#ACT
+MESSAGEBOX 请从六品巡抚努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 5
+#ACT
+MESSAGEBOX 请从五品提督努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 6
+#ACT
+MESSAGEBOX 请从四品总督努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 7
+#ACT
+MESSAGEBOX 请从三品尚书努力升官吧！~~~
+BREAK
+
+
+#IF
+CHECKLEVELEX < 115
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够进行本次转生!!
+BREAK
+
+
+
+#IF
+CHECKGAMEGOLD < 2500000
+#ACT
+MESSAGEBOX 你的元宝不足2500000
+BREAK
+
+#IF
+#ACT
+GAMEGOLD - 2500000
+CALCVAR HUMAN 转生级数 = 8
+SAVEVAR HUMAN 转生级数  ..\QuestDiary\如龙数据\转生变量Save.txt
+MESSAGEBOX 领取成功.恭喜你领取的(115级)[二品太傅(封号)]+[上线攻魔道属性+40]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+
+break
+
+[@105]
+#IF
+CHECKVAR HUMAN 转生级数 > 6
+#ACT
+MESSAGEBOX 你已经进行过本次转生了.禁止重复转生!!!
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 1
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 2
+#ACT
+MESSAGEBOX 请从八品知府努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 3
+#ACT
+MESSAGEBOX 请从七品太守努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 4
+#ACT
+MESSAGEBOX 请从六品巡抚努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 5
+#ACT
+MESSAGEBOX 请从五品提督努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 6
+#ACT
+MESSAGEBOX 请从四品总督努力升官吧！~~~
+BREAK
+
+
+#IF
+CHECKLEVELEX < 105
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够进行本次转生!!
+BREAK
+
+
+
+
+#IF
+CHECKGAMEGOLD < 2000000
+#ACT
+MESSAGEBOX 你的元宝不足2000000
+BREAK
+
+#IF
+#ACT
+gamegold - 2000000
+CALCVAR HUMAN 转生级数 = 7
+SAVEVAR HUMAN 转生级数  ..\QuestDiary\如龙数据\转生变量Save.txt
+MESSAGEBOX 领取成功.恭喜你领取的(65级)[三品尚书(封号)]+[上线攻魔道属性+30]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+
+break
+
+[@95]
+#IF
+CHECKVAR HUMAN 转生级数 > 5
+#ACT
+MESSAGEBOX 你已经进行过本次转生了.禁止重复转生!!!
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 1
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 2
+#ACT
+MESSAGEBOX 请从八品知府努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 3
+#ACT
+MESSAGEBOX 请从七品太守努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 4
+#ACT
+MESSAGEBOX 请从六品巡抚努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 5
+#ACT
+MESSAGEBOX 请从五品提督努力升官吧！~~~
+BREAK
+
+
+#IF
+CHECKLEVELEX < 95
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够进行本次转生!!
+
+BREAK
+
+
+#IF
+CHECKGAMEGOLD < 1500000
+#ACT
+MESSAGEBOX 你的元宝不足1500000
+BREAK
+
+
+#if
+#act
+gamegold - 1500000
+CALCVAR HUMAN 转生级数 = 6
+SAVEVAR HUMAN 转生级数  ..\QuestDiary\如龙数据\转生变量Save.txt
+MESSAGEBOX 领取成功.恭喜你领取的(95级)[四品总督(封号)]+[上线攻魔道属性+25]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+
+break
+
+[@85]
+#IF
+CHECKVAR HUMAN 转生级数 > 4
+#ACT
+MESSAGEBOX 你已经进行过本次转生了.禁止重复转生!!!
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 1
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 2
+#ACT
+MESSAGEBOX 请从八品知府努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 3
+#ACT
+MESSAGEBOX 请从七品太守努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 4
+#ACT
+MESSAGEBOX 请从六品巡抚努力升官吧！~~~
+BREAK
+
+
+#IF
+CHECKLEVELEX < 85
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够进行本次转生!!
+
+BREAK
+
+
+
+#IF
+CHECKGAMEGOLD < 1000000
+#ACT
+MESSAGEBOX 你的元宝不足1000000
+BREAK
+
+#IF
+#ACT
+CALCVAR HUMAN 转生级数 = 5
+SAVEVAR HUMAN 转生级数  ..\QuestDiary\如龙数据\转生变量Save.txt
+GAMEGOLD - 1000000
+MESSAGEBOX 领取成功.恭喜你领取的(60级)[五品提督(封号)]+[上线攻魔道属性+20]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+
+break
+
+[@75]
+#IF
+CHECKVAR HUMAN 转生级数 > 3
+#ACT
+MESSAGEBOX 你已经进行过本次转生了.禁止重复转生!!!
+BREAK
+#IF
+CHECKVAR HUMAN 转生级数 < 1
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 2
+#ACT
+MESSAGEBOX 请从八品知府努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 3
+#ACT
+MESSAGEBOX 请从七品太守努力升官吧！~~~
+BREAK
+#IF
+CHECKLEVELEX < 75
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够进行本次转生!!
+BREAK
+
+
+
+#IF
+CHECKGAMEGOLD < 800000
+#ACT
+MESSAGEBOX 你的元宝不足800000
+BREAK
+
+#IF
+#ACT
+GAMEGOLD - 800000
+CALCVAR HUMAN 转生级数 = 4
+SAVEVAR HUMAN 转生级数  ..\QuestDiary\如龙数据\转生变量Save.txt
+MESSAGEBOX 领取成功.恭喜你领取的(75级)[六品巡抚(封号)]+[上线攻魔道属性+15]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+
+break
+
+[@65]
+#IF
+CHECKVAR HUMAN 转生级数 > 2
+#ACT
+MESSAGEBOX 你已经进行过本次转生了.禁止重复转生!!!
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 1
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 2
+#ACT
+MESSAGEBOX 请从八品知府努力升官吧！~~~
+BREAK
+
+#IF
+CHECKLEVELEX < 65
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够进行本次转生!!
+BREAK
+
+
+
+#IF
+CHECKGAMEGOLD < 500000
+#ACT
+MESSAGEBOX 你的元宝不足500000
+BREAK
+
+#IF
+#ACT
+CALCVAR HUMAN 转生级数 = 3
+SAVEVAR HUMAN 转生级数  ..\QuestDiary\如龙数据\转生变量Save.txt
+GAMEGOLD - 500000
+MESSAGEBOX 领取成功.恭喜你领取的(65级)[七品太守(封号)]+[上线攻魔道属性+10]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+
+break
+
+[@55]
+#IF
+CHECKVAR HUMAN 转生级数 > 1
+#ACT
+MESSAGEBOX 你已经进行过本次转生了.禁止重复转生!!!
+BREAK
+
+#IF
+CHECKVAR HUMAN 转生级数 < 1
+#ACT
+MESSAGEBOX 请从九品知县努力升官吧！~~~
+BREAK
+#IF
+CHECKLEVELEX < 55
+#ACT
+MESSAGEBOX 领取失败!!你的人物级别不够进行本次转生!!
+BREAK
+
+
+
+#IF
+CHECKGAMEGOLD < 200000
+#ACT
+MESSAGEBOX 你的元宝不足200000
+BREAK
+
+#IF
+#ACT
+CALCVAR HUMAN 转生级数 = 2
+SAVEVAR HUMAN 转生级数  ..\QuestDiary\如龙数据\转生变量Save.txt
+GAMEGOLD - 200000
+MESSAGEBOX 领取成功.恭喜你领取的(55级)[八品知府(封号)]+[上线攻魔道属性+5]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+
+break
+
+[@45]
+#IF
+CHECKVAR HUMAN 转生级数 > 0
+#ACT
+MESSAGEBOX 你已经进行过本次转生了.禁止重复转生!!!
+BREAK
+
+
+#IF
+CHECKLEVELEX < 45
+#ACT
+MESSAGEBOX 你的等级不够无法领取
+BREAK
+
+
+#IF
+CHECKGAMEGOLD < 100000
+#ACT
+MESSAGEBOX 你的元宝不足100000
+BREAK
+
+#IF
+#ACT
+CALCVAR HUMAN 转生级数 = 1
+SAVEVAR HUMAN 转生级数  ..\QuestDiary\如龙数据\转生变量Save.txt
+GAMEGOLD - 100000
+MESSAGEBOX 领取成功.恭喜你领取的(45级)[九品知县(封号)]+[上线攻魔道属性+2]的奖励\　\请您下线上线后就可以获得属性和成功奖励了!!
+#CALL [\系统功能\封号设置.txt] @封号设置
+#CALL [\\登陆\属性.txt] @SX
+
+break
+

@@ -1,0 +1,36 @@
+[@main]
+#if
+hour 23 23
+MIN 0 20
+#say
+现在行会争霸地图已经关闭了\
+只要你的行会打败了其他行会\
+行会掌门人就可以获得<88888元宝>奖励！\
+现在这个地图里面是否只剩下你们行会的成员了呢\
+如果是话,恭喜你咯,可以领取奖励了\
+<领取奖励/@领取奖励>    <继续战斗/@exit>
+#act
+BREAK
+#elseact
+messagebox 23:00-23:20分之间和我说话！其余时间我不想搭理任何人
+BREAK
+
+[@领取奖励]
+#if
+ISGUILDMASTER
+#ELSEACT
+messagebox 你不是行会老大！
+BREAK
+#if
+IsSameGuildOnMap D5071B
+#act
+GAMEGOLD + 88888
+sendmsg 0 行会老大【%s】获得行会争霸胜利,奖励元宝88888个 31 241
+sendmsg 0 行会老大【%s】获得行会争霸胜利,奖励元宝88888个 31 241
+sendmsg 0 行会老大【%s】获得行会争霸胜利,奖励元宝88888个 31 241
+sendmsg 0 行会老大【%s】获得行会争霸胜利,奖励元宝88888个 31 241
+mapmove 3 333 333
+GMEXECUTE 集体传送 D5071B 3
+#elseact
+messagebox 你还没有将其他行会的人全部请出这里..
+BREAK

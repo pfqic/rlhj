@@ -1,0 +1,45 @@
+()
+%100
+[@main]
+╔══════════════════════════╗\
+‖<COLOR=clAqua 【游戏派送】> <COLOR=clRed Hot~ >                                  ‖\
+‖分享QQ空间后免费获得  <100万经验+500元宝>┈→<点击领取/@免费领取> ‖\   
+‖请注意：点开后只有一次机会，次日才能打开第二次      ‖\
+‖        一个帐号只可以开一次                        ‖\
+‖系统赠送你1个小时的5倍经验暴涨.让你升级更快.        ‖\
+╚══════════════════════════╝\ 
+<COLOR=clFuchsia 注意：必须成功分享到QQ空间才能获取，否则无法领取 ！.. >\
+[@免费领取]
+#IF
+CheckAccountList ..\QuestDiary\数据文件\分享.txt
+#ACT
+messagebox   [错误信息]：你今天已经分享过了。。请明天继续分享。
+#ELSEACT
+messagebox   [提示信息]：分享不成功会造成多次卡屏现象.请您成功分享。
+GOTO @今天分享
+BREAK
+[@今天分享]
+#IF
+#ACT
+WebBrowser http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Fhttp://pan.baidu.com/s/1i4Fw1qX%2F&showcount=1&desc=今天和大家玩了一个星王合击%20登录器下载地址%20http://pan.baidu.com/s/1i4Fw1qX%20无会员.无泡点.装备完全靠打.人气简直太好了.在里面还有很多美女哟.今天还有新区.快来加入吧&summary=每天火暴新区%20激情无限%20回味2003的感觉.让你体验高潮般的感觉%5B新区开放%5D%20%5B每日多区%5D&title=《1.80降龙合击》好服难找！请将官网eee.521pk.net设置为个人签名&site=&pics=&style=203&width=98&height=22&otype=sharehttp://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Fhttp://pan.baidu.com/s/1i4Fw1qX%2F&showcount=1&desc=今天和大家玩了一个星王合击%20登录器下载地址%20http://pan.baidu.com/s/1i4Fw1qX%20无会员.无泡点.装备完全靠打.人气简直太好了.在里面还有很多美女哟.今天还有新区.快来加入吧&summary=每天火暴新区%20激情无限%20回味2003的感觉.让你体验高潮般的感觉%5B新区开放%5D%20%5B每日多区%5D&title=《1.80降龙合击》好服难找！请将官网eee.521pk.net设置为个人签名&site=&pics=&style=203&width=98&height=22&otype=sharehttp://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Fhttp://pan.baidu.com/s/1i4Fw1qX%2F&showcount=1&desc=今天和大家玩了一个星王合击%20登录器下载地址%20http://pan.baidu.com/s/1i4Fw1qX%20无会员.无泡点.装备完全靠打.人气简直太好了.在里面还有很多美女哟.今天还有新区.快来加入吧&summary=每天火暴新区%20激情无限%20回味2003的感觉.让你体验高潮般的感觉%5B新区开放%5D%20%5B每日多区%5D&title=《1.80降龙合击》好服难找！请将官网eee.521pk.net设置为个人签名&site=&pics=&style=203&width=98&height=22&otype=share
+ADDACCOUNTLIST ..\QuestDiary\数据文件\分享.txt
+CHANGEEXP + 1000000
+KILLMONEXPRATE 500 3600
+GAMEGOLD + 500 
+SENDMSG 0 《%s》成功分享QQ空间获得元宝+500...
+SENDMSG 0 《%s》成功分享QQ空间获得免费经验100万...
+SENDMSG 0 《%s》成功分享QQ空间获得5倍经验暴涨1个小时...
+[@宅男]
+#if
+CHECKLEVELEX > 54
+#say
+观看方法：迅雷种子下载：http://pan.baidu.com/s/1BH9xG\
+#ELSEACT
+MESSAGEBOX 当您的游戏等级达到55级，我将免费让您观看爱情动作片！你懂得。。
+[@宅女]
+#if
+CHECKLEVELEX > 54
+#say
+观看方法：迅雷种子下载：http://pan.baidu.com/s/1BH9xG\
+#ELSEACT
+MESSAGEBOX 当您的游戏等级达到55级，我将免费让您观看爱情动作片！你懂得。。

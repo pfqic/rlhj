@@ -1,0 +1,127 @@
+[@药品]
+{
+欢迎，你需要点什么吗？\ \
+ <买/@buy> 药品\
+ <卖/@sell> 药品\
+ <离 开/@exit>\
+[@Q318]
+我这只卖药！没有特殊服务！\\
+<离 开/@exit>
+[@buy]
+需要什么物品呢？\ \ \
+ <返 回/@main>\
+[@sell]
+让我看看你要卖什么东西.\ \ \
+ <返 回/@main>\
+[goods]
+金创药(小量)    200        1
+魔法药(小量)    200        1
+金创药(中量)    100        1
+魔法药(中量)    100        1
+强效金创药      100        1
+强效魔法药      100        1
+金创药(小)包    100        1
+魔法药(小)包    100        1
+金创药(中)包    100        1
+魔法药(中)包    100        1
+超级金创药	100	   1
+超级魔法药	100	   1
+太阳水   	      100	3
+
+
+[@雪霜]
+您好！在这里可以批量进行买药，请选择您要购买的药品\ \
+< 万年雪霜 →/SCOLOR=250><输入数量/@@InPutInteger10>\ \
+<超级金创药→/SCOLOR=250><输入数量/@@InPutInteger11>\ \
+<超级魔法药→/SCOLOR=250><输入数量/@@InPutInteger12>\ \
+
+[@CallInPutInteger10]
+#IF
+EQUAL N10 0
+#SAY
+输入数据等于0，请重新输入
+break
+
+#IF
+#ACT
+MUL M0 5000 <$STR(N10)>
+GOTO @检查背包
+
+[@检查背包]
+#IF
+CHECKBAGSIZE <$STR(N10)>
+#ACT
+GOTO @拿药
+#ELSESAY
+背包空格不够!谢谢合作!
+
+[@拿药]
+#IF
+checkgold > <$STR(M0)> 
+#ACT
+give 万年雪霜 <$STR(N10)> 
+take 金币 <$STR(M0)> 
+#ELSESAY
+你没那么多钱!谢谢合作!
+
+
+[@CallInPutInteger11]
+#IF
+EQUAL N11 0
+#SAY
+输入数据等于0，请重新输入
+break
+
+#IF
+#ACT
+MUL M0 4000 <$STR(N11)>
+GOTO @检查背包1
+
+[@检查背包1]
+#IF
+CHECKBAGSIZE <$STR(N11)>
+#ACT
+GOTO @拿药1
+#ELSESAY
+背包空格不够!谢谢合作!
+
+[@拿药1]
+#IF
+checkgold > <$STR(M0)> 
+#ACT
+give 超级金创药 <$STR(N11)> 
+take 金币 <$STR(M0)> 
+#ELSESAY
+你没那么多钱!谢谢合作!
+
+
+[@CallInPutInteger12]
+#IF
+EQUAL N12 0
+#SAY
+输入数据等于0，请重新输入
+break
+
+#IF
+#ACT
+MUL M0 4000 <$STR(N12)>
+GOTO @检查背包2
+
+[@检查背包2]
+#IF
+CHECKBAGSIZE <$STR(N12)>
+#ACT
+GOTO @拿药2
+#ELSESAY
+背包空格不够!谢谢合作!
+
+[@拿药2]
+#IF
+checkgold > <$STR(M0)> 
+#ACT
+give 超级魔法药 <$STR(N12)> 
+take 金币 <$STR(M0)> 
+#ELSESAY
+你没那么多钱!谢谢合作!
+
+}

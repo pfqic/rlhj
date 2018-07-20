@@ -1,0 +1,519 @@
+[@领取附加赠送]
+{
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\01.txt
+#ACT
+GAMEDIAMOND + 5
+GAMEPOINT + 0
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\01.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了5金刚石0游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\02.txt
+#ACT
+GAMEDIAMOND + 10
+GAMEPOINT + 0
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\02.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了10金刚石0游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\03.txt
+#ACT
+GAMEDIAMOND + 15
+GAMEPOINT + 0
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\03.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了15金刚石0游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\04.txt
+#ACT
+GAMEDIAMOND + 20
+GAMEPOINT + 0
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\04.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了20金刚石0游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\05.txt
+#ACT
+GAMEDIAMOND + 25
+GAMEPOINT + 0
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\05.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了25金刚石0游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\06.txt
+#ACT
+GAMEDIAMOND + 30
+GAMEPOINT + 0
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\06.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了30金刚石0游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\07.txt
+#ACT
+GAMEDIAMOND + 35
+GAMEPOINT + 0
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\07.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了35金刚石0游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\08.txt
+#ACT
+GAMEDIAMOND + 40
+GAMEPOINT + 0
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\08.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了40金刚石0游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\09.txt
+#ACT
+GAMEDIAMOND + 45
+GAMEPOINT + 0
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\09.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了45金刚石0游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\1.txt
+#ACT
+GAMEDIAMOND + 50
+GAMEPOINT + 1
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\1.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了50金刚石1游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\2.txt
+#ACT
+GAMEDIAMOND + 100
+GAMEPOINT + 2
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\2.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了100金刚石2游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\3.txt
+#ACT
+GAMEDIAMOND + 150
+GAMEPOINT + 3
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\3.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了150金刚石3游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\4.txt
+#ACT
+GAMEDIAMOND + 200
+GAMEPOINT + 4
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\4.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了200金刚石4游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\5.txt
+#ACT
+GAMEDIAMOND + 250
+GAMEPOINT + 5
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\5.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了250金刚石5游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\6.txt
+#ACT
+GAMEDIAMOND + 300
+GAMEPOINT + 6
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\6.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了300金刚石6游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\7.txt
+#ACT
+GAMEDIAMOND + 350
+GAMEPOINT + 7
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\7.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了350金刚石7游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\8.txt
+#ACT
+GAMEDIAMOND + 400
+GAMEPOINT + 8
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\8.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了400金刚石8游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\9.txt
+#ACT
+GAMEDIAMOND + 450
+GAMEPOINT + 9
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\9.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了450金刚石9游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\10.txt
+#ACT
+GAMEDIAMOND + 500
+GAMEPOINT + 10
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\10.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了500金刚石10游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\20.txt
+#ACT
+GAMEDIAMOND + 1000
+GAMEPOINT + 20
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\20.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了1000金刚石20游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\30.txt
+#ACT
+GAMEDIAMOND + 1500
+GAMEPOINT + 30
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\30.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了1500金刚石30游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\40.txt
+#ACT
+GAMEDIAMOND + 2000
+GAMEPOINT + 40
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\40.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了2000金刚石40游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\50.txt
+#ACT
+GAMEDIAMOND + 2500
+GAMEPOINT + 50
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\50.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了2500金刚石50游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\60.txt
+#ACT
+GAMEDIAMOND + 3000
+GAMEPOINT + 60
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\60.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了3000金刚石60游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\70.txt
+#ACT
+GAMEDIAMOND + 3500
+GAMEPOINT + 70
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\70.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了3500金刚石70游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\80.txt
+#ACT
+GAMEDIAMOND + 4000
+GAMEPOINT + 80
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\80.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了4000金刚石80游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\90.txt
+#ACT
+GAMEDIAMOND + 4500
+GAMEPOINT + 90
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\90.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了4500金刚石90游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\100.txt
+#ACT
+GAMEDIAMOND + 5000
+GAMEPOINT + 100
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\100.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了5000金刚石100游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\200.txt
+#ACT
+GAMEDIAMOND + 10000
+GAMEPOINT + 200
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\200.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了10000金刚石200游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\300.txt
+#ACT
+GAMEDIAMOND + 15000
+GAMEPOINT + 300
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\300.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了15000金刚石300游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\400.txt
+#ACT
+GAMEDIAMOND + 20000
+GAMEPOINT + 400
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\400.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了20000金刚石400游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\500.txt
+#ACT
+GAMEDIAMOND + 25000
+GAMEPOINT + 500
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\500.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了25000金刚石500游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\600.txt
+#ACT
+GAMEDIAMOND + 30000
+GAMEPOINT + 600
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\600.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了30000金刚石600游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\700.txt
+#ACT
+GAMEDIAMOND + 35000
+GAMEPOINT + 700
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\700.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了35000金刚石700游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\800.txt
+#ACT
+GAMEDIAMOND + 40000
+GAMEPOINT + 800
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\800.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了40000金刚石800游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\900.txt
+#ACT
+GAMEDIAMOND + 45000
+GAMEPOINT + 900
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\900.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了45000金刚石900游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\1000.txt
+#ACT
+GAMEDIAMOND + 50000
+GAMEPOINT + 1000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\1000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了50000金刚石1000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\2000.txt
+#ACT
+GAMEDIAMOND + 100000
+GAMEPOINT + 2000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\2000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了100000金刚石2000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\3000.txt
+#ACT
+GAMEDIAMOND + 150000
+GAMEPOINT + 3000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\3000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了150000金刚石3000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\4000.txt
+#ACT
+GAMEDIAMOND + 200000
+GAMEPOINT + 4000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\4000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了200000金刚石4000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\5000.txt
+#ACT
+GAMEDIAMOND + 250000
+GAMEPOINT + 5000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\5000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了250000金刚石5000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\6000.txt
+#ACT
+GAMEDIAMOND + 300000
+GAMEPOINT + 6000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\6000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了300000金刚石6000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\7000.txt
+#ACT
+GAMEDIAMOND + 350000
+GAMEPOINT + 7000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\7000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了350000金刚石7000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\8000.txt
+#ACT
+GAMEDIAMOND + 400000
+GAMEPOINT + 8000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\8000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了400000金刚石8000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\9000.txt
+#ACT
+GAMEDIAMOND + 450000
+GAMEPOINT + 9000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\9000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了450000金刚石9000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\10000.txt
+#ACT
+GAMEDIAMOND + 500000
+GAMEPOINT + 10000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\10000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了500000金刚石10000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\20000.txt
+#ACT
+GAMEDIAMOND + 1000000
+GAMEPOINT + 20000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\20000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了1000000金刚石20000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\30000.txt
+#ACT
+GAMEDIAMOND + 1500000
+GAMEPOINT + 30000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\30000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了1500000金刚石30000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\40000.txt
+#ACT
+GAMEDIAMOND + 2000000
+GAMEPOINT + 40000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\40000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了2000000金刚石40000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\50000.txt
+#ACT
+GAMEDIAMOND + 2500000
+GAMEPOINT + 50000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\50000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了2500000金刚石50000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\60000.txt
+#ACT
+GAMEDIAMOND + 3000000
+GAMEPOINT + 60000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\60000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了3000000金刚石60000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\70000.txt
+#ACT
+GAMEDIAMOND + 3500000
+GAMEPOINT + 70000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\70000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了3500000金刚石70000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\80000.txt
+#ACT
+GAMEDIAMOND + 4000000
+GAMEPOINT + 80000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\80000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了4000000金刚石80000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\90000.txt
+#ACT
+GAMEDIAMOND + 4500000
+GAMEPOINT + 90000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\90000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了4500000金刚石90000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\100000.txt
+#ACT
+GAMEDIAMOND + 5000000
+GAMEPOINT + 100000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\100000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了5000000金刚石100000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\200000.txt
+#ACT
+GAMEDIAMOND + 10000000
+GAMEPOINT + 200000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\200000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了10000000金刚石200000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\300000.txt
+#ACT
+GAMEDIAMOND + 15000000
+GAMEPOINT + 300000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\300000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了15000000金刚石300000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\400000.txt
+#ACT
+GAMEDIAMOND + 20000000
+GAMEPOINT + 400000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\400000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了20000000金刚石400000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\500000.txt
+#ACT
+GAMEDIAMOND + 25000000
+GAMEPOINT + 500000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\500000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了25000000金刚石500000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\600000.txt
+#ACT
+GAMEDIAMOND + 30000000
+GAMEPOINT + 600000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\600000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了30000000金刚石600000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\700000.txt
+#ACT
+GAMEDIAMOND + 35000000
+GAMEPOINT + 700000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\700000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了35000000金刚石700000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\800000.txt
+#ACT
+GAMEDIAMOND + 40000000
+GAMEPOINT + 800000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\800000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了40000000金刚石800000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\900000.txt
+#ACT
+GAMEDIAMOND + 45000000
+GAMEPOINT + 900000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\900000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了45000000金刚石900000游戏点。
+
+#IF
+CheckAccountList ..\QuestDiary\充值元宝\附加赠送\1000000.txt
+#ACT
+GAMEDIAMOND + 50000000
+GAMEPOINT + 1000000
+DelAccountList ..\QuestDiary\充值元宝\附加赠送\1000000.txt
+SENDMSG 1 ★[%s]:恭喜玩家<$USERNAME>通过在线充值额外获得了50000000金刚石1000000游戏点。
+
+#ELSESAY
+请查看自己的金刚石,游戏点数量!\
+没有充值请按提示进行充值!\
+<退出/@exit>
+}

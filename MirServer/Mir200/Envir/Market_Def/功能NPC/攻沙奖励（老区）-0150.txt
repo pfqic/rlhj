@@ -1,0 +1,295 @@
+[@MAIN]
+ ╱◥██◣   ╭●╮∴°★．°☆      ╭══╮\
+︱田︱田田|∴ /▓↘<COLOR=clFuchsia 欢迎光临降龙合击>╭╯≡≡║\
+╬╬╬╬╬╬╬ ▲ Ｉしovのyoｕ     ╰⊙═⊙╯ \
+<攻沙奖励>：<COLOR=clAqua 价值100人民币元宝600000个>\
+<领取要求>：<COLOR=clLime 在攻沙结束后合区前两位城主必须领取>\
+<注意事项>：两位老大每人只能领取一半奖励，如想\
+全部领取,需发起请求,另外一个老大同意才可全部领\
+取,一个人领取的话网站只上一个人的排名\
+╬╬╬╬╬╬╬╬╬<领取沙城奖励/@沙城奖励>╬╬╬╬╬╬╬╬╬\
+
+
+[@沙城奖励]
+#IF
+checkcastlewar
+#SAY
+ ¤╭⌒╮╭⌒╮   ☆°． ☆   ★ · °☆    \
+ ╱◥██◣   ╭●╮∴°★．°☆      ╭══╮\ 
+︱田︱田田|∴ /▓↘<COLOR=clFuchsia 欢迎光临降龙合击>╭╯≡≡║\
+╬╬╬╬╬╬╬ ▲ Ｉしovのyoｕ     ╰⊙═⊙╯ \
+.     ☆┏┅◇ ·。 ◢◣◢◣ 。· ◇┅┓☆       .\
+.     ツ┇HJ┃ ·。【<COLOR=clFuchsia 只愛你>】。· ┃TX┇ツ       .\
+.     の◇┅→→→→◥！！◤←←←←┅◇の       .\
+.     ☆<正在攻城中哦>℡◥◤℡<正在攻城中哦>☆       .\
+╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬\
+#ACT
+BREAK
+
+#IF
+#SAY
+ ¤╭⌒╮╭⌒╮   ☆°． ☆   ★ · °☆    \
+ ╱◥██◣   ╭●╮∴°★．°☆      ╭══╮\
+︱田︱田田|∴ /▓↘<COLOR=clFuchsia 欢迎光临降龙合击>╭╯≡≡║\
+╬╬╬╬╬╬╬ ▲ Ｉしovのyoｕ     ╰⊙═⊙╯ \
+.     ☆┏┅◇ ·。 ◢◣◢◣ 。· ◇┅┓☆       .\
+.     ツ┇HJ┃ ·。【<COLOR=clFuchsia 只愛你>】。· ┃TX┇ツ       .\
+.     の◇┅→→→→◥！！◤←←←←┅◇の       .\
+.     ☆<领取功沙奖励/@wlaiqu>℡◥◤℡<领取功沙奖励/@wlaiqu>☆       .\
+╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬\
+#ACT
+BREAK
+
+
+[@wlaiqu]
+#IF
+ISCASTLEMASTER
+#SAY
+ ╱◥██◣   ╭●╮∴°★．°☆      ╭══╮\
+︱田︱田田|∴ /▓↘<COLOR=clFuchsia 欢迎光临降龙合击>╭╯≡≡║\
+╬╬╬╬╬╬╬ ▲ Ｉしovのyoｕ     ╰⊙═⊙╯ \
+╔┄┄┄┄┄┄┄┄┄╗  ╔┄┄┄┄┄┄┄┄┄╗\
+┆  <领取一半的奖励/@yirjl>  ┆  ┆  <领取全部的奖励/@liangjl>  ┆\
+╚┄┄┄┄┄┄┄┄┄╝  ╚┄┄┄┄┄┄┄┄┄╝\
+╔┄┄┄┄┄┄┄┄┄┄┄┄╗  ╔┄┄┄┄┄┄╗\
+┆ <向另外一个城主发起请求/@qingq> ┆  ┆  <离    开/@EXIT>  ┆\
+╚┄┄┄┄┄┄┄┄┄┄┄┄╝  ╚┄┄┄┄┄┄╝\
+#ACT
+BREAK
+#IF
+#SAY
+ ╱◥██◣   ╭●╮∴°★．°☆      ╭══╮\
+︱田︱田田|∴ /▓↘<COLOR=clFuchsia 欢迎光临降龙合击>╭╯≡≡║\
+╬╬╬╬╬╬╬ ▲ Ｉしovのyoｕ     ╰⊙═⊙╯ \
+╔┄┄┄┄┄┄┄┄┄╗      ╔┄┄┄┄┄┄┄┄┄╗\
+┆  <领取一半的奖励>  ┆      ┆  <领取全部的奖励>  ┆\
+╚┄┄┄┄┄┄┄┄┄╝      ╚┄┄┄┄┄┄┄┄┄╝\
+╔┄┄┄┄┄┄┄┄┄┄┄┄╗╔┄┄┄┄┄┄┄┄┄╗\
+┆ <向另外一个城主发起请求> ┆┆ <滚！你不是沙城主/@EXIT> ┆\
+╚┄┄┄┄┄┄┄┄┄┄┄┄╝╚┄┄┄┄┄┄┄┄┄╝\
+#ACT
+BREAK
+
+[@liangjl]
+#IF
+HOUR 22 23
+#ELSEACT
+MESSAGEBOX 必须在22-23点领取！
+BREAK
+
+#IF
+CHECKGUILDLIST ..\QuestDiary\数据文件\行会领取奖励1.txt
+#SAY
+╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬\
+ ¤╭⌒╮╭⌒╮   ☆°． ☆   ★ · °☆    \
+ ╱◥██◣   ╭●╮∴°★．°☆      ╭══╮\
+︱田︱田田|∴ /▓↘<COLOR=clFuchsia 欢迎光临降龙合击>>╭╯≡≡║\
+╬╬╬╬╬╬╬ ▲ Ｉしovのyoｕ     ╰⊙═⊙╯ \
+╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬\
+╬╬╬╬╬╬╬╬<COLOR=clLime 您已经领取过奖励>╬╬╬╬╬╬╬\
+╬╬╬╬╬╬╬╬<COLOR=clLime 您已经领取过奖励>╬╬╬╬╬╬╬\
+╬╬╬╬╬╬╬╬╬╬╬<离  开/@EXIT>╬╬╬╬╬╬╬╬╬\
+#ACT
+BREAK
+
+#IF
+ISCASTLEMASTER
+EQUAL I39 2
+#ACT
+GAMEGOLD + 600000
+SENDMSG 0 伟大的沙城主【%s】领取了全部的功沙奖励600000元宝.
+SENDMSG 0 伟大的沙城主【%s】领取了全部的功沙奖励600000元宝.
+SENDMSG 0 伟大的沙城主【%s】领取了全部的功沙奖励600000元宝.
+SENDMSG 0 伟大的沙城主【%s】领取了全部的功沙奖励600000元宝.
+SENDMSG 0 伟大的沙城主【%s】领取了全部的功沙奖励600000元宝.
+SENDMSG 0 伟大的沙城主【%s】领取了全部的功沙奖励600000元宝.
+addnamelist ..\QuestDiary\数据文件\沙老大名单.txt
+ADDGUILDLIST ..\QuestDiary\数据文件\行会领取奖励1.txt
+ADDGUILDLIST ..\QuestDiary\数据文件\行会领取奖励3.txt
+BREAK
+#IF
+#ACT
+MESSAGEBOX 想独吞？没门！不过可以向另外个城主发出请求，同意后可以独吞！
+BREAK
+
+[@qingq]
+#IF
+HOUR 22 23
+#ELSEACT
+MESSAGEBOX 必须在22-23点领取！
+BREAK
+
+#IF
+EQUAL I38 1
+#SAY
+╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬\
+ ¤╭⌒╮╭⌒╮   ☆°． ☆   ★ · °☆    \
+ ╱◥██◣   ╭●╮∴°★．°☆      ╭══╮\
+︱田︱田田|∴ /▓↘<COLOR=clFuchsia 欢迎光临降龙合击>╭╯≡≡║\
+╬╬╬╬╬╬╬ ▲ Ｉしovのyoｕ     ╰⊙═⊙╯ \
+╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬\
+╬╬╬╬╬╬<COLOR=clLime 有人发起过请求不能再发起>╬╬╬╬╬\
+╬╬╬╬╬╬<COLOR=clLime 有人发起过请求不能再发起>╬╬╬╬╬\
+╬╬╬╬╬╬╬╬╬╬╬<离  开/@EXIT>╬╬╬╬╬╬╬╬╬\
+#ACT
+BREAK
+
+#IF
+CHECKGUILDLIST ..\QuestDiary\数据文件\行会领取奖励3.txt
+#SAY
+╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬\
+ ¤╭⌒╮╭⌒╮   ☆°． ☆   ★ · °☆    \
+ ╱◥██◣   ╭●╮∴°★．°☆      ╭══╮\
+︱田︱田田|∴ /▓↘<COLOR=clFuchsia 欢迎光临降龙合击>>╭╯≡≡║\
+╬╬╬╬╬╬╬ ▲ Ｉしovのyoｕ     ╰⊙═⊙╯ \
+╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬\
+╬╬╬╬╬╬<COLOR=clLime 已经领取奖励不能发起请求>╬╬╬╬╬\
+╬╬╬╬╬╬<COLOR=clLime 已经领取奖励不能发起请求>╬╬╬╬╬\
+╬╬╬╬╬╬╬╬╬╬╬<离  开/@EXIT>╬╬╬╬╬╬╬╬╬\
+#ACT
+BREAK
+
+#IF
+EQUAL I38 0
+#ACT
+inc I38 1
+Gmexecute 开始提问 @发送请求
+SENDMSG 6 已经向另一位沙城主发起了请求！请稍后！
+BREAK
+
+[@yirjl]
+#IF
+HOUR 22 23
+#ELSEACT
+MESSAGEBOX 必须在22-23点领取！
+BREAK
+
+#IF
+ISCASTLEMASTER
+CheckNameList ..\QuestDiary\数据文件\沙老大名单.txt
+#SAY
+╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬\
+ ¤╭⌒╮╭⌒╮   ☆°． ☆   ★ · °☆    \
+ ╱◥██◣   ╭●╮∴°★．°☆      ╭══╮\
+︱田︱田田|∴ /▓↘<COLOR=clFuchsia 欢迎光临降龙合击>╭╯≡≡║\
+╬╬╬╬╬╬╬ ▲ Ｉしovのyoｕ     ╰⊙═⊙╯ \
+╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬\
+╬╬╬╬╬╬╬╬<COLOR=clLime 您已经领取过奖励>╬╬╬╬╬╬╬\
+╬╬╬╬╬╬╬╬<COLOR=clLime 您已经领取过奖励>╬╬╬╬╬╬╬\
+╬╬╬╬╬╬╬╬╬╬╬<离  开/@EXIT>╬╬╬╬╬╬╬╬╬\
+#ACT
+BREAK
+
+#IF
+ISCASTLEMASTER
+CHECKGUILDLIST ..\QuestDiary\数据文件\行会领取奖励3.txt
+#SAY
+╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬\
+ ¤╭⌒╮╭⌒╮   ☆°． ☆   ★ · °☆    \
+ ╱◥██◣   ╭●╮∴°★．°☆      ╭══╮\
+︱田︱田田|∴ /▓↘<COLOR=clFuchsia 欢迎光临降龙合击>╭╯≡≡║\
+╬╬╬╬╬╬╬ ▲ Ｉしovのyoｕ     ╰⊙═⊙╯ \
+╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬\
+╬╬╬╬╬╬╬╬<COLOR=clLime 您已经领取过奖励>╬╬╬╬╬╬╬\
+╬╬╬╬╬╬╬╬<COLOR=clLime 您已经领取过奖励>╬╬╬╬╬╬╬\
+╬╬╬╬╬╬╬╬╬╬╬<离  开/@EXIT>╬╬╬╬╬╬╬╬╬\
+#ACT
+BREAK
+
+#IF
+ISCASTLEMASTER
+CHECKGUILDLIST ..\QuestDiary\数据文件\行会领取奖励2.txt
+#SAY
+╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬\
+ ¤╭⌒╮╭⌒╮   ☆°． ☆   ★ · °☆    \
+ ╱◥██◣   ╭●╮∴°★．°☆      ╭══╮\
+︱田︱田田|∴ /▓↘<COLOR=clFuchsia 欢迎光临降龙合击>╭╯≡≡║\
+╬╬╬╬╬╬╬ ▲ Ｉしovのyoｕ     ╰⊙═⊙╯ \
+╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬\
+╬╬╬╬╬╬╬╬<COLOR=clLime 您已经领取过奖励>╬╬╬╬╬╬╬\
+╬╬╬╬╬╬╬╬<COLOR=clLime 您已经领取过奖励>╬╬╬╬╬╬╬\
+╬╬╬╬╬╬╬╬╬╬╬<离  开/@EXIT>╬╬╬╬╬╬╬╬╬\
+#ACT
+BREAK
+
+#IF
+ISCASTLEMASTER
+CHECKGUILDLIST ..\QuestDiary\数据文件\行会领取奖励1.txt
+#SAY
+╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬\
+ ¤╭⌒╮╭⌒╮   ☆°． ☆   ★ · °☆    \
+ ╱◥██◣   ╭●╮∴°★．°☆      ╭══╮\
+︱田︱田田|∴ /▓↘<COLOR=clFuchsia 欢迎光临降龙合击>╭╯≡≡║\
+╬╬╬╬╬╬╬ ▲ Ｉしovのyoｕ     ╰⊙═⊙╯ \
+╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬\
+╬╬╬╬╬╬╬╬<COLOR=clLime 您已经领取过奖励>╬╬╬╬╬╬╬\
+╬╬╬╬╬╬╬╬<COLOR=clLime 您已经领取过奖励>╬╬╬╬╬╬╬\
+╬╬╬╬╬╬╬╬╬╬╬<离  开/@EXIT>╬╬╬╬╬╬╬╬╬\
+#ACT
+GOTO @lunqu1
+BREAK
+
+#IF
+gender man
+ISCASTLEMASTER
+#ACT
+GAMEGOLD + 300000
+SENDMSG 0 帅气的沙城主【%s】领取了一半的功沙奖励300000元宝.
+SENDMSG 0 帅气的沙城主【%s】领取了一半的功沙奖励300000元宝.
+SENDMSG 0 帅气的沙城主【%s】领取了一半的功沙奖励300000元宝.
+SENDMSG 0 帅气的沙城主【%s】领取了一半的功沙奖励300000元宝.
+SENDMSG 0 帅气的沙城主【%s】领取了一半的功沙奖励300000元宝.
+SENDMSG 0 帅气的沙城主【%s】领取了一半的功沙奖励300000元宝.
+addnamelist ..\QuestDiary\数据文件\沙老大名单.txt
+ADDGUILDLIST ..\QuestDiary\数据文件\行会领取奖励1.txt
+BREAK
+
+#IF
+ISCASTLEMASTER
+#ACT
+GAMEGOLD + 300000
+SENDMSG 0 漂亮的沙城主【%s】领取了一半的功沙奖励300000元宝.
+SENDMSG 0 漂亮的沙城主【%s】领取了一半的功沙奖励300000元宝.
+SENDMSG 0 漂亮的沙城主【%s】领取了一半的功沙奖励300000元宝.
+SENDMSG 0 漂亮的沙城主【%s】领取了一半的功沙奖励300000元宝.
+SENDMSG 0 漂亮的沙城主【%s】领取了一半的功沙奖励300000元宝.
+SENDMSG 0 漂亮的沙城主【%s】领取了一半的功沙奖励300000元宝.
+addnamelist ..\QuestDiary\数据文件\沙老大名单.txt
+ADDGUILDLIST ..\QuestDiary\数据文件\行会领取奖励1.txt
+BREAK
+
+[@lunqu1]
+#IF
+HOUR 22 23
+#ELSEACT
+MESSAGEBOX 必须在22-23点领取！
+BREAK
+
+#IF
+gender man
+ISCASTLEMASTER
+#ACT
+GAMEGOLD + 300000
+SENDMSG 0 帅气的沙城主【%s】领取了一半的功沙奖励300000元宝.
+SENDMSG 0 帅气的沙城主【%s】领取了一半的功沙奖励300000元宝.
+SENDMSG 0 帅气的沙城主【%s】领取了一半的功沙奖励300000元宝.
+SENDMSG 0 帅气的沙城主【%s】领取了一半的功沙奖励300000元宝.
+SENDMSG 0 帅气的沙城主【%s】领取了一半的功沙奖励300000元宝.
+SENDMSG 0 帅气的沙城主【%s】领取了一半的功沙奖励300000元宝.
+addnamelist ..\QuestDiary\数据文件\沙老大名单.txt
+ADDGUILDLIST ..\QuestDiary\数据文件\行会领取奖励2.txt
+BREAK
+
+#IF
+ISCASTLEMASTER
+#ACT
+GAMEGOLD + 300000
+SENDMSG 0 漂亮的沙城主【%s】领取了一半的功沙奖励300000元宝.
+SENDMSG 0 漂亮的沙城主【%s】领取了一半的功沙奖励300000元宝.
+SENDMSG 0 漂亮的沙城主【%s】领取了一半的功沙奖励300000元宝.
+SENDMSG 0 漂亮的沙城主【%s】领取了一半的功沙奖励300000元宝.
+SENDMSG 0 漂亮的沙城主【%s】领取了一半的功沙奖励300000元宝.
+SENDMSG 0 漂亮的沙城主【%s】领取了一半的功沙奖励300000元宝.
+addnamelist ..\QuestDiary\数据文件\沙老大名单.txt
+ADDGUILDLIST ..\QuestDiary\数据文件\行会领取奖励2.txt
+BREAK
